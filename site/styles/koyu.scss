@@ -1,0 +1,46 @@
+/*-- scss:defaults --*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+$font-family-monospace: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+$font-size-root: 17px;
+$line-height-base: 1.6;
+$headings-font-weight: 600;
+
+$body-bg: #0e0f12;
+$body-color: #ececea;
+$body-secondary: #a3a3a8;
+$link-color: #8ab8f5;
+$border-color: #2a2b31;
+$code-color: #ececea;
+$code-bg: #1e1f24;
+$table-color: #ececea;
+
+$navbar-bg: #0e0f12;
+$navbar-fg: #ececea;
+$navbar-hl: #ffffff;
+$footer-bg: #0e0f12;
+$footer-fg: #8b8b91;
+$toc-color: #a3a3a8;
+$toc-active-border: #ececea;
+
+$callout-color-note: #3987e5;
+$callout-color-tip: #199e70;
+$callout-color-warning: #c98500;
+
+/*-- scss:rules --*/
+:root {
+  --rk-bg: #0e0f12;
+  --rk-surface: #17181c;
+  --rk-surface-2: #1f2025;
+  --rk-border: #2a2b31;
+  --rk-text: #ececea;
+  --rk-muted: #a3a3a8;
+  --rk-faint: #6f7076;
+  --rk-accent: #3987e5;
+  --rk-step-active-bg: #f3f3f1;
+  --rk-ok: #4cc38a;
+  --rk-hata: #ff7b72;
+  --rk-uyari: #e3b341;
+  --rk-step-active-fg: #0e0f12;
+}

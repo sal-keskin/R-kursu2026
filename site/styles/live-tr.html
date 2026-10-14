@@ -1,0 +1,48 @@
+<script>
+// quarto-live (webR) arayüz yazılarını Türkçeleştirir. Eklentinin kendisine dokunulmaz;
+// sayfaya eklenen düğme ve durum yazıları ekrana geldikçe çevrilir.
+(() => {
+  const tam = {
+    "Run Code": "Çalıştır",
+    "Start Over": "Baştan başla",
+    "Show Hint": "İpucu",
+    "Next Hint": "Sonraki ipucu",
+    "Show Solution": "Çözüm",
+    "Exercise": "Alıştırma",
+    "R Code": "R kodu",
+    "Please replace ______ with valid code.": "Lütfen ______ yerine geçerli bir kod yazın.",
+    "Downloading webR": "webR indiriliyor",
+    "Installing webR shims": "webR hazırlanıyor"
+  };
+  const onEk = [
+    ["Downloading package: ", "Paket indiriliyor: "],
+    ["Downloading resource: ", "Veri dosyası indiriliyor: "]
+  ];
+  const cevir = (dugum) => {
+    const metin = dugum.nodeValue;
+    const kirpik = metin.trim();
+    if (!kirpik) return;
+    if (tam[kirpik]) { dugum.nodeValue = metin.replace(kirpik, tam[kirpik]); return; }
+    for (const [en, tr] of onEk) {
+      if (kirpik.startsWith(en)) { dugum.nodeValue = metin.replace(en, tr); return; }
+    }
+  };
+  const tara = (kok) => {
+    const yuruyucu = document.createTreeWalker(kok, NodeFilter.SHOW_TEXT);
+    let d;
+    while ((d = yuruyucu.nextNode())) cevir(d);
+  };
+  const gozlemci = new MutationObserver((kayitlar) => {
+    for (const k of kayitlar) {
+      if (k.type === "characterData") cevir(k.target);
+      k.addedNodes.forEach((n) => n.nodeType === Node.TEXT_NODE ? cevir(n) : tara(n));
+    }
+  });
+  const basla = () => {
+    tara(document.body);
+    gozlemci.observe(document.body, { childList: true, subtree: true, characterData: true });
+  };
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", basla);
+  else basla();
+})();
+</script>

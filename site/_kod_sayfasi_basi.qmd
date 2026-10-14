@@ -1,0 +1,38 @@
+---
+ust-etiket: "Oturum 1 · 16 Ekim 2026"
+title: "Oturum 1: kodlar ve çıktıları"
+subtitle: "Oturum 1'in kodları R'da çalıştırıldığında nasıl görünür? Her kod bloğunun altında R'ın verdiği sonuç var. Kendi bilgisayarınızda da aynı sonuçları görmelisiniz; yalnızca klasör yolu ve hata mesajlarının dili farklı olabilir."
+toc-depth: 2
+---
+
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _kod_sayfasi_basi.qmd'den,
+     gövde ../oturum1_ilk_adim.R'den gelir. Elle düzenlemeyin; değişiklikler bir sonraki derlemede silinir. -->
+
+```{r}
+#| include: false
+# Script, katılımcının klasörünün birebir kopyasında çalışsın (getwd(), list.files() gerçekçi olsun)
+kurs <- file.path(tempdir(), "R_egitim")
+unlink(kurs, recursive = TRUE)
+dir.create(kurs)
+file.copy(file.path("..", c("R_egitim.Rproj", "OKUBENI.txt", "oturum1_ilk_adim.R", "seminer_verileri.R")), kurs)
+file.copy("../veri", kurs, recursive = TRUE)
+knitr::opts_knit$set(root.dir = kurs)
+
+# Derleme sırasında etkisiz kalacak satırlar (kodda olduğu gibi görünürler)
+install.packages <- function(...) invisible(NULL)
+View <- function(...) invisible(NULL)
+# stview() RStudio'da Viewer panelini açar; sayfada aynı raporu gömülü gösterelim
+stview <- function(x, ...) {
+  htmltools::div(class = "html-cikti column-page", print(x, method = "render", footnote = NA, ...))
+}
+```
+
+::: {.cipler}
+[`oturum1_ilk_adim.R` script'i indir](indir/oturum1_ilk_adim.R){.cip}
+[`R_egitim.zip` ders klasörünün tamamı](indir/R_egitim.zip){.cip}
+[`webR` R'ı tarayıcıda deneyin!](dene.qmd){.cip}
+:::
+
+::: {.callout-note appearance="simple"}
+Bu sayfa her güncellemede `oturum1_ilk_adim.R` dosyasından yeniden üretilir; script ile sayfa hep aynıdır. Gri satırlar yorumdur; R onları çalıştırmaz. `install.packages()` ve `View()` satırları burada gösterilir ama çalıştırılmaz.
+:::

@@ -1,0 +1,38 @@
+R ve LLM ile Halk Sağlığında Veri Analizi - Ders klasörü
+=========================================================
+
+BAŞLARKEN
+1. Bu klasörü (zip ise önce çıkartarak) bilgisayarınızda kolay bulacağınız,
+   adında Türkçe karakter ve boşluk olmayan bir yere koyun.
+   İyi örnek:  C:\R_egitim   veya   Belgeler/R_egitim
+   Kaçının:    OneDrive ile eşitlenen klasörler, "Masaüstü/R Eğitim" gibi adlar
+2. R_egitim.Rproj dosyasına çift tıklayın. RStudio bu klasörde açılır.
+3. Sağ alttaki Files panelinden oturum1_ilk_adim.R dosyasını açın.
+
+KLASÖR İÇERİĞİ
+  R_egitim.Rproj               RStudio proje dosyası
+  oturum1_ilk_adim.R           16 Ekim oturumunun script'i
+  seminer_verileri.R           Açık verileri indirme (NHANES, Epi R Handbook)
+                               ve TNSA benzeri veride ağırlıklı analiz örneği
+  veri/veri_sozlugu.xlsx       Tüm veri setlerinin değişken sözlüğü
+
+  veri/ht_tarama.xlsx          Hipertansiyon taraması, 1.500 yetişkin (Excel)
+  veri/ht_tarama.csv           Aynı veri, CSV
+  veri/ht_tarama.sav           Aynı veri, SPSS (değer ve değişken etiketli)
+  veri/ht_tarama_ham.xlsx      Aynı taramanın sahadan gelen dağınık Excel hali
+                               (Oturum 2: veri temizliği alıştırması)
+  veri/salgin_dugun.csv        Düğün sonrası gıda kaynaklı salgın, 150 davetli
+  veri/kkka_vakalar.xlsx       Kırım-Kongo kanamalı ateşi bildirimleri,
+                               2023-2025, 22 il, 1.663 vaka
+  veri/tnsa_benzeri_kadin.sav  TNSA benzeri hane araştırması: 2.545 evlenmiş
+                               kadın, 180 küme; örneklem ağırlıklı (Seminer 4)
+
+LLM KULLANIRKEN
+  Sohbet penceresine veri satırlarını değil, veri_sozlugu.xlsx'teki
+  değişken açıklamalarını veya names(veri) / str(veri) çıktısını verin.
+
+ÖNEMLİ
+  Bu klasördeki tüm veriler SENTETİKTİR; eğitim amacıyla bilgisayarda
+  üretilmiştir ve gerçek kişilere ait değildir. İl adları ve mevsimsellik
+  gerçekçi olması için seçilmiştir, sayılar resmi istatistik değildir.
+  NHANES ve Epi R Handbook verileri seminer_verileri.R ile indirilir.

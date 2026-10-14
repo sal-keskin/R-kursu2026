@@ -1,0 +1,384 @@
+---
+ust-etiket: "Veri tanıtımı · Oturum 1"
+title: "Hipertansiyon taraması verisi"
+subtitle: "Kurgusal bir ilçede, dört aile sağlığı merkezinde 1.500 yetişkine yapılan tarama. Bu sayfa veriyi tablo ve grafiklerle tanıtır. Her tablonun ve grafiğin üstündeki **R'da nasıl yapılır?** düğmesi, aynı sonucu R'da nasıl elde edeceğinizi gösterir."
+code-fold: true
+code-summary: "R'da nasıl yapılır?"
+toc-depth: 2
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(fig.width = 7.5, fig.height = 4.2)
+binlik <- function(x) format(x, big.mark = ".", decimal.mark = ",")
+ondalik <- function(x, k = 1) format(round(x, k), nsmall = k, decimal.mark = ",")
+```
+
+## Hazırlık
+
+Sayfadaki bütün tablo ve grafikler aşağıdaki hazırlık kodundan sonra çalışır. Kendi bilgisayarınızda denemek için önce bu kodu `R_egitim` projesinde çalıştırın.
+
+```{r}
+#| code-fold: false
+library(haven)     # SPSS dosyası
+library(dplyr)     # veri yönetimi
+library(tidyr)     # tabloyu uzun biçime çevirme
+library(ggplot2)   # grafik
+library(naniar)    # eksik veri
+
+# SPSS dosyasını okuyup etiketli kategorileri factor'e çeviriyoruz
+ht <- as_factor(read_sav("veri/ht_tarama.sav"))
+
+# Sonraki tablo ve grafikler için yardımcı değişkenler
+ht <- ht |>
+  mutate(
+    yas_grubu = cut(yas, breaks = c(17, 29, 39, 49, 59, 69, 85),
+                    labels = c("18–29", "30–39", "40–49", "50–59", "60–69", "70+")),
+    boy_cm = ifelse(boy_cm < 100 | boy_cm > 230, NA, boy_cm),  # 3 hatalı boy değeri
+    bki = kilo_kg / (boy_cm / 100)^2,
+    bki_grubu = cut(bki, breaks = c(0, 18.5, 25, 30, Inf), right = FALSE,
+                    labels = c("Zayıf", "Normal", "Fazla kilolu", "Obez")),
+    yuksek_kb = sks >= 140 | dks >= 90                         # ölçümde yüksek kan basıncı
+  )
+
+theme_set(theme_minimal(base_size = 12))          # bütün grafiklerde sade tema
+renk_cinsiyet <- c(Erkek = "#2a78d6", Kadın = "#eb6834")
+```
+
+## Bir bakışta
+
+```{r}
+#| echo: false
+#| output: asis
+gun <- length(unique(ht$tarama_tarihi))
+cat(sprintf('
+::: {.kartlar}
+::: {.kart}
+[%s kişi]{.kart-sayi}
+18 yaş ve üstü yetişkin; her satır bir kişi.
+:::
+::: {.kart}
+[%d değişken]{.kart-sayi}
+Kişisel bilgiler, yaşam tarzı, ölçümler ve tanılar.
+:::
+::: {.kart}
+[4 sağlık merkezi]{.kart-sayi}
+ASM-1, ASM-2, ASM-3 ve ASM-4.
+:::
+::: {.kart}
+[%d tarama günü]{.kart-sayi}
+%s – %s 2026; hafta içi, resmî tatiller hariç.
+:::
+:::
+', binlik(nrow(ht)), 14L, gun,
+   format(min(ht$tarama_tarihi), "%d %B"), format(max(ht$tarama_tarihi), "%d %B")))
+```
+
+Veri eğitim için üretildi; gerçek kişilere ait değildir. Sayılar gerçekçi olsun diye seçildi ama resmî istatistik değildir.
+
+## Aynı veri, üç dosya
+
+`veri/` klasöründe bu verinin üç dosyası var. **İçerik aynıdır, yalnızca dosya biçimi farklıdır.** Hangisini okursanız okuyun aynı 1.500 kişiye ulaşırsınız. Bu sayfada SPSS dosyasını kullanıyoruz; çünkü kategorilerin doğru sırası ve değişken açıklamaları bu dosyada hazır geliyor.
+
+| Dosya | R'da okuma | Bilmeniz gereken |
+|------|--------|------------------|
+| [`ht_tarama.xlsx`](veri/ht_tarama.xlsx) | `read_excel()` | Kategoriler metin olarak gelir ve alfabetik sıralanır ("Lise", "Ortaokul"dan önce). |
+| [`ht_tarama.csv`](veri/ht_tarama.csv) | `read_csv()` | Düz metin dosyasıdır; her programda açılır. Kategoriler yine metindir. |
+| [`ht_tarama.sav`](veri/ht_tarama.sav) | `read_sav()` | Kategoriler sayı olarak saklanır, anlamları değer etiketindedir (1 = Erkek). Değişken açıklamaları ve kategori sırası korunur. |
+
+## Değişkenler
+
+```{r}
+tur <- function(x) {
+  if (inherits(x, "Date")) "Tarih" else if (is.factor(x)) "Kategori" else "Sayı"
+}
+ozet <- function(x) {
+  if (inherits(x, "Date")) return(paste(format(range(x, na.rm = TRUE), "%d.%m.%Y"), collapse = " – "))
+  if (is.factor(x)) return(paste(levels(x), collapse = ", "))
+  sprintf("ortalama %s (en az %s, en çok %s)",
+          format(round(mean(x, na.rm = TRUE), 1), decimal.mark = ","),
+          format(min(x, na.rm = TRUE), decimal.mark = ","),
+          format(max(x, na.rm = TRUE), decimal.mark = ","))
+}
+ham <- as_factor(read_sav("veri/ht_tarama.sav"))   # düzeltme yapılmamış hali
+data.frame(
+  Değişken = names(ham),
+  Açıklama = sapply(ham, function(x) attr(x, "label")),
+  Tür      = sapply(ham, tur),
+  Değerler = sapply(ham, ozet),
+  Eksik    = sapply(ham, function(x) sum(is.na(x)))
+) |>
+  knitr::kable(row.names = FALSE)
+```
+
+`boy_cm` değişkeninde üç değer bir yetişkin için mümkün değil (en küçük ve en büyük değere bakın). Bunlar veri giriş hatasıdır. Bu sayfada bu üç değeri eksik saydık; nasıl yakalanacaklarını Oturum 2'de göreceğiz.
+
+## Katılımcılar
+
+### Yaş
+
+Katılımcıların yaş ortalaması `r ondalik(mean(ht$yas))`, ortancası `r median(ht$yas)`. En genç katılımcı `r min(ht$yas)`, en yaşlı katılımcı `r max(ht$yas)` yaşında.
+
+```{r}
+ggplot(ht, aes(x = yas)) +
+  geom_histogram(binwidth = 5, boundary = 15, fill = "#2a78d6", colour = "white") +
+  labs(x = "Yaş (yıl)", y = "Kişi sayısı")
+```
+
+### Yaş ve cinsiyet
+
+Kadın: `r binlik(sum(ht$cinsiyet == "Kadın"))` kişi (%`r ondalik(mean(ht$cinsiyet == "Kadın") * 100)`). Erkek: `r binlik(sum(ht$cinsiyet == "Erkek"))` kişi (%`r ondalik(mean(ht$cinsiyet == "Erkek") * 100)`). Grafik, her yaş grubunda kadın ve erkek sayısını gösterir (nüfus piramidi).
+
+```{r}
+#| fig-height: 3.8
+ht |>
+  count(yas_grubu, cinsiyet) |>
+  mutate(n = ifelse(cinsiyet == "Erkek", -n, n)) |>
+  ggplot(aes(x = n, y = yas_grubu, fill = cinsiyet)) +
+  geom_col(width = 0.8) +
+  scale_x_continuous(labels = abs) +
+  scale_fill_manual(values = renk_cinsiyet) +
+  labs(x = "Kişi sayısı", y = "Yaş grubu", fill = NULL) +
+  theme(legend.position = "top")
+```
+
+### Eğitim düzeyi
+
+```{r}
+#| fig-height: 3.6
+ht |>
+  filter(!is.na(egitim)) |>
+  count(cinsiyet, egitim) |>
+  group_by(cinsiyet) |>
+  mutate(yuzde = n / sum(n) * 100) |>
+  ggplot(aes(x = yuzde, y = egitim, fill = cinsiyet)) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
+  scale_fill_manual(values = renk_cinsiyet) +
+  labs(x = "Yüzde (cinsiyet içinde)", y = NULL, fill = NULL) +
+  theme(legend.position = "top")
+```
+
+Eğitim düzeyi bilinmeyen `r sum(is.na(ht$egitim))` kişi yüzdelere katılmadı.
+
+### Sağlık merkezleri
+
+```{r}
+ht |>
+  count(saglik_merkezi, name = "Kişi sayısı") |>
+  mutate(Yüzde = round(`Kişi sayısı` / sum(`Kişi sayısı`) * 100, 1)) |>
+  rename(`Sağlık merkezi` = saglik_merkezi) |>
+  knitr::kable(format.args = list(decimal.mark = ","))
+```
+
+## Yaşam tarzı
+
+### Sigara
+
+Erkeklerde sigara içenlerin oranı kadınların iki katından fazla.
+
+```{r}
+#| fig-height: 3.6
+ht |>
+  count(cinsiyet, sigara) |>
+  group_by(cinsiyet) |>
+  mutate(yuzde = n / sum(n) * 100) |>
+  ggplot(aes(x = sigara, y = yuzde, fill = cinsiyet)) +
+  geom_col(position = position_dodge(width = 0.8), width = 0.75) +
+  geom_text(aes(label = round(yuzde)), position = position_dodge(width = 0.8),
+            vjust = -0.4, size = 3.5) +
+  scale_fill_manual(values = renk_cinsiyet) +
+  labs(x = NULL, y = "Yüzde (cinsiyet içinde)", fill = NULL) +
+  theme(legend.position = "top")
+```
+
+### Fiziksel aktivite
+
+Haftada en az 150 dakika hareket edenlerin oranı yaşla azalıyor.
+
+```{r}
+#| fig-height: 3.6
+ht |>
+  group_by(yas_grubu, cinsiyet) |>
+  summarise(yeterli = mean(fiz_aktivite != "Yetersiz") * 100, .groups = "drop") |>
+  ggplot(aes(x = yas_grubu, y = yeterli, colour = cinsiyet, group = cinsiyet)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2.5) +
+  scale_colour_manual(values = renk_cinsiyet) +
+  scale_y_continuous(limits = c(0, 100)) +
+  labs(x = "Yaş grubu", y = "Yeterli aktivite (%)", colour = NULL) +
+  theme(legend.position = "top")
+```
+
+### Beden kitle indeksi (BKİ)
+
+BKİ, kilonun boyun karesine bölünmesiyle hesaplanır (kg/m²). Kesikli çizgiler Dünya Sağlık Örgütü'nün sınırlarını gösterir: 18,5 altı zayıf, 25–29,9 fazla kilolu, 30 ve üstü obez.
+
+```{r}
+ggplot(filter(ht, !is.na(bki)), aes(x = bki)) +
+  geom_histogram(binwidth = 1, fill = "#2a78d6", colour = "white") +
+  geom_vline(xintercept = c(18.5, 25, 30), linetype = "dashed", colour = "grey40") +
+  labs(x = "BKİ (kg/m²)", y = "Kişi sayısı")
+```
+
+```{r}
+ht |>
+  filter(!is.na(bki_grubu)) |>
+  count(cinsiyet, bki_grubu) |>
+  group_by(cinsiyet) |>
+  mutate(yuzde = round(n / sum(n) * 100, 1)) |>
+  select(-n) |>
+  pivot_wider(names_from = bki_grubu, values_from = yuzde) |>
+  rename(Cinsiyet = cinsiyet) |>
+  knitr::kable(caption = "BKİ grupları, cinsiyete göre (%)", format.args = list(decimal.mark = ","))
+```
+
+Kilosu ya da boyu bilinmeyen `r sum(is.na(ht$bki))` kişinin BKİ'si hesaplanamadı.
+
+## Kan basıncı
+
+### Ölçülen kan basıncı
+
+Sistolik kan basıncında (SKB) 140, diyastolik kan basıncında (DKB) 90 mmHg yüksek kan basıncı sınırıdır. Kesikli çizgiler bu sınırları gösterir.
+
+```{r}
+#| fig-height: 3.6
+ht |>
+  select(sks, dks) |>
+  pivot_longer(everything(), names_to = "olcum", values_to = "deger") |>
+  filter(!is.na(deger)) |>
+  mutate(olcum = ifelse(olcum == "sks", "Sistolik (SKB)", "Diyastolik (DKB)"),
+         sinir = ifelse(olcum == "Sistolik (SKB)", 140, 90)) |>
+  ggplot(aes(x = deger)) +
+  geom_histogram(binwidth = 4, fill = "#2a78d6", colour = "white") +
+  geom_vline(aes(xintercept = sinir), linetype = "dashed", colour = "grey40") +
+  facet_wrap(~ olcum, scales = "free_x") +
+  labs(x = "mmHg", y = "Kişi sayısı")
+```
+
+### Yaşa ve cinsiyete göre sistolik kan basıncı
+
+```{r}
+ggplot(filter(ht, !is.na(sks)), aes(x = yas_grubu, y = sks, fill = cinsiyet)) +
+  geom_boxplot(outlier.size = 0.8, width = 0.7) +
+  geom_hline(yintercept = 140, linetype = "dashed", colour = "grey40") +
+  scale_fill_manual(values = renk_cinsiyet) +
+  labs(x = "Yaş grubu", y = "Sistolik kan basıncı (mmHg)", fill = NULL) +
+  theme(legend.position = "top")
+```
+
+Kutunun ortasındaki çizgi ortancayı, kutu ortadaki %50'lik kısmı gösterir. Sistolik kan basıncı yaşla artıyor; gençlerde erkeklerin değeri kadınlardan biraz daha yüksek.
+
+### Tanı ve ölçüm birlikte
+
+Daha önce hipertansiyon tanısı almış olmak ile taramada yüksek ölçülmek aynı şey değildir. Tanısı olan bir kişinin kan basıncı ilaçla normal olabilir; tanısı olmayan bir kişinin değeri yüksek çıkabilir.
+
+```{r}
+ht |>
+  filter(!is.na(yuksek_kb)) |>
+  mutate(olcum = ifelse(yuksek_kb, "Yüksek (≥140/90)", "Yüksek değil")) |>
+  count(`HT tanısı` = ht_tani, olcum) |>
+  group_by(`HT tanısı`) |>
+  mutate(n = sprintf("%d (%%%s)", n, format(round(n / sum(n) * 100, 1), decimal.mark = ","))) |>
+  pivot_wider(names_from = olcum, values_from = n) |>
+  knitr::kable(caption = "Hipertansiyon tanısı ve taramadaki ölçüm (satır yüzdesi)")
+```
+
+Tanısı olmayan kişilerde ölçülen kan basıncı yüksek olanların oranı yaklaşık %`r round(mean(ht$yuksek_kb[ht$ht_tani == "Yok"], na.rm = TRUE) * 100)`. Taramanın asıl amacı bu kişileri bulmaktır.
+
+## Hastalıklar
+
+### Diyabet ve hipertansiyon tanısı
+
+Daha önce konmuş tanıların oranı: diyabet %`r ondalik(mean(ht$diyabet == "Var") * 100)`, hipertansiyon %`r ondalik(mean(ht$ht_tani == "Var") * 100)`. İkisi de yaşla belirgin biçimde artıyor.
+
+```{r}
+ht |>
+  group_by(yas_grubu, cinsiyet) |>
+  summarise(Diyabet = mean(diyabet == "Var") * 100,
+            `Hipertansiyon` = mean(ht_tani == "Var") * 100, .groups = "drop") |>
+  pivot_longer(c(Diyabet, `Hipertansiyon`), names_to = "tani", values_to = "yuzde") |>
+  ggplot(aes(x = yas_grubu, y = yuzde, colour = cinsiyet, group = cinsiyet)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 2.5) +
+  facet_wrap(~ tani) +
+  scale_colour_manual(values = renk_cinsiyet) +
+  labs(x = "Yaş grubu", y = "Tanısı olanlar (%)", colour = NULL) +
+  theme(legend.position = "top", axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+### BKİ grubuna göre
+
+```{r}
+ht |>
+  filter(!is.na(bki_grubu)) |>
+  group_by(`BKİ grubu` = bki_grubu) |>
+  summarise(`Kişi sayısı` = n(),
+            `Diyabet (%)` = round(mean(diyabet == "Var") * 100, 1),
+            `HT tanısı (%)` = round(mean(ht_tani == "Var") * 100, 1),
+            `SKB ortalaması` = round(mean(sks, na.rm = TRUE), 1)) |>
+  knitr::kable(format.args = list(decimal.mark = ","))
+```
+
+Bu tablo yalnızca ham oranları gösterir. Örneğin obezlerin daha yaşlı olması da farka katkıda bulunur. Yaş gibi etkenleri hesaba katan analizleri sonraki oturumlarda göreceğiz.
+
+## Tarama süreci
+
+### Günlere göre kayıt
+
+```{r}
+#| fig-height: 3.4
+ht |>
+  count(tarama_tarihi) |>
+  ggplot(aes(x = tarama_tarihi, y = n)) +
+  geom_col(fill = "#2a78d6", width = 0.8) +
+  scale_x_date(date_breaks = "2 weeks", date_labels = "%d %b") +
+  labs(x = NULL, y = "Kayıt sayısı")
+```
+
+```{r}
+ht |>
+  mutate(gun = factor(format(tarama_tarihi, "%u"), levels = 1:5,
+                      labels = c("Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma"))) |>
+  count(Gün = gun, name = "Kayıt sayısı") |>
+  mutate(Yüzde = round(`Kayıt sayısı` / sum(`Kayıt sayısı`) * 100, 1)) |>
+  knitr::kable(format.args = list(decimal.mark = ","))
+```
+
+Grafikteki boşluklar resmî tatillere denk geliyor: 20 Mart (Ramazan Bayramı), 23 Nisan, 1 Mayıs ve 19 Mayıs.
+
+## Eksik veri
+
+### Hangi değişkenlerde?
+
+```{r}
+miss_var_summary(ham) |>
+  filter(n_miss > 0) |>
+  rename(Değişken = variable, `Eksik sayısı` = n_miss, `Eksik (%)` = pct_miss) |>
+  knitr::kable(digits = 1, format.args = list(decimal.mark = ","))
+```
+
+### Sağlık merkezine ve yaşa göre
+
+```{r}
+#| fig-height: 3.4
+gg_miss_fct(select(ham, saglik_merkezi, egitim, kilo_kg, sks, dks), fct = saglik_merkezi) +
+  labs(x = "Sağlık merkezi", y = NULL)
+```
+
+```{r}
+#| fig-height: 3.6
+ht |>
+  group_by(yas_grubu) |>
+  summarise(`Kan basıncı` = mean(is.na(sks)) * 100,
+            Kilo = mean(is.na(kilo_kg)) * 100,
+            Eğitim = mean(is.na(egitim)) * 100) |>
+  pivot_longer(-yas_grubu, names_to = "degisken", values_to = "yuzde") |>
+  mutate(degisken = factor(degisken, levels = c("Kan basıncı", "Kilo", "Eğitim"))) |>
+  ggplot(aes(x = yas_grubu, y = yuzde, fill = degisken)) +
+  geom_col(position = position_dodge(width = 0.85), width = 0.8) +
+  scale_fill_manual(values = c(`Kan basıncı` = "#2a78d6", Kilo = "#eb6834", Eğitim = "#1baf7a")) +
+  labs(x = "Yaş grubu", y = "Eksik (%)", fill = NULL) +
+  theme(legend.position = "top")
+```
+
+Eksikler bütün kişilere eşit dağılmamış: bazı merkezlerde ve bazı yaş gruplarında daha sık. Bunun analizi nasıl etkileyebileceğini Oturum 2'de konuşacağız.

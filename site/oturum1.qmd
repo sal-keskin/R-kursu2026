@@ -1,0 +1,118 @@
+---
+ust-etiket: "Temel 1 · 16 Ekim 2026, Cuma 14:00–16:00"
+title: "R ve RStudio'ya ilk adım"
+subtitle: "Oturumun sonunda kendi bilgisayarınızda bir RStudio projesi açmış, aynı veriyi Excel, CSV ve SPSS dosyasından okumuş ve ilk özet tablolarınızı üretmiş olacaksınız."
+---
+
+::: {.cipler}
+[`oturum1_ilk_adim.R` script'i indir](indir/oturum1_ilk_adim.R){.cip}
+[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum1-kod.qmd){.cip}
+[`webR` R'ı tarayıcıda deneyin!](dene.qmd){.cip}
+[`Veri tanıtımı` hipertansiyon taraması](veri-ht.qmd){.cip}
+:::
+
+## Akış
+
+Oturum, paylaşılan `oturum1_ilk_adim.R` script'inin bölümlerini sırayla izlemektedir. R'ın dilini öğrenmenin en hızlı yolu bol bol pratik yapmaktır.
+
+::::: {.adimlar}
+:::: {.adim}
+[01]{.adim-no}
+
+[Açılış]{.adim-baslik}
+[14:00]{.adim-ek}
+
+R'ın neden seçildiği açıklanmaktadır: R ücretsizdir, analizler tekrarlanabilir ve paketler sürekli güncellenmektedir. Ardından programın akışı ve tek kural tanıtılmaktadır: **kopyalama, yaz.**
+::::
+
+:::: {.adim}
+[02]{.adim-no}
+
+[Kurulum kontrolü]{.adim-baslik}
+[14:10]{.adim-ek}
+
+R ve RStudio'nun açılıp açılmadığı kontrol edilmektedir. Kurulumu tamamlayamayan katılımcılar oturuma [tarayıcıdan](dene.qmd) ya da [Posit Cloud](https://posit.cloud) ile devam etmektedir.
+::::
+
+:::: {.adim}
+[03]{.adim-no}
+
+[RStudio turu ve proje]{.adim-baslik}
+[14:25 · Bölüm 0]{.adim-ek}
+
+- RStudio'nun dört paneli ve script ile konsol arasındaki fark gösterilmektedir.
+- `R_egitim.Rproj` ile proje açılmakta; `veri/` klasörü ve `getwd()` tanıtılmaktadır.
+- Satırlar Ctrl + Enter (Mac: Cmd + Enter) ile çalıştırılmaktadır.
+::::
+
+:::: {.adim}
+[04]{.adim-no}
+
+[R'ın dili]{.adim-baslik}
+[14:40 · Bölüm 1–5]{.adim-ek}
+
+- R hesap makinesi olarak kullanılmakta; düğün salgınındaki atak hızı hesaplanmaktadır.
+- Nesne ve atama (`<-`), vektör (`c()`), fonksiyon ve yardım (`?mean`) tanıtılmaktadır.
+- Eksik değerin (`NA`) hesaplamayı nasıl etkilediği ve `na.rm = TRUE` gösterilmektedir.
+- Paketlerin bir kez kurulduğu, her oturumda ise yeniden yüklendiği açıklanmaktadır.
+::::
+
+:::: {.adim}
+[05]{.adim-no}
+
+[Veri okuma, ilk bakış ve hızlı özet]{.adim-baslik}
+[15:10 · Bölüm 6–9 · 15:00–15:10 mola]{.adim-ek}
+
+- Aynı veri üç farklı dosyadan okunmaktadır: `read_excel()`, `read_csv()` ve `read_sav()`.
+- Veriye ilk bakış için `head()`, `str()`, `glimpse()`, `summary()` ve `table()` kullanılmaktadır.
+- SPSS etiketleri `print_labels()` ve `as_factor()` ile R'a taşınmaktadır.
+- Veri tek komutla özetlenmekte (`dfSummary()`), SPSS benzeri frekans tabloları üretilmekte ve eksik verinin örüntüsü incelenmektedir.
+::::
+
+:::: {.adim}
+[06]{.adim-no}
+
+[LLM köşesi]{.adim-baslik}
+[15:35 · Bölüm 10]{.adim-ek}
+
+Kasıtlı olarak yapılan üç hatanın mesajı bir LLM'e açıklatılmakta, bir kod bloğu da satır satır açıklatılmaktadır. Gizlilik kuralı vurgulanmaktadır: **veri değil, yapı paylaşılır.**
+::::
+
+:::: {.adim}
+[07]{.adim-no}
+
+[Kapanış]{.adim-baslik}
+[15:50]{.adim-ek}
+
+23 Ekim'deki oturum için yapılacak hazırlık anlatılmakta ve 1 dakikalık geri bildirim alınmaktadır. Script'in sonunda, evde incelenmek üzere bir bonus bölüm de yer almaktadır: altı grafiğin tek görselde birleştirilmesi (Bölüm 11).
+::::
+:::::
+
+## Script'in bölümleri
+
+| Bölüm | Konu | SPSS'teki karşılığı |
+|--|--------|--------|
+| 0 | Proje ve çalışma klasörü | Dosyaların bulunduğu klasör |
+| 1 | R bir hesap makinesidir | — |
+| 2 | Nesneler ve atama (`<-`) | Compute ile yeni değişken |
+| 3 | Vektörler | Data View'daki bir sütun |
+| 4 | Fonksiyonlar ve yardım | Menü komutları ve Help |
+| 5 | Paketler | Eklentiler (extension) |
+| 6 | Veri okuma: Excel, CSV, SPSS | File > Open > Data |
+| 7 | Veriye ilk bakış | Data View, Frequencies, Crosstabs |
+| 8 | SPSS dosyalarında etiketler | Variable View: Values ve Label |
+| 9 | Tek komutla veri özeti, eksik veri | Reports > Codebook, Missing Value Analysis, Split File |
+| 10 | LLM köşesi: hata mesajlarını okumak | — |
+| 11 | Bonus: tek görselde veri öyküsü | Chart Builder (çoklu panel) |
+
+## Bu oturumdaki paketler
+
+| Paket | Ne için? |
+|------|----------|
+| `readxl`, `readr`, `haven` | Excel, CSV ve SPSS dosyalarını okumak |
+| `dplyr` | Veri yönetimi (`glimpse()`); Oturum 2'de ayrıntılı |
+| `summarytools` | Tüm veriyi tek sayfada özetleyen `dfSummary()` |
+| `datawizard` | SPSS çıktısına benzeyen frekans ve çapraz tablolar |
+| `naniar`, `ggplot2` | Eksik verinin sayısı, yeri ve örüntüsü |
+| `gtExtras` (+ `svglite`) | Küçük grafikli özet tablo |
+| `patchwork` | Birden çok grafiği tek görselde birleştirmek (bonus) |

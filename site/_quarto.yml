@@ -1,0 +1,81 @@
+project:
+  type: website
+  output-dir: _site
+  # Derlemeden önce veri ve script'ler site klasörüne kopyalanır (bkz. _hazirla.R)
+  pre-render: _hazirla.R
+  render:
+    - "*.qmd"
+  resources:
+    - veri/
+    - indir/
+
+lang: tr
+
+website:
+  title: "R ile Halk Sağlığı"
+  description: "Hacettepe Üniversitesi Halk Sağlığı AD, Epidemiyoloji Bilim Dalı: SPSS ve Excel kullananlar için R eğitimi."
+  site-url: https://sal-keskin.github.io/R-kursu2026/
+  repo-url: https://github.com/sal-keskin/R-kursu2026
+  page-navigation: true
+  reader-mode: false
+  navbar:
+    collapse-below: lg
+    left:
+      - text: "Oturum 1"
+        menu:
+          - text: "Oturuma genel bakış"
+            href: oturum1.qmd
+          - text: "Kodlar ve çıktıları"
+            href: oturum1-kod.qmd
+          - text: "Tarayıcıda deneyin"
+            href: dene.qmd
+          - text: "Oturumun verisi"
+            href: veri-ht.qmd
+      - text: "Veriler"
+        menu:
+          - text: "Hipertansiyon taraması"
+            href: veri-ht.qmd
+    right:
+      - icon: github
+        href: https://github.com/sal-keskin/R-kursu2026
+        aria-label: "GitHub deposu"
+  page-footer:
+    left: "Hacettepe Üniversitesi Tıp Fakültesi Halk Sağlığı AD · Epidemiyoloji Bilim Dalı"
+    right: "Salih Keskin · Saadet Göksu Çelik Pekerşen"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/acik.scss]
+      dark: [cosmo, styles/koyu.scss]
+    respect-user-color-scheme: true
+    css: styles/site.css
+    template-partials:
+      - sablon/title-block.html
+    highlight-style:
+      light: github
+      dark: github-dark
+    toc: true
+    toc-title: "Bu sayfada"
+    toc-depth: 2
+    page-layout: article
+    grid:
+      body-width: 860px
+      margin-width: 260px
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    smooth-scroll: true
+    anchor-sections: true
+
+execute:
+  echo: true
+  warning: false
+  message: false
+  freeze: false
+
+knitr:
+  opts_chunk:
+    comment: "#>"
+    fig.align: center
+    dev: svglite

@@ -1,0 +1,80 @@
+<script>
+// "Sıra sizde" alıştırmaları: giriş kutularındaki cevapları koda yerleştirir, cevabı denetler
+// ve kodu hemen altındaki gizli webR kutusunda çalıştırır (çıktı o kutunun altında görünür).
+(() => {
+  const sade = (s) => s.replace(/\s+/g, "").replace(/'/g, '"');
+
+  const editorBul = (id) => {
+    const kap = document.getElementById("calistirici-" + id);
+    const cm = kap && kap.querySelector(".cm-content");
+    const dugme = kap && kap.querySelector('[aria-label="Run Code"]');
+    if (!cm || !dugme || !cm.cmView) return null;
+    const view = (cm.cmView.rootView && cm.cmView.rootView.view) || cm.cmView.view;
+    return view ? { view, dugme } : null;
+  };
+
+  const kodYap = (kutu) => {
+    let kod = "";
+    kutu.querySelector(".dolgu-kod code").childNodes.forEach((n) => {
+      kod += n.nodeType === Node.TEXT_NODE ? n.nodeValue
+           : (n.matches && n.matches("input.kod-girdi")) ? n.value.trim() : n.textContent;
+    });
+    return kod;
+  };
+
+  const geriBildirim = (kutu, tur, metin) => {
+    const g = kutu.querySelector(".dolgu-geri");
+    g.className = "dolgu-geri " + tur;
+    g.textContent = metin;
+  };
+
+  const calistir = (kutu, cozumMu) => {
+    const id = kutu.id.replace(/^dolgu-/, "");
+    const girdiler = [...kutu.querySelectorAll("input.kod-girdi")];
+    const bos = girdiler.find((g) => !g.value.trim());
+    if (bos) {
+      geriBildirim(kutu, "bilgi", "Önce boş kutuları doldurun.");
+      bos.focus();
+      return;
+    }
+    let hepsiDogru = true;
+    girdiler.forEach((g) => {
+      const dogru = JSON.parse(g.dataset.cevap).some((c) => sade(c) === sade(g.value));
+      g.classList.toggle("dogru", dogru);
+      g.classList.toggle("yanlis", !dogru);
+      if (!dogru) hepsiDogru = false;
+    });
+    const e = editorBul(id);
+    if (!e) {
+      geriBildirim(kutu, "bilgi", "R henüz hazırlanıyor. Birkaç saniye sonra yeniden deneyin.");
+      return;
+    }
+    e.view.dispatch({ changes: { from: 0, to: e.view.state.doc.length, insert: kodYap(kutu) } });
+    e.dugme.click();
+    if (cozumMu) geriBildirim(kutu, "bilgi", "Çözüm kutulara yazıldı. R'ın sonucu aşağıda.");
+    else if (hepsiDogru) geriBildirim(kutu, "basari", "Doğru! R'ın sonucu aşağıda.");
+    else geriBildirim(kutu, "uyari", "Kırmızı çerçeveli kutuyu bir kez daha kontrol edin. R'ın verdiği sonuç aşağıda.");
+  };
+
+  document.addEventListener("click", (olay) => {
+    const kutu = olay.target.closest(".dolgu");
+    if (!kutu) return;
+    if (olay.target.closest(".dolgu-calistir")) calistir(kutu, false);
+    if (olay.target.closest(".dolgu-cozum")) {
+      kutu.querySelectorAll("input.kod-girdi").forEach((g) => { g.value = JSON.parse(g.dataset.cevap)[0]; });
+      calistir(kutu, true);
+    }
+  });
+
+  document.addEventListener("keydown", (olay) => {
+    if (olay.key === "Enter" && olay.target.matches("input.kod-girdi")) {
+      olay.preventDefault();
+      calistir(olay.target.closest(".dolgu"), false);
+    }
+  });
+
+  document.addEventListener("input", (olay) => {
+    if (olay.target.matches("input.kod-girdi")) olay.target.classList.remove("dogru", "yanlis");
+  });
+})();
+</script>

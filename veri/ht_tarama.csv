@@ -1,0 +1,1501 @@
+id,saglik_merkezi,tarama_tarihi,yas,cinsiyet,egitim,sigara,fiz_aktivite,diyabet,boy_cm,kilo_kg,sks,dks,ht_tani
+1,ASM-2,2026-03-02,52,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,182.3,103.9,114,70,Yok
+2,ASM-1,2026-03-02,52,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Var,156.3,73.1,108,69,Yok
+3,ASM-1,2026-03-02,40,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,170.4,62.2,125,71,Yok
+4,ASM-1,2026-03-02,61,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,180.8,71.8,129,74,Yok
+5,ASM-4,2026-03-02,39,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.6,72.2,118,71,Yok
+6,ASM-3,2026-03-02,44,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.7,70.5,114,78,Yok
+7,ASM-2,2026-03-02,46,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,183.6,94.5,117,76,Yok
+8,ASM-3,2026-03-02,51,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.2,89.9,136,77,Yok
+9,ASM-1,2026-03-02,46,Kadın,Lise,Bırakmış,Yetersiz,Yok,152.5,65.6,138,83,Var
+10,ASM-1,2026-03-02,35,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,161.9,58.7,90,69,Yok
+11,ASM-1,2026-03-02,47,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,162,,98,72,Yok
+12,ASM-3,2026-03-02,61,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,162.7,87.4,130,77,Var
+13,ASM-3,2026-03-02,21,Erkek,Üniversite,İçiyor,Yetersiz,Yok,173.7,63.4,105,66,Yok
+14,ASM-3,2026-03-02,57,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.4,83,140,81,Yok
+15,ASM-3,2026-03-02,26,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,162.6,80.8,120,73,Yok
+16,ASM-4,2026-03-02,70,Kadın,,Hiç içmemiş,Yetersiz,Yok,148.7,74.1,151,90,Var
+17,ASM-3,2026-03-02,73,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,176.5,114.4,144,97,Var
+18,ASM-4,2026-03-02,46,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,159.5,,,,Yok
+19,ASM-3,2026-03-03,27,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.4,74.7,110,67,Yok
+20,ASM-2,2026-03-03,30,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,159.2,64.8,123,82,Yok
+21,ASM-4,2026-03-03,53,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Var,174,105,121,71,Yok
+22,ASM-4,2026-03-03,70,Kadın,Lise,İçiyor,Yetersiz,Var,160.9,74.4,133,74,Var
+23,ASM-3,2026-03-03,40,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.8,79.1,97,69,Yok
+24,ASM-1,2026-03-03,59,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,164.9,65.3,118,72,Yok
+25,ASM-4,2026-03-03,47,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,179,79.2,147,89,Yok
+26,ASM-1,2026-03-03,26,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,181.1,99.7,115,74,Yok
+27,ASM-2,2026-03-03,63,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.1,69.9,110,72,Yok
+28,ASM-1,2026-03-03,43,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,168,70.1,123,73,Yok
+29,ASM-1,2026-03-03,32,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.7,65.3,114,70,Yok
+30,ASM-4,2026-03-03,80,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,157.3,69.3,122,92,Var
+31,ASM-1,2026-03-03,58,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,172.8,93.1,123,86,Var
+32,ASM-1,2026-03-03,18,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,158.9,59.6,125,80,Yok
+33,ASM-4,2026-03-03,54,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,178.9,86,163,95,Yok
+34,ASM-1,2026-03-03,85,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,159.8,52,124,75,Var
+35,ASM-4,2026-03-03,43,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,181.3,90.9,121,77,Yok
+36,ASM-4,2026-03-03,37,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164,50.4,99,79,Yok
+37,ASM-1,2026-03-03,19,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,159,50.6,134,87,Yok
+38,ASM-1,2026-03-03,69,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,166.3,105.8,120,81,Var
+39,ASM-2,2026-03-04,38,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,154.7,63.2,113,74,Yok
+40,ASM-1,2026-03-04,49,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,164.6,76.1,113,70,Var
+41,ASM-2,2026-03-04,46,Kadın,Lise,Bırakmış,Yetersiz,Yok,162.5,68,125,74,Yok
+42,ASM-3,2026-03-04,30,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,168.2,71.4,140,78,Yok
+43,ASM-2,2026-03-04,50,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,176,79.7,146,91,Yok
+44,ASM-1,2026-03-04,42,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,166.4,68.2,120,75,Yok
+45,ASM-3,2026-03-04,85,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,174.2,88,188,105,Var
+46,ASM-3,2026-03-04,50,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,172.7,86.9,126,71,Yok
+47,ASM-4,2026-03-05,42,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.2,61.2,90,55,Yok
+48,ASM-1,2026-03-05,38,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,164.7,82.8,106,70,Yok
+49,ASM-3,2026-03-05,33,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,169.2,,,,Yok
+50,ASM-2,2026-03-05,63,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,154.5,87.1,183,82,Var
+51,ASM-2,2026-03-05,18,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,156.8,72.4,123,87,Yok
+52,ASM-4,2026-03-05,40,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,175.9,82.4,132,80,Yok
+53,ASM-3,2026-03-05,25,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.8,80.7,111,76,Yok
+54,ASM-4,2026-03-05,18,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,184.7,,,,Yok
+55,ASM-4,2026-03-05,42,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,165.2,93.3,100,65,Yok
+56,ASM-4,2026-03-05,47,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160,65.4,124,70,Yok
+57,ASM-2,2026-03-05,54,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,17.2,72.4,138,78,Var
+58,ASM-1,2026-03-05,84,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,172.9,70.4,148,78,Var
+59,ASM-3,2026-03-06,63,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,150.1,63.3,144,85,Yok
+60,ASM-3,2026-03-06,31,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,186.3,100.3,144,95,Var
+61,ASM-4,2026-03-06,76,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,168.5,91,147,81,Var
+62,ASM-1,2026-03-06,43,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,181.9,101.1,118,85,Yok
+63,ASM-4,2026-03-09,39,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,176.2,82.7,137,83,Yok
+64,ASM-2,2026-03-09,65,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,163.1,85.6,165,97,Yok
+65,ASM-3,2026-03-09,61,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,179.5,89.2,147,87,Yok
+66,ASM-4,2026-03-09,85,Erkek,Ortaokul,İçiyor,Yetersiz,Var,185.7,109.1,159,94,Var
+67,ASM-1,2026-03-09,58,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.8,88.7,143,79,Yok
+68,ASM-1,2026-03-09,36,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.9,89.3,125,81,Yok
+69,ASM-3,2026-03-09,29,Erkek,Lise,Hiç içmemiş,Yetersiz,Var,174,94.3,134,67,Var
+70,ASM-4,2026-03-09,47,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,162.1,76.4,146,88,Var
+71,ASM-3,2026-03-09,34,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.5,76.2,119,66,Yok
+72,ASM-1,2026-03-09,34,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.6,80.8,104,61,Yok
+73,ASM-4,2026-03-09,69,Kadın,,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.8,63.4,127,83,Var
+74,ASM-2,2026-03-09,52,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,159.9,89.9,126,75,Var
+75,ASM-3,2026-03-09,36,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,169.8,63.9,133,86,Yok
+76,ASM-2,2026-03-09,41,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,149,57.3,114,67,Yok
+77,ASM-1,2026-03-09,46,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,175.9,80.5,100,75,Yok
+78,ASM-4,2026-03-09,48,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,178.6,95.6,140,80,Yok
+79,ASM-3,2026-03-09,41,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,176.3,66.3,127,81,Yok
+80,ASM-1,2026-03-09,66,Erkek,Lise,Bırakmış,Yetersiz,Var,169.1,102.6,148,74,Var
+81,ASM-2,2026-03-09,55,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,177.1,70.7,115,68,Yok
+82,ASM-4,2026-03-09,32,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.4,57.1,120,76,Yok
+83,ASM-2,2026-03-09,44,Erkek,Üniversite,İçiyor,Yetersiz,Yok,176.2,89.2,125,83,Yok
+84,ASM-4,2026-03-09,57,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,173,82.9,131,80,Yok
+85,ASM-1,2026-03-09,56,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,175.2,83.9,141,88,Yok
+86,ASM-2,2026-03-09,38,Kadın,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,165.6,71.3,130,77,Yok
+87,ASM-1,2026-03-09,18,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,175,75,128,77,Yok
+88,ASM-4,2026-03-09,33,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,171.5,65.1,110,77,Yok
+89,ASM-3,2026-03-09,75,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,149.1,49.6,135,80,Var
+90,ASM-1,2026-03-10,49,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,162.8,65.1,119,66,Yok
+91,ASM-1,2026-03-10,18,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,172.3,56,90,68,Yok
+92,ASM-2,2026-03-10,44,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.2,80,116,73,Yok
+93,ASM-4,2026-03-10,44,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,184,114,145,77,Var
+94,ASM-1,2026-03-10,30,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,171.7,60.9,129,80,Yok
+95,ASM-4,2026-03-10,55,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,171.4,72.2,136,75,Yok
+96,ASM-3,2026-03-10,45,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.2,76.3,142,81,Yok
+97,ASM-1,2026-03-10,33,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,178.2,102.8,128,85,Yok
+98,ASM-1,2026-03-10,40,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,159.6,71.7,98,60,Yok
+99,ASM-3,2026-03-10,35,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,181.3,81.8,118,75,Yok
+100,ASM-2,2026-03-10,26,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.5,77,95,58,Yok
+101,ASM-1,2026-03-10,52,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.8,106.5,130,82,Yok
+102,ASM-4,2026-03-10,67,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,173.2,68.7,149,77,Var
+103,ASM-4,2026-03-10,26,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.1,80.8,107,70,Yok
+104,ASM-4,2026-03-10,72,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,156.5,,148,87,Var
+105,ASM-3,2026-03-10,54,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,167.8,78.2,130,86,Var
+106,ASM-3,2026-03-10,70,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,163.4,78.9,126,87,Yok
+107,ASM-2,2026-03-10,54,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,157.7,76,156,79,Yok
+108,ASM-4,2026-03-10,41,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,152.8,81.9,133,75,Var
+109,ASM-2,2026-03-10,61,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.7,69.8,128,72,Var
+110,ASM-3,2026-03-10,57,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Var,164.7,61.7,130,79,Yok
+111,ASM-1,2026-03-10,80,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,162.2,58.3,109,70,Yok
+112,ASM-1,2026-03-10,39,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.9,68,111,78,Yok
+113,ASM-4,2026-03-10,58,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,153.4,84.2,157,91,Yok
+114,ASM-4,2026-03-10,65,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,149.5,64.1,163,86,Var
+115,ASM-3,2026-03-10,28,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,160.9,70.9,109,76,Yok
+116,ASM-4,2026-03-10,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,154,76.8,147,89,Yok
+117,ASM-2,2026-03-10,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.5,44.7,135,69,Var
+118,ASM-1,2026-03-10,46,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.6,91.1,146,94,Yok
+119,ASM-4,2026-03-10,51,Kadın,Lise,Bırakmış,Yetersiz,Yok,161.3,79.6,123,81,Yok
+120,ASM-4,2026-03-10,78,Erkek,,Hiç içmemiş,Yetersiz,Yok,174.4,84.2,141,79,Yok
+121,ASM-2,2026-03-10,43,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,173,69,140,79,Yok
+122,ASM-4,2026-03-10,39,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,163.1,69,125,78,Yok
+123,ASM-4,2026-03-10,40,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.7,74.1,106,79,Yok
+124,ASM-3,2026-03-10,85,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,151.8,63.7,156,85,Var
+125,ASM-4,2026-03-10,60,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,155.7,65.4,132,69,Yok
+126,ASM-3,2026-03-10,40,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,179.6,57.5,101,69,Yok
+127,ASM-4,2026-03-10,47,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175,70.7,131,81,Yok
+128,ASM-1,2026-03-10,34,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,155.7,76.3,96,74,Yok
+129,ASM-1,2026-03-10,49,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,162.1,84.3,131,80,Yok
+130,ASM-3,2026-03-10,24,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,184.9,80.4,127,96,Yok
+131,ASM-4,2026-03-10,44,Erkek,Lise,İçiyor,Yetersiz,Yok,176,65.6,153,93,Yok
+132,ASM-2,2026-03-10,18,Kadın,Üniversite,İçiyor,Yetersiz,Yok,168.2,68.8,137,64,Yok
+133,ASM-1,2026-03-10,42,Erkek,Lise,Hiç içmemiş,Yetersiz,Var,175,94.2,155,77,Yok
+134,ASM-2,2026-03-11,30,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,167.2,101.8,92,61,Yok
+135,ASM-2,2026-03-11,62,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,159.7,69.1,129,79,Yok
+136,ASM-2,2026-03-11,54,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,167.5,86.8,159,71,Yok
+137,ASM-1,2026-03-11,32,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,173.1,88.4,129,79,Yok
+138,ASM-3,2026-03-11,19,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.3,76,100,71,Yok
+139,ASM-3,2026-03-11,60,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,177.9,68.8,125,85,Yok
+140,ASM-3,2026-03-11,63,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,179.1,84.7,128,74,Yok
+141,ASM-1,2026-03-11,55,Kadın,Üniversite,İçiyor,Yetersiz,Yok,159.6,71.8,115,88,Yok
+142,ASM-2,2026-03-11,49,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.8,71.1,123,77,Yok
+143,ASM-2,2026-03-11,41,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.4,70.1,128,74,Yok
+144,ASM-3,2026-03-11,44,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,173.7,95.8,141,75,Yok
+145,ASM-2,2026-03-11,65,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,171.5,85.2,172,87,Yok
+146,ASM-3,2026-03-11,18,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,175.1,80,127,83,Yok
+147,ASM-2,2026-03-11,43,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,151.9,66.3,104,72,Yok
+148,ASM-3,2026-03-11,72,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,171.1,65.8,116,70,Yok
+149,ASM-1,2026-03-11,47,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,186.1,,,,Var
+150,ASM-3,2026-03-11,37,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,152,74.3,109,78,Yok
+151,ASM-2,2026-03-11,18,Erkek,Üniversite,İçiyor,Yetersiz,Yok,168.6,69,112,70,Yok
+152,ASM-2,2026-03-11,46,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,177,97.7,141,85,Yok
+153,ASM-1,2026-03-11,47,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,167.8,,,,Yok
+154,ASM-1,2026-03-11,28,Erkek,Üniversite,İçiyor,Yetersiz,Yok,180.4,74.1,92,57,Yok
+155,ASM-4,2026-03-11,76,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Var,167,80.4,165,74,Var
+156,ASM-1,2026-03-11,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.9,62.8,125,84,Yok
+157,ASM-1,2026-03-11,68,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,153.9,69.4,122,73,Yok
+158,ASM-3,2026-03-11,36,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,158.4,51.2,113,73,Var
+159,ASM-3,2026-03-11,68,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,162.7,83.6,142,77,Var
+160,ASM-3,2026-03-12,39,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,171.4,79.4,141,90,Yok
+161,ASM-3,2026-03-12,53,Erkek,Lise,İçiyor,Yetersiz,Yok,163.9,84,144,79,Var
+162,ASM-3,2026-03-12,32,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,155.8,48.2,104,71,Yok
+163,ASM-2,2026-03-12,41,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,162.9,57.1,109,71,Yok
+164,ASM-1,2026-03-12,40,Erkek,Üniversite,İçiyor,Yetersiz,Yok,162.1,,113,68,Yok
+165,ASM-2,2026-03-12,45,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,179.6,71.3,124,88,Yok
+166,ASM-2,2026-03-12,57,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,170.9,80.1,132,84,Var
+167,ASM-1,2026-03-12,69,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168,61.2,122,76,Yok
+168,ASM-2,2026-03-12,36,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,155,65.8,136,85,Var
+169,ASM-2,2026-03-12,33,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,162,74.4,110,65,Yok
+170,ASM-3,2026-03-12,51,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.7,68.4,151,92,Yok
+171,ASM-4,2026-03-12,25,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.2,85.7,138,66,Var
+172,ASM-4,2026-03-12,65,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,177.6,95.2,140,80,Var
+173,ASM-4,2026-03-12,40,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,173.3,,,,Yok
+174,ASM-1,2026-03-12,50,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,171.5,56.1,121,68,Yok
+175,ASM-1,2026-03-12,47,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.2,60.2,124,89,Yok
+176,ASM-2,2026-03-12,60,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,164.7,78.2,136,86,Yok
+177,ASM-1,2026-03-12,47,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164.5,83.5,122,72,Yok
+178,ASM-3,2026-03-12,42,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.7,67.1,124,84,Yok
+179,ASM-3,2026-03-12,42,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,181.7,83.9,118,82,Yok
+180,ASM-3,2026-03-12,40,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,158.2,67.3,145,87,Yok
+181,ASM-3,2026-03-12,47,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,159.5,81.4,125,72,Var
+182,ASM-3,2026-03-12,22,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,169.2,81.9,112,70,Yok
+183,ASM-1,2026-03-12,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,169.4,83.7,129,82,Yok
+184,ASM-4,2026-03-12,53,Kadın,,Hiç içmemiş,Yetersiz,Yok,167.8,87.1,126,78,Yok
+185,ASM-2,2026-03-12,18,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.1,68.9,116,78,Var
+186,ASM-3,2026-03-12,37,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,154.2,67.2,121,76,Yok
+187,ASM-2,2026-03-12,59,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,153,64.6,113,76,Yok
+188,ASM-1,2026-03-13,58,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,167.4,70.8,111,69,Var
+189,ASM-1,2026-03-13,18,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.9,62.4,116,59,Yok
+190,ASM-2,2026-03-13,53,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,182.3,58.3,132,85,Yok
+191,ASM-4,2026-03-13,47,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,173.1,83.3,121,74,Yok
+192,ASM-3,2026-03-13,61,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,164.1,79.1,138,82,Yok
+193,ASM-2,2026-03-13,50,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,178,98.5,144,85,Yok
+194,ASM-1,2026-03-13,45,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,171.3,75.9,118,69,Yok
+195,ASM-4,2026-03-13,38,Kadın,Lise,Bırakmış,Yetersiz,Yok,155.5,62,110,67,Yok
+196,ASM-4,2026-03-13,32,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,175.3,105.4,120,73,Var
+197,ASM-1,2026-03-13,60,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.9,77.5,123,92,Var
+198,ASM-2,2026-03-13,50,Kadın,,İçiyor,Yeterli (haftada 150 dk+),Yok,157.7,46.9,101,62,Yok
+199,ASM-2,2026-03-13,55,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,164.3,79.7,153,74,Var
+200,ASM-1,2026-03-13,42,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.2,67.4,121,73,Yok
+201,ASM-1,2026-03-13,33,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,165.7,67.7,133,87,Yok
+202,ASM-4,2026-03-13,51,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,168.8,105.8,153,79,Var
+203,ASM-3,2026-03-13,33,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,166.9,78.9,126,74,Yok
+204,ASM-1,2026-03-13,48,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,174.6,77.2,137,77,Yok
+205,ASM-1,2026-03-13,48,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Var,175.7,100.3,122,79,Yok
+206,ASM-1,2026-03-13,60,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,153.8,67.2,122,76,Yok
+207,ASM-1,2026-03-13,42,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,189,98.5,140,83,Yok
+208,ASM-3,2026-03-13,38,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,173.1,61.1,126,89,Yok
+209,ASM-3,2026-03-13,70,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Var,173.8,58.4,139,78,Yok
+210,ASM-3,2026-03-13,46,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.5,64.4,121,82,Yok
+211,ASM-2,2026-03-13,48,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,166.5,68.7,120,80,Yok
+212,ASM-2,2026-03-13,57,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,162.3,75.3,143,85,Yok
+213,ASM-3,2026-03-13,29,Erkek,Üniversite,İçiyor,Yetersiz,Yok,171.6,75.5,126,76,Yok
+214,ASM-1,2026-03-13,40,Erkek,Ortaokul,İçiyor,Yetersiz,Var,178.1,,,,Yok
+215,ASM-1,2026-03-16,52,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,154.3,78.9,151,75,Var
+216,ASM-3,2026-03-16,63,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,158.1,66.7,158,84,Var
+217,ASM-2,2026-03-16,49,Erkek,,İçiyor,Yetersiz,Yok,176.4,57.6,125,75,Yok
+218,ASM-3,2026-03-16,45,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,159.2,44.6,115,82,Var
+219,ASM-2,2026-03-16,54,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,159.4,59.4,141,78,Var
+220,ASM-1,2026-03-16,27,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,165,75.8,142,81,Yok
+221,ASM-3,2026-03-16,58,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.8,86.6,122,68,Yok
+222,ASM-1,2026-03-16,51,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,176.9,91.8,123,70,Var
+223,ASM-2,2026-03-16,39,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,154.6,67.3,127,83,Var
+224,ASM-1,2026-03-16,59,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,162.4,79.8,153,78,Yok
+225,ASM-3,2026-03-16,39,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,175.4,,,,Yok
+226,ASM-4,2026-03-16,33,Kadın,Lise,Bırakmış,Yetersiz,Yok,165.3,82.7,129,83,Yok
+227,ASM-2,2026-03-16,66,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,163.6,80.5,119,78,Yok
+228,ASM-2,2026-03-16,28,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,151.5,48.8,110,83,Yok
+229,ASM-3,2026-03-16,42,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,186.7,,,,Yok
+230,ASM-1,2026-03-16,61,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,180.1,85,155,91,Var
+231,ASM-3,2026-03-16,47,Kadın,Lise,İçiyor,Yetersiz,Yok,159.8,71.1,136,91,Yok
+232,ASM-1,2026-03-16,31,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,171.2,82.2,115,80,Yok
+233,ASM-3,2026-03-16,79,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,1.68,91.8,134,67,Var
+234,ASM-2,2026-03-16,51,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,169.3,92.5,119,78,Yok
+235,ASM-4,2026-03-16,24,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162,74.9,119,77,Yok
+236,ASM-3,2026-03-16,46,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.5,60.9,131,78,Yok
+237,ASM-1,2026-03-16,69,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,158.9,64.5,137,88,Yok
+238,ASM-3,2026-03-16,43,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,151.2,64.8,126,79,Yok
+239,ASM-1,2026-03-16,64,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164.9,90.6,130,68,Var
+240,ASM-2,2026-03-16,63,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,172,,,,Var
+241,ASM-1,2026-03-16,68,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,162.3,97.6,145,83,Yok
+242,ASM-3,2026-03-16,47,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,158.8,104.7,160,98,Var
+243,ASM-1,2026-03-16,51,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,147.6,64.8,129,77,Yok
+244,ASM-2,2026-03-16,54,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.8,78.3,123,76,Yok
+245,ASM-4,2026-03-16,58,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,175.8,85.8,166,79,Var
+246,ASM-3,2026-03-16,45,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.7,89.8,116,79,Var
+247,ASM-1,2026-03-16,51,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,179.5,105.9,133,80,Yok
+248,ASM-1,2026-03-16,42,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,167.1,61.3,122,66,Yok
+249,ASM-3,2026-03-16,22,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,169.2,74.5,101,75,Yok
+250,ASM-3,2026-03-16,46,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,164.7,78.6,108,72,Var
+251,ASM-3,2026-03-16,25,Erkek,Üniversite,Bırakmış,Yetersiz,Yok,162,,97,77,Yok
+252,ASM-1,2026-03-16,38,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.1,63.4,96,57,Yok
+253,ASM-2,2026-03-16,54,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.7,85.5,115,74,Yok
+254,ASM-1,2026-03-16,36,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,157.4,75.5,121,72,Yok
+255,ASM-4,2026-03-17,32,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,147,56.5,110,77,Yok
+256,ASM-2,2026-03-17,53,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,156.8,,121,67,Yok
+257,ASM-3,2026-03-17,68,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,167.6,81.4,133,82,Yok
+258,ASM-3,2026-03-17,61,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,152.4,49.7,146,82,Yok
+259,ASM-3,2026-03-17,63,Erkek,Üniversite,İçiyor,Yetersiz,Yok,186.4,88.4,143,85,Yok
+260,ASM-4,2026-03-17,63,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.2,64.5,148,74,Var
+261,ASM-3,2026-03-17,51,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,185.6,69.7,114,78,Yok
+262,ASM-3,2026-03-17,18,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.3,69.6,90,64,Yok
+263,ASM-1,2026-03-17,45,Erkek,Lise,İçiyor,Yetersiz,Yok,176.2,59.8,107,65,Var
+264,ASM-1,2026-03-17,62,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,164,82.2,120,72,Yok
+265,ASM-4,2026-03-17,48,Erkek,Lise,Bırakmış,Yetersiz,Yok,185.4,107.2,174,90,Var
+266,ASM-3,2026-03-17,50,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.1,67.1,132,79,Yok
+267,ASM-2,2026-03-17,53,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,169.8,85.7,125,78,Yok
+268,ASM-3,2026-03-17,42,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,183.5,86.2,98,66,Var
+269,ASM-1,2026-03-17,35,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.1,55.4,107,75,Yok
+270,ASM-1,2026-03-17,55,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,185.8,98.6,139,77,Yok
+271,ASM-4,2026-03-17,51,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,162.1,92.4,150,79,Yok
+272,ASM-3,2026-03-17,58,Erkek,Lise,Hiç içmemiş,Yetersiz,Var,175.4,62.3,136,88,Yok
+273,ASM-1,2026-03-17,50,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,152.8,79.9,156,84,Var
+274,ASM-1,2026-03-17,25,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,187.3,110.4,114,75,Yok
+275,ASM-2,2026-03-17,67,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.3,73.7,117,79,Yok
+276,ASM-4,2026-03-17,66,Erkek,Lise,İçiyor,Yetersiz,Yok,177.3,90.7,141,85,Var
+277,ASM-2,2026-03-17,42,Erkek,Lise,İçiyor,Yetersiz,Yok,172.5,69.6,144,84,Yok
+278,ASM-1,2026-03-17,71,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Var,155.8,72.8,121,78,Yok
+279,ASM-4,2026-03-17,49,Kadın,Lise,Hiç içmemiş,Yetersiz,Var,166.9,72.6,124,83,Yok
+280,ASM-3,2026-03-17,47,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,173.2,85.7,109,70,Yok
+281,ASM-3,2026-03-17,66,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.9,64.1,129,84,Yok
+282,ASM-2,2026-03-17,26,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,176.3,61.6,99,78,Yok
+283,ASM-2,2026-03-17,54,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,170.8,60.3,137,83,Yok
+284,ASM-3,2026-03-17,43,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167,66.4,125,76,Yok
+285,ASM-1,2026-03-17,49,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,180.5,119.1,129,83,Yok
+286,ASM-3,2026-03-17,66,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,177,77.8,132,81,Yok
+287,ASM-2,2026-03-17,50,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.5,72.2,127,87,Yok
+288,ASM-1,2026-03-17,52,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.8,75.2,139,87,Var
+289,ASM-1,2026-03-17,47,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166,73.3,140,85,Yok
+290,ASM-1,2026-03-17,60,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,166.8,96.9,146,83,Var
+291,ASM-4,2026-03-17,52,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Var,165.3,99.2,158,89,Var
+292,ASM-1,2026-03-18,30,Erkek,Lise,İçiyor,Yetersiz,Yok,174.8,64.3,129,70,Yok
+293,ASM-4,2026-03-18,21,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.6,61.4,112,66,Yok
+294,ASM-3,2026-03-18,49,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.5,91.5,130,74,Yok
+295,ASM-4,2026-03-18,58,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,158.7,69.5,117,70,Var
+296,ASM-4,2026-03-18,54,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,161.3,81.7,137,83,Var
+297,ASM-3,2026-03-18,85,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,157.6,68.9,166,81,Var
+298,ASM-4,2026-03-18,49,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164.4,66.4,106,60,Yok
+299,ASM-1,2026-03-18,42,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.5,73.8,96,69,Var
+300,ASM-2,2026-03-18,46,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,166.1,75.7,128,77,Var
+301,ASM-2,2026-03-18,28,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162,,,,Yok
+302,ASM-2,2026-03-18,35,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,172.3,49,145,79,Var
+303,ASM-1,2026-03-18,35,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,167.2,86.1,129,74,Yok
+304,ASM-1,2026-03-18,72,Erkek,,İçiyor,Yetersiz,Yok,176.1,74,121,69,Yok
+305,ASM-1,2026-03-18,46,Erkek,Lise,Hiç içmemiş,Yetersiz,Var,178.3,88.3,133,73,Yok
+306,ASM-4,2026-03-18,64,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,181.9,91.4,121,78,Var
+307,ASM-4,2026-03-18,27,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,185.7,84.2,139,82,Yok
+308,ASM-1,2026-03-18,65,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,188.9,90.8,138,82,Var
+309,ASM-3,2026-03-18,39,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182,90.5,133,92,Yok
+310,ASM-2,2026-03-18,18,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.2,65.9,115,70,Yok
+311,ASM-4,2026-03-18,52,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.6,55,110,69,Var
+312,ASM-2,2026-03-18,63,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,160.1,79.8,127,72,Yok
+313,ASM-1,2026-03-18,23,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,165.5,53.9,115,73,Yok
+314,ASM-2,2026-03-18,36,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.8,91.5,120,85,Yok
+315,ASM-2,2026-03-18,77,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,172.9,72.2,153,78,Var
+316,ASM-3,2026-03-18,51,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,181.3,,148,75,Yok
+317,ASM-1,2026-03-18,59,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,154.9,74.3,103,77,Var
+318,ASM-2,2026-03-18,26,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,180.6,66.3,119,87,Yok
+319,ASM-3,2026-03-18,68,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,158.4,66,136,80,Var
+320,ASM-1,2026-03-18,52,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,158.7,69.2,124,76,Yok
+321,ASM-1,2026-03-19,64,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,168.7,79.5,138,93,Yok
+322,ASM-3,2026-03-19,54,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,163.1,53.4,138,78,Yok
+323,ASM-3,2026-03-19,47,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,159.1,,,,Var
+324,ASM-4,2026-03-19,46,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,187.2,79.6,115,77,Yok
+325,ASM-1,2026-03-19,37,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,179.1,96.5,157,81,Var
+326,ASM-3,2026-03-19,56,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,152.2,79.2,143,69,Var
+327,ASM-1,2026-03-19,51,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.9,71.6,128,92,Var
+328,ASM-1,2026-03-19,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,165.8,85.9,120,82,Yok
+329,ASM-3,2026-03-23,79,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.8,56.5,117,67,Var
+330,ASM-1,2026-03-23,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.2,77.7,132,67,Var
+331,ASM-1,2026-03-23,55,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.9,95.3,130,81,Var
+332,ASM-3,2026-03-23,61,Erkek,Lise,İçiyor,Yetersiz,Yok,184.9,99.7,131,67,Yok
+333,ASM-3,2026-03-23,69,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,184.4,85.2,136,75,Yok
+334,ASM-1,2026-03-23,62,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,171.8,85.8,140,79,Yok
+335,ASM-1,2026-03-23,49,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.3,53.6,114,74,Yok
+336,ASM-3,2026-03-23,47,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,158.2,72.3,138,87,Yok
+337,ASM-4,2026-03-23,37,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,167.7,84.2,114,74,Yok
+338,ASM-2,2026-03-23,46,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,180.9,93.8,128,67,Var
+339,ASM-4,2026-03-23,54,Kadın,Üniversite,İçiyor,Yetersiz,Yok,159,70.2,108,74,Yok
+340,ASM-3,2026-03-23,26,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,177.1,91.3,100,79,Yok
+341,ASM-3,2026-03-23,48,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,167.3,92.9,141,83,Yok
+342,ASM-2,2026-03-23,49,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,151.8,77.7,114,79,Yok
+343,ASM-3,2026-03-23,42,Kadın,Lise,İçiyor,Yetersiz,Yok,158.8,,102,67,Yok
+344,ASM-2,2026-03-23,51,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,180.3,99.8,115,74,Yok
+345,ASM-1,2026-03-23,40,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,179.4,75.3,159,86,Var
+346,ASM-1,2026-03-23,60,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,152.9,64.7,128,84,Yok
+347,ASM-1,2026-03-23,74,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,146,69.4,151,79,Var
+348,ASM-3,2026-03-23,41,Erkek,Üniversite,İçiyor,Yetersiz,Yok,168.4,78.6,121,74,Yok
+349,ASM-2,2026-03-23,56,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,175.7,71.7,113,81,Yok
+350,ASM-4,2026-03-23,38,Erkek,Lise,İçiyor,Yetersiz,Yok,181,78.2,118,87,Yok
+351,ASM-2,2026-03-23,47,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.9,83.7,130,83,Yok
+352,ASM-1,2026-03-23,49,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,186.2,78.9,120,63,Yok
+353,ASM-1,2026-03-23,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.1,99.9,155,78,Var
+354,ASM-4,2026-03-23,75,Erkek,,Hiç içmemiş,Yetersiz,Var,169.9,92.9,141,88,Var
+355,ASM-1,2026-03-23,27,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,165.5,75.2,134,79,Var
+356,ASM-2,2026-03-23,40,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,174.5,91.4,128,81,Yok
+357,ASM-1,2026-03-23,74,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,162.9,81.2,163,78,Var
+358,ASM-1,2026-03-23,62,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,167.3,70.5,138,78,Yok
+359,ASM-3,2026-03-23,36,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,156.2,85,151,79,Var
+360,ASM-3,2026-03-23,35,Erkek,Lise,Bırakmış,Yetersiz,Yok,178.6,,,,Yok
+361,ASM-3,2026-03-23,36,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.4,69.7,151,81,Yok
+362,ASM-2,2026-03-23,56,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,194,95.3,103,71,Yok
+363,ASM-2,2026-03-23,58,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,172.7,92,140,82,Yok
+364,ASM-1,2026-03-23,46,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,163.5,50.7,120,77,Var
+365,ASM-1,2026-03-23,45,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,171.2,74,114,79,Yok
+366,ASM-4,2026-03-23,45,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,172,70,116,68,Yok
+367,ASM-3,2026-03-23,27,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.1,77.5,120,71,Yok
+368,ASM-2,2026-03-23,33,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,157.2,,,,Yok
+369,ASM-3,2026-03-23,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,159.8,77.8,130,76,Yok
+370,ASM-2,2026-03-23,51,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,163.2,78,121,76,Var
+371,ASM-2,2026-03-23,41,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,169.4,62,117,72,Yok
+372,ASM-1,2026-03-23,45,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,166.5,70.6,128,85,Yok
+373,ASM-1,2026-03-23,54,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,179.9,92,108,67,Yok
+374,ASM-2,2026-03-23,59,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,159.8,55.1,132,78,Var
+375,ASM-4,2026-03-24,39,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.4,65.2,128,93,Yok
+376,ASM-4,2026-03-24,58,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,165.1,75.5,125,83,Var
+377,ASM-3,2026-03-24,69,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,162.6,82.7,146,74,Yok
+378,ASM-2,2026-03-24,52,Erkek,Lise,İçiyor,Yetersiz,Yok,174.1,61.8,95,71,Var
+379,ASM-4,2026-03-24,46,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.6,,,,Yok
+380,ASM-4,2026-03-24,51,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.9,102.7,111,72,Yok
+381,ASM-1,2026-03-24,42,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,169.6,65.7,122,76,Yok
+382,ASM-3,2026-03-24,46,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,173,72.5,91,64,Yok
+383,ASM-1,2026-03-24,53,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,166.4,102.7,162,75,Var
+384,ASM-4,2026-03-24,33,Kadın,Üniversite,İçiyor,Yetersiz,Yok,159.2,,,,Yok
+385,ASM-3,2026-03-24,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,163.4,65,112,81,Yok
+386,ASM-2,2026-03-24,66,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,159.9,71.8,125,65,Yok
+387,ASM-1,2026-03-24,63,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,169.9,69.7,140,92,Yok
+388,ASM-2,2026-03-24,60,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176,82.3,135,86,Yok
+389,ASM-1,2026-03-24,27,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.9,83.1,119,75,Yok
+390,ASM-2,2026-03-24,59,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,176,60.1,115,61,Yok
+391,ASM-3,2026-03-24,45,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,171.3,90.5,126,83,Yok
+392,ASM-2,2026-03-24,20,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,177,72.6,96,69,Yok
+393,ASM-2,2026-03-24,53,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,172,,134,74,Var
+394,ASM-3,2026-03-24,53,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,169.2,85.1,137,80,Yok
+395,ASM-1,2026-03-24,64,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,183.5,98.3,121,81,Yok
+396,ASM-1,2026-03-24,36,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,173.8,79.6,126,65,Yok
+397,ASM-2,2026-03-24,44,Kadın,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,158.6,65.4,120,79,Yok
+398,ASM-4,2026-03-24,42,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,166.1,68.4,106,64,Yok
+399,ASM-4,2026-03-24,55,Kadın,Ortaokul,Bırakmış,Yetersiz,Var,163.8,,,,Var
+400,ASM-3,2026-03-24,43,Kadın,Lise,İçiyor,Yetersiz,Yok,159.4,75,116,78,Var
+401,ASM-3,2026-03-24,52,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,153.4,76,139,82,Var
+402,ASM-4,2026-03-24,34,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,175.8,67.7,125,74,Yok
+403,ASM-2,2026-03-24,50,Erkek,Lise,İçiyor,Yetersiz,Yok,180.2,65.6,105,69,Yok
+404,ASM-3,2026-03-24,85,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,171.9,81.9,159,78,Var
+405,ASM-1,2026-03-25,64,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156.1,77.5,155,90,Yok
+406,ASM-2,2026-03-25,58,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.6,81.1,129,75,Yok
+407,ASM-2,2026-03-25,53,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.2,,,,Yok
+408,ASM-3,2026-03-25,64,Kadın,Üniversite,İçiyor,Yetersiz,Yok,172.4,91.9,125,70,Yok
+409,ASM-3,2026-03-25,41,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,166.3,104.3,128,67,Yok
+410,ASM-3,2026-03-25,55,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.7,87,116,74,Yok
+411,ASM-3,2026-03-25,24,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,158.3,79.6,114,69,Yok
+412,ASM-1,2026-03-25,38,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,187.4,71.2,111,78,Yok
+413,ASM-3,2026-03-25,48,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,181.1,101.9,153,85,Var
+414,ASM-2,2026-03-25,46,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,151.2,76.6,128,71,Yok
+415,ASM-1,2026-03-25,53,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Var,180.4,76.5,134,83,Yok
+416,ASM-1,2026-03-25,69,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,169.3,88.5,149,77,Var
+417,ASM-2,2026-03-25,36,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,177.1,77.8,143,84,Yok
+418,ASM-2,2026-03-25,68,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,162,69.1,143,90,Var
+419,ASM-1,2026-03-25,49,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,155.2,66.5,125,82,Var
+420,ASM-2,2026-03-25,54,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,165.5,92,138,73,Var
+421,ASM-2,2026-03-25,61,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,152.2,79.2,155,86,Yok
+422,ASM-3,2026-03-25,49,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,162.1,67,113,73,Yok
+423,ASM-2,2026-03-25,44,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,153.2,,129,83,Yok
+424,ASM-1,2026-03-25,34,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,152.7,67.9,109,68,Yok
+425,ASM-1,2026-03-25,38,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,149,53.4,113,79,Yok
+426,ASM-4,2026-03-25,59,Erkek,Lise,İçiyor,Yetersiz,Yok,170.9,65.6,102,69,Yok
+427,ASM-1,2026-03-26,29,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.6,92.9,116,66,Yok
+428,ASM-2,2026-03-26,39,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,158.6,80,126,83,Yok
+429,ASM-2,2026-03-26,38,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.5,74.3,115,81,Yok
+430,ASM-1,2026-03-26,52,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,155.6,63.7,110,74,Yok
+431,ASM-1,2026-03-26,43,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,157.6,80.9,134,87,Yok
+432,ASM-1,2026-03-26,38,Kadın,Lise,İçiyor,Yetersiz,Var,165.5,83.7,146,84,Yok
+433,ASM-4,2026-03-26,59,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,179.1,,,,Yok
+434,ASM-4,2026-03-26,26,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,165.5,70.3,115,86,Yok
+435,ASM-2,2026-03-26,60,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,161.5,90.5,143,80,Yok
+436,ASM-3,2026-03-26,56,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.8,94.8,114,71,Yok
+437,ASM-2,2026-03-26,53,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,177.9,66.5,95,65,Var
+438,ASM-2,2026-03-26,45,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,147.4,74,129,79,Yok
+439,ASM-1,2026-03-26,58,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,163.9,60.3,135,81,Var
+440,ASM-1,2026-03-26,38,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.6,85.4,123,82,Yok
+441,ASM-2,2026-03-26,37,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Var,157.6,66.5,143,82,Yok
+442,ASM-4,2026-03-26,41,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.2,79.8,121,78,Yok
+443,ASM-3,2026-03-26,34,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,169.2,76.9,127,78,Yok
+444,ASM-1,2026-03-26,38,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,152.4,59.2,105,68,Yok
+445,ASM-4,2026-03-26,63,Kadın,Lise,İçiyor,Yetersiz,Yok,152.1,,,,Var
+446,ASM-2,2026-03-26,32,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.2,83.7,108,69,Yok
+447,ASM-2,2026-03-26,70,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Var,164.8,70.9,141,84,Yok
+448,ASM-2,2026-03-26,36,Erkek,Lise,İçiyor,Yetersiz,Yok,165.5,65.1,126,77,Yok
+449,ASM-4,2026-03-26,51,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,175.1,64.9,119,79,Yok
+450,ASM-1,2026-03-26,37,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,180,98.4,107,72,Yok
+451,ASM-1,2026-03-26,26,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,164.9,91.2,106,64,Yok
+452,ASM-2,2026-03-27,56,Kadın,Lise,İçiyor,Yetersiz,Yok,167.6,,133,89,Yok
+453,ASM-2,2026-03-27,66,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,158.9,82.1,143,79,Yok
+454,ASM-4,2026-03-27,66,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,160.8,75.3,126,89,Var
+455,ASM-4,2026-03-27,45,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.5,67.6,118,80,Yok
+456,ASM-2,2026-03-27,52,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.1,85.8,151,82,Var
+457,ASM-3,2026-03-27,34,Erkek,Lise,İçiyor,Yetersiz,Yok,176.4,82.4,128,90,Yok
+458,ASM-3,2026-03-27,85,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,165.8,54.9,162,90,Var
+459,ASM-1,2026-03-27,42,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.3,101.6,124,79,Yok
+460,ASM-4,2026-03-30,18,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,181.8,,,,Yok
+461,ASM-1,2026-03-30,47,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.2,97.4,126,67,Yok
+462,ASM-1,2026-03-30,53,Kadın,,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,164.6,65.1,116,66,Yok
+463,ASM-3,2026-03-30,49,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.4,,123,65,Yok
+464,ASM-3,2026-03-30,54,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,183.7,96.3,125,78,Yok
+465,ASM-1,2026-03-30,74,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Var,168.1,87.8,152,86,Var
+466,ASM-4,2026-03-30,53,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,178.6,86.6,127,78,Yok
+467,ASM-3,2026-03-30,51,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,178.1,106.5,149,100,Yok
+468,ASM-4,2026-03-30,56,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,161.3,95.4,144,84,Yok
+469,ASM-1,2026-03-30,43,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167,83.2,109,74,Yok
+470,ASM-3,2026-03-30,48,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,162.3,67.2,123,68,Yok
+471,ASM-2,2026-03-30,24,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.1,64.9,105,67,Yok
+472,ASM-1,2026-03-30,49,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.7,68.9,107,76,Var
+473,ASM-1,2026-03-30,53,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,156,70.8,145,81,Yok
+474,ASM-2,2026-03-30,67,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,163.2,98.2,138,82,Var
+475,ASM-1,2026-03-30,78,Erkek,,İçiyor,Yetersiz,Yok,176.7,73.8,130,80,Yok
+476,ASM-1,2026-03-30,58,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,154.9,56.6,135,73,Yok
+477,ASM-4,2026-03-30,76,Erkek,,Hiç içmemiş,Yetersiz,Var,172.2,81.8,154,89,Var
+478,ASM-3,2026-03-30,44,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,164.5,75.6,98,57,Yok
+479,ASM-4,2026-03-30,41,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.1,78.6,117,74,Var
+480,ASM-3,2026-03-30,67,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,175.8,68.6,123,80,Yok
+481,ASM-4,2026-03-30,56,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,163.8,62.8,108,76,Yok
+482,ASM-2,2026-03-30,53,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.7,70.3,119,73,Yok
+483,ASM-2,2026-03-30,50,Kadın,,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,159.6,81.1,145,86,Yok
+484,ASM-2,2026-03-30,46,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.4,84,113,75,Yok
+485,ASM-4,2026-03-30,57,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158,68.3,131,72,Var
+486,ASM-1,2026-03-30,34,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.8,61.3,125,80,Yok
+487,ASM-3,2026-03-30,54,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,162.7,54.8,114,69,Yok
+488,ASM-3,2026-03-30,37,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,169.4,72.9,109,78,Yok
+489,ASM-3,2026-03-30,57,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,160.1,63.7,141,90,Var
+490,ASM-2,2026-03-30,25,Kadın,Lise,İçiyor,Yetersiz,Yok,159.5,82.1,90,70,Yok
+491,ASM-1,2026-03-30,50,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,159.6,73.6,139,86,Var
+492,ASM-3,2026-03-30,75,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,170.2,82.6,149,95,Var
+493,ASM-2,2026-03-30,42,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,162.5,55.6,132,85,Yok
+494,ASM-3,2026-03-30,45,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,152.5,71.1,123,77,Yok
+495,ASM-4,2026-03-30,36,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.5,82.7,128,85,Yok
+496,ASM-2,2026-03-30,28,Erkek,Lise,İçiyor,Yetersiz,Yok,191,90.8,123,67,Yok
+497,ASM-4,2026-03-30,61,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,168.5,77.1,142,73,Var
+498,ASM-3,2026-03-30,21,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161,76.4,93,67,Yok
+499,ASM-2,2026-03-30,39,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,183.9,,,,Yok
+500,ASM-1,2026-03-30,47,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173,87.1,153,86,Yok
+501,ASM-3,2026-03-30,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,173.1,97.4,130,84,Yok
+502,ASM-3,2026-03-30,38,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.6,67.1,117,90,Yok
+503,ASM-3,2026-03-30,78,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,163.6,91.5,165,93,Var
+504,ASM-3,2026-03-30,30,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,175.8,,,,Yok
+505,ASM-3,2026-03-31,52,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.6,84.8,127,68,Yok
+506,ASM-1,2026-03-31,74,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,166.1,106.2,155,93,Var
+507,ASM-2,2026-03-31,63,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,156.7,49.9,122,84,Yok
+508,ASM-4,2026-03-31,39,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,165.4,73.5,121,72,Yok
+509,ASM-1,2026-03-31,41,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,164,83.1,128,84,Yok
+510,ASM-2,2026-03-31,22,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,186,74.1,116,69,Yok
+511,ASM-4,2026-03-31,58,Kadın,,Hiç içmemiş,Yetersiz,Yok,156.8,56.5,133,67,Yok
+512,ASM-2,2026-03-31,42,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.1,69,125,69,Yok
+513,ASM-2,2026-03-31,61,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,166.2,83.3,132,78,Var
+514,ASM-1,2026-03-31,55,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,179.6,66.6,120,86,Var
+515,ASM-3,2026-03-31,44,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,158.4,73.8,111,65,Yok
+516,ASM-3,2026-03-31,61,Kadın,Ortaokul,İçiyor,Yetersiz,Var,149.4,70.6,145,79,Var
+517,ASM-2,2026-03-31,57,Erkek,Lise,Bırakmış,Yetersiz,Yok,173.1,58.9,99,64,Yok
+518,ASM-2,2026-03-31,47,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.5,90,105,71,Yok
+519,ASM-4,2026-03-31,58,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,164.9,78.4,133,70,Var
+520,ASM-3,2026-03-31,40,Erkek,Lise,İçiyor,Yetersiz,Yok,183.8,86.1,115,74,Yok
+521,ASM-3,2026-03-31,31,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,172.3,78.1,111,73,Yok
+522,ASM-1,2026-03-31,45,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,158.6,86,133,77,Yok
+523,ASM-2,2026-03-31,54,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,157.9,105.8,161,97,Var
+524,ASM-4,2026-03-31,47,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,176.1,98.4,147,80,Yok
+525,ASM-1,2026-03-31,40,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,177.5,92.4,129,71,Yok
+526,ASM-3,2026-03-31,52,Kadın,Lise,İçiyor,Yetersiz,Yok,174.7,98.7,142,88,Yok
+527,ASM-3,2026-03-31,74,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,167.1,73.2,121,81,Yok
+528,ASM-4,2026-03-31,18,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,184,92,107,75,Yok
+529,ASM-1,2026-03-31,26,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,163.7,66.8,136,76,Yok
+530,ASM-3,2026-03-31,36,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.1,75.8,135,89,Yok
+531,ASM-3,2026-03-31,18,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,156.9,70,108,67,Yok
+532,ASM-1,2026-03-31,57,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.7,101,94,62,Yok
+533,ASM-3,2026-03-31,40,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,160.6,,,,Yok
+534,ASM-3,2026-03-31,61,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,144.5,55.2,125,65,Yok
+535,ASM-3,2026-03-31,42,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,159.8,70.3,134,74,Yok
+536,ASM-1,2026-03-31,54,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,183.1,115,143,73,Yok
+537,ASM-3,2026-03-31,40,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,155.4,63.7,110,72,Yok
+538,ASM-1,2026-03-31,59,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,158.3,70,120,81,Yok
+539,ASM-1,2026-04-01,27,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.2,81.9,114,64,Var
+540,ASM-3,2026-04-01,38,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,167.7,59.2,91,69,Yok
+541,ASM-3,2026-04-01,27,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.6,73.1,120,84,Yok
+542,ASM-2,2026-04-01,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155,83.9,150,86,Yok
+543,ASM-1,2026-04-01,58,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,159.4,84.9,139,80,Yok
+544,ASM-4,2026-04-01,43,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,157.6,70.5,113,71,Var
+545,ASM-1,2026-04-01,51,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,154.2,68.6,131,77,Yok
+546,ASM-3,2026-04-01,50,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,170.9,59.2,106,73,Yok
+547,ASM-1,2026-04-01,35,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.9,83.4,136,85,Var
+548,ASM-1,2026-04-01,75,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,179.5,96.5,147,83,Yok
+549,ASM-3,2026-04-01,46,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,186.9,80.5,98,75,Yok
+550,ASM-2,2026-04-01,39,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.6,74.4,133,81,Yok
+551,ASM-2,2026-04-01,71,Erkek,Ortaokul,İçiyor,Yetersiz,Var,169.7,66.5,143,66,Var
+552,ASM-3,2026-04-01,53,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,166.4,65,137,77,Yok
+553,ASM-1,2026-04-01,74,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,148.5,71.4,153,91,Yok
+554,ASM-2,2026-04-01,45,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,177.6,97.9,161,82,Var
+555,ASM-4,2026-04-01,59,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.9,73.1,146,91,Var
+556,ASM-1,2026-04-01,36,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,171.3,89.9,140,82,Var
+557,ASM-1,2026-04-01,60,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,171.9,48.8,135,80,Yok
+558,ASM-1,2026-04-01,75,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,174.4,52.6,129,87,Var
+559,ASM-2,2026-04-01,18,Kadın,Üniversite,İçiyor,Yetersiz,Var,154.8,76.6,123,78,Yok
+560,ASM-4,2026-04-01,24,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,152.1,74.1,99,69,Yok
+561,ASM-3,2026-04-01,34,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,160.7,85.3,124,81,Yok
+562,ASM-3,2026-04-01,56,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,187,108.7,125,94,Yok
+563,ASM-1,2026-04-01,26,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,170.7,73.6,112,79,Yok
+564,ASM-1,2026-04-01,49,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,160.3,80.5,140,85,Yok
+565,ASM-4,2026-04-01,32,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,177.3,54.2,101,69,Yok
+566,ASM-3,2026-04-01,58,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,160.8,67,129,75,Yok
+567,ASM-4,2026-04-01,50,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,169.4,63.9,101,71,Yok
+568,ASM-1,2026-04-01,52,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,161.2,105.5,157,99,Yok
+569,ASM-4,2026-04-01,40,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,165.3,72.7,116,75,Yok
+570,ASM-1,2026-04-01,40,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.7,43.1,115,84,Yok
+571,ASM-1,2026-04-01,74,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,165.7,58.8,134,89,Var
+572,ASM-2,2026-04-01,52,Erkek,Lise,İçiyor,Yetersiz,Yok,180.7,97.4,133,83,Yok
+573,ASM-4,2026-04-01,44,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,166.9,63.5,141,83,Yok
+574,ASM-1,2026-04-01,59,Erkek,,Hiç içmemiş,Yetersiz,Yok,167,61,145,82,Yok
+575,ASM-2,2026-04-01,33,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.9,61.7,108,73,Yok
+576,ASM-1,2026-04-01,47,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,179.5,63.1,116,73,Yok
+577,ASM-1,2026-04-02,25,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,148.7,64.3,109,72,Yok
+578,ASM-1,2026-04-02,47,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,147.4,73.7,133,71,Yok
+579,ASM-2,2026-04-02,47,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,171.5,101.4,99,60,Yok
+580,ASM-4,2026-04-02,57,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,163.4,85,119,72,Var
+581,ASM-2,2026-04-02,77,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,190.4,68.3,155,88,Var
+582,ASM-4,2026-04-02,35,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.3,49.7,109,79,Yok
+583,ASM-3,2026-04-02,33,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.8,60.1,92,57,Yok
+584,ASM-4,2026-04-02,55,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164,84.7,141,81,Var
+585,ASM-2,2026-04-02,45,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,167.6,69.7,136,83,Yok
+586,ASM-1,2026-04-02,62,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,168.4,86,139,86,Yok
+587,ASM-3,2026-04-02,32,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,189,86.9,132,73,Yok
+588,ASM-1,2026-04-02,70,Erkek,Lise,Bırakmış,Yetersiz,Yok,171.3,77.8,109,75,Var
+589,ASM-1,2026-04-02,47,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,182,86.2,153,88,Yok
+590,ASM-1,2026-04-02,54,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,169.9,69.5,131,86,Var
+591,ASM-2,2026-04-02,48,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,157.1,64.4,117,73,Yok
+592,ASM-1,2026-04-02,63,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,181.3,92.2,142,96,Yok
+593,ASM-3,2026-04-02,35,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.4,75.6,128,77,Yok
+594,ASM-2,2026-04-02,56,Kadın,Lise,Bırakmış,Yetersiz,Yok,160,74.5,112,70,Yok
+595,ASM-2,2026-04-02,51,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,160.6,71.3,128,67,Var
+596,ASM-4,2026-04-02,52,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Var,184.4,80,129,72,Yok
+597,ASM-2,2026-04-02,45,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,167.3,65.3,110,61,Yok
+598,ASM-3,2026-04-02,27,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.3,74.9,108,71,Yok
+599,ASM-3,2026-04-02,37,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.5,56.5,116,85,Yok
+600,ASM-1,2026-04-02,44,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.2,61.7,104,64,Yok
+601,ASM-1,2026-04-03,47,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,185.1,75.5,138,97,Yok
+602,ASM-4,2026-04-03,27,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,163.5,70.2,100,68,Yok
+603,ASM-4,2026-04-03,60,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,173.8,78.8,164,82,Var
+604,ASM-2,2026-04-03,42,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,163.9,84.5,141,88,Var
+605,ASM-2,2026-04-03,84,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Var,167.1,76.4,154,77,Var
+606,ASM-3,2026-04-03,69,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,168.4,86.1,125,72,Yok
+607,ASM-1,2026-04-03,55,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,172,107.2,131,83,Var
+608,ASM-1,2026-04-03,38,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,173.2,65.8,144,87,Var
+609,ASM-4,2026-04-03,63,Erkek,Ortaokul,İçiyor,Yetersiz,Var,182,83.7,138,74,Var
+610,ASM-4,2026-04-03,39,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,178,76.2,132,80,Var
+611,ASM-1,2026-04-03,38,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.3,83.3,128,79,Yok
+612,ASM-2,2026-04-03,53,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,164.1,65.4,118,84,Var
+613,ASM-3,2026-04-03,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,163.4,77.8,136,82,Yok
+614,ASM-1,2026-04-03,36,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,171.6,89.6,131,85,Yok
+615,ASM-1,2026-04-03,28,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,180.8,62.2,133,80,Yok
+616,ASM-1,2026-04-03,60,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.8,65,133,84,Yok
+617,ASM-4,2026-04-03,44,Erkek,Üniversite,İçiyor,Yetersiz,Yok,178.3,57.8,121,81,Yok
+618,ASM-4,2026-04-03,19,Kadın,,Bırakmış,Yeterli (haftada 150 dk+),Yok,172,66.4,107,64,Yok
+619,ASM-2,2026-04-03,45,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,155.2,78.8,141,86,Yok
+620,ASM-1,2026-04-06,48,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,166.2,74.5,90,66,Yok
+621,ASM-3,2026-04-06,60,Kadın,Ortaokul,Bırakmış,Yetersiz,Var,160,92.7,153,74,Var
+622,ASM-2,2026-04-06,32,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.5,93.6,123,70,Yok
+623,ASM-1,2026-04-06,66,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,171.1,69.8,138,83,Yok
+624,ASM-1,2026-04-06,30,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,158.1,77.3,106,72,Yok
+625,ASM-4,2026-04-06,59,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,189.5,,,,Yok
+626,ASM-3,2026-04-06,54,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,166.6,92.1,118,80,Var
+627,ASM-3,2026-04-06,59,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,173.7,,,,Yok
+628,ASM-2,2026-04-06,57,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.2,,130,86,Yok
+629,ASM-3,2026-04-06,34,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,163.6,,,,Yok
+630,ASM-1,2026-04-06,46,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,167.7,70.7,119,84,Yok
+631,ASM-3,2026-04-06,62,Kadın,Lise,Bırakmış,Yetersiz,Yok,155.6,79.1,115,72,Var
+632,ASM-3,2026-04-06,58,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,177.5,80.1,132,79,Yok
+633,ASM-2,2026-04-06,22,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,170.6,67.9,92,60,Yok
+634,ASM-3,2026-04-06,42,Kadın,Lise,Hiç içmemiş,Yetersiz,Var,154.2,72.3,115,75,Yok
+635,ASM-4,2026-04-06,51,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.6,,124,73,Var
+636,ASM-4,2026-04-06,59,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161,,114,70,Yok
+637,ASM-2,2026-04-06,70,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,159.2,78.7,135,86,Yok
+638,ASM-3,2026-04-06,18,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.3,59.6,90,63,Yok
+639,ASM-3,2026-04-06,68,Erkek,Lise,Bırakmış,Yetersiz,Yok,176.8,95.1,130,75,Yok
+640,ASM-2,2026-04-06,51,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164.4,74.1,120,69,Yok
+641,ASM-2,2026-04-06,42,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,153,64.9,134,79,Yok
+642,ASM-4,2026-04-06,33,Erkek,Üniversite,İçiyor,Yetersiz,Yok,164.6,,132,83,Yok
+643,ASM-4,2026-04-06,43,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.5,,112,67,Var
+644,ASM-1,2026-04-06,46,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,166.8,,,,Yok
+645,ASM-1,2026-04-06,59,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,171.4,,142,78,Var
+646,ASM-3,2026-04-06,54,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,149.6,65.3,132,72,Yok
+647,ASM-2,2026-04-06,34,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.8,71.4,105,80,Yok
+648,ASM-2,2026-04-06,39,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,177.9,78.8,99,65,Yok
+649,ASM-3,2026-04-06,38,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,168.5,88.2,124,74,Yok
+650,ASM-4,2026-04-06,41,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,182.5,,123,78,Yok
+651,ASM-1,2026-04-06,54,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,164.5,90.2,149,92,Var
+652,ASM-2,2026-04-06,54,Kadın,Lise,Bırakmış,Yetersiz,Yok,159.7,67.9,124,90,Yok
+653,ASM-3,2026-04-06,38,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.7,76.1,115,81,Var
+654,ASM-2,2026-04-06,39,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.6,83.5,112,71,Yok
+655,ASM-3,2026-04-06,25,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,167.5,82.1,135,85,Yok
+656,ASM-4,2026-04-06,42,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.9,,116,77,Yok
+657,ASM-1,2026-04-06,39,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,164.6,89.5,147,89,Yok
+658,ASM-1,2026-04-06,30,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.6,70.2,131,88,Var
+659,ASM-4,2026-04-06,46,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.6,,130,94,Yok
+660,ASM-1,2026-04-07,54,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169,70.4,110,65,Yok
+661,ASM-4,2026-04-07,25,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,164.8,,115,72,Yok
+662,ASM-4,2026-04-07,45,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,177.6,,118,68,Yok
+663,ASM-1,2026-04-07,85,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,166.9,85.4,131,73,Var
+664,ASM-4,2026-04-07,43,Kadın,Lise,İçiyor,Yetersiz,Yok,170.2,,94,69,Yok
+665,ASM-4,2026-04-07,43,Kadın,Üniversite,İçiyor,Yetersiz,Var,174,,137,78,Yok
+666,ASM-4,2026-04-07,38,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,169.2,,110,77,Yok
+667,ASM-3,2026-04-07,74,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,153.5,79.4,161,78,Var
+668,ASM-3,2026-04-07,24,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,183,102.8,105,66,Yok
+669,ASM-2,2026-04-07,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.5,74.5,141,81,Var
+670,ASM-3,2026-04-07,48,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,166.1,75.7,126,76,Var
+671,ASM-2,2026-04-07,20,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.1,62.3,104,71,Yok
+672,ASM-2,2026-04-07,18,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,171,69.6,126,70,Var
+673,ASM-4,2026-04-07,63,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,167.5,,162,87,Yok
+674,ASM-4,2026-04-07,46,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,167.2,,107,71,Yok
+675,ASM-1,2026-04-07,36,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.4,73.2,117,69,Yok
+676,ASM-4,2026-04-07,37,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,162.5,,101,59,Yok
+677,ASM-3,2026-04-07,44,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,172.5,88.1,125,75,Yok
+678,ASM-1,2026-04-07,85,Kadın,,Bırakmış,Yetersiz,Var,156.7,41.3,125,75,Var
+679,ASM-2,2026-04-07,69,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,155.4,74.1,164,74,Var
+680,ASM-3,2026-04-07,29,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.4,56.6,90,62,Yok
+681,ASM-3,2026-04-07,39,Erkek,Lise,İçiyor,Yetersiz,Yok,168.8,52.8,133,68,Yok
+682,ASM-2,2026-04-07,40,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,152.7,63.3,126,71,Yok
+683,ASM-1,2026-04-07,69,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,174,93,168,81,Var
+684,ASM-2,2026-04-07,46,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,159.8,49.3,90,56,Yok
+685,ASM-4,2026-04-07,49,Erkek,Üniversite,İçiyor,Yetersiz,Yok,186.8,,146,91,Yok
+686,ASM-3,2026-04-07,41,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.9,74.3,123,74,Yok
+687,ASM-4,2026-04-07,46,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,178.2,,131,74,Yok
+688,ASM-4,2026-04-07,45,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.6,,96,59,Yok
+689,ASM-2,2026-04-07,74,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,181.1,93.9,151,80,Var
+690,ASM-2,2026-04-08,54,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,186.3,87.6,132,79,Yok
+691,ASM-1,2026-04-08,50,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,192.3,,,,Yok
+692,ASM-2,2026-04-08,30,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.2,56.7,109,67,Yok
+693,ASM-2,2026-04-08,39,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,188.9,91.4,131,82,Yok
+694,ASM-3,2026-04-08,62,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,164.5,71.2,105,60,Yok
+695,ASM-2,2026-04-08,57,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,154.8,,,,Var
+696,ASM-1,2026-04-08,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,158.7,63.1,109,77,Yok
+697,ASM-3,2026-04-08,58,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,171.9,89,132,75,Yok
+698,ASM-1,2026-04-08,65,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,157.7,68.9,130,75,Var
+699,ASM-2,2026-04-08,50,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.2,47.9,124,78,Yok
+700,ASM-2,2026-04-08,81,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,151.1,68.1,119,81,Yok
+701,ASM-1,2026-04-08,45,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,170.2,84.1,113,85,Yok
+702,ASM-1,2026-04-08,54,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,166.1,88.5,140,78,Var
+703,ASM-1,2026-04-08,75,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,168.5,83.1,126,83,Yok
+704,ASM-4,2026-04-08,52,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,174.8,,148,79,Var
+705,ASM-1,2026-04-08,36,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,153.2,71.2,121,73,Yok
+706,ASM-2,2026-04-08,36,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,184,100.8,142,76,Yok
+707,ASM-3,2026-04-08,64,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,179.3,80.4,141,81,Var
+708,ASM-3,2026-04-08,68,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,161.3,69.8,141,90,Yok
+709,ASM-2,2026-04-08,21,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,156.7,61.1,116,71,Yok
+710,ASM-1,2026-04-08,40,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,173,91.2,146,88,Yok
+711,ASM-2,2026-04-08,36,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,163.8,62.5,106,76,Yok
+712,ASM-2,2026-04-08,29,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,190.2,110.6,119,85,Yok
+713,ASM-2,2026-04-08,56,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,161.4,78.1,121,71,Var
+714,ASM-3,2026-04-08,52,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,168.8,65,103,61,Var
+715,ASM-3,2026-04-08,36,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,156.6,75.9,107,64,Yok
+716,ASM-4,2026-04-08,48,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,168.1,,133,72,Yok
+717,ASM-4,2026-04-08,50,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.3,,113,66,Yok
+718,ASM-4,2026-04-08,37,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.9,,121,76,Yok
+719,ASM-1,2026-04-08,77,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,171.2,73.3,162,96,Yok
+720,ASM-4,2026-04-09,51,Erkek,,İçiyor,Yetersiz,Yok,170.8,,135,79,Yok
+721,ASM-1,2026-04-09,58,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,165.7,59.3,151,95,Yok
+722,ASM-4,2026-04-09,41,Erkek,Lise,İçiyor,Yetersiz,Var,169.2,,134,77,Var
+723,ASM-1,2026-04-09,35,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.8,71.4,130,79,Yok
+724,ASM-2,2026-04-09,85,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,164.7,82.5,138,69,Var
+725,ASM-4,2026-04-09,54,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,176,,133,90,Yok
+726,ASM-4,2026-04-09,33,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,157.1,,135,82,Yok
+727,ASM-3,2026-04-09,52,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.7,67.1,111,81,Yok
+728,ASM-1,2026-04-09,59,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Var,169.9,95.1,110,61,Yok
+729,ASM-3,2026-04-09,20,Kadın,Üniversite,İçiyor,Yetersiz,Yok,163.6,,,,Yok
+730,ASM-3,2026-04-09,35,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.5,72,126,74,Var
+731,ASM-4,2026-04-09,31,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,179,,108,63,Yok
+732,ASM-2,2026-04-09,35,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,183.4,100.3,115,79,Yok
+733,ASM-3,2026-04-09,53,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,175.2,73.2,120,75,Yok
+734,ASM-1,2026-04-09,32,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.7,64.4,115,67,Yok
+735,ASM-2,2026-04-09,33,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,150.7,69.4,96,56,Yok
+736,ASM-3,2026-04-09,50,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,158.3,61.7,110,72,Yok
+737,ASM-2,2026-04-09,35,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160,75.8,106,85,Yok
+738,ASM-3,2026-04-09,68,Erkek,,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.7,83.1,133,63,Yok
+739,ASM-4,2026-04-09,50,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,166,,132,84,Yok
+740,ASM-2,2026-04-09,46,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,170.5,86.1,137,76,Yok
+741,ASM-3,2026-04-09,43,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.7,72.4,108,73,Yok
+742,ASM-2,2026-04-09,68,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.9,50.6,131,85,Yok
+743,ASM-1,2026-04-09,41,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,157.4,48,124,82,Yok
+744,ASM-2,2026-04-09,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,162.3,68,154,97,Yok
+745,ASM-3,2026-04-09,49,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,184.6,83.8,125,89,Yok
+746,ASM-4,2026-04-09,29,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,161.4,,93,66,Yok
+747,ASM-2,2026-04-09,23,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,160.7,70.1,113,76,Yok
+748,ASM-4,2026-04-09,51,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.9,,123,84,Yok
+749,ASM-4,2026-04-09,18,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,174.9,,121,76,Yok
+750,ASM-3,2026-04-09,50,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,164.9,79.2,124,75,Yok
+751,ASM-4,2026-04-09,74,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,148.3,,169,98,Var
+752,ASM-3,2026-04-10,49,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,180.7,85.7,134,75,Yok
+753,ASM-1,2026-04-10,49,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,182.4,104.7,120,57,Var
+754,ASM-3,2026-04-10,54,Kadın,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,162.6,99.3,118,68,Yok
+755,ASM-2,2026-04-10,77,Kadın,,Hiç içmemiş,Yetersiz,Yok,159.3,58.3,138,72,Var
+756,ASM-2,2026-04-10,52,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.4,64.7,114,78,Yok
+757,ASM-2,2026-04-10,36,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,184.2,74.4,121,78,Yok
+758,ASM-4,2026-04-10,33,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.4,,118,81,Yok
+759,ASM-4,2026-04-10,64,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,160.9,,147,67,Var
+760,ASM-1,2026-04-10,61,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.5,83.3,131,86,Var
+761,ASM-4,2026-04-10,54,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.3,,116,81,Var
+762,ASM-1,2026-04-10,23,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154,64.7,113,73,Yok
+763,ASM-4,2026-04-10,36,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,159,,110,71,Yok
+764,ASM-4,2026-04-10,47,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,177,,142,83,Var
+765,ASM-4,2026-04-10,59,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,170.7,,122,76,Yok
+766,ASM-4,2026-04-10,65,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,155.8,,114,76,Yok
+767,ASM-2,2026-04-10,45,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,189.1,107.6,123,73,Yok
+768,ASM-1,2026-04-10,51,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.3,85.8,139,86,Yok
+769,ASM-3,2026-04-10,54,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.6,89.8,115,68,Yok
+770,ASM-1,2026-04-10,44,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,181.5,96,131,74,Yok
+771,ASM-1,2026-04-13,67,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,176.2,74.5,115,64,Yok
+772,ASM-1,2026-04-13,37,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,161.1,64.2,110,66,Yok
+773,ASM-1,2026-04-13,50,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,167.3,77.2,131,81,Yok
+774,ASM-2,2026-04-13,45,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,160.7,,,,Yok
+775,ASM-3,2026-04-13,53,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174,80.7,112,88,Yok
+776,ASM-1,2026-04-13,80,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,179.5,84.6,147,87,Yok
+777,ASM-4,2026-04-13,57,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,175.7,,,,Yok
+778,ASM-3,2026-04-13,41,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,169.7,63.2,112,82,Yok
+779,ASM-1,2026-04-13,26,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,181.3,84.2,121,76,Yok
+780,ASM-2,2026-04-13,43,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,150.3,55.3,149,84,Yok
+781,ASM-3,2026-04-13,28,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,165.6,50.8,115,68,Yok
+782,ASM-4,2026-04-13,71,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164,68.7,120,69,Var
+783,ASM-2,2026-04-13,81,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156.2,68.2,148,82,Var
+784,ASM-3,2026-04-13,37,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,176.4,86,131,82,Yok
+785,ASM-3,2026-04-13,26,Kadın,Üniversite,İçiyor,Yetersiz,Yok,174.9,63.7,92,62,Yok
+786,ASM-3,2026-04-13,34,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,147.6,,,,Yok
+787,ASM-1,2026-04-13,41,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,172.2,83.2,126,81,Yok
+788,ASM-2,2026-04-13,43,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,168.6,68.9,104,64,Yok
+789,ASM-3,2026-04-13,22,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,178.8,,,,Yok
+790,ASM-1,2026-04-13,69,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,150.8,51.3,134,89,Var
+791,ASM-1,2026-04-13,61,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.3,60.3,124,71,Var
+792,ASM-3,2026-04-13,34,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,181.6,88.6,111,73,Yok
+793,ASM-4,2026-04-13,45,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,158.6,70.8,102,76,Yok
+794,ASM-3,2026-04-13,30,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,157.4,56.1,130,72,Yok
+795,ASM-3,2026-04-13,45,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,177.7,76.4,114,72,Yok
+796,ASM-1,2026-04-13,73,Kadın,,Bırakmış,Yetersiz,Var,150.1,65,152,78,Var
+797,ASM-1,2026-04-13,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,165.7,75,124,68,Yok
+798,ASM-1,2026-04-13,28,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,169.5,71.5,131,76,Yok
+799,ASM-4,2026-04-13,66,Erkek,Lise,İçiyor,Yetersiz,Var,176.3,96.2,129,90,Yok
+800,ASM-3,2026-04-13,62,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.2,70.2,142,86,Yok
+801,ASM-1,2026-04-13,41,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.4,113.8,102,69,Yok
+802,ASM-1,2026-04-13,31,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,165.6,85.6,97,68,Yok
+803,ASM-1,2026-04-13,30,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,157.7,58.2,131,74,Yok
+804,ASM-1,2026-04-13,18,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,158.2,,,,Yok
+805,ASM-4,2026-04-14,42,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,169.6,47.5,122,67,Var
+806,ASM-4,2026-04-14,41,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,162,67.5,116,65,Yok
+807,ASM-1,2026-04-14,75,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,179.2,100.1,143,89,Var
+808,ASM-4,2026-04-14,54,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.5,73.9,109,72,Yok
+809,ASM-1,2026-04-14,53,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,147.1,54.4,129,88,Yok
+810,ASM-1,2026-04-14,35,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,168.9,83.4,126,76,Yok
+811,ASM-1,2026-04-14,23,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,171.3,83.5,137,83,Yok
+812,ASM-2,2026-04-14,26,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154,64.1,113,73,Yok
+813,ASM-3,2026-04-14,41,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,191.9,96.1,118,82,Yok
+814,ASM-3,2026-04-14,53,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.2,71,130,88,Yok
+815,ASM-4,2026-04-14,56,Erkek,,Hiç içmemiş,Yetersiz,Yok,177.3,77.4,137,84,Yok
+816,ASM-1,2026-04-14,39,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,161.7,69.7,123,79,Var
+817,ASM-4,2026-04-14,47,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,184,62.8,120,81,Yok
+818,ASM-4,2026-04-14,46,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,155.3,66,124,64,Var
+819,ASM-2,2026-04-14,44,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.4,68.3,99,62,Yok
+820,ASM-1,2026-04-14,63,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,150.9,65.7,132,89,Var
+821,ASM-3,2026-04-14,70,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,176.9,58.2,130,86,Yok
+822,ASM-2,2026-04-14,41,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,186.8,100.9,113,75,Yok
+823,ASM-3,2026-04-14,28,Kadın,Lise,İçiyor,Yetersiz,Yok,151.4,44.2,106,75,Yok
+824,ASM-4,2026-04-14,28,Erkek,Üniversite,İçiyor,Yetersiz,Yok,175,72.3,100,71,Yok
+825,ASM-1,2026-04-14,36,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,190,84.7,122,84,Yok
+826,ASM-2,2026-04-14,65,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,185.5,96.5,144,78,Var
+827,ASM-1,2026-04-14,53,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,153.1,64.2,123,61,Var
+828,ASM-3,2026-04-14,64,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,161.1,98.1,149,79,Var
+829,ASM-3,2026-04-14,58,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.5,90,124,80,Yok
+830,ASM-1,2026-04-14,64,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,176.2,82.1,116,74,Yok
+831,ASM-2,2026-04-14,68,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156.4,70.3,118,76,Var
+832,ASM-2,2026-04-15,53,Erkek,Lise,İçiyor,Yetersiz,Yok,161.8,67.3,131,77,Yok
+833,ASM-1,2026-04-15,57,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,159.4,85.4,135,73,Yok
+834,ASM-1,2026-04-15,18,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,171.8,48.7,120,73,Yok
+835,ASM-1,2026-04-15,37,Erkek,Üniversite,İçiyor,Yetersiz,Yok,170.4,75.1,128,80,Yok
+836,ASM-3,2026-04-15,54,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.7,72.5,116,65,Yok
+837,ASM-3,2026-04-15,48,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,176.1,59.8,112,69,Yok
+838,ASM-2,2026-04-15,75,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,161.1,62.7,136,73,Var
+839,ASM-4,2026-04-15,24,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.7,79.4,99,74,Yok
+840,ASM-3,2026-04-15,32,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,147.3,46.3,90,61,Yok
+841,ASM-3,2026-04-15,42,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.4,95.6,148,89,Yok
+842,ASM-3,2026-04-15,67,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,158.6,74.8,149,90,Yok
+843,ASM-2,2026-04-15,68,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,175,86.6,124,71,Yok
+844,ASM-3,2026-04-15,36,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,158.8,81.4,107,75,Yok
+845,ASM-4,2026-04-15,63,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,167.3,80.5,128,79,Yok
+846,ASM-3,2026-04-15,45,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.4,87.8,121,83,Yok
+847,ASM-2,2026-04-15,58,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,150.7,63.4,121,84,Yok
+848,ASM-4,2026-04-15,48,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,179.7,108.5,125,82,Yok
+849,ASM-3,2026-04-16,45,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.3,67.1,122,75,Yok
+850,ASM-2,2026-04-16,32,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,184.8,98.6,138,87,Yok
+851,ASM-4,2026-04-16,52,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,153.1,79.5,155,87,Var
+852,ASM-3,2026-04-16,60,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,169.8,70.4,129,81,Var
+853,ASM-4,2026-04-16,38,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,161.1,93.6,115,71,Yok
+854,ASM-1,2026-04-16,43,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,157.1,54,106,79,Yok
+855,ASM-1,2026-04-16,33,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,166.4,60,90,67,Yok
+856,ASM-2,2026-04-16,22,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,181.5,83,125,86,Yok
+857,ASM-2,2026-04-16,40,Kadın,Lise,İçiyor,Yetersiz,Yok,158.1,64.6,147,78,Yok
+858,ASM-2,2026-04-16,34,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.8,77.3,111,67,Yok
+859,ASM-1,2026-04-16,42,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.3,79,93,68,Yok
+860,ASM-4,2026-04-16,34,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,173.7,,,,Yok
+861,ASM-2,2026-04-16,67,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,171.8,75.2,151,82,Var
+862,ASM-3,2026-04-16,25,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,175.4,,,,Yok
+863,ASM-2,2026-04-16,66,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.3,74.5,119,64,Yok
+864,ASM-2,2026-04-16,63,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160,67,119,75,Yok
+865,ASM-1,2026-04-16,54,Erkek,Lise,Bırakmış,Yetersiz,Yok,163,51.8,107,69,Yok
+866,ASM-2,2026-04-16,55,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,170.7,74.2,119,72,Yok
+867,ASM-2,2026-04-16,63,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Var,160.7,78.2,129,73,Yok
+868,ASM-4,2026-04-16,47,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,163.7,69.1,124,81,Var
+869,ASM-4,2026-04-16,64,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.6,75.5,148,88,Yok
+870,ASM-1,2026-04-16,55,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,168.4,75,143,80,Var
+871,ASM-1,2026-04-17,62,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,169.1,94.4,107,76,Yok
+872,ASM-4,2026-04-17,26,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.8,57.5,107,82,Yok
+873,ASM-3,2026-04-17,45,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,152.4,48.1,127,73,Yok
+874,ASM-2,2026-04-17,61,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,189.7,101.6,131,85,Yok
+875,ASM-4,2026-04-17,51,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.5,81.4,126,84,Yok
+876,ASM-2,2026-04-17,71,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,173.3,79.7,118,70,Var
+877,ASM-4,2026-04-17,34,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,158.3,83.2,144,77,Yok
+878,ASM-1,2026-04-17,23,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,178.6,74.5,107,77,Yok
+879,ASM-2,2026-04-17,43,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.3,67.8,106,64,Var
+880,ASM-2,2026-04-17,39,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,177.6,85.7,108,65,Var
+881,ASM-1,2026-04-17,35,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.1,72.9,114,80,Yok
+882,ASM-1,2026-04-17,36,Erkek,Lise,Bırakmış,Yetersiz,Yok,171.9,72,145,81,Yok
+883,ASM-2,2026-04-17,65,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156,61.8,133,76,Yok
+884,ASM-3,2026-04-17,56,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,174.2,112.2,150,76,Var
+885,ASM-3,2026-04-17,66,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,178.4,101.3,129,79,Yok
+886,ASM-4,2026-04-17,70,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.8,,,,Var
+887,ASM-4,2026-04-17,43,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,187.7,76.8,141,80,Yok
+888,ASM-1,2026-04-17,60,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Var,189,103.1,132,78,Yok
+889,ASM-2,2026-04-17,56,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,156.2,74.4,151,89,Var
+890,ASM-4,2026-04-17,72,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,170.2,75,125,78,Var
+891,ASM-1,2026-04-20,62,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,156.9,75.4,127,77,Var
+892,ASM-1,2026-04-20,64,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,164.1,77.9,127,80,Var
+893,ASM-1,2026-04-20,49,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,173.8,64.8,141,86,Yok
+894,ASM-1,2026-04-20,36,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,173.3,73.3,116,81,Yok
+895,ASM-1,2026-04-20,81,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.7,66.6,107,72,Var
+896,ASM-1,2026-04-20,37,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,181.1,100.7,140,86,Yok
+897,ASM-1,2026-04-20,85,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,148.4,69,120,79,Yok
+898,ASM-1,2026-04-20,69,Kadın,,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,169.3,96.1,152,86,Var
+899,ASM-3,2026-04-20,27,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,161,62,93,68,Yok
+900,ASM-2,2026-04-20,29,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,176.4,,,,Yok
+901,ASM-2,2026-04-20,74,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,156,73.5,139,78,Yok
+902,ASM-2,2026-04-20,18,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,189.6,86.9,122,77,Yok
+903,ASM-3,2026-04-20,51,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.5,92.5,114,67,Yok
+904,ASM-1,2026-04-20,43,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.7,72.3,114,69,Yok
+905,ASM-3,2026-04-20,65,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,171.7,81,128,87,Yok
+906,ASM-3,2026-04-20,42,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,151.6,70.6,121,84,Yok
+907,ASM-4,2026-04-20,55,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,161.4,,,,Yok
+908,ASM-3,2026-04-20,66,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,158.6,57.3,141,85,Yok
+909,ASM-4,2026-04-20,56,Erkek,Lise,İçiyor,Yetersiz,Yok,189.3,121,133,84,Yok
+910,ASM-2,2026-04-20,43,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,173.1,98.6,155,95,Yok
+911,ASM-3,2026-04-20,79,Kadın,,İçiyor,Yeterli (haftada 150 dk+),Yok,162.7,79.1,119,75,Yok
+912,ASM-3,2026-04-20,46,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.9,65.9,134,90,Yok
+913,ASM-2,2026-04-20,85,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,181,80.1,129,74,Yok
+914,ASM-1,2026-04-20,30,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.5,76.3,137,89,Yok
+915,ASM-4,2026-04-20,43,Erkek,Lise,İçiyor,Yetersiz,Yok,173.8,69.2,132,77,Yok
+916,ASM-3,2026-04-20,42,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,157.2,54.9,100,80,Yok
+917,ASM-2,2026-04-20,57,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,188.4,82.8,125,66,Yok
+918,ASM-3,2026-04-20,24,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,176.9,100.1,152,89,Yok
+919,ASM-4,2026-04-20,43,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,175.8,86.7,126,82,Yok
+920,ASM-1,2026-04-20,50,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.3,71.8,130,72,Var
+921,ASM-3,2026-04-20,51,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.8,75.7,127,62,Yok
+922,ASM-1,2026-04-20,35,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,156.8,,,,Yok
+923,ASM-2,2026-04-20,38,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,169,63.5,121,77,Yok
+924,ASM-2,2026-04-20,83,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Var,171.1,,,,Var
+925,ASM-1,2026-04-20,46,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,179.7,79.7,113,75,Yok
+926,ASM-3,2026-04-20,55,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,154.5,64.4,138,82,Yok
+927,ASM-1,2026-04-20,46,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.7,87,121,64,Var
+928,ASM-3,2026-04-20,60,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.1,70.9,117,86,Yok
+929,ASM-2,2026-04-20,24,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,188.2,83.1,106,77,Yok
+930,ASM-2,2026-04-20,50,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,177.1,61.2,125,78,Yok
+931,ASM-4,2026-04-20,44,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,159.5,85.2,135,72,Var
+932,ASM-4,2026-04-21,55,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,174.2,64,108,74,Yok
+933,ASM-2,2026-04-21,35,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,147.7,,,,Yok
+934,ASM-1,2026-04-21,59,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Var,146.5,61.7,126,72,Var
+935,ASM-2,2026-04-21,46,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,174.7,97,136,101,Yok
+936,ASM-2,2026-04-21,63,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,181.3,85.3,115,71,Yok
+937,ASM-1,2026-04-21,64,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.5,97.1,155,89,Var
+938,ASM-2,2026-04-21,66,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,179.2,104.6,121,76,Yok
+939,ASM-1,2026-04-21,73,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.5,81,139,83,Yok
+940,ASM-2,2026-04-21,40,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.8,73.8,129,78,Yok
+941,ASM-3,2026-04-21,43,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,189.3,,,,Yok
+942,ASM-3,2026-04-21,67,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,179.1,111,156,85,Yok
+943,ASM-2,2026-04-21,49,Erkek,Lise,İçiyor,Yetersiz,Yok,177.3,81.4,119,73,Yok
+944,ASM-3,2026-04-21,27,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,158.4,67.1,133,79,Yok
+945,ASM-3,2026-04-21,36,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,173.6,89.8,130,74,Yok
+946,ASM-1,2026-04-21,71,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,166,93.3,125,78,Yok
+947,ASM-4,2026-04-21,39,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,162.7,75,90,70,Yok
+948,ASM-4,2026-04-21,19,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,157.5,81.8,109,72,Yok
+949,ASM-1,2026-04-21,33,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,166.8,76.7,115,79,Yok
+950,ASM-1,2026-04-21,59,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,159.5,76.2,142,78,Yok
+951,ASM-2,2026-04-21,45,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,161.6,76.3,130,76,Yok
+952,ASM-1,2026-04-21,58,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Var,170.3,77.2,160,86,Var
+953,ASM-2,2026-04-21,77,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,154,48,132,77,Var
+954,ASM-2,2026-04-22,59,Kadın,Lise,İçiyor,Yetersiz,Yok,177.3,105.9,103,65,Yok
+955,ASM-1,2026-04-22,18,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,163.9,61.4,113,68,Yok
+956,ASM-4,2026-04-22,56,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,178.7,85.6,142,86,Yok
+957,ASM-3,2026-04-22,85,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,178.9,78.8,180,96,Yok
+958,ASM-4,2026-04-22,37,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,151.6,60.7,110,66,Yok
+959,ASM-1,2026-04-22,46,Erkek,Lise,İçiyor,Yetersiz,Yok,170.3,70.8,152,77,Var
+960,ASM-4,2026-04-22,30,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,157.4,72.4,96,62,Yok
+961,ASM-2,2026-04-22,70,Erkek,Lise,Bırakmış,Yetersiz,Yok,178.2,77.4,143,82,Var
+962,ASM-1,2026-04-22,39,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,178.4,92.1,137,84,Yok
+963,ASM-1,2026-04-22,48,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,167.7,89.2,130,83,Yok
+964,ASM-4,2026-04-22,52,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.3,55.4,134,95,Yok
+965,ASM-2,2026-04-22,65,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,168.1,92.7,121,79,Yok
+966,ASM-1,2026-04-22,22,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.3,75.2,122,75,Yok
+967,ASM-4,2026-04-22,31,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,169.7,59.4,103,78,Yok
+968,ASM-3,2026-04-22,18,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,166.4,78.3,106,79,Yok
+969,ASM-2,2026-04-22,35,Kadın,Üniversite,İçiyor,Yetersiz,Yok,166.1,77.7,103,62,Yok
+970,ASM-1,2026-04-22,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,163,74.5,134,77,Yok
+971,ASM-1,2026-04-22,44,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,150.6,73.7,135,76,Var
+972,ASM-2,2026-04-22,31,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,174.4,56,100,60,Yok
+973,ASM-4,2026-04-22,73,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.3,67.1,141,78,Yok
+974,ASM-4,2026-04-22,60,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.9,89,123,79,Yok
+975,ASM-4,2026-04-22,39,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.4,80.4,112,73,Yok
+976,ASM-2,2026-04-22,70,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,156.6,72.3,136,91,Yok
+977,ASM-3,2026-04-22,70,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,185.3,77.1,141,92,Yok
+978,ASM-2,2026-04-22,50,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,174.8,79.6,127,68,Yok
+979,ASM-2,2026-04-22,41,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,147,47.6,128,80,Yok
+980,ASM-4,2026-04-22,45,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,164.2,55.9,117,73,Yok
+981,ASM-1,2026-04-22,18,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,169.3,95,108,74,Yok
+982,ASM-4,2026-04-22,46,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.9,69.1,131,89,Yok
+983,ASM-3,2026-04-22,48,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,173.3,106.1,122,78,Yok
+984,ASM-4,2026-04-22,38,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,164.9,85.8,118,70,Yok
+985,ASM-3,2026-04-24,59,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.6,77.9,125,82,Yok
+986,ASM-3,2026-04-24,57,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,152.7,72.8,107,70,Yok
+987,ASM-2,2026-04-24,43,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.1,,,,Yok
+988,ASM-1,2026-04-24,39,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,160.7,78,140,93,Yok
+989,ASM-1,2026-04-24,60,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,160.4,71.8,132,67,Var
+990,ASM-2,2026-04-24,76,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,169.1,67.9,144,89,Var
+991,ASM-1,2026-04-24,65,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,153.6,66.5,145,87,Yok
+992,ASM-3,2026-04-24,38,Kadın,Lise,Hiç içmemiş,Yetersiz,Var,157,75.2,133,74,Yok
+993,ASM-1,2026-04-24,28,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.5,76.9,113,61,Yok
+994,ASM-3,2026-04-24,48,Erkek,Lise,İçiyor,Yetersiz,Yok,188.4,100.8,122,72,Yok
+995,ASM-1,2026-04-24,53,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.5,93.7,146,89,Yok
+996,ASM-3,2026-04-24,31,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,152.8,,,,Yok
+997,ASM-4,2026-04-24,18,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,176.7,,,,Yok
+998,ASM-1,2026-04-24,54,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156.6,55.6,141,78,Yok
+999,ASM-3,2026-04-24,41,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.6,78,154,79,Var
+1000,ASM-4,2026-04-24,18,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,171.1,63.2,111,66,Yok
+1001,ASM-3,2026-04-24,26,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,157.9,54,111,74,Yok
+1002,ASM-1,2026-04-24,24,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.3,63.2,113,69,Yok
+1003,ASM-3,2026-04-27,25,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.9,93.5,153,79,Yok
+1004,ASM-4,2026-04-27,49,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,168.9,86,136,77,Yok
+1005,ASM-4,2026-04-27,45,Kadın,Lise,Bırakmış,Yetersiz,Yok,157,70.1,121,80,Yok
+1006,ASM-1,2026-04-27,51,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.3,64.9,106,76,Yok
+1007,ASM-2,2026-04-27,63,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,174.7,88.1,99,74,Yok
+1008,ASM-4,2026-04-27,61,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,178.5,98.8,131,76,Var
+1009,ASM-4,2026-04-27,48,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.6,85,100,76,Yok
+1010,ASM-3,2026-04-27,45,Kadın,Lise,İçiyor,Yetersiz,Yok,161.2,47.4,128,82,Yok
+1011,ASM-4,2026-04-27,72,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Var,172.2,89.2,164,88,Var
+1012,ASM-1,2026-04-27,53,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.8,77.8,128,79,Yok
+1013,ASM-1,2026-04-27,62,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,165.2,62.7,114,86,Yok
+1014,ASM-2,2026-04-27,53,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.3,78.3,130,76,Var
+1015,ASM-1,2026-04-27,49,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,166.6,58,128,76,Yok
+1016,ASM-4,2026-04-27,36,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,166.5,91.7,121,85,Yok
+1017,ASM-2,2026-04-27,60,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,166.1,72.2,122,76,Yok
+1018,ASM-3,2026-04-27,32,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.6,71.3,118,72,Yok
+1019,ASM-3,2026-04-27,70,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,171.9,80.9,111,83,Var
+1020,ASM-4,2026-04-27,45,Erkek,Lise,İçiyor,Yetersiz,Yok,183.3,93.9,114,78,Yok
+1021,ASM-3,2026-04-27,61,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,149.6,61.5,118,71,Yok
+1022,ASM-1,2026-04-27,85,Kadın,,Bırakmış,Yetersiz,Yok,170.4,88.1,133,69,Var
+1023,ASM-1,2026-04-27,47,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.1,67.9,126,81,Yok
+1024,ASM-4,2026-04-27,56,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,178.8,88.1,129,95,Var
+1025,ASM-1,2026-04-27,49,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,175.7,,,,Yok
+1026,ASM-4,2026-04-27,75,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.2,76.1,134,76,Yok
+1027,ASM-1,2026-04-27,51,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,157.2,71.6,126,58,Var
+1028,ASM-1,2026-04-27,56,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,162.7,80.2,125,75,Yok
+1029,ASM-2,2026-04-27,44,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,162,,124,80,Yok
+1030,ASM-1,2026-04-27,39,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,177.6,63.8,126,82,Var
+1031,ASM-2,2026-04-27,38,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.9,104.7,133,67,Yok
+1032,ASM-3,2026-04-27,27,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,180.4,83.7,141,89,Yok
+1033,ASM-2,2026-04-27,60,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,169.4,96.2,121,71,Var
+1034,ASM-3,2026-04-27,72,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,165.4,83.1,152,86,Yok
+1035,ASM-1,2026-04-27,34,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.8,59,113,66,Yok
+1036,ASM-4,2026-04-27,49,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,189.4,82.7,125,70,Var
+1037,ASM-1,2026-04-27,18,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173,90.2,125,81,Yok
+1038,ASM-1,2026-04-27,58,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,174,83.5,118,70,Yok
+1039,ASM-1,2026-04-27,63,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,170.9,86.3,131,84,Yok
+1040,ASM-1,2026-04-27,51,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.1,67.9,107,74,Yok
+1041,ASM-2,2026-04-27,46,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,174.4,95.7,115,70,Var
+1042,ASM-2,2026-04-27,34,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.8,106,124,70,Var
+1043,ASM-3,2026-04-28,55,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.9,63.8,137,96,Yok
+1044,ASM-1,2026-04-28,28,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,158.7,78.7,121,78,Yok
+1045,ASM-2,2026-04-28,45,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,157.5,78.7,107,75,Yok
+1046,ASM-1,2026-04-28,54,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,160.7,59.7,141,75,Yok
+1047,ASM-2,2026-04-28,69,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,183.6,114.3,152,80,Var
+1048,ASM-4,2026-04-28,67,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,167.1,85.4,142,70,Var
+1049,ASM-3,2026-04-28,55,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,168.8,62.2,124,75,Yok
+1050,ASM-1,2026-04-28,42,Erkek,Lise,İçiyor,Yetersiz,Yok,165.1,52.8,139,86,Yok
+1051,ASM-4,2026-04-28,76,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,160.1,63.1,131,73,Var
+1052,ASM-4,2026-04-28,70,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Var,178.7,85.5,144,83,Yok
+1053,ASM-2,2026-04-28,39,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.3,69.5,132,74,Yok
+1054,ASM-3,2026-04-28,43,Kadın,Lise,Bırakmış,Yetersiz,Yok,164.6,,,,Yok
+1055,ASM-2,2026-04-28,42,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,181.1,79.5,131,88,Yok
+1056,ASM-2,2026-04-28,82,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,165.9,76,129,76,Var
+1057,ASM-3,2026-04-28,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,163.5,91.5,129,82,Yok
+1058,ASM-3,2026-04-28,42,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.1,82,140,77,Yok
+1059,ASM-2,2026-04-28,55,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,168.3,82.3,128,71,Yok
+1060,ASM-1,2026-04-28,39,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,185.6,79.2,129,71,Yok
+1061,ASM-3,2026-04-28,27,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.3,57,103,75,Yok
+1062,ASM-1,2026-04-28,60,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,166.4,68.8,149,84,Yok
+1063,ASM-2,2026-04-28,46,Erkek,Üniversite,İçiyor,Yetersiz,Yok,151.4,56.1,145,76,Yok
+1064,ASM-2,2026-04-28,60,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Var,178.4,94.5,120,67,Yok
+1065,ASM-3,2026-04-28,61,Kadın,Ortaokul,Bırakmış,Yetersiz,Var,158.6,60.7,122,85,Var
+1066,ASM-1,2026-04-28,63,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Var,160.9,67.9,122,70,Var
+1067,ASM-1,2026-04-28,66,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,167.3,88.1,152,95,Yok
+1068,ASM-4,2026-04-28,53,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167,75.4,133,78,Var
+1069,ASM-1,2026-04-28,24,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,177.2,85.3,140,65,Var
+1070,ASM-2,2026-04-29,45,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,167.5,77.4,118,71,Yok
+1071,ASM-2,2026-04-29,53,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,153.5,52.5,135,88,Yok
+1072,ASM-1,2026-04-29,37,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,176.6,73.9,114,70,Yok
+1073,ASM-3,2026-04-29,73,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,158.7,73.9,140,79,Yok
+1074,ASM-2,2026-04-29,60,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,159.9,66.5,115,72,Yok
+1075,ASM-2,2026-04-29,69,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,169.4,65.9,140,76,Yok
+1076,ASM-3,2026-04-29,31,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,142.8,56.6,126,81,Yok
+1077,ASM-2,2026-04-29,47,Erkek,Lise,İçiyor,Yetersiz,Yok,176.2,97.2,146,79,Yok
+1078,ASM-1,2026-04-29,68,Kadın,,Hiç içmemiş,Yetersiz,Yok,155.3,60.5,147,72,Var
+1079,ASM-2,2026-04-29,42,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,177.1,94.4,126,78,Yok
+1080,ASM-3,2026-04-29,50,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,157,74.1,135,80,Yok
+1081,ASM-4,2026-04-29,67,Erkek,Ortaokul,Bırakmış,Yetersiz,Var,183,72.2,135,82,Var
+1082,ASM-2,2026-04-29,37,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.4,83.1,127,83,Var
+1083,ASM-2,2026-04-29,28,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,163.6,68.1,120,81,Yok
+1084,ASM-2,2026-04-29,39,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.2,86.1,120,69,Yok
+1085,ASM-4,2026-04-29,85,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,176.1,71.5,144,84,Yok
+1086,ASM-2,2026-04-29,34,Erkek,Lise,İçiyor,Yetersiz,Yok,179.8,95.8,142,82,Yok
+1087,ASM-3,2026-04-29,76,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,160.6,71.3,167,83,Var
+1088,ASM-4,2026-04-29,38,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,183.5,120.3,129,73,Yok
+1089,ASM-2,2026-04-29,58,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.2,,,,Yok
+1090,ASM-1,2026-04-29,42,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.2,86.6,111,74,Var
+1091,ASM-3,2026-04-29,30,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,170.3,85.7,132,69,Var
+1092,ASM-3,2026-04-29,56,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,153.8,68.9,128,70,Yok
+1093,ASM-4,2026-04-29,37,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.5,58.3,96,63,Yok
+1094,ASM-3,2026-04-29,21,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,153.2,60.9,117,76,Yok
+1095,ASM-4,2026-04-30,34,Erkek,,İçiyor,Yeterli (haftada 150 dk+),Yok,182.5,65,128,84,Yok
+1096,ASM-4,2026-04-30,36,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.6,72.2,106,71,Var
+1097,ASM-2,2026-04-30,41,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,157.1,80.1,124,82,Yok
+1098,ASM-1,2026-04-30,41,Kadın,,Hiç içmemiş,Yetersiz,Yok,164.8,74.2,114,83,Yok
+1099,ASM-2,2026-04-30,53,Erkek,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,173,58.4,117,80,Yok
+1100,ASM-4,2026-04-30,24,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,177.3,85.8,130,87,Yok
+1101,ASM-1,2026-04-30,34,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,169.2,69.9,135,88,Yok
+1102,ASM-4,2026-04-30,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,165.5,94.1,162,101,Yok
+1103,ASM-3,2026-04-30,30,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,169.4,47.3,98,61,Yok
+1104,ASM-1,2026-04-30,40,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,268,69,126,63,Var
+1105,ASM-4,2026-04-30,47,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,172.4,76.6,109,81,Yok
+1106,ASM-4,2026-04-30,40,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,154.3,75.1,122,78,Yok
+1107,ASM-3,2026-04-30,32,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.7,75.7,110,82,Yok
+1108,ASM-3,2026-04-30,50,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,164.3,68.5,155,84,Var
+1109,ASM-3,2026-04-30,66,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,153.5,66.7,130,72,Var
+1110,ASM-2,2026-04-30,51,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,182.1,92.4,155,92,Yok
+1111,ASM-1,2026-04-30,85,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Var,162.8,74.5,129,83,Var
+1112,ASM-1,2026-04-30,66,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172,79.2,100,69,Var
+1113,ASM-1,2026-04-30,29,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,159.2,65.5,113,64,Yok
+1114,ASM-4,2026-04-30,54,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,167.7,63.9,127,83,Yok
+1115,ASM-4,2026-04-30,58,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.4,75.7,149,78,Var
+1116,ASM-1,2026-04-30,47,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158,60,123,72,Yok
+1117,ASM-2,2026-04-30,54,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.4,72.1,105,75,Yok
+1118,ASM-3,2026-04-30,40,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163,62.3,126,77,Yok
+1119,ASM-1,2026-04-30,18,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.9,72.8,105,66,Yok
+1120,ASM-3,2026-05-04,35,Kadın,Ortaokul,İçiyor,Yetersiz,Yok,170.4,79,125,89,Yok
+1121,ASM-4,2026-05-04,46,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,174.7,120.1,126,81,Yok
+1122,ASM-2,2026-05-04,62,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.6,75.3,128,78,Yok
+1123,ASM-2,2026-05-04,34,Erkek,Lise,İçiyor,Yetersiz,Yok,168.7,69.3,128,68,Var
+1124,ASM-4,2026-05-04,78,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,154.5,85.9,154,83,Var
+1125,ASM-1,2026-05-04,49,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,170.5,63.1,119,76,Yok
+1126,ASM-1,2026-05-04,60,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,174.6,86.1,114,58,Var
+1127,ASM-1,2026-05-04,42,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,180.5,58.6,129,74,Yok
+1128,ASM-2,2026-05-04,74,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,152.9,77.2,155,88,Var
+1129,ASM-1,2026-05-04,28,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,171.7,64.3,127,71,Yok
+1130,ASM-1,2026-05-04,46,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.8,75.4,128,86,Var
+1131,ASM-2,2026-05-04,37,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,179.9,66.7,120,73,Var
+1132,ASM-3,2026-05-04,37,Erkek,Üniversite,İçiyor,Yetersiz,Yok,185.9,,,,Yok
+1133,ASM-2,2026-05-04,39,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,166,61.2,118,69,Yok
+1134,ASM-2,2026-05-04,36,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,186.9,81.1,112,73,Yok
+1135,ASM-2,2026-05-04,69,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,176.7,79.7,133,81,Yok
+1136,ASM-1,2026-05-04,35,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.2,86,133,86,Yok
+1137,ASM-1,2026-05-04,35,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.6,61.9,132,71,Yok
+1138,ASM-1,2026-05-04,35,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.3,66.9,103,83,Yok
+1139,ASM-1,2026-05-04,51,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,156.9,60.4,125,73,Yok
+1140,ASM-3,2026-05-04,70,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,166.5,97.1,149,83,Var
+1141,ASM-3,2026-05-04,60,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,160.8,90.9,140,77,Var
+1142,ASM-3,2026-05-04,65,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,160.2,78.2,116,76,Yok
+1143,ASM-3,2026-05-04,60,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,151.7,65.3,137,95,Var
+1144,ASM-3,2026-05-04,18,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,177.6,63.9,117,84,Yok
+1145,ASM-3,2026-05-04,18,Kadın,Üniversite,İçiyor,Yetersiz,Yok,157.9,,,,Yok
+1146,ASM-1,2026-05-04,50,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,174.1,63.2,133,78,Var
+1147,ASM-4,2026-05-04,22,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.2,,,,Yok
+1148,ASM-2,2026-05-04,31,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.9,94.5,116,70,Yok
+1149,ASM-4,2026-05-04,54,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,178.5,74.7,121,79,Yok
+1150,ASM-1,2026-05-04,55,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,183,92.3,120,75,Yok
+1151,ASM-1,2026-05-04,51,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,173.6,87.7,142,73,Var
+1152,ASM-2,2026-05-04,30,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,160.9,72.9,90,66,Yok
+1153,ASM-3,2026-05-04,28,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,147.6,54.2,107,70,Yok
+1154,ASM-1,2026-05-04,64,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,183.3,72,119,83,Yok
+1155,ASM-2,2026-05-05,31,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,182.6,58,111,76,Yok
+1156,ASM-2,2026-05-05,26,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.7,68.3,99,64,Yok
+1157,ASM-1,2026-05-05,68,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,164.8,87,137,86,Var
+1158,ASM-1,2026-05-05,53,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.5,69,117,71,Yok
+1159,ASM-1,2026-05-05,40,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,173.3,67.4,113,88,Yok
+1160,ASM-4,2026-05-05,36,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,176.7,61.4,129,88,Yok
+1161,ASM-1,2026-05-05,23,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,162.7,,103,77,Yok
+1162,ASM-3,2026-05-05,18,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,161.8,,,,Yok
+1163,ASM-1,2026-05-05,45,Kadın,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,158.7,,,,Yok
+1164,ASM-3,2026-05-05,34,Kadın,Üniversite,İçiyor,Yetersiz,Yok,164.7,91.7,123,69,Yok
+1165,ASM-3,2026-05-05,85,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164.5,59.5,138,75,Var
+1166,ASM-1,2026-05-05,55,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,150.7,56.6,138,91,Yok
+1167,ASM-3,2026-05-05,58,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,151.6,53.7,108,69,Yok
+1168,ASM-1,2026-05-05,38,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,187.6,89.6,134,90,Yok
+1169,ASM-2,2026-05-05,36,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.6,74.4,112,64,Yok
+1170,ASM-1,2026-05-05,46,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,155.3,56.6,115,80,Yok
+1171,ASM-2,2026-05-05,49,Kadın,Lise,İçiyor,Yetersiz,Yok,161.9,75,116,76,Yok
+1172,ASM-1,2026-05-05,42,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,163.3,63.6,139,86,Var
+1173,ASM-1,2026-05-05,47,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,160.1,66.7,119,78,Yok
+1174,ASM-2,2026-05-05,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.4,69.9,104,61,Yok
+1175,ASM-3,2026-05-05,32,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.4,71.8,124,69,Yok
+1176,ASM-2,2026-05-05,64,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,158.9,71.5,150,75,Var
+1177,ASM-1,2026-05-05,32,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,185.1,78.7,90,67,Yok
+1178,ASM-2,2026-05-05,35,Kadın,Üniversite,İçiyor,Yetersiz,Yok,157.9,68.8,121,82,Yok
+1179,ASM-1,2026-05-05,73,Erkek,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,179.3,85.2,136,83,Yok
+1180,ASM-4,2026-05-05,31,Erkek,Lise,İçiyor,Yetersiz,Var,183.7,82.9,133,75,Yok
+1181,ASM-4,2026-05-05,43,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,170.3,76.1,154,87,Yok
+1182,ASM-1,2026-05-05,44,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175.8,79.9,137,88,Yok
+1183,ASM-2,2026-05-06,41,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,185.5,91.8,125,76,Yok
+1184,ASM-2,2026-05-06,24,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,165.2,68.1,112,65,Yok
+1185,ASM-3,2026-05-06,57,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,163.2,73.9,139,78,Var
+1186,ASM-4,2026-05-06,57,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,149.4,53,100,70,Yok
+1187,ASM-2,2026-05-06,50,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,156.7,72.5,137,84,Var
+1188,ASM-2,2026-05-06,51,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.2,54.2,121,78,Yok
+1189,ASM-1,2026-05-06,45,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.9,89.8,144,84,Yok
+1190,ASM-1,2026-05-06,27,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.2,69.3,105,62,Var
+1191,ASM-4,2026-05-06,60,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.1,83.4,138,84,Var
+1192,ASM-3,2026-05-06,44,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.6,77.8,105,78,Yok
+1193,ASM-2,2026-05-06,84,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,166.7,87.4,150,80,Var
+1194,ASM-1,2026-05-06,24,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.1,76.3,111,80,Yok
+1195,ASM-3,2026-05-06,45,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.3,70.7,141,84,Yok
+1196,ASM-1,2026-05-06,46,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,160.5,68.6,116,79,Yok
+1197,ASM-1,2026-05-06,37,Kadın,Lise,Bırakmış,Yetersiz,Yok,160.1,79.4,146,92,Yok
+1198,ASM-1,2026-05-06,31,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.8,64.9,106,73,Yok
+1199,ASM-1,2026-05-06,46,Kadın,Lise,İçiyor,Yetersiz,Yok,165.4,85.7,122,71,Yok
+1200,ASM-4,2026-05-06,60,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,168.9,79.3,133,83,Yok
+1201,ASM-1,2026-05-06,51,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,180.8,101,136,89,Yok
+1202,ASM-3,2026-05-06,39,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,152.6,60.7,103,58,Yok
+1203,ASM-1,2026-05-07,26,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,164.5,72,104,70,Yok
+1204,ASM-3,2026-05-07,57,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,152.7,61.5,130,80,Yok
+1205,ASM-3,2026-05-07,53,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,161.5,72.4,112,71,Var
+1206,ASM-4,2026-05-07,23,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,156.1,54.4,114,73,Yok
+1207,ASM-1,2026-05-07,55,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.7,76.9,131,71,Yok
+1208,ASM-2,2026-05-07,68,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,170.8,78.2,121,71,Var
+1209,ASM-1,2026-05-07,54,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.6,78.5,119,76,Yok
+1210,ASM-3,2026-05-07,54,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,160.5,75.1,113,74,Var
+1211,ASM-4,2026-05-07,40,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,163.8,75.4,145,79,Yok
+1212,ASM-1,2026-05-07,56,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,170,94.3,136,85,Yok
+1213,ASM-3,2026-05-07,49,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,173.4,91.1,130,74,Var
+1214,ASM-1,2026-05-07,30,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.1,79.2,116,57,Var
+1215,ASM-1,2026-05-07,60,Erkek,Lise,İçiyor,Yetersiz,Yok,173,98.3,149,76,Var
+1216,ASM-1,2026-05-07,61,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,170.9,59.4,150,76,Yok
+1217,ASM-1,2026-05-07,42,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,183.8,100.3,105,73,Yok
+1218,ASM-2,2026-05-07,40,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.5,73.9,107,77,Yok
+1219,ASM-4,2026-05-07,30,Erkek,Üniversite,İçiyor,Yetersiz,Yok,173.4,69.6,108,70,Yok
+1220,ASM-1,2026-05-07,66,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,178.8,67.7,139,73,Yok
+1221,ASM-1,2026-05-08,21,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160.3,62.6,93,57,Yok
+1222,ASM-3,2026-05-08,52,Kadın,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Var,153.9,83.7,140,74,Var
+1223,ASM-4,2026-05-08,39,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,185.4,119.9,141,84,Yok
+1224,ASM-2,2026-05-08,54,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,152.4,60.7,101,66,Yok
+1225,ASM-2,2026-05-08,42,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158.9,77.6,128,88,Yok
+1226,ASM-2,2026-05-08,40,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,163.1,94.2,125,80,Var
+1227,ASM-4,2026-05-08,57,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,156.5,82.7,144,92,Var
+1228,ASM-1,2026-05-08,65,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,171.1,98.2,137,79,Var
+1229,ASM-1,2026-05-08,33,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,168.3,87.9,131,77,Yok
+1230,ASM-2,2026-05-08,49,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.2,56.6,108,65,Yok
+1231,ASM-2,2026-05-08,43,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,160.6,83.7,111,67,Yok
+1232,ASM-3,2026-05-08,36,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,173.8,93,111,75,Yok
+1233,ASM-4,2026-05-08,49,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,181.9,88.9,153,74,Var
+1234,ASM-3,2026-05-08,35,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,171.6,64,107,66,Yok
+1235,ASM-3,2026-05-08,63,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,153.6,66.4,134,89,Var
+1236,ASM-2,2026-05-08,33,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.9,76.6,123,74,Yok
+1237,ASM-2,2026-05-08,85,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,162.8,64,150,73,Var
+1238,ASM-4,2026-05-08,56,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,168.2,100.8,127,87,Yok
+1239,ASM-1,2026-05-08,29,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,172.1,72.2,115,86,Yok
+1240,ASM-4,2026-05-08,39,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,182.1,83.6,130,72,Yok
+1241,ASM-2,2026-05-08,21,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,176.8,71.8,95,75,Yok
+1242,ASM-3,2026-05-11,53,Erkek,Lise,Bırakmış,Yetersiz,Yok,177.9,115.9,141,74,Yok
+1243,ASM-1,2026-05-11,63,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,151.7,75.1,158,99,Yok
+1244,ASM-3,2026-05-11,67,Erkek,Ortaokul,İçiyor,Yetersiz,Var,171.2,87.3,138,77,Var
+1245,ASM-1,2026-05-11,32,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,159.2,67.2,119,80,Yok
+1246,ASM-4,2026-05-11,38,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,161.4,61.6,109,75,Yok
+1247,ASM-2,2026-05-11,45,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168,69.6,117,76,Yok
+1248,ASM-2,2026-05-11,54,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.5,83.1,135,73,Yok
+1249,ASM-2,2026-05-11,35,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,177.4,58.4,114,80,Yok
+1250,ASM-1,2026-05-11,19,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,164,61.3,112,73,Yok
+1251,ASM-1,2026-05-11,81,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,151.7,57.4,158,84,Yok
+1252,ASM-3,2026-05-11,44,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.7,69.1,129,75,Yok
+1253,ASM-1,2026-05-11,45,Erkek,Lise,İçiyor,Yetersiz,Yok,180.9,96.3,119,73,Yok
+1254,ASM-2,2026-05-11,55,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,179.6,81.3,138,82,Var
+1255,ASM-1,2026-05-11,55,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.7,75.2,116,73,Yok
+1256,ASM-2,2026-05-11,40,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.1,76.5,137,76,Yok
+1257,ASM-3,2026-05-11,78,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,146.7,63.9,170,85,Var
+1258,ASM-1,2026-05-11,29,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,153.9,74.1,95,70,Yok
+1259,ASM-3,2026-05-11,50,Kadın,Üniversite,İçiyor,Yetersiz,Yok,158,75,137,79,Yok
+1260,ASM-4,2026-05-11,35,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.4,57.1,111,62,Yok
+1261,ASM-2,2026-05-11,85,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,178.1,72.3,159,74,Var
+1262,ASM-1,2026-05-11,38,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,175,78.4,131,77,Var
+1263,ASM-2,2026-05-11,70,Kadın,,Hiç içmemiş,Yetersiz,Yok,159.4,75.2,121,70,Var
+1264,ASM-1,2026-05-11,57,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,165.3,66.7,125,74,Yok
+1265,ASM-3,2026-05-11,48,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,172.1,82.7,129,86,Yok
+1266,ASM-3,2026-05-11,49,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,170.5,79.6,126,75,Yok
+1267,ASM-4,2026-05-11,40,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,174.4,82.8,140,75,Yok
+1268,ASM-1,2026-05-11,56,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.4,81,127,79,Yok
+1269,ASM-2,2026-05-11,46,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.2,80.4,139,85,Var
+1270,ASM-2,2026-05-11,53,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,164.4,,,,Var
+1271,ASM-3,2026-05-12,27,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.3,81.3,102,70,Yok
+1272,ASM-1,2026-05-12,60,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,157,69.6,117,78,Yok
+1273,ASM-3,2026-05-12,18,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,166.9,53.3,90,61,Yok
+1274,ASM-4,2026-05-12,71,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,155.1,49.2,114,79,Var
+1275,ASM-4,2026-05-12,51,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Var,167.5,93.1,133,74,Var
+1276,ASM-1,2026-05-12,58,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,165.5,71.7,111,72,Yok
+1277,ASM-2,2026-05-12,59,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.1,88.5,113,78,Yok
+1278,ASM-2,2026-05-12,55,Erkek,Lise,Hiç içmemiş,Yetersiz,Var,162.2,93.9,134,80,Yok
+1279,ASM-2,2026-05-12,33,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,160,52.8,122,85,Yok
+1280,ASM-3,2026-05-12,44,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,163.5,72.4,136,88,Yok
+1281,ASM-2,2026-05-12,39,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.6,58.2,114,70,Yok
+1282,ASM-4,2026-05-12,73,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,159.4,103.7,141,85,Yok
+1283,ASM-3,2026-05-12,58,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156.6,73.7,147,85,Yok
+1284,ASM-1,2026-05-12,63,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,149.8,47.2,133,79,Yok
+1285,ASM-2,2026-05-12,30,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,162,80.4,118,74,Yok
+1286,ASM-2,2026-05-12,48,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,160.8,75.8,107,66,Yok
+1287,ASM-3,2026-05-12,51,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,152.2,68.2,131,88,Yok
+1288,ASM-2,2026-05-12,25,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.4,63.2,90,53,Yok
+1289,ASM-2,2026-05-12,41,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,162.7,55.3,127,74,Yok
+1290,ASM-4,2026-05-12,44,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,169.5,86.9,119,79,Var
+1291,ASM-4,2026-05-12,64,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,160.3,70,145,77,Var
+1292,ASM-2,2026-05-12,47,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,173.8,77.2,118,76,Yok
+1293,ASM-3,2026-05-12,48,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,158.6,75.5,92,72,Yok
+1294,ASM-1,2026-05-12,53,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,161.3,42.9,129,80,Yok
+1295,ASM-3,2026-05-12,67,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,170.2,76.9,145,82,Yok
+1296,ASM-4,2026-05-12,60,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,167.4,59.8,128,84,Yok
+1297,ASM-4,2026-05-12,51,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,162.3,78.8,119,91,Yok
+1298,ASM-2,2026-05-12,58,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,161,54.5,130,78,Yok
+1299,ASM-2,2026-05-12,51,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,157.9,81.8,122,61,Var
+1300,ASM-1,2026-05-12,60,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,164.7,89,155,96,Yok
+1301,ASM-2,2026-05-12,46,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,159.3,75.4,135,84,Yok
+1302,ASM-1,2026-05-12,43,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.6,87.2,132,81,Yok
+1303,ASM-4,2026-05-12,45,Erkek,Üniversite,Bırakmış,Yetersiz,Yok,163.8,79.7,119,78,Yok
+1304,ASM-2,2026-05-12,34,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,160.7,70.4,134,77,Yok
+1305,ASM-3,2026-05-12,37,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,177.1,90.1,116,70,Yok
+1306,ASM-3,2026-05-13,42,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,161.3,63.3,124,74,Yok
+1307,ASM-1,2026-05-13,63,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,182.5,92.7,112,63,Yok
+1308,ASM-1,2026-05-13,64,Erkek,İlkokul ve altı,Bırakmış,Yetersiz,Yok,172.5,63.8,151,85,Yok
+1309,ASM-1,2026-05-13,76,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,175.7,76.2,152,81,Var
+1310,ASM-3,2026-05-13,31,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168,68,91,56,Yok
+1311,ASM-1,2026-05-13,42,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,180.4,64.7,117,72,Yok
+1312,ASM-1,2026-05-13,49,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,157,67.2,111,83,Yok
+1313,ASM-4,2026-05-13,49,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,147.9,52.2,125,78,Yok
+1314,ASM-3,2026-05-13,48,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,162.7,84.9,115,80,Yok
+1315,ASM-2,2026-05-13,43,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,160.2,74,149,89,Yok
+1316,ASM-3,2026-05-13,48,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,158.3,84.2,115,83,Yok
+1317,ASM-1,2026-05-13,38,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.1,61.8,105,69,Yok
+1318,ASM-3,2026-05-13,53,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.3,81.4,148,79,Yok
+1319,ASM-1,2026-05-13,53,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,160.1,65.1,116,79,Yok
+1320,ASM-1,2026-05-13,31,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.7,71,134,80,Yok
+1321,ASM-1,2026-05-13,50,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,160,61.5,133,86,Yok
+1322,ASM-2,2026-05-13,26,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,189.8,96.9,132,66,Yok
+1323,ASM-1,2026-05-13,68,Kadın,Lise,İçiyor,Yetersiz,Var,157.1,72.6,134,82,Var
+1324,ASM-1,2026-05-13,18,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.4,76.3,120,80,Yok
+1325,ASM-4,2026-05-13,76,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,174.8,73.9,137,74,Yok
+1326,ASM-4,2026-05-13,61,Erkek,Lise,İçiyor,Yetersiz,Var,166.1,74.5,140,80,Yok
+1327,ASM-1,2026-05-13,53,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,176.1,74.4,132,80,Yok
+1328,ASM-2,2026-05-13,50,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,161.5,86.9,109,75,Yok
+1329,ASM-3,2026-05-13,36,Kadın,Lise,Bırakmış,Yetersiz,Yok,183.2,100,108,72,Yok
+1330,ASM-2,2026-05-13,29,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,163.6,58.7,95,73,Var
+1331,ASM-1,2026-05-13,55,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,177,72,139,79,Yok
+1332,ASM-2,2026-05-13,58,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,149.7,68.2,127,72,Var
+1333,ASM-4,2026-05-13,22,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154,58.6,106,66,Yok
+1334,ASM-1,2026-05-13,43,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,162.2,89.4,125,86,Yok
+1335,ASM-1,2026-05-13,50,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.5,77.7,131,82,Yok
+1336,ASM-1,2026-05-14,50,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,179.9,112.5,172,94,Var
+1337,ASM-3,2026-05-14,33,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,168.7,89.3,148,100,Yok
+1338,ASM-1,2026-05-14,45,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.5,97.9,119,74,Yok
+1339,ASM-2,2026-05-14,52,Erkek,Lise,İçiyor,Yetersiz,Yok,162.7,70.7,147,86,Yok
+1340,ASM-3,2026-05-14,57,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,164,69.3,172,91,Var
+1341,ASM-4,2026-05-14,69,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,161.1,91.8,177,91,Var
+1342,ASM-4,2026-05-14,31,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.2,69.7,126,76,Var
+1343,ASM-3,2026-05-14,55,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156.9,,128,90,Yok
+1344,ASM-1,2026-05-14,45,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,159.6,84.3,138,105,Yok
+1345,ASM-3,2026-05-14,66,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,159.9,73.1,120,77,Yok
+1346,ASM-3,2026-05-14,47,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,173.1,88.4,139,75,Yok
+1347,ASM-4,2026-05-14,43,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Var,184.5,103.7,148,87,Yok
+1348,ASM-3,2026-05-14,56,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,161.8,80,128,76,Yok
+1349,ASM-3,2026-05-14,56,Kadın,İlkokul ve altı,Bırakmış,Yeterli (haftada 150 dk+),Yok,163.2,88.9,120,75,Yok
+1350,ASM-1,2026-05-14,34,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.3,61.2,90,70,Yok
+1351,ASM-3,2026-05-14,21,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.4,70.2,92,69,Yok
+1352,ASM-2,2026-05-14,39,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,173.8,81.9,154,83,Var
+1353,ASM-3,2026-05-14,56,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,172.9,85.3,136,85,Yok
+1354,ASM-4,2026-05-14,53,Erkek,Lise,İçiyor,Yetersiz,Yok,179.2,73.1,129,85,Yok
+1355,ASM-1,2026-05-14,23,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.4,75.1,116,74,Yok
+1356,ASM-2,2026-05-14,49,Kadın,Lise,İçiyor,Yetersiz,Yok,159.2,64.8,127,76,Yok
+1357,ASM-4,2026-05-14,55,Erkek,Lise,Bırakmış,Yetersiz,Yok,177.3,63.5,132,71,Yok
+1358,ASM-3,2026-05-14,18,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,165.1,82.8,107,76,Yok
+1359,ASM-2,2026-05-14,40,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.8,68.3,133,75,Yok
+1360,ASM-1,2026-05-14,50,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,185.3,79,143,74,Yok
+1361,ASM-4,2026-05-14,64,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,179.9,93.5,152,80,Var
+1362,ASM-1,2026-05-14,53,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,165.3,89.6,142,88,Yok
+1363,ASM-2,2026-05-14,22,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,157.5,76.3,106,69,Yok
+1364,ASM-4,2026-05-14,43,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,154.5,,,,Yok
+1365,ASM-1,2026-05-14,25,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,159.2,54.6,90,70,Yok
+1366,ASM-1,2026-05-14,46,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,159.4,95.4,128,84,Yok
+1367,ASM-3,2026-05-14,62,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,158,77.4,144,74,Yok
+1368,ASM-2,2026-05-15,28,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,167.7,67.3,124,76,Yok
+1369,ASM-3,2026-05-15,34,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,156.3,60.3,102,64,Yok
+1370,ASM-1,2026-05-15,47,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,153.1,53.9,130,76,Yok
+1371,ASM-4,2026-05-15,25,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,182.2,63.3,144,86,Yok
+1372,ASM-3,2026-05-15,49,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,143.4,58.5,95,74,Yok
+1373,ASM-1,2026-05-15,66,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Var,158.9,111.7,168,89,Var
+1374,ASM-2,2026-05-15,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,156.5,90.1,140,73,Var
+1375,ASM-2,2026-05-15,38,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,168.7,77.6,98,75,Yok
+1376,ASM-3,2026-05-15,55,Erkek,Üniversite,İçiyor,Yetersiz,Yok,176,55.4,124,72,Yok
+1377,ASM-2,2026-05-15,51,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,168.1,80.6,126,83,Var
+1378,ASM-1,2026-05-15,41,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,149.3,72.5,127,84,Yok
+1379,ASM-1,2026-05-15,56,Erkek,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164.1,81.5,151,85,Yok
+1380,ASM-4,2026-05-15,76,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,148.3,63.6,129,72,Yok
+1381,ASM-1,2026-05-15,48,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,171.8,78.2,131,70,Yok
+1382,ASM-4,2026-05-18,31,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,167.7,88.4,114,80,Yok
+1383,ASM-4,2026-05-18,51,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,169.3,68.3,117,76,Yok
+1384,ASM-2,2026-05-18,51,Erkek,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,178,76.6,115,68,Yok
+1385,ASM-2,2026-05-18,67,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,160.9,74.6,132,80,Var
+1386,ASM-2,2026-05-18,42,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,167.2,88.7,99,70,Yok
+1387,ASM-3,2026-05-18,72,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Var,153.5,63,150,64,Var
+1388,ASM-3,2026-05-18,75,Erkek,Ortaokul,Bırakmış,Yetersiz,Yok,165.3,84.1,148,84,Var
+1389,ASM-1,2026-05-18,32,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,163,73.9,126,62,Yok
+1390,ASM-3,2026-05-18,40,Kadın,Lise,İçiyor,Yetersiz,Yok,174.3,80.8,102,82,Yok
+1391,ASM-4,2026-05-18,84,Kadın,,Hiç içmemiş,Yetersiz,Yok,166.8,109.4,165,98,Var
+1392,ASM-4,2026-05-18,41,Erkek,Üniversite,Hiç içmemiş,Yetersiz,Yok,171,48.2,90,70,Yok
+1393,ASM-3,2026-05-18,55,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,154.3,78.3,120,72,Var
+1394,ASM-4,2026-05-18,59,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,166.2,63.1,151,93,Yok
+1395,ASM-2,2026-05-18,40,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,182.2,97,133,71,Var
+1396,ASM-2,2026-05-18,48,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,154.7,76.3,125,82,Yok
+1397,ASM-2,2026-05-18,57,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,153.5,76.9,171,88,Var
+1398,ASM-2,2026-05-18,62,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,153.6,55.3,134,85,Yok
+1399,ASM-4,2026-05-18,51,Erkek,Lise,Bırakmış,Yeterli (haftada 150 dk+),Yok,157.9,,,,Yok
+1400,ASM-3,2026-05-18,68,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,167.6,66.8,122,64,Var
+1401,ASM-1,2026-05-18,38,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,163.9,66,101,72,Yok
+1402,ASM-2,2026-05-18,50,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,155.1,57.1,128,75,Yok
+1403,ASM-2,2026-05-18,73,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.1,108.6,157,83,Yok
+1404,ASM-2,2026-05-18,50,Erkek,Lise,İçiyor,Yetersiz,Yok,183.4,83.5,133,79,Yok
+1405,ASM-3,2026-05-18,43,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,157.9,68.8,141,86,Var
+1406,ASM-1,2026-05-18,60,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,156.7,79.1,133,82,Yok
+1407,ASM-1,2026-05-18,82,Kadın,,İçiyor,Yetersiz,Yok,167.6,56.3,148,80,Var
+1408,ASM-2,2026-05-18,39,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,154.6,75.6,131,90,Yok
+1409,ASM-1,2026-05-18,52,Erkek,Lise,Bırakmış,Yetersiz,Var,171.3,,,,Yok
+1410,ASM-3,2026-05-18,65,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.6,57.8,135,85,Var
+1411,ASM-3,2026-05-18,18,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,165.4,,,,Yok
+1412,ASM-2,2026-05-18,40,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,179,67.4,113,70,Yok
+1413,ASM-1,2026-05-18,52,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,152.4,61.7,123,77,Yok
+1414,ASM-1,2026-05-18,62,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,157.2,71,124,72,Yok
+1415,ASM-1,2026-05-18,30,Kadın,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,153.9,63.9,122,75,Yok
+1416,ASM-2,2026-05-18,20,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,181.5,,,,Yok
+1417,ASM-2,2026-05-18,25,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.7,58.2,111,72,Yok
+1418,ASM-1,2026-05-18,72,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,159.7,69,144,78,Yok
+1419,ASM-2,2026-05-18,47,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Yok,159.4,,,,Yok
+1420,ASM-1,2026-05-18,59,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,178.1,77.2,118,77,Var
+1421,ASM-3,2026-05-18,65,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.8,,135,69,Var
+1422,ASM-1,2026-05-18,18,Erkek,Lise,Hiç içmemiş,Yetersiz,Var,170.4,78.4,135,76,Yok
+1423,ASM-1,2026-05-18,59,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,164.2,82.5,130,80,Yok
+1424,ASM-4,2026-05-18,67,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Var,156.7,80.9,121,70,Var
+1425,ASM-4,2026-05-18,39,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,174.6,83.6,148,93,Yok
+1426,ASM-1,2026-05-18,26,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.4,63.6,110,70,Yok
+1427,ASM-3,2026-05-18,31,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Var,165.4,90.9,124,81,Yok
+1428,ASM-4,2026-05-20,54,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171.9,98.1,153,85,Yok
+1429,ASM-2,2026-05-20,68,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,180.8,100.7,145,87,Var
+1430,ASM-3,2026-05-20,59,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,165.9,66,146,87,Yok
+1431,ASM-4,2026-05-20,43,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,158.4,78,113,69,Var
+1432,ASM-1,2026-05-20,37,Kadın,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,170.6,70.5,122,70,Yok
+1433,ASM-4,2026-05-20,38,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,166.1,77.6,116,76,Var
+1434,ASM-3,2026-05-20,33,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,176.9,62.7,117,69,Yok
+1435,ASM-4,2026-05-20,57,Kadın,İlkokul ve altı,İçiyor,Yetersiz,Yok,159.3,64,141,78,Var
+1436,ASM-2,2026-05-20,60,Kadın,Ortaokul,Bırakmış,Yetersiz,Yok,163.7,59.6,123,76,Yok
+1437,ASM-1,2026-05-20,40,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,161.8,58.4,115,62,Yok
+1438,ASM-1,2026-05-20,38,Erkek,Lise,Hiç içmemiş,Yetersiz,Yok,167.6,71.9,112,77,Yok
+1439,ASM-4,2026-05-20,38,Kadın,Üniversite,İçiyor,Yetersiz,Yok,162.8,64.4,127,83,Yok
+1440,ASM-3,2026-05-20,43,Erkek,Üniversite,İçiyor,Yetersiz,Var,180.5,83.9,148,80,Yok
+1441,ASM-3,2026-05-20,30,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,157.7,73.7,134,77,Var
+1442,ASM-2,2026-05-20,46,Kadın,Lise,İçiyor,Yetersiz,Var,153,66.7,116,74,Yok
+1443,ASM-2,2026-05-20,32,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,163.7,72.3,124,90,Yok
+1444,ASM-1,2026-05-20,19,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,158,,,,Yok
+1445,ASM-4,2026-05-20,43,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,162.9,65.9,127,83,Yok
+1446,ASM-1,2026-05-20,36,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,148.3,74.5,126,70,Yok
+1447,ASM-2,2026-05-20,40,Kadın,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,151.4,79.1,113,75,Var
+1448,ASM-1,2026-05-20,46,Kadın,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,152.6,75.9,94,70,Yok
+1449,ASM-2,2026-05-20,46,Kadın,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.6,74.1,106,63,Var
+1450,ASM-3,2026-05-20,40,Kadın,Üniversite,Bırakmış,Yeterli (haftada 150 dk+),Var,160.5,57.4,102,66,Yok
+1451,ASM-1,2026-05-20,33,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,170,81.7,123,76,Yok
+1452,ASM-1,2026-05-20,25,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,171.2,98.5,134,84,Yok
+1453,ASM-3,2026-05-20,48,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,168.3,73.5,120,69,Yok
+1454,ASM-1,2026-05-20,50,Erkek,Lise,İçiyor,Yetersiz,Yok,171.1,69.8,146,82,Yok
+1455,ASM-1,2026-05-20,52,Kadın,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,169.7,76.7,142,67,Var
+1456,ASM-3,2026-05-21,40,Erkek,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,175.1,84.7,122,87,Yok
+1457,ASM-2,2026-05-21,71,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,172.8,80.7,121,73,Yok
+1458,ASM-4,2026-05-21,21,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.5,74.6,129,80,Yok
+1459,ASM-1,2026-05-21,68,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,151.1,,166,91,Yok
+1460,ASM-4,2026-05-21,52,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,181.7,94.4,129,75,Yok
+1461,ASM-3,2026-05-21,46,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,164.5,51.5,114,77,Yok
+1462,ASM-2,2026-05-21,46,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Yok,155.2,84.5,134,82,Yok
+1463,ASM-4,2026-05-21,36,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,159.8,59.8,123,70,Var
+1464,ASM-4,2026-05-21,61,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,161.5,74,146,71,Yok
+1465,ASM-3,2026-05-21,57,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,162.2,71.5,141,72,Var
+1466,ASM-4,2026-05-21,55,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Yok,181.2,84.8,127,80,Var
+1467,ASM-3,2026-05-21,34,Kadın,Üniversite,Hiç içmemiş,Yetersiz,Yok,155.3,66.4,137,78,Yok
+1468,ASM-1,2026-05-21,37,Kadın,Lise,İçiyor,Yetersiz,Yok,158.2,56.2,109,70,Yok
+1469,ASM-3,2026-05-21,44,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,161.3,77,137,79,Yok
+1470,ASM-4,2026-05-21,52,Kadın,İlkokul ve altı,Bırakmış,Yetersiz,Yok,156.6,68.7,130,84,Yok
+1471,ASM-2,2026-05-21,35,Erkek,Ortaokul,Hiç içmemiş,Yetersiz,Yok,179.2,84.5,129,84,Yok
+1472,ASM-2,2026-05-21,62,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.8,78.9,108,68,Yok
+1473,ASM-2,2026-05-21,18,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,162.4,74.8,120,83,Yok
+1474,ASM-4,2026-05-21,33,Erkek,Üniversite,İçiyor,Yeterli (haftada 150 dk+),Yok,172.7,71,112,71,Yok
+1475,ASM-3,2026-05-21,40,Erkek,Ortaokul,İçiyor,Yetersiz,Yok,179.8,114.5,105,71,Yok
+1476,ASM-2,2026-05-21,40,Kadın,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,166.6,,,,Var
+1477,ASM-4,2026-05-21,52,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,167.5,74,163,88,Var
+1478,ASM-3,2026-05-21,65,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,158.2,55.6,111,71,Yok
+1479,ASM-4,2026-05-22,40,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,171,60.7,163,90,Yok
+1480,ASM-1,2026-05-22,43,Erkek,Ortaokul,İçiyor,Yeterli (haftada 150 dk+),Yok,171.5,89.1,126,81,Yok
+1481,ASM-2,2026-05-22,40,Erkek,Ortaokul,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,174.2,,,,Yok
+1482,ASM-2,2026-05-22,60,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,176.7,87.1,135,84,Yok
+1483,ASM-3,2026-05-22,35,Erkek,İlkokul ve altı,İçiyor,Yeterli (haftada 150 dk+),Yok,179.8,68.2,130,72,Yok
+1484,ASM-1,2026-05-22,21,Kadın,Lise,İçiyor,Yeterli (haftada 150 dk+),Yok,175.9,99.5,108,66,Yok
+1485,ASM-1,2026-05-22,51,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,172.8,65.3,131,79,Yok
+1486,ASM-2,2026-05-22,43,Kadın,Üniversite,Bırakmış,Yetersiz,Yok,145.7,35,123,68,Yok
+1487,ASM-4,2026-05-22,75,Kadın,İlkokul ve altı,Hiç içmemiş,Yetersiz,Var,160,68,115,75,Var
+1488,ASM-1,2026-05-22,62,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Var,163.5,68.3,101,66,Yok
+1489,ASM-4,2026-05-22,51,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,170.6,60.9,106,64,Yok
+1490,ASM-1,2026-05-22,52,Erkek,Lise,İçiyor,Yetersiz,Var,177.6,71.9,120,69,Yok
+1491,ASM-2,2026-05-22,54,Kadın,Ortaokul,Bırakmış,Yeterli (haftada 150 dk+),Yok,158.3,87.4,129,80,Yok
+1492,ASM-2,2026-05-22,64,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,164.3,63.1,129,87,Yok
+1493,ASM-1,2026-05-22,18,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.2,100.3,123,73,Yok
+1494,ASM-2,2026-05-22,48,Erkek,İlkokul ve altı,İçiyor,Yetersiz,Var,155.4,70.1,141,87,Yok
+1495,ASM-1,2026-05-22,44,Erkek,Lise,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,182.1,86.2,132,72,Yok
+1496,ASM-1,2026-05-22,28,Kadın,Üniversite,İçiyor,Yetersiz,Yok,153.6,55.3,119,77,Yok
+1497,ASM-1,2026-05-22,49,Kadın,Ortaokul,Hiç içmemiş,Yetersiz,Yok,155.6,66.8,146,83,Yok
+1498,ASM-1,2026-05-22,72,Erkek,İlkokul ve altı,Hiç içmemiş,Yeterli (haftada 150 dk+),Var,173,99,154,81,Var
+1499,ASM-2,2026-05-22,23,Erkek,Üniversite,Hiç içmemiş,Yeterli (haftada 150 dk+),Yok,190.8,73.3,104,66,Yok
+1500,ASM-4,2026-05-22,35,Kadın,Lise,Hiç içmemiş,Yetersiz,Yok,161.8,61.4,107,72,Yok

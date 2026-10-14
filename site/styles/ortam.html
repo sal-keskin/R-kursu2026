@@ -1,0 +1,181 @@
+<script>
+// "Tarayıcıda deneyin" sayfası:
+//  1. Sağ sütun (geniş ekran): üstte bölüm listesi, altta Ortam paneli. Bu genişlikte Quarto'nun kendi
+//     "Bu sayfada" menüsü gizlenir; iki bileşen hiçbir zaman üst üste binmez.
+//     Dar ekran / telefon: Quarto'nun menüsü olduğu gibi kalır; Ortam, sağ altta kapalı bir düğmedir.
+//  2. Ortam paneli: RStudio'daki Environment paneline benzer. Her kod kutusu çalıştıktan sonra gizli
+//     "ortam" kutusu çalıştırılır; onun çıktısındaki nesne listesi panele yazılır.
+//  3. Atama notu: Ekrana hiçbir şey yazdırmayan atama blokları (hasta_sayisi <- 73 gibi) için çıktı
+//     alanına, hangi nesnenin hangi değeri aldığını gösteren kısa bir not eklenir.
+(() => {
+  const ORTAM = "ortam-calistirici";
+  const GRUPLAR = ["Veri", "Değerler", "Fonksiyonlar"];
+  const RAY_EN_AZ = 250;           // sağ sütunun gösterilmesi için gereken en az boşluk (px)
+  const bekleyen = new Set();
+  let ortam = new Map();
+  let zamanlayici = null;
+
+  const kacis = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  // ---- Ortam paneli ----
+  const panel = document.createElement("section");
+  panel.className = "ortam-paneli kapali";
+  panel.setAttribute("aria-label", "Ortam: R'daki nesneler");
+  panel.innerHTML = `
+    <button type="button" class="ortam-baslik" aria-expanded="false" aria-controls="ortam-govde">
+      <span class="ortam-ad">Ortam</span>
+      <span class="ortam-sayi">R hazırlanıyor…</span>
+      <span class="ortam-ok" aria-hidden="true">▾</span>
+    </button>
+    <div class="ortam-govde" id="ortam-govde">
+      <p class="ortam-aciklama">RStudio'daki <strong>Environment</strong> paneli gibi: R'da şu an hangi nesnelerin olduğunu gösterir.</p>
+      <div class="ortam-liste"></div>
+    </div>`;
+  const baslik = panel.querySelector(".ortam-baslik");
+  const ac = (durum) => {
+    panel.classList.toggle("kapali", !durum);
+    baslik.setAttribute("aria-expanded", String(durum));
+  };
+  baslik.addEventListener("click", () => ac(panel.classList.contains("kapali")));
+
+  // ---- Sağ sütun: bölüm listesi + ortam paneli ----
+  // Quarto kimliği başlığa değil, onu saran <section>'a verir
+  const bolumler = [...document.querySelectorAll("main.content section.level2[id]")]
+    .filter((b) => b.querySelector(":scope > h2") && /^Bölüm/.test(b.querySelector(":scope > h2").textContent.trim()));
+  const bolumAdi = (b) => b.querySelector(":scope > h2").textContent.trim();
+  const ray = document.createElement("aside");
+  ray.className = "sag-ray";
+  ray.setAttribute("aria-label", "Bölümler ve ortam");
+  ray.innerHTML = `<nav class="ray-bolumler" aria-label="Bölümler"><div class="ray-baslik">Bölümler</div><ul>${
+    bolumler.map((b) => `<li><a href="#${b.id}">${kacis(bolumAdi(b))}</a></li>`).join("")
+  }</ul></nav>`;
+  document.body.appendChild(ray);
+  document.body.appendChild(panel);
+
+  // Okunan bölümü vurgula
+  const baglantilar = [...ray.querySelectorAll(".ray-bolumler a")];
+  const etkinBolum = () => {
+    let etkin = 0;
+    bolumler.forEach((h, i) => { if (h.getBoundingClientRect().top < window.innerHeight * 0.3) etkin = i; });
+    baglantilar.forEach((a, i) => a.classList.toggle("etkin", i === etkin));
+  };
+
+  // Geniş ekranda sağ sütun; dar ekranda sağ altta düğme
+  let raydaMi = null;
+  const yerlestir = () => {
+    const icerik = document.querySelector("main.content") || document.querySelector("main");
+    const sag = icerik ? icerik.getBoundingClientRect().right : window.innerWidth;
+    const bosluk = window.innerWidth - sag - 32;
+    const genis = bosluk >= RAY_EN_AZ;
+    document.body.classList.toggle("ray-acik", genis);
+    ray.style.width = genis ? Math.min(320, bosluk) + "px" : "";
+    if (genis !== raydaMi) {
+      if (genis) { ray.appendChild(panel); ac(true); }
+      else { document.body.appendChild(panel); ac(false); }
+      raydaMi = genis;
+    }
+    etkinBolum();
+  };
+  yerlestir();
+  let yerZamani = null;
+  window.addEventListener("resize", () => { clearTimeout(yerZamani); yerZamani = setTimeout(yerlestir, 150); });
+  window.addEventListener("scroll", () => { if (raydaMi) requestAnimationFrame(etkinBolum); }, { passive: true });
+
+  // ---- Panel içeriği ----
+  const ciz = () => {
+    const liste = panel.querySelector(".ortam-liste");
+    panel.querySelector(".ortam-sayi").textContent = ortam.size ? `${ortam.size} nesne` : "boş";
+    if (!ortam.size) {
+      liste.innerHTML = '<p class="ortam-bos">Henüz nesne yok. Kod çalıştırdıkça burada görünür.</p>';
+      return;
+    }
+    let html = "";
+    for (const grup of GRUPLAR) {
+      const satirlar = [...ortam].filter(([, o]) => o.grup === grup);
+      if (!satirlar.length) continue;
+      html += `<div class="ortam-grup">${grup}</div><dl>`;
+      for (const [ad, o] of satirlar) html += `<dt>${kacis(ad)}</dt><dd>${kacis(o.deger)}</dd>`;
+      html += "</dl>";
+    }
+    liste.innerHTML = html;
+  };
+
+  // ---- R'a sorma ----
+  const ortamHucresi = () => document.querySelector(`#${ORTAM} .exercise-cell`);
+  const yenile = () => {
+    const d = ortamHucresi() && ortamHucresi().querySelector('[aria-label="Run Code"]');
+    if (d) d.click();
+  };
+  const planla = () => { clearTimeout(zamanlayici); zamanlayici = setTimeout(yenile, 150); };
+
+  const editorKodu = (hucre) => {
+    const cm = hucre.querySelector(".cm-content");
+    const view = cm && cm.cmView && ((cm.cmView.rootView && cm.cmView.rootView.view) || cm.cmView.view);
+    return view ? view.state.doc.toString() : "";
+  };
+
+  // Satır başında (girintisiz) yapılan atamaların hedefleri: "ad <- ..." ya da "ad = ..."
+  const atamaHedefleri = (kod) => {
+    const adlar = [];
+    for (const satir of kod.split("\n")) {
+      const m = satir.match(/^([A-Za-z.][A-Za-z0-9._]*)\s*(<-|=(?!=))/);
+      if (m && !adlar.includes(m[1])) adlar.push(m[1]);
+    }
+    return adlar;
+  };
+
+  const notlariYaz = () => {
+    for (const hucre of bekleyen) {
+      const cikti = hucre.querySelector(".cell-output-container-webr");
+      if (!cikti || cikti.querySelector(".atama-notu")) continue;
+      const bos = !cikti.innerText.trim() && !cikti.querySelector("img, canvas, svg");
+      if (!bos) continue;
+      const hedefler = atamaHedefleri(editorKodu(hucre)).filter((ad) => ortam.has(ad));
+      if (!hedefler.length) continue;
+      const not = document.createElement("div");
+      not.className = "atama-notu";
+      not.innerHTML = "Bu kod ekrana bir şey yazdırmaz; sonuçları <strong>nesnelere kaydeder</strong>:" +
+        "<ul>" + hedefler.map((ad) => `<li><code>${kacis(ad)}</code> → ${kacis(ortam.get(ad).deger)}</li>`).join("") + "</ul>";
+      cikti.appendChild(not);
+    }
+    bekleyen.clear();
+  };
+
+  const oku = () => {
+    const cikti = ortamHucresi() && ortamHucresi().querySelector(".cell-output-container-webr");
+    if (!cikti || !cikti.innerText.includes("ORTAM_SON")) return;
+    ortam = new Map(
+      cikti.innerText.split("\n")
+        .filter((s) => s.startsWith("ORTAM\t"))
+        .map((s) => { const [, grup, ad, deger] = s.split("\t"); return [ad, { grup, deger: deger || "" }]; })
+    );
+    ciz();
+    notlariYaz();
+  };
+
+  // Bir kod kutusunun çalışması bitince (gösterge "çalışıyor"dan "bitti"ye geçince) ortamı yenile.
+  // Gözlemci, sayfa tamamen hazır olduktan sonra başlar; hazırlık sırasında hiçbir kutuya dokunulmaz.
+  const gozlemciyiBaslat = () => {
+    new MutationObserver((kayitlar) => {
+      for (const k of kayitlar) {
+        const el = k.target;
+        if (!el.classList || !el.classList.contains("exercise-editor-eval-indicator")) continue;
+        const bitti = el.classList.contains("d-none") && k.oldValue && !k.oldValue.includes("d-none");
+        if (!bitti) continue;
+        const hucre = el.closest(".exercise-cell");
+        if (!hucre) continue;
+        if (hucre.closest("#" + ORTAM)) setTimeout(oku, 100);
+        else { if (!hucre.closest(".dolgu-calistirici")) bekleyen.add(hucre); planla(); }
+      }
+    }).observe(document.body, { attributes: true, attributeFilter: ["class"], attributeOldValue: true, subtree: true });
+  };
+
+  const ilkBekleme = setInterval(() => {
+    const cikti = ortamHucresi() && ortamHucresi().querySelector(".cell-output-container-webr");
+    if (!cikti || !cikti.innerText.includes("ORTAM_SON")) return;
+    clearInterval(ilkBekleme);
+    oku();
+    gozlemciyiBaslat();
+  }, 1000);
+})();
+</script>

@@ -1,0 +1,91 @@
+---
+ust-etiket: "Oturum 1 · tarayıcıda"
+title: "R'ı tarayıcıda deneyin"
+subtitle: "Oturum 1'in kodunu hiçbir şey kurmadan, bu sayfanın içinde çalıştırabilirsiniz. Sayfa, oturum1_ilk_adim.R dosyasıyla aynı sırayı izler."
+format:
+  live-html:
+    theme:
+      light: [cosmo, styles/acik.scss]
+      dark: [cosmo, styles/koyu.scss]
+    respect-user-color-scheme: true
+    css: styles/site.css
+    include-after-body:
+      - styles/live-tr.html
+      - styles/dolgu.html
+      - styles/ortam.html
+    template-partials:
+      - sablon/title-block.html
+    toc: true
+    toc-title: "Bu sayfada"
+    toc-depth: 2
+    page-layout: article
+    grid:
+      body-width: 860px
+      margin-width: 260px
+engine: knitr
+webr:
+  packages: ["readxl", "readr", "haven", "dplyr", "datawizard"]
+resources:
+  - veri/ht_tarama.xlsx
+  - veri/ht_tarama.csv
+  - veri/ht_tarama.sav
+---
+
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _dene_basi.qmd'den, alıştırmalar
+     _dene_alistirmalar.R'den, gövde ../oturum1_ilk_adim.R'den gelir. Elle düzenlemeyin. -->
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+::: {.callout-note appearance="simple"}
+## Nasıl kullanılır?
+
+- Gri kutulardaki kodu değiştirebilir, **Çalıştır**'a basarak sonucu görebilirsiniz.
+- **Sıra sizde** kutularında boşluğa cevabınızı yazın ve Enter'a basın.
+- Sağdaki **Ortam** paneli, RStudio'daki Environment paneli gibi, R'da o an hangi nesnelerin olduğunu gösterir.
+- R, tarayıcınızın içinde çalışır; kodunuz ve veri hiçbir sunucuya gönderilmez.
+- Sayfa ilk açıldığında R'ın ve verinin hazırlanması yaklaşık bir dakika sürer. Sol alttaki yükleme yazısı kaybolunca başlayabilirsiniz. Sayfayı yenilerseniz her şey baştan başlar.
+:::
+
+```{webr}
+#| autorun: true
+#| include: false
+# Sayfa açılınca: veriyi okur, böylece her bölüm tek başına çalışabilir
+View <- function(x, ...) {
+  cat("View() tarayıcıda tablo penceresi açamaz. İlk satırlar:\n")
+  print(head(x))
+}
+library(readxl)
+library(readr)
+library(haven)
+library(dplyr)
+ht_excel  <- read_excel("veri/ht_tarama.xlsx")
+ht_csv    <- read_csv("veri/ht_tarama.csv", show_col_types = FALSE)
+ht_spss   <- read_sav("veri/ht_tarama.sav")
+ht_spss_f <- as_factor(ht_spss)
+```
+
+::: {#ortam-calistirici .ortam-calistirici}
+```{webr}
+#| autorun: true
+# Ortam paneli için: R'daki nesneleri listeler (sayfadaki gizli kutu; her çalıştırmadan sonra yenilenir)
+local({
+  ozet <- function(x) {
+    if (is.data.frame(x)) return(c("Veri", sprintf("%d gözlem, %d değişken", nrow(x), ncol(x))))
+    if (is.function(x)) return(c("Fonksiyonlar", "fonksiyon"))
+    if (inherits(x, "theme")) return(c("Değerler", "ggplot teması"))
+    if (inherits(x, "gg")) return(c("Değerler", "ggplot grafiği"))
+    if (is.atomic(x) && length(x) == 1 && !is.factor(x)) {
+      return(c("Değerler", if (is.character(x)) sprintf('"%s"', x) else format(x)))
+    }
+    satir <- utils::capture.output(utils::str(x, vec.len = 2, give.attr = FALSE, nchar.max = 40))[1]
+    c("Değerler", substr(trimws(satir), 1, 80))
+  }
+  for (ad in grep("^ojs", setdiff(ls(globalenv()), "View"), value = TRUE, invert = TRUE)) {
+    o <- tryCatch(ozet(get(ad, envir = globalenv())), error = function(e) c("Değerler", ""))
+    cat("ORTAM", o[1], ad, o[2], sep = "\t")
+    cat("\n")
+  }
+  cat("ORTAM_SON\n")
+})
+```
+:::

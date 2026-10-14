@@ -1,0 +1,515 @@
+/* Ortak bileşenler: renkler tema dosyalarındaki --rk-* değişkenlerinden gelir */
+
+/* ---- Genel ---- */
+body {
+  background: var(--rk-bg);
+  color: var(--rk-text);
+  font-feature-settings: "cv11", "ss01";
+  -webkit-font-smoothing: antialiased;
+}
+::selection { background: color-mix(in srgb, var(--rk-accent) 30%, transparent); }
+:focus-visible { outline: 2px solid var(--rk-accent); outline-offset: 2px; border-radius: 4px; }
+
+h2, h3, h4 { letter-spacing: -0.01em; }
+h2 { font-size: 1.55rem; margin-top: 3rem; padding-bottom: 0; border-bottom: none; }
+h3 { font-size: 1.2rem; margin-top: 2rem; }
+p, li { color: var(--rk-text); }
+
+/* ---- Üst menü ---- */
+.navbar { border-bottom: 1px solid transparent; padding-top: .9rem; padding-bottom: .9rem; }
+.navbar-brand .navbar-title { font-weight: 600; letter-spacing: -0.01em; font-size: 1.05rem; }
+.navbar .nav-link {
+  border-radius: 8px;
+  padding: .45rem .8rem !important;
+  color: var(--rk-text) !important;
+  font-weight: 500;
+  font-size: .95rem;
+  white-space: nowrap;
+  transition: background-color .15s ease;
+}
+.navbar .nav-link:hover { background: var(--rk-surface); }
+.navbar .nav-link.active { background: var(--rk-surface-2); }
+.headroom--not-top .navbar,
+.navbar.headroom--not-top { border-bottom-color: var(--rk-border); }
+
+/* ---- Açılır menü (Oturum 1) ---- */
+.navbar .dropdown-menu {
+  background: var(--rk-surface);
+  border: 1px solid var(--rk-border);
+  border-radius: 10px;
+  padding: .35rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .18);
+  min-width: 13rem;
+}
+.navbar .dropdown-item {
+  color: var(--rk-text) !important;
+  border-radius: 6px;
+  padding: .45rem .7rem;
+  font-size: .95rem;
+}
+.navbar .dropdown-item:hover, .navbar .dropdown-item:focus { background: var(--rk-surface-2); }
+.navbar .dropdown-item.active, .navbar .dropdown-item:active { background: var(--rk-surface-2); font-weight: 600; }
+.navbar .dropdown-toggle.active, .navbar .nav-item.dropdown:has(.dropdown-item.active) > .nav-link { background: var(--rk-surface-2); }
+
+/* ---- Sayfa başlığı: küçük üst etiket, büyük başlık, soluk giriş ---- */
+#title-block-header { margin-top: 2.5rem; margin-bottom: 2.5rem; }
+.quarto-title .title,
+#title-block-header h1.title {
+  font-size: clamp(2.1rem, 5.2vw, 3.5rem);
+  line-height: 1.08;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  margin-bottom: 1.1rem;
+}
+.quarto-title .subtitle,
+#title-block-header .subtitle,
+.quarto-title p.subtitle {
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  line-height: 1.5;
+  color: var(--rk-muted);
+  font-weight: 400;
+  padding-top: 0;
+  max-width: 46rem;
+}
+.ust-etiket {
+  display: block;
+  font-size: .9rem;
+  color: var(--rk-muted);
+  margin-bottom: .6rem;
+  font-weight: 500;
+}
+.quarto-title-meta { display: none; }
+
+/* ---- Satır içi kod ---- */
+p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
+  background: var(--rk-surface-2);
+  color: var(--rk-text);
+  border-radius: 6px;
+  padding: .12em .42em;
+  font-size: .86em;
+  white-space: nowrap;
+}
+
+/* ---- Kod çipleri (dosya bağlantıları) ---- */
+.cipler { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.75rem 0 2.5rem; }
+.cipler p { display: contents; }
+a.cip {
+  display: inline-flex;
+  align-items: center;
+  gap: .7rem;
+  padding: .55rem .9rem .55rem .55rem;
+  background: var(--rk-surface);
+  border: 1px solid var(--rk-border);
+  border-radius: 10px;
+  color: var(--rk-muted);
+  text-decoration: none;
+  font-size: .98rem;
+  transition: border-color .15s ease, transform .15s ease;
+}
+a.cip:hover { border-color: var(--rk-faint); color: var(--rk-text); }
+a.cip:active { transform: translateY(1px); }
+a.cip code {
+  background: var(--rk-surface-2) !important;
+  color: var(--rk-text) !important;
+  border-radius: 6px;
+  padding: .3rem .55rem !important;
+  font-size: .85rem !important;
+  white-space: nowrap;
+}
+
+/* ---- Numaralı adımlar (zaman çizelgesi) ---- */
+.adimlar { margin: 2rem 0 1rem; }
+.adim {
+  position: relative;
+  padding-left: 5.25rem;
+  padding-bottom: 2.4rem;
+  min-height: 4rem;
+}
+.adim::before {
+  content: "";
+  position: absolute;
+  left: 1.85rem;
+  top: 4.4rem;
+  bottom: .6rem;
+  width: 1px;
+  background: var(--rk-border);
+}
+.adim:last-child::before { display: none; }
+.adim:last-child { padding-bottom: .5rem; }
+.adim-no {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: grid;
+  place-items: center;
+  background: var(--rk-surface-2);
+  border-radius: 6px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-size: 1.05rem;
+}
+.adim.simdi .adim-no { background: var(--rk-step-active-bg); color: var(--rk-step-active-fg); }
+.adim h3, .adim .adim-baslik {
+  font-size: 1.45rem;
+  font-weight: 500;
+  margin: .7rem 0 .9rem;
+  letter-spacing: -0.01em;
+}
+.adim .adim-ek {
+  display: block;
+  font-size: .9rem;
+  color: var(--rk-muted);
+  margin: -.55rem 0 .8rem;
+  font-weight: 500;
+}
+.adim ul { padding-left: 1.1rem; }
+.adim li { margin-bottom: .45rem; color: var(--rk-muted); }
+.adim p { color: var(--rk-muted); }
+.adim strong { color: var(--rk-text); font-weight: 600; }
+
+/* ---- Bilgi kartları ---- */
+.kartlar { display: grid; grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr)); gap: .9rem; margin: 1.5rem 0 2rem; }
+.kart {
+  background: var(--rk-surface);
+  border: 1px solid var(--rk-border);
+  border-radius: 12px;
+  padding: 1.1rem 1.2rem;
+}
+.kart p { margin: 0; color: var(--rk-muted); font-size: .95rem; }
+.kart .kart-baslik { display: block; color: var(--rk-text); font-weight: 600; margin-bottom: .35rem; font-size: 1rem; }
+.kart .kart-sayi { display: block; color: var(--rk-text); font-weight: 600; font-size: 1.3rem; letter-spacing: -0.02em; line-height: 1.2; }
+
+/* ---- Tablolar ---- */
+table { font-size: .93rem; }
+.table, table.table { --bs-table-bg: transparent; color: var(--rk-text); }
+.table > :not(caption) > * > * { border-bottom-color: var(--rk-border); padding: .55rem .7rem; }
+.table thead th { color: var(--rk-muted); font-weight: 500; border-bottom: 1px solid var(--rk-faint); }
+
+/* ---- Kod blokları ve çıktılar ---- */
+div.sourceCode, pre.sourceCode {
+  background: var(--rk-surface) !important;
+  border: 1px solid var(--rk-border) !important;
+  border-radius: 10px;
+}
+pre.sourceCode { padding: .9rem 1rem; }
+.cell-output pre, .cell-output-stdout pre, .cell-output-stderr pre {
+  background: transparent;
+  border-left: 2px solid var(--rk-border);
+  border-radius: 0;
+  padding: .3rem 0 .3rem 1rem;
+  color: var(--rk-muted);
+  font-size: .82rem;
+}
+.cell-output-error pre { border-left-color: #e34948; color: var(--rk-text); }
+.cell-output-display img, .cell-output-display svg, figure img {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: .5rem;
+  max-width: 100%;
+  height: auto;
+}
+.cell-output-display .gt_table, .cell-output-display table { background: transparent; }
+.cell-output-display { overflow-x: auto; }
+
+/* Koyu temada beyaz zeminli HTML çıktıları (gt, summarytools) kart içinde gösterilir */
+.html-cikti {
+  background: #ffffff;
+  color: #111113;
+  border-radius: 10px;
+  padding: .75rem;
+  overflow-x: auto;
+}
+.html-cikti, .html-cikti table {
+  --bs-table-bg: #ffffff;
+  --bs-table-color: #111113;
+  --bs-body-color: #111113;
+  --bs-border-color: #d9d9d4;
+}
+.html-cikti table, .html-cikti td, .html-cikti th, .html-cikti tr {
+  color: #111113 !important;
+  background-color: #ffffff !important;
+  border-color: #d9d9d4 !important;
+}
+.html-cikti h3, .html-cikti h4, .html-cikti strong, .html-cikti p { color: #111113 !important; }
+.html-cikti img { background: transparent; padding: 0; }
+
+/* ---- Uyarı kutuları ---- */
+.callout {
+  border-radius: 10px !important;
+  border: 1px solid var(--rk-border) !important;
+  background: var(--rk-surface) !important;
+}
+.callout .callout-header { background: transparent !important; border-bottom: none !important; }
+
+/* ---- Alt bilgi ---- */
+.nav-footer { border-top: 1px solid var(--rk-border); font-size: .85rem; color: var(--rk-faint); }
+
+/* ---- Telefon ---- */
+@media (max-width: 767.98px) {
+  html { font-size: 16px; }
+  #title-block-header { margin-top: 1.25rem; margin-bottom: 1.75rem; }
+  .adim { padding-left: 3.9rem; }
+  .adim-no { width: 2.75rem; height: 2.75rem; font-size: .95rem; }
+  .adim::before { left: 1.35rem; top: 3.3rem; }
+  .adim h3, .adim .adim-baslik { font-size: 1.2rem; margin-top: .4rem; }
+  a.cip { width: 100%; }
+  p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) { white-space: normal; overflow-wrap: anywhere; }
+  table { font-size: .85rem; }
+  .table > :not(caption) > * > * { padding: .45rem .4rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* ---- "Kod ve çıktılar": kasıtlı hata örnekleri ---- */
+.hata-ornegi { margin: -.25rem 0 1.5rem 1rem; font-size: .9rem; color: var(--rk-muted); }
+.hata-ornegi p { color: var(--rk-muted); margin-bottom: .35rem; }
+
+/* ---- Mac / Windows sekmeleri ---- */
+.panel-tabset { margin: 1.25rem 0 1.5rem; }
+.panel-tabset .nav-tabs { border-bottom: 1px solid var(--rk-border); gap: .25rem; }
+.panel-tabset .nav-tabs .nav-link {
+  color: var(--rk-muted);
+  border: 1px solid transparent;
+  border-radius: 8px 8px 0 0;
+  padding: .45rem 1rem;
+  font-weight: 500;
+}
+.panel-tabset .nav-tabs .nav-link:hover { color: var(--rk-text); border-color: transparent; }
+.panel-tabset .nav-tabs .nav-link.active {
+  color: var(--rk-text);
+  background: var(--rk-surface);
+  border-color: var(--rk-border) var(--rk-border) var(--rk-surface);
+}
+.panel-tabset .tab-content { padding: 1rem 0 0; border: none; }
+.adim .panel-tabset li, .adim .panel-tabset p, .adim .panel-tabset td { color: var(--rk-muted); }
+
+/* ---- Kurulum ekran görüntüleri ---- */
+.adim .quarto-figure { margin: .75rem 0 1.25rem; }
+.adim figure img, img.ekran {
+  border: 1px solid var(--rk-border);
+  border-radius: 8px;
+  padding: 0;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .10);
+}
+.adim figcaption, .adim .figure-caption { color: var(--rk-faint); font-size: .85rem; margin-top: .4rem; }
+.adim table { margin: .5rem 0 1rem; }
+.adim .quarto-figure-center > figure > p,
+.adim .quarto-figure-center > figure > figcaption,
+.adim .quarto-figure > figure > p { text-align: left; }
+
+/* ---- "R'da nasıl yapılır?" katlanır kod düğmesi ---- */
+details.code-fold { margin: .4rem 0 .6rem; }
+details.code-fold > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  list-style: none;
+  cursor: pointer;
+  padding: .3rem .75rem;
+  border: 1px solid var(--rk-border);
+  border-radius: 999px;
+  background: var(--rk-surface);
+  color: var(--rk-muted);
+  font-size: .85rem;
+  font-weight: 500;
+}
+details.code-fold > summary::-webkit-details-marker { display: none; }
+details.code-fold > summary::before { content: "‹›"; font-family: var(--bs-font-monospace); font-size: .8rem; }
+details.code-fold > summary:hover { color: var(--rk-text); border-color: var(--rk-faint); }
+details.code-fold[open] > summary { color: var(--rk-text); background: var(--rk-surface-2); margin-bottom: .5rem; }
+
+/* ---- "Tarayıcıda deneyin": Sıra sizde alıştırmaları ---- */
+.dolgu {
+  border: 1px solid var(--rk-border);
+  border-radius: 12px;
+  background: var(--rk-surface);
+  padding: 1rem 1.15rem .9rem;
+  margin: 1.75rem 0 .5rem;
+}
+.dolgu-etiket {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--rk-step-active-fg);
+  background: var(--rk-step-active-bg);
+  border-radius: 999px;
+  padding: .15rem .65rem;
+  margin-bottom: .6rem;
+}
+.dolgu p { margin-bottom: .6rem; }
+pre.dolgu-kod {
+  background: var(--rk-bg);
+  border: 1px solid var(--rk-border);
+  border-radius: 8px;
+  padding: .8rem 1rem;
+  margin: .4rem 0 .8rem;
+  font-size: .92rem;
+  line-height: 2;
+  white-space: pre-wrap;
+}
+pre.dolgu-kod code { background: transparent; padding: 0; color: var(--rk-text); }
+input.kod-girdi {
+  font: inherit;
+  font-family: var(--bs-font-monospace);
+  color: var(--rk-text);
+  background: var(--rk-surface-2);
+  border: 1.5px dashed var(--rk-accent);
+  border-radius: 6px;
+  padding: .05rem .4rem;
+  margin: 0 .1rem;
+  min-width: 4ch;
+  text-align: center;
+  vertical-align: baseline;
+  transition: border-color .15s ease, background-color .15s ease;
+}
+input.kod-girdi::placeholder { color: var(--rk-faint); }
+input.kod-girdi:focus { outline: none; border-style: solid; box-shadow: 0 0 0 3px color-mix(in srgb, var(--rk-accent) 25%, transparent); }
+input.kod-girdi.dogru { border: 1.5px solid var(--rk-ok); }
+input.kod-girdi.yanlis { border: 1.5px solid var(--rk-hata); }
+.dolgu-dugmeler { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.dolgu-dugmeler button {
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: .4rem .9rem;
+  cursor: pointer;
+  border: 1px solid var(--rk-border);
+  background: var(--rk-bg);
+  color: var(--rk-text);
+}
+.dolgu-dugmeler button:hover { border-color: var(--rk-faint); }
+.dolgu-dugmeler .dolgu-calistir { background: var(--rk-accent); border-color: var(--rk-accent); color: #ffffff; }
+.dolgu-dugmeler .dolgu-calistir:hover { filter: brightness(1.08); }
+.dolgu-geri { min-height: 1.4em; margin: .6rem 0 .2rem; font-size: .92rem; font-weight: 500; }
+.dolgu-geri.basari { color: var(--rk-ok); }
+.dolgu-geri.basari::before { content: "✓ "; }
+.dolgu-geri.uyari { color: var(--rk-uyari); }
+.dolgu-geri.bilgi { color: var(--rk-muted); }
+.dolgu-ipucu summary { cursor: pointer; color: var(--rk-muted); font-size: .9rem; }
+.dolgu-ipucu p { color: var(--rk-muted); font-size: .9rem; margin: .4rem 0 0; }
+/* Alıştırmanın kodunu çalıştıran webR kutusu gizlidir; yalnız çıktısı görünür */
+.dolgu-calistirici .exercise-editor { display: none !important; }
+.dolgu-calistirici .cell-output-container-webr { margin: 0 0 1.5rem; }
+
+/* Tarayıcıda çalışmayan satırlar için not */
+.tarayici-notu { font-size: .88rem; color: var(--rk-muted); margin: -.4rem 0 1.2rem; }
+.tarayici-notu p { color: var(--rk-muted); }
+
+/* ---- "Tarayıcıda deneyin": sağ sütun (bölümler + ortam paneli) ---- */
+.ortam-calistirici { display: none !important; }
+.sag-ray { display: none; }
+body.ray-acik .sag-ray {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: fixed;
+  right: 16px;
+  top: 5.5rem;
+  bottom: 1rem;
+  z-index: 1030;
+}
+/* Sağ sütun açıkken Quarto'nun kendi "Bu sayfada" menüsü gizlenir; çakışma olmaz */
+body.ray-acik #quarto-margin-sidebar,
+body.ray-acik #quarto-toc-toggle,
+body.ray-acik .quarto-sidebar-toggle { display: none !important; }
+
+.ray-bolumler { flex: 0 1 auto; min-height: 0; max-height: 46%; overflow-y: auto; font-size: .82rem; }
+.ray-baslik { font-weight: 600; color: var(--rk-text); margin-bottom: .45rem; font-size: .85rem; }
+.ray-bolumler ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--rk-border); }
+.ray-bolumler a {
+  display: block;
+  margin-left: -1px;
+  padding: .22rem 0 .22rem .75rem;
+  border-left: 2px solid transparent;
+  color: var(--rk-muted);
+  text-decoration: none;
+  line-height: 1.35;
+}
+.ray-bolumler a:hover { color: var(--rk-text); }
+.ray-bolumler a.etkin { color: var(--rk-text); border-left-color: var(--rk-text); font-weight: 500; }
+
+/* Ortam paneli (RStudio'daki Environment gibi) */
+.ortam-paneli {
+  display: flex;
+  flex-direction: column;
+  background: var(--rk-surface);
+  border: 1px solid var(--rk-border);
+  border-radius: 12px;
+  font-size: .84rem;
+  overflow: hidden;
+}
+.sag-ray .ortam-paneli { flex: 1 1 auto; min-height: 9rem; }
+.sag-ray .ortam-paneli.kapali { flex: 0 0 auto; min-height: 0; }
+/* Dar ekran: sağ altta düğme; açılınca alttan kart */
+body > .ortam-paneli {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1040;
+  max-width: calc(100vw - 2rem);
+  max-height: 60vh;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, .2);
+}
+body > .ortam-paneli:not(.kapali) { width: min(420px, calc(100vw - 2rem)); }
+.ortam-baslik {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  width: 100%;
+  padding: .6rem .9rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--rk-border);
+  color: var(--rk-text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.ortam-ad { font-weight: 600; }
+.ortam-sayi { flex: 1; color: var(--rk-muted); }
+.ortam-ok { color: var(--rk-muted); transition: transform .15s ease; }
+.ortam-paneli.kapali .ortam-govde { display: none; }
+.ortam-paneli.kapali .ortam-baslik { border-bottom: none; }
+.ortam-paneli.kapali .ortam-ok { transform: rotate(180deg); }
+.ortam-govde { flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: .5rem .9rem .8rem; }
+.ortam-aciklama { color: var(--rk-muted); font-size: .8rem; margin: 0 0 .4rem; }
+.ortam-bos { color: var(--rk-faint); margin: .25rem 0; }
+.ortam-grup { font-weight: 600; color: var(--rk-muted); font-size: .8rem; margin: .7rem 0 .15rem; }
+.ortam-liste dl { margin: 0; }
+.ortam-liste dt {
+  font-family: var(--bs-font-monospace);
+  font-weight: 500;
+  font-size: .82rem;
+  color: var(--rk-text);
+  padding-top: .35rem;
+  border-top: 1px solid var(--rk-border);
+}
+.ortam-liste dd {
+  margin: 0 0 .3rem;
+  font-family: var(--bs-font-monospace);
+  font-size: .76rem;
+  color: var(--rk-muted);
+  overflow-wrap: anywhere;
+}
+/* webR'ın yükleme göstergesi sağ alttaki düğmeyle çakışmasın diye sol alta */
+.exercise-loading-indicator { left: 1rem !important; right: auto !important; }
+@media print { .ortam-paneli, .sag-ray { display: none !important; } }
+
+/* Ekrana bir şey yazdırmayan atama blokları için not */
+.atama-notu {
+  font-size: .85rem;
+  color: var(--rk-muted);
+  border-left: 2px solid var(--rk-border);
+  padding: .3rem 0 .3rem .9rem;
+  margin: .2rem 0 1rem;
+}
+.atama-notu ul { margin: .3rem 0 0; padding-left: 1rem; }
+.atama-notu li { color: var(--rk-muted); margin: 0; }
+.atama-notu code { color: var(--rk-text); }

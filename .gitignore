@@ -1,0 +1,30 @@
+# Eğitmen materyali: herkese açık repoya girmez (yalnız eğitmenin bilgisayarında)
+CLAUDE.md
+arac/
+
+# RStudio ve R oturum dosyaları
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+Rplots.pdf
+ht_rapor.html
+ht_ozet.png
+
+# macOS
+.DS_Store
+
+# Quarto sitesi: derleme çıktıları ve derleme sırasında kopyalanan dosyalar
+site/_site/
+site/.quarto/
+site/_freeze/
+site/_kurs/
+site/veri/
+site/indir/
+site/*_files/
+site/*.html
+/.quarto/
+
+# Tasarım denetim aracının yerel ayarları
+.impeccable/
+site/.impeccable/
