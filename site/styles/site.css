@@ -513,3 +513,18 @@ body > .ortam-paneli:not(.kapali) { width: min(420px, calc(100vw - 2rem)); }
 .atama-notu ul { margin: .3rem 0 0; padding-left: 1rem; }
 .atama-notu li { color: var(--rk-muted); margin: 0; }
 .atama-notu code { color: var(--rk-text); }
+
+/* ---- Tema düğmesi: açık temada ay (koyuya geç), koyu temada güneş (açığa geç) ---- */
+body.quarto-light { --rk-tema-ikon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'/%3E%3C/svg%3E"); }
+body.quarto-dark { --rk-tema-ikon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='4.5'/%3E%3Cpath d='M12 1.5v2M12 20.5v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1.5 12h2M20.5 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42'/%3E%3C/svg%3E"); }
+.quarto-color-scheme-toggle .bi::before {
+  background-image: none !important;
+  background-color: currentColor;
+  -webkit-mask: var(--rk-tema-ikon) center / contain no-repeat;
+  mask: var(--rk-tema-ikon) center / contain no-repeat;
+  width: 1.15rem;
+  height: 1.15rem;
+  vertical-align: -0.2em;
+}
+.quarto-color-scheme-toggle { border-radius: 8px; padding: .3rem .45rem !important; }
+.quarto-color-scheme-toggle:hover { background: var(--rk-surface); }

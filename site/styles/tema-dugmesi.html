@@ -1,0 +1,15 @@
+<script>
+// Tema düğmesinin ipucu ve ekran okuyucu metni: hangi temaya geçileceğini söyler
+(() => {
+  const guncelle = () => {
+    const koyu = document.body.classList.contains("quarto-dark");
+    const metin = koyu ? "Açık temaya geç" : "Koyu temaya geç";
+    document.querySelectorAll(".quarto-color-scheme-toggle").forEach((d) => {
+      d.setAttribute("title", metin);
+      d.setAttribute("aria-label", metin);
+    });
+  };
+  new MutationObserver(guncelle).observe(document.body, { attributes: true, attributeFilter: ["class"] });
+  guncelle();
+})();
+</script>

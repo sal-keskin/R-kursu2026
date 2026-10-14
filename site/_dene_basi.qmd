@@ -13,6 +13,7 @@ format:
       - styles/live-tr.html
       - styles/dolgu.html
       - styles/ortam.html
+      - styles/tema-dugmesi.html
     template-partials:
       - sablon/title-block.html
     toc: true
