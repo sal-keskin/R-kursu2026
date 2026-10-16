@@ -31,6 +31,9 @@ website:
             href: dene.qmd
           - text: "Oturumun verisi"
             href: veri-ht.qmd
+          - text: "Ders kaydı"
+            href: https://www.youtube.com/watch?v=cc22iYSFUmw&list=PLVqkPXX13dHk
+            target: _blank
       - text: "Veriler"
         menu:
           - text: "Hipertansiyon taraması"

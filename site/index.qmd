@@ -6,6 +6,22 @@ pagetitle: "R ile Halk Sağlığında Veri Analizi"
 toc: false
 ---
 
+::: {.duyuru}
+```{=html}
+<div class="duyuru-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/cc22iYSFUmw?rel=0" title="Oturum 1 ders kaydı, 16 Ekim 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+```
+
+::: {.duyuru-metin}
+[Duyuru]{.duyuru-etiket}
+
+**İlk oturumun kaydı yayında.** 16\ Ekim'deki oturuma katılamadıysanız ya da bir bölümü yeniden görmek istiyorsanız kaydı izleyebilirsiniz.
+
+[Kaydı YouTube'da açın](https://www.youtube.com/watch?v=cc22iYSFUmw&list=PLVqkPXX13dHk){.duyuru-baglanti}
+:::
+:::
+
 ## Başlamadan önce
 
 İlk oturumdan önce bilgisayarınızı hazırlayın. Aşağıdaki beş adım yaklaşık 15–20 dakika sürer. Mac ya da Windows kullandığınıza göre ilgili sekmeyi seçin.
