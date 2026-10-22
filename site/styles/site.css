@@ -250,7 +250,22 @@ pre.sourceCode { padding: .9rem 1rem; }
 }
 .callout .callout-header { background: transparent !important; border-bottom: none !important; }
 
-/* ---- Ana sayfa duyurusu (ders kaydı) ---- */
+/* ---- Ana sayfa duyuruları: tek satırlık kısa duyuru ve videolu ders kaydı ---- */
+.duyuru-satir {
+  padding: .6rem 1rem;
+  margin: 0 0 .75rem;
+  background: var(--rk-surface);
+  border: 1px solid var(--rk-border);
+  border-radius: 12px;
+}
+.duyuru-satir p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .35rem .65rem;
+  margin: 0;
+  font-size: .98rem;
+}
 .duyuru {
   display: grid;
   grid-template-columns: 16rem minmax(0, 1fr);

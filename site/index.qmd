@@ -6,6 +6,10 @@ pagetitle: "R ile Halk Sağlığında Veri Analizi"
 toc: false
 ---
 
+::: {.duyuru-satir}
+[Yeni]{.duyuru-etiket} İkinci oturumun veri seti ve çıktıları yayında. [Oturuma genel bakış](oturum2.qmd){.duyuru-baglanti}
+:::
+
 ::: {.duyuru}
 ```{=html}
 <div class="duyuru-video">
