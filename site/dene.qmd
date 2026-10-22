@@ -32,8 +32,8 @@ resources:
   - veri/ht_tarama.sav
 ---
 
-<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _dene_basi.qmd'den, alıştırmalar
-     _dene_alistirmalar.R'den, gövde ../oturum1_ilk_adim.R'den gelir. Elle düzenlemeyin. -->
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum1_dene_basi.qmd'den, alıştırmalar
+     _oturum1_alistirmalar.R'den, gövde ../oturum1_ilk_adim.R'den gelir. Elle düzenlemeyin. -->
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
@@ -286,7 +286,7 @@ library(dplyr)    # Veri yönetimi (Oturum 2'de ayrıntılı)
 ```
 
 
-## Bölüm 6: Veri okuma: aynı veri ama üç farklı format 
+## Bölüm 6: Veri okuma: aynı veri ama üç farklı format
 
 ```r
 # Veri: Kurgusal bir ilçede 18 yaş üstü 1.500 yetişkinde hipertansiyon taraması yapalım.

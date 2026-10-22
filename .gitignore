@@ -10,6 +10,9 @@ arac/
 Rplots.pdf
 ht_rapor.html
 ht_ozet.png
+# Oturum 2 script'i çalıştırılınca veri/ klasörüne kaydedilenler
+veri/ht_tarama_oturum2.*
+veri/ht_temizlik_kararlari.csv
 
 # macOS
 .DS_Store

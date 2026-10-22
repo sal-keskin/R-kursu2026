@@ -24,7 +24,7 @@ toc: false
 
 ## Başlamadan önce
 
-İlk oturumdan önce bilgisayarınızı hazırlayın. Aşağıdaki beş adım yaklaşık 15–20 dakika sürer. Mac ya da Windows kullandığınıza göre ilgili sekmeyi seçin.
+Oturuma katılmadan önce bilgisayarınızı hazırlayın. Aşağıdaki beş adım yaklaşık 15–20 dakika sürer. Mac ya da Windows kullandığınıza göre ilgili sekmeyi seçin.
 
 :::::: {.adimlar}
 ::::: {.adim}
@@ -113,7 +113,7 @@ RStudio, R ile çalışmayı kolaylaştıran programdır. Kodu bu programda yaza
 ::::
 
 ::: {.callout-note appearance="simple"}
-RStudio'nun güncel sürümü **Windows 11** ve **macOS 14 (Sonoma)** ya da daha yenisinde çalışır. Bilgisayarınızda daha eski bir sürüm varsa oturuma yine katılın. Kodu [Tarayıcıda deneyin](dene.qmd) sayfasında kurulum yapmadan çalıştırabilirsiniz.
+RStudio'nun güncel sürümü **Windows 11** ve **macOS 14 (Sonoma)** ya da daha yenisinde çalışır. Bilgisayarınızda daha eski bir sürüm varsa oturuma yine katılın. Kodu [Tarayıcıda deneyin](oturum2-dene.qmd) sayfasında kurulum yapmadan çalıştırabilirsiniz.
 :::
 :::::
 
@@ -161,26 +161,28 @@ RStudio'nun güncel sürümü **Windows 11** ve **macOS 14 (Sonoma)** ya da daha
 ::: {.callout-tip}
 ## Kurulum olmazsa
 
-Oturuma yine katılın. Ekranı izleyerek takip edebilirsiniz. Kodu kurulum yapmadan [Tarayıcıda deneyin](dene.qmd) sayfasında da çalıştırabilirsiniz.
+Oturuma yine katılın. Ekranı izleyerek takip edebilirsiniz. Kodu kurulum yapmadan [Tarayıcıda deneyin](oturum2-dene.qmd) sayfasında da çalıştırabilirsiniz.
 :::
 
-## İlk oturum: R ve RStudio'ya ilk adım
+## İkinci oturum: dağınık veriyi temizlemek
 
-[16 Ekim 2026]{.ust-etiket}
+[23 Ekim 2026]{.ust-etiket}
 
 Bu oturumun sonunda şunları yapabileceksiniz:
 
-- RStudio'da bir proje açmak ve kod çalıştırmak.
-- R'ı hesap makinesi gibi kullanmak; nesne ve vektör oluşturmak.
-- Aynı veriyi Excel, CSV ve SPSS dosyasından okumak.
-- SPSS'teki değer etiketlerini R'a taşımak.
-- Bir veri setini tek komutla özetlemek ve eksik verileri görmek.
-- Hata mesajlarını okumak ve anlamak.
+- Sahadan gelen dağınık bir Excel dosyasını doğru ayarlarla okumak.
+- Veriyi LLM'e göstermeden, yalnız özetini paylaşarak yardım istemek.
+- `|>` ve dplyr fiilleriyle satır ve sütun seçmek, yeni sütun oluşturmak.
+- Farklı yazılmış kategorileri birleştirmek; metin olarak okunan sayıları ve tarihleri düzeltmek.
+- Akla yatkın olmayan değerleri ve tekrar eden kayıtları bulmak.
+- Her düzeltmeyi kontrol etmek ve kararları kaydetmek.
 
-Oturumda, kurgusal bir ilçede 1.500 yetişkine yapılan hipertansiyon taramasının verisini kullanacağız. Bu veri eğitim için üretildi; gerçek kişilere ait değildir.
+Oturumda, ilk oturumdaki hipertansiyon taramasının sahadan gelmiş, dağınık Excel halini kullanacağız. Bu veri eğitim için üretildi; gerçek kişilere ait değildir.
 
 ::: {.cipler}
-[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum1-kod.qmd){.cip}
-[`webR` R'ı tarayıcıda deneyin!](dene.qmd){.cip}
-[`Veri tanıtımı` hipertansiyon taraması, tablo ve grafiklerle](veri-ht.qmd){.cip}
+[`Genel bakış` oturumun akışı ve bölümleri](oturum2.qmd){.cip}
+[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum2-kod.qmd){.cip}
+[`webR` R'ı tarayıcıda deneyin!](oturum2-dene.qmd){.cip}
 :::
+
+İlk oturumun kodları, kaydı ve verisi üst menüde, **Oturum 1** altında.

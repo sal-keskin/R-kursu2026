@@ -32,8 +32,8 @@ resources:
   - veri/ht_tarama.sav
 ---
 
-<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _dene_basi.qmd'den, alıştırmalar
-     _dene_alistirmalar.R'den, gövde ../oturum1_ilk_adim.R'den gelir. Elle düzenlemeyin. -->
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum1_dene_basi.qmd'den, alıştırmalar
+     _oturum1_alistirmalar.R'den, gövde ../oturum1_ilk_adim.R'den gelir. Elle düzenlemeyin. -->
 
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 

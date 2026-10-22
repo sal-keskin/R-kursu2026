@@ -1,0 +1,119 @@
+---
+ust-etiket: "Temel 2 · 23 Ekim 2026, Cuma 14:00–16:00"
+title: "Dağınık veriyi temizlemek"
+subtitle: "Oturumun sonunda sahadan gelen dağınık bir Excel dosyasını R'a okumuş, sorunlarını bulmuş, adım adım temizlemiş ve temizlik kararlarınızı kaydetmiş olacaksınız."
+---
+
+::: {.cipler}
+[`oturum2_veri_temizligi.R` script'i indir](indir/oturum2_veri_temizligi.R){.cip}
+[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum2-kod.qmd){.cip}
+[`webR` R'ı tarayıcıda deneyin!](oturum2-dene.qmd){.cip}
+:::
+
+::: {.callout-note appearance="simple"}
+## Oturumdan önce
+
+`oturum2_veri_temizligi.R` dosyasını indirin ve `R_egitim` klasörünüze koyun. Oturumun verisi (`veri/ht_tarama_ham.xlsx`) ilk oturumda indirdiğiniz klasörde zaten var. Klasörü yeniden indirirseniz `R_egitim.zip` içinde iki oturumun dosyaları da bulunur.
+:::
+
+## Akış
+
+Bu oturumda kod yazmaktan çok kodu tanımak öğrenilmektedir. Sorun çıktığında LLM'e doğru soruyu sormak ve gelen kodu kontrol etmek de oturumun parçasıdır. Oturum, `oturum2_veri_temizligi.R` script'inin bölümlerini sırayla izlemektedir.
+
+::::: {.adimlar}
+:::: {.adim}
+[01]{.adim-no}
+
+[Geçen haftadan]{.adim-baslik}
+[Bölüm 0–0b]{.adim-ek}
+
+- Oturum 1'deki vektörler ve eksik değer (`NA`) kısa sorularla tekrar edilmektedir.
+- Excel, CSV ve SPSS dosyalarının hangi fonksiyonla okunduğu özetlenmektedir.
+- CSV dosyasında sık görülen üç sorun gösterilmektedir: ayraç, ondalık işareti ve karakter kodlaması.
+::::
+
+:::: {.adim}
+[02]{.adim-no}
+
+[Ham veriyi okumak ve tanımak]{.adim-baslik}
+[Bölüm 1–1b]{.adim-ek}
+
+- Aynı tarama, bu kez sahadan geldiği haliyle okunmaktadır: başlık satırları `skip` ile atlanmakta, sütun adları `clean_names()` ile düzeltilmektedir.
+- Veriyi LLM'e göstermeden tanımak için LLM'den kod istenmektedir. Kod bilgisayarımızda çalışmakta; LLM'e yalnız özet çıktı verilmektedir.
+::::
+
+:::: {.adim}
+[03]{.adim-no}
+
+[Pipe ve dplyr fiilleri]{.adim-baslik}
+[Bölüm 2]{.adim-ek}
+
+- `|>` işareti "ve sonra" diye okunmaktadır.
+- `count()`, `filter()`, `select()`, `mutate()`, `arrange()` ve `rename()` SPSS karşılıklarıyla tanıtılmaktadır.
+- Boş satırlar ve TOPLAM satırı atılmakta, değişken adları geçen haftaki veriyle aynı yapılmaktadır.
+::::
+
+:::: {.adim}
+[04]{.adim-no}
+
+[Kategoriler, sayılar ve tarihler]{.adim-baslik}
+[Bölüm 3–5]{.adim-ek}
+
+Her düzeltmede aynı kalıp izlenmektedir: **dene, kontrol et, uygula.**
+
+- Farklı yazılmış kategoriler birleştirilmekte, eğitim düzeylerinin sırası `factor()` ile düzeltilmektedir.
+- Metin olarak okunan yaş, kilo ve kan basıncı sayıya çevrilmektedir (`parse_number()`, `na_if()`).
+- Sayı ve metnin karıştığı tarih sütunu tarihe çevrilmekte, tarama dönemi dışında kalan tarih bulunmaktadır.
+- LLM'in yazdığı kodun hata vermeden yanlış sonuç verebildiği, sonucun saydırılarak nasıl yakalandığı gösterilmektedir.
+::::
+
+:::: {.adim}
+[05]{.adim-no}
+
+[Akla yatkın olmayan değerler ve tekrarlar]{.adim-baslik}
+[Bölüm 6–7]{.adim-ek}
+
+- Uç değerler `summary()` ve kutu grafiğiyle bulunmaktadır. LLM'in önerdiği düzeltmeler tartışılmaktadır.
+- Kural şudur: tek bir akla yatkın yorum varsa düzelt, yoksa `NA` yap ve kararı yaz.
+- Tekrar eden kayıtlar silinmekte; temiz veri ve karar kaydı ham dosyanın üzerine yazılmadan kaydedilmektedir.
+::::
+
+:::: {.adim}
+[06]{.adim-no}
+
+[Hepsi bir arada ve LLM şablonu]{.adim-baslik}
+[Bölüm 8]{.adim-ek}
+
+Bütün temizlik adımları tek bir kod bloğunda yeniden çalıştırılmakta ve sonucun adım adım yapılanla aynı olduğu kontrol edilmektedir. Oturum, LLM'e soru sormak için beş adımlı bir şablonla kapanmaktadır.
+::::
+:::::
+
+## Script'in bölümleri
+
+| Bölüm | Konu | SPSS'teki karşılığı |
+|--|--------|--------|
+| 0 | Geçen haftadan | — |
+| 0b | Farklı dosya türlerini R'a yüklemek | File > Open > Data; metin dosyası okuma sihirbazı |
+| 1 | Ham veriyi okumak | File > Open > Data (Excel) |
+| 1b | Veriyi göstermeden LLM'e tanıtmak | Codebook, Frequencies |
+| 2 | Pipe ve dplyr fiilleri | Frequencies, Select Cases, Compute, Sort Cases, Rename Variables |
+| 3 | Kategorik değişkenler | Recode into Different Variables; Variable View: Values |
+| 4 | Sayı olması gereken sütunda metin | Variable View: Type (String → Numeric) |
+| 5 | Tarihler | Date and Time Wizard |
+| 6 | Akla yatkın olmayan değerler | Explore (kutu grafiği), Select Cases |
+| 7 | Tekrar eden kayıtlar ve kaydetmek | Data > Identify Duplicate Cases; File > Save As |
+| 8 | Hepsi bir arada | Syntax dosyası (Paste) |
+| — | LLM'e soru sormak için şablon | — |
+
+## Bu oturumdaki paketler
+
+Paketlerin hepsi ilk oturumda `tidyverse` ve `janitor` ile kuruldu. Kurulu değilse RStudio'da bir kez şunu çalıştırın: `install.packages(c("tidyverse", "janitor"))`
+
+| Paket | Ne için? |
+|------|----------|
+| `readxl`, `readr`, `haven` | Excel, CSV ve SPSS dosyalarını okumak; `parse_number()`, `write_csv()` |
+| `dplyr` | Veri yönetimi: `count()`, `filter()`, `select()`, `mutate()`, `case_when()`, `distinct()` |
+| `janitor` | Temizlik yardımcıları: `clean_names()`, `get_dupes()`, Excel tarihlerini çevirmek |
+| `stringr` | Metin işlemleri: `str_to_title()`, `str_detect()` |
+| `lubridate` | Tarihler: `dmy()` |
+| `tidyr` | `pivot_longer()`: Bölüm 1b'deki tanıtım kodu için |

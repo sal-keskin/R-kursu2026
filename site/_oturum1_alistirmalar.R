@@ -1,0 +1,32 @@
+# Oturum 1 "Tarayıcıda deneyin" sayfasındaki "Sıra sizde" alıştırmaları (yazım kuralları: _alistirma.R)
+
+alistirma_listesi <- list(
+  list(bolum = 1, id = "atak", baslik = "Atak hızı",
+       metin = "Başka bir düğünde 120 davetliden 30'u hastalanmış. Atak hızını (%) hesaplamak için boşlukları doldurun.",
+       kod = "{{30}} / {{120}} * 100",
+       ipucu = "Atak hızı = hasta sayısı / davetli sayısı × 100. Sonuç 25 olmalı."),
+  list(bolum = 3, id = "vektor", baslik = "Vektörle sayma",
+       metin = "`yaslar` vektöründe 40 yaşından küçük kaç kişi var? Boşluğa doğru karşılaştırma işaretini yazın.",
+       kod = "yaslar <- c(34, 51, 67, 45, 29, 72, 58)\nsum(yaslar {{<}} 40)",
+       ipucu = "\"Küçüktür\" işareti < ile yazılır. yaslar < 40 her kişi için TRUE ya da FALSE verir; sum() TRUE'ları sayar."),
+  list(bolum = 4, id = "eksik", baslik = "Eksik değerle ortalama",
+       metin = "Üç kişiden birinin kilosu eksik. Ortalamayı eksik değeri dışarıda bırakarak hesaplayın.",
+       kod = "mean(c(70, 82, NA), {{na.rm}} = {{TRUE|T}})",
+       ipucu = "Bölüm 4'teki örneğe bakın: eksikleri dışarıda bırakan argüman. Sonuç 76 olmalı."),
+  list(bolum = 7, id = "frekans", baslik = "Frekans ve çapraz tablo",
+       metin = "Önce sigara kullanımının frekans tablosunu, sonra cinsiyete göre diyabet çapraz tablosunu çıkarın.",
+       kod = "table(ht_excel${{sigara}})\ntable(ht_excel$cinsiyet, ht_excel${{diyabet}})",
+       ipucu = "Değişken adları küçük harfle yazılır. Bütün adları names(ht_excel) ile görebilirsiniz."),
+  list(bolum = 8, id = "etiket", baslik = "SPSS etiketleri",
+       metin = "SPSS dosyasında eğitim düzeyi sayı olarak gelir. Sayıları etiketli kategorilere çevirip tablolayın.",
+       kod = "table({{as_factor|haven::as_factor}}(ht_spss$egitim))",
+       ipucu = "Bölüm 8'de etiketli sayıları factor'e çeviren fonksiyonu kullandık."),
+  list(bolum = 9, id = "eksiksay", baslik = "Eksik değerleri sayma",
+       metin = "Kilo değişkeninde kaç eksik değer var?",
+       kod = "sum(is.na(ht_excel${{kilo_kg}}))",
+       ipucu = "is.na() her değer için \"eksik mi?\" diye sorar; sum() eksikleri sayar. Değişkenin adı kilo_kg."),
+  list(bolum = 10, id = "hata", baslik = "Hata avı",
+       metin = "İki satırdaki hataları düzeltin. R büyük-küçük harfe duyarlıdır; veri dosyaları `veri/` klasörünün içindedir.",
+       kod = "{{mean}}(ht_excel$yas)\nread_excel(\"{{veri/}}ht_tarama.xlsx\")",
+       ipucu = "Fonksiyonun adı küçük harfle yazılır. Dosya yolunun başına klasörün adı gelir.")
+)

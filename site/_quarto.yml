@@ -34,6 +34,14 @@ website:
           - text: "Ders kaydı"
             href: https://www.youtube.com/watch?v=cc22iYSFUmw&list=PLVqkPXX13dHk
             target: _blank
+      - text: "Oturum 2"
+        menu:
+          - text: "Oturuma genel bakış"
+            href: oturum2.qmd
+          - text: "Kodlar ve çıktıları"
+            href: oturum2-kod.qmd
+          - text: "Tarayıcıda deneyin"
+            href: oturum2-dene.qmd
       - text: "Veriler"
         menu:
           - text: "Hipertansiyon taraması"

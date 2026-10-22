@@ -12,6 +12,7 @@ BAŞLARKEN
 KLASÖR İÇERİĞİ
   R_egitim.Rproj               RStudio proje dosyası
   oturum1_ilk_adim.R           16 Ekim oturumunun script'i
+  oturum2_veri_temizligi.R     23 Ekim oturumunun script'i (veri temizliği)
   seminer_verileri.R           Açık verileri indirme (NHANES, Epi R Handbook)
                                ve TNSA benzeri veride ağırlıklı analiz örneği
   veri/veri_sozlugu.xlsx       Tüm veri setlerinin değişken sözlüğü

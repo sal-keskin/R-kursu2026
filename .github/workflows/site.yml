@@ -58,6 +58,9 @@ jobs:
             any::gtExtras
             any::svglite
             any::patchwork
+            any::janitor
+            any::stringr
+            any::lubridate
 
       # Türkçe yerel ayar yalnız derlemede: R çıktıları ve hata mesajları Türkçe olsun.
       # (Bütün işe uygulanınca "Türkçe İ" sorunu yüzünden paket kurulumu bozuluyor.)

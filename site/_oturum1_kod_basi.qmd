@@ -5,7 +5,7 @@ subtitle: "Oturum 1'in kodları R'da çalıştırıldığında nasıl görünür
 toc-depth: 2
 ---
 
-<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _kod_sayfasi_basi.qmd'den,
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum1_kod_basi.qmd'den,
      gövde ../oturum1_ilk_adim.R'den gelir. Elle düzenlemeyin; değişiklikler bir sonraki derlemede silinir. -->
 
 ```{r}
@@ -14,7 +14,7 @@ toc-depth: 2
 kurs <- file.path(tempdir(), "R_egitim")
 unlink(kurs, recursive = TRUE)
 dir.create(kurs)
-file.copy(file.path("..", c("R_egitim.Rproj", "OKUBENI.txt", "oturum1_ilk_adim.R", "seminer_verileri.R")), kurs)
+file.copy(file.path("..", c("R_egitim.Rproj", "OKUBENI.txt", "oturum1_ilk_adim.R", "oturum2_veri_temizligi.R", "seminer_verileri.R")), kurs)
 file.copy("../veri", kurs, recursive = TRUE)
 knitr::opts_knit$set(root.dir = kurs)
 

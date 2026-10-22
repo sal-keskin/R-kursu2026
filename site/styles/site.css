@@ -80,6 +80,13 @@ p, li { color: var(--rk-text); }
 }
 .quarto-title-meta { display: none; }
 
+/* ---- Kod yazı tipi: birleşik çizimler (ligatür) kapalı ----
+   JetBrains Mono "|>" işaretini ▷, "<-" işaretini ok gibi çizer; katılımcı ekranda gördüğünü yazabilsin. */
+code, pre, kbd, samp, .cm-editor, .cm-content, input.kod-girdi {
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "calt" 0;
+}
+
 /* ---- Satır içi kod ---- */
 p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) {
   background: var(--rk-surface-2);
@@ -108,7 +115,7 @@ a.cip {
 }
 a.cip:hover { border-color: var(--rk-faint); color: var(--rk-text); }
 a.cip:active { transform: translateY(1px); }
-a.cip code {
+.cipler a.cip code {
   background: var(--rk-surface-2) !important;
   color: var(--rk-text) !important;
   border-radius: 6px;

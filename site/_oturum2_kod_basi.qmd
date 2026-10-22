@@ -1,0 +1,34 @@
+---
+ust-etiket: "Oturum 2 · 23 Ekim 2026"
+title: "Oturum 2: kodlar ve çıktıları"
+subtitle: "Oturum 2'nin kodları R'da çalıştırıldığında nasıl görünür? Her kod bloğunun altında R'ın verdiği sonuç var. Kendi bilgisayarınızda da aynı sonuçları görmelisiniz; yalnızca uyarıların ve hata mesajlarının dili farklı olabilir."
+toc-depth: 2
+---
+
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum2_kod_basi.qmd'den,
+     gövde ../oturum2_veri_temizligi.R'den gelir. Elle düzenlemeyin; değişiklikler bir sonraki derlemede silinir. -->
+
+```{r}
+#| include: false
+# Script, katılımcının klasörünün birebir kopyasında çalışsın (kaydedilen dosyalar sitenin klasörüne düşmesin)
+kurs <- file.path(tempdir(), "R_egitim")
+unlink(kurs, recursive = TRUE)
+dir.create(kurs)
+file.copy(file.path("..", c("R_egitim.Rproj", "OKUBENI.txt", "oturum1_ilk_adim.R", "oturum2_veri_temizligi.R", "seminer_verileri.R")), kurs)
+file.copy("../veri", kurs, recursive = TRUE)
+knitr::opts_knit$set(root.dir = kurs)
+
+# Derleme sırasında etkisiz kalacak satırlar (kodda olduğu gibi görünürler)
+install.packages <- function(...) invisible(NULL)
+View <- function(...) invisible(NULL)
+```
+
+::: {.cipler}
+[`oturum2_veri_temizligi.R` script'i indir](indir/oturum2_veri_temizligi.R){.cip}
+[`R_egitim.zip` ders klasörünün tamamı](indir/R_egitim.zip){.cip}
+[`webR` R'ı tarayıcıda deneyin!](oturum2-dene.qmd){.cip}
+:::
+
+::: {.callout-note appearance="simple"}
+Bu sayfa her güncellemede `oturum2_veri_temizligi.R` dosyasından yeniden üretilir; script ile sayfa hep aynıdır. Gri satırlar yorumdur; R onları çalıştırmaz. "LLM köşesi" bölümlerindeki örnek cevaplar eğitmenlerin hazırladığı temsili cevaplardır; sizin kullandığınız LLM farklı bir kod yazabilir.
+:::

@@ -20,6 +20,7 @@ Hacettepe Üniversitesi Tıp Fakültesi Halk Sağlığı Anabilim Dalı, Epidemi
 |---|---|
 | `R_egitim.Rproj` | RStudio proje dosyası |
 | `oturum1_ilk_adim.R` | İlk oturumun kodu |
+| `oturum2_veri_temizligi.R` | İkinci oturumun kodu: dağınık veriyi temizlemek |
 | `seminer_verileri.R` | Sonraki oturumlar için açık verileri indirme |
 | `veri/` | Veri setleri ve değişken sözlüğü (`veri_sozlugu.xlsx`) |
 | `OKUBENI.txt` | Klasörün kullanımı |

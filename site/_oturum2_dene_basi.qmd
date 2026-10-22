@@ -1,0 +1,96 @@
+---
+ust-etiket: "Oturum 2 · tarayıcıda"
+title: "Veri temizliğini tarayıcıda deneyin"
+subtitle: "Oturum 2'nin kodunu hiçbir şey kurmadan, bu sayfanın içinde çalıştırabilirsiniz. Sayfa, oturum2_veri_temizligi.R dosyasıyla aynı sırayı izler."
+format:
+  live-html:
+    theme:
+      light: [cosmo, styles/acik.scss]
+      dark: [cosmo, styles/koyu.scss]
+    respect-user-color-scheme: true
+    css: styles/site.css
+    include-after-body:
+      - styles/live-tr.html
+      - styles/dolgu.html
+      - styles/ortam.html
+      - styles/tema-dugmesi.html
+    template-partials:
+      - sablon/title-block.html
+    toc: true
+    toc-title: "Bu sayfada"
+    toc-depth: 2
+    page-layout: article
+    grid:
+      body-width: 860px
+      margin-width: 260px
+engine: knitr
+webr:
+  packages: ["readxl", "readr", "dplyr", "stringr", "lubridate", "janitor", "tidyr", "haven"]
+resources:
+  - veri/ht_tarama_ham.xlsx
+  - veri/ht_tarama.xlsx
+  - veri/ht_tarama.csv
+  - veri/ht_tarama.sav
+---
+
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum2_dene_basi.qmd'den, alıştırmalar
+     _oturum2_alistirmalar.R'den, gövde ../oturum2_veri_temizligi.R'den gelir. Elle düzenlemeyin. -->
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+::: {.callout-note appearance="simple"}
+## Nasıl kullanılır?
+
+- Gri kutulardaki kodu değiştirebilir, **Çalıştır**'a basarak sonucu görebilirsiniz.
+- Kutuları yukarıdan aşağıya, sırayla çalıştırın. Temizlenen veri (`ht`) her adımda bir öncekinin üzerine kurulur; bir bölümü atlarsanız sonraki kutular hata verebilir.
+- Ham veri, sayfa açılınca `ht_ham` adıyla hazırlanır (Bölüm 1'deki gibi okunur).
+- **Sıra sizde** kutularında boşluğa cevabınızı yazın ve Enter'a basın.
+- Sağdaki **Ortam** paneli, RStudio'daki Environment paneli gibi, R'da o an hangi nesnelerin olduğunu gösterir.
+- R, tarayıcınızın içinde çalışır; kodunuz ve veri hiçbir sunucuya gönderilmez.
+- Sayfa ilk açıldığında R'ın ve verinin hazırlanması yaklaşık bir dakika sürer. Sol alttaki yükleme yazısı kaybolunca başlayabilirsiniz. Sayfayı yenilerseniz her şey baştan başlar.
+:::
+
+```{webr}
+#| autorun: true
+#| include: false
+# Sayfa açılınca: paketleri yükler, ham veriyi Bölüm 1'deki gibi okur (alıştırmalar hemen çalışsın)
+View <- function(x, ...) {
+  cat("View() tarayıcıda tablo penceresi açamaz. İlk satırlar:\n")
+  print(head(x))
+}
+library(readxl)
+library(readr)
+library(dplyr)
+library(stringr)
+library(lubridate)
+library(janitor)
+library(tidyr)
+library(haven)
+ht_ham <- clean_names(suppressWarnings(read_excel("veri/ht_tarama_ham.xlsx", skip = 2)))
+```
+
+::: {#ortam-calistirici .ortam-calistirici}
+```{webr}
+#| autorun: true
+# Ortam paneli için: R'daki nesneleri listeler (sayfadaki gizli kutu; her çalıştırmadan sonra yenilenir)
+local({
+  ozet <- function(x) {
+    if (is.data.frame(x)) return(c("Veri", sprintf("%d gözlem, %d değişken", nrow(x), ncol(x))))
+    if (is.function(x)) return(c("Fonksiyonlar", "fonksiyon"))
+    if (inherits(x, "theme")) return(c("Değerler", "ggplot teması"))
+    if (inherits(x, "gg")) return(c("Değerler", "ggplot grafiği"))
+    if (is.atomic(x) && length(x) == 1 && !is.factor(x)) {
+      return(c("Değerler", if (is.character(x)) sprintf('"%s"', x) else format(x)))
+    }
+    satir <- utils::capture.output(utils::str(x, vec.len = 2, give.attr = FALSE, nchar.max = 40))[1]
+    c("Değerler", substr(trimws(satir), 1, 80))
+  }
+  for (ad in grep("^ojs", setdiff(ls(globalenv()), "View"), value = TRUE, invert = TRUE)) {
+    o <- tryCatch(ozet(get(ad, envir = globalenv())), error = function(e) c("Değerler", ""))
+    cat("ORTAM", o[1], ad, o[2], sep = "\t")
+    cat("\n")
+  }
+  cat("ORTAM_SON\n")
+})
+```
+:::
