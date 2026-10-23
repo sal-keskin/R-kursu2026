@@ -296,6 +296,24 @@ pre.sourceCode { padding: .9rem 1rem; }
   border-radius: 999px;
   padding: .12rem .6rem;
 }
+/* Kutunun altında, bütün genişlikte: önceki kayıt ve oynatma listesi */
+.duyuru-onceki {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--rk-border);
+  padding: .65rem .25rem 0;
+}
+.duyuru-onceki p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .3rem 1.1rem;
+  margin: 0;
+  font-size: .9rem;
+}
+.duyuru-onceki-baslik { color: var(--rk-faint); font-weight: 500; }
+.duyuru-onceki a { font-weight: 500; text-decoration: none; }
+.duyuru-onceki a:hover { text-decoration: underline; }
+.duyuru-onceki a + a::before { content: "·"; color: var(--rk-faint); margin-right: 1.1rem; display: inline-block; }
 a.duyuru-baglanti { font-weight: 500; text-decoration: none; }
 a.duyuru-baglanti::after { content: " →"; }
 a.duyuru-baglanti:hover { text-decoration: underline; }
@@ -313,6 +331,8 @@ a.duyuru-baglanti:hover { text-decoration: underline; }
   .adim h3, .adim .adim-baslik { font-size: 1.2rem; margin-top: .4rem; }
   a.cip { width: 100%; }
   .duyuru { grid-template-columns: 1fr; padding: .75rem; gap: .9rem; }
+  .duyuru-onceki p { flex-direction: column; gap: .25rem; }
+  .duyuru-onceki a + a::before { display: none; }
   p code:not(.sourceCode), li code:not(.sourceCode), td code:not(.sourceCode) { white-space: normal; overflow-wrap: anywhere; }
   table { font-size: .85rem; }
   .table > :not(caption) > * > * { padding: .45rem .4rem; }

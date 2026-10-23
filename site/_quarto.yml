@@ -42,6 +42,9 @@ website:
             href: oturum2-kod.qmd
           - text: "Tarayıcıda deneyin"
             href: oturum2-dene.qmd
+          - text: "Ders kaydı"
+            href: https://www.youtube.com/watch?v=824RjWL-aeQ&list=PLVqkPXX13dHk
+            target: _blank
       - text: "Veriler"
         menu:
           - text: "Hipertansiyon taraması"

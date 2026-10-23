@@ -13,16 +13,20 @@ toc: false
 ::: {.duyuru}
 ```{=html}
 <div class="duyuru-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/cc22iYSFUmw?rel=0" title="Oturum 1 ders kaydı, 16 Ekim 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube-nocookie.com/embed/824RjWL-aeQ?rel=0" title="Oturum 2 ders kaydı, 23 Ekim 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 ```
 
 ::: {.duyuru-metin}
-[Duyuru]{.duyuru-etiket}
+[Ders kaydı]{.duyuru-etiket}
 
-**İlk oturumun kaydı yayında.** 16\ Ekim'deki oturuma katılamadıysanız ya da bir bölümü yeniden görmek istiyorsanız kaydı izleyebilirsiniz.
+**İkinci oturumun kaydı yayında.** 23\ Ekim'deki oturuma katılamadıysanız ya da bir bölümü yeniden görmek istiyorsanız kaydı izleyebilirsiniz.
 
-[Kaydı YouTube'da açın](https://www.youtube.com/watch?v=cc22iYSFUmw&list=PLVqkPXX13dHk){.duyuru-baglanti}
+[Kaydı YouTube'da açın](https://www.youtube.com/watch?v=824RjWL-aeQ&list=PLVqkPXX13dHk){.duyuru-baglanti}
+:::
+
+::: {.duyuru-onceki}
+[Önceki kayıt]{.duyuru-onceki-baslik} [Oturum 1 · R ve RStudio'ya ilk adım · 16\ Ekim](https://www.youtube.com/watch?v=cc22iYSFUmw&list=PLVqkPXX13dHk) [Bütün kayıtlar](https://www.youtube.com/playlist?list=PLVqkPXX13dHk)
 :::
 :::
 
