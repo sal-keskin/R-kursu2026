@@ -1,6 +1,8 @@
 # Eğitmen materyali: herkese açık repoya girmez (yalnız eğitmenin bilgisayarında)
 CLAUDE.md
 arac/
+# Yazım yönergesi: sonra kullanılacak; o zamana kadar repoya girmez
+skills/
 
 # RStudio ve R oturum dosyaları
 .Rproj.user/
@@ -10,6 +12,9 @@ arac/
 Rplots.pdf
 ht_rapor.html
 ht_ozet.png
+# Oturum 3 script'inin tablo ve şekil çıktıları; Excel'in açık dosya kilitleri
+ciktilar/
+~$*
 # Oturum 2 script'i çalıştırılınca veri/ klasörüne kaydedilenler
 veri/ht_tarama_oturum2.*
 veri/ht_temizlik_kararlari.csv

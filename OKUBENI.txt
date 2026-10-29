@@ -13,6 +13,10 @@ KLASÖR İÇERİĞİ
   R_egitim.Rproj               RStudio proje dosyası
   oturum1_ilk_adim.R           16 Ekim oturumunun script'i
   oturum2_veri_temizligi.R     23 Ekim oturumunun script'i (veri temizliği)
+  oturum3_bulgular.R           30 Ekim oturumunun script'i (araştırma bulguları:
+                               tablolar, grafikler, regresyon)
+  veriye_bakis.R               Oturum 3'te source() ile yüklenen yardımcı dosya:
+                               bir veriye ilk bakış için beş sayfalık PDF raporu
   seminer_verileri.R           Açık verileri indirme (NHANES, Epi R Handbook)
                                ve TNSA benzeri veride ağırlıklı analiz örneği
   veri/veri_sozlugu.xlsx       Tüm veri setlerinin değişken sözlüğü
@@ -27,6 +31,10 @@ KLASÖR İÇERİĞİ
                                2023-2025, 22 il, 1.663 vaka
   veri/tnsa_benzeri_kadin.sav  TNSA benzeri hane araştırması: 2.545 evlenmiş
                                kadın, 180 küme; örneklem ağırlıklı (Seminer 4)
+  veri/dusme65.xlsx            65 yaş ve üstü 600 kişinin 12 aylık düşme izlemi
+                               (Oturum 3; "sozluk" ve "veri" sayfaları)
+  veri/dusme65.csv             Aynı veri, CSV
+  veri/dusme65.sav             Aynı veri, SPSS (değer ve değişken etiketli)
 
 LLM KULLANIRKEN
   Sohbet penceresine veri satırlarını değil, veri_sozlugu.xlsx'teki

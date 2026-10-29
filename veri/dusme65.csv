@@ -1,0 +1,601 @@
+katilimci_no,yas,cinsiyet,egitim,yalniz_yasama,kronik_sayisi,ilac_sayisi,gorme_guclugu,onceki_dusme,aktivite_dk,bki,uyku_saat,kavrama_kg,yurume_hizi,denge_programi,yurume_hizi_6ay,dusme_12ay
+KT0001,76,Kadın,Yükseköğretim,Hayır,2,3,Hayır,Hayır,126,29.2,6.5,15.5,1.31,Hayır,1.33,1
+KT0002,72,Kadın,İlkokul ve altı,Hayır,2,5,Evet,Hayır,126,31.7,6.4,16.4,1.06,Evet,1.15,0
+KT0003,82,Erkek,Yükseköğretim,Hayır,3,5,Hayır,Evet,55,26.3,6.4,18.7,1.11,Hayır,0.97,0
+KT0004,78,Erkek,Yükseköğretim,Hayır,3,0,Evet,Hayır,45,17.7,7.9,28.7,1.16,Hayır,1.06,0
+KT0005,74,Erkek,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,153,25.6,6.9,30.4,1.23,Hayır,1.21,0
+KT0006,77,Kadın,Yükseköğretim,Evet,2,4,Evet,Hayır,59,32.1,8.2,15.2,0.96,Hayır,1,1
+KT0007,74,Erkek,İlkokul ve altı,Evet,0,2,Evet,Hayır,0,32.3,6.6,30.6,1.13,Hayır,1.06,0
+KT0008,73,Kadın,Yükseköğretim,Evet,1,2,Hayır,Hayır,45,18.1,6,25.8,1.29,Hayır,1.34,0
+KT0009,71,Kadın,Ortaöğretim,Hayır,0,0,Hayır,Hayır,0,22.5,6.7,29.2,1.1,Hayır,1.26,0
+KT0010,67,Kadın,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,23,29.7,9.9,28.4,1.23,Hayır,1.23,0
+KT0011,71,Kadın,İlkokul ve altı,Evet,3,6,Hayır,Hayır,207,27.1,7,23.2,1.16,Hayır,1.11,0
+KT0012,68,Kadın,Yükseköğretim,Hayır,0,0,Hayır,Hayır,0,24.7,7.2,26.2,1.44,Hayır,1.36,0
+KT0013,76,Kadın,İlkokul ve altı,Hayır,2,0,Hayır,Hayır,91,25.3,8.7,15.5,1.12,Hayır,1.14,0
+KT0014,76,Kadın,İlkokul ve altı,Hayır,1,4,Hayır,Hayır,42,34.6,5.2,22.1,1.01,Hayır,0.94,0
+KT0015,79,Erkek,Yükseköğretim,Hayır,1,2,Hayır,Hayır,210,26.2,6.7,26.2,1.11,Hayır,1.03,0
+KT0016,83,Erkek,Yükseköğretim,Hayır,3,3,Evet,Hayır,80,24.2,5.3,22.9,1.16,Hayır,1.05,0
+KT0017,77,Kadın,Ortaöğretim,Hayır,2,3,Hayır,Hayır,126,27.3,5.6,20.2,1.06,Hayır,1.07,0
+KT0018,79,Erkek,İlkokul ve altı,Hayır,1,5,Hayır,Hayır,0,30.9,5.3,29.6,1.14,Hayır,1.12,0
+KT0019,65,Kadın,Ortaöğretim,Evet,1,2,Hayır,Hayır,210,29.9,6.5,21.9,1.33,Hayır,1.23,0
+KT0020,83,Kadın,İlkokul ve altı,Evet,3,0,Hayır,Hayır,0,25.4,7.3,16.3,0.9,Evet,0.92,0
+KT0021,77,Kadın,Yükseköğretim,Evet,3,2,Hayır,Hayır,125,35.8,6,23.6,1.06,Hayır,0.89,0
+KT0022,85,Erkek,Ortaöğretim,Hayır,0,1,Evet,Hayır,80,29.8,8.1,22.5,0.98,Evet,1.09,1
+KT0023,73,Kadın,Yükseköğretim,Hayır,3,4,Hayır,Evet,34,32.1,6.3,19.6,1.18,Hayır,1.09,0
+KT0024,87,Kadın,Yükseköğretim,Evet,2,2,Hayır,Hayır,55,37.2,6.3,15.5,0.73,Hayır,0.74,0
+KT0025,72,Erkek,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,0,23.1,7.9,30.8,1.15,Hayır,1.09,0
+KT0026,72,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,275,24.7,7.6,25.9,1.28,Hayır,1.35,0
+KT0027,70,Erkek,Ortaöğretim,Evet,2,3,Hayır,Hayır,73,24.2,6.6,31,1,Hayır,0.89,0
+KT0028,73,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,90,22.3,6.5,6.5,1.02,Hayır,0.9,0
+KT0029,78,Erkek,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,157,28.8,7.5,28,1.25,Hayır,1.27,0
+KT0030,69,Erkek,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,94,25.7,5.4,32.7,1.23,Hayır,1.31,1
+KT0031,68,Kadın,Yükseköğretim,Hayır,2,2,Hayır,Evet,80,26.8,7,20.5,1,Evet,0.89,1
+KT0032,79,Erkek,İlkokul ve altı,Evet,2,3,Hayır,Hayır,0,29.8,6,22.1,1.11,Hayır,0.98,0
+KT0033,73,Kadın,İlkokul ve altı,Hayır,3,6,Hayır,Hayır,21,27.9,5.9,26.3,1.06,Hayır,0.99,1
+KT0034,74,Kadın,Ortaöğretim,Hayır,0,3,Hayır,Hayır,277,32.2,6.7,26.2,1.06,Hayır,1.07,0
+KT0035,80,Erkek,İlkokul ve altı,Hayır,4,5,Evet,Evet,19,28.2,8,18.6,0.98,Evet,1.01,0
+KT0036,70,Kadın,Ortaöğretim,Hayır,0,0,Hayır,Hayır,70,25.4,7.6,25.9,0.95,Hayır,0.93,1
+KT0037,75,Kadın,Ortaöğretim,Hayır,3,5,Hayır,Hayır,0,32.5,7.4,9.5,1.01,Evet,1.07,0
+KT0038,79,Kadın,Ortaöğretim,Evet,3,8,Hayır,Hayır,30,23.3,8,20.4,1.03,Hayır,0.86,0
+KT0039,79,Kadın,İlkokul ve altı,Hayır,4,3,Hayır,Hayır,78,30.4,5.3,13,0.69,Hayır,0.63,1
+KT0040,65,Erkek,Ortaöğretim,Hayır,1,2,Evet,Hayır,0,21.8,7.3,35.7,1.44,Hayır,1.44,0
+KT0041,79,Erkek,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,86,24.9,7.7,27.5,1.1,Hayır,1.12,0
+KT0042,77,Erkek,İlkokul ve altı,Evet,1,3,Hayır,Hayır,188,26.4,8.8,29.8,0.93,Hayır,0.79,0
+KT0043,87,Kadın,Yükseköğretim,Hayır,3,3,Evet,Hayır,34,25.4,6.8,24.6,0.77,Evet,0.73,1
+KT0044,70,Erkek,Yükseköğretim,Hayır,1,1,Hayır,Hayır,0,32.4,8.2,40.4,1.19,Hayır,1.34,1
+KT0045,72,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,70,28.8,7.3,10.4,1.2,Evet,1.25,0
+KT0046,73,Erkek,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,86,23.6,9.3,24.7,1.01,Evet,0.96,0
+KT0047,80,Kadın,Yükseköğretim,Hayır,1,1,Hayır,Hayır,0,28,6.3,14.9,1,Evet,1.02,0
+KT0048,80,Erkek,Yükseköğretim,Hayır,3,3,Evet,Hayır,153,30.3,5.6,21.9,0.73,Evet,0.65,0
+KT0049,74,Kadın,İlkokul ve altı,Hayır,2,4,Hayır,Hayır,0,26.8,6.6,29.1,0.78,Evet,0.86,1
+KT0050,78,Kadın,İlkokul ve altı,Hayır,1,4,Evet,Hayır,85,25.7,6.7,22.5,1.26,Hayır,1.36,0
+KT0051,73,Erkek,İlkokul ve altı,Hayır,2,1,Hayır,Hayır,0,27,5.4,26.2,0.99,Hayır,0.95,0
+KT0052,79,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,0,27.6,6.5,17.8,1,Hayır,0.92,1
+KT0053,78,Erkek,Yükseköğretim,Hayır,0,2,Hayır,Hayır,0,32.5,7,21.2,1.3,Evet,1.47,0
+KT0054,74,Kadın,Ortaöğretim,Evet,0,2,Hayır,Hayır,108,34.8,9.1,14.2,1.09,Hayır,1.03,0
+KT0055,69,Kadın,Yükseköğretim,Evet,1,3,Hayır,Hayır,0,22.3,6.9,18.7,1.33,Hayır,1.36,0
+KT0056,68,Kadın,İlkokul ve altı,Hayır,3,5,Evet,Hayır,83,27.9,6.7,15.6,1.33,Evet,1.34,0
+KT0057,79,Kadın,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,46,37.7,7.3,19.4,0.97,Hayır,0.92,1
+KT0058,67,Erkek,Ortaöğretim,Hayır,0,2,Hayır,Hayır,137,24,7,27,1.3,Hayır,1.5,0
+KT0059,79,Erkek,İlkokul ve altı,Hayır,3,4,Evet,Hayır,96,26,7.6,29.6,0.92,Hayır,0.94,0
+KT0060,72,Erkek,Ortaöğretim,Hayır,4,5,Hayır,Hayır,0,27.7,7.1,20.3,1.04,Hayır,1.1,0
+KT0061,73,Erkek,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,131,28.6,7.3,32.2,1.23,Hayır,1.23,0
+KT0062,81,Kadın,İlkokul ve altı,Hayır,2,6,Hayır,Hayır,47,37,5.5,19.6,0.8,Evet,0.74,0
+KT0063,79,Kadın,Yükseköğretim,Hayır,2,0,Evet,Hayır,81,30.1,7.3,11.1,0.92,Hayır,0.8,0
+KT0064,71,Kadın,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,100,17,6.9,25,1.19,Hayır,1.17,0
+KT0065,70,Erkek,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,134,27.5,7.1,28,1.21,Hayır,1.33,1
+KT0066,80,Kadın,Yükseköğretim,Evet,3,6,Evet,Evet,124,34.2,6.4,18.9,0.9,Evet,0.84,0
+KT0067,74,Kadın,İlkokul ve altı,Hayır,2,5,Hayır,Hayır,0,24.5,6.7,25.9,1.01,Hayır,0.86,0
+KT0068,68,Kadın,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,188,28.1,6.1,27.2,1.05,Hayır,0.85,0
+KT0069,78,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,63,24.9,6,18.5,1.12,Hayır,1.25,1
+KT0070,71,Kadın,Ortaöğretim,Evet,4,4,Hayır,Hayır,0,32.1,7.7,12.1,0.99,Hayır,1.02,0
+KT0071,78,Kadın,Yükseköğretim,Evet,0,0,Hayır,Hayır,100,24.3,3.5,22.1,1.01,Evet,1.01,0
+KT0072,73,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,53,30.7,7.2,25.1,1.23,Hayır,1.14,1
+KT0073,73,Kadın,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,131,27,5.6,16.6,1.31,Hayır,1.35,0
+KT0074,88,Erkek,Ortaöğretim,Hayır,2,3,Hayır,Evet,46,30.8,6.2,22.7,0.76,Evet,0.72,0
+KT0075,70,Kadın,Ortaöğretim,Evet,0,0,Hayır,Hayır,96,31.6,4.5,27,1.22,Hayır,1.23,0
+KT0076,92,Erkek,Ortaöğretim,Evet,1,4,Hayır,Hayır,0,22.5,6.8,21.5,0.93,Hayır,0.77,1
+KT0077,77,Kadın,İlkokul ve altı,Evet,4,7,Evet,Evet,23,20.6,6.5,24.4,0.98,Evet,0.95,0
+KT0078,78,Erkek,Yükseköğretim,Hayır,0,2,Hayır,Hayır,442,22.2,7.3,20.7,1.34,Hayır,1.2,0
+KT0079,76,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Evet,115,21.7,7.7,17.7,1.11,Evet,1.13,1
+KT0080,79,Erkek,İlkokul ve altı,Hayır,5,8,Hayır,Hayır,36,28.3,8.3,25.6,1.05,Evet,1.12,0
+KT0081,89,Kadın,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,0,27.4,6.5,11.9,1.18,Evet,1.15,1
+KT0082,74,Kadın,İlkokul ve altı,Evet,0,0,Hayır,Hayır,0,27,7.6,23.5,1.04,Hayır,0.9,0
+KT0083,78,Kadın,İlkokul ve altı,Hayır,2,1,Hayır,Hayır,43,26.6,6.5,18.6,1.03,Evet,1.13,0
+KT0084,73,Erkek,İlkokul ve altı,Hayır,3,4,Hayır,Hayır,122,23.3,6.4,33.2,1.3,Hayır,1.19,0
+KT0085,81,Erkek,Ortaöğretim,Hayır,3,6,Hayır,Evet,0,27.6,8.4,23.2,0.66,Evet,0.81,1
+KT0086,94,Kadın,Yükseköğretim,Hayır,1,0,Evet,Hayır,89,27.5,6.6,15.8,0.62,Evet,0.6,0
+KT0087,75,Erkek,İlkokul ve altı,Hayır,0,1,Hayır,Evet,100,19.3,7.4,24.4,1.29,Hayır,1.3,0
+KT0088,78,Kadın,İlkokul ve altı,Evet,1,3,Hayır,Evet,191,31.9,5.6,21.2,0.87,Evet,0.92,1
+KT0089,89,Kadın,İlkokul ve altı,Hayır,5,7,Evet,Hayır,36,23.5,6.2,10,0.72,Evet,0.73,0
+KT0090,86,Erkek,İlkokul ve altı,Evet,2,3,Hayır,Hayır,38,23.3,6.4,18.9,1.3,Evet,1.45,0
+KT0091,71,Erkek,İlkokul ve altı,Evet,2,3,Hayır,Hayır,55,28.3,5.6,23.9,0.99,Evet,1.11,0
+KT0092,72,Kadın,Yükseköğretim,Hayır,2,1,Hayır,Evet,109,26.8,6.1,23.3,1.31,Hayır,1.24,0
+KT0093,66,Kadın,İlkokul ve altı,Hayır,3,1,Hayır,Hayır,149,25.5,7,25.9,1.29,Hayır,1.24,0
+KT0094,85,Kadın,İlkokul ve altı,Evet,3,6,Evet,Evet,0,27.3,7.2,15.2,0.67,Evet,0.64,1
+KT0095,84,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Evet,0,23.1,8.1,21,0.83,Evet,0.82,1
+KT0096,66,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,74,26.5,6.7,23.7,1.37,Hayır,1.23,0
+KT0097,78,Erkek,İlkokul ve altı,Hayır,3,6,Hayır,Hayır,25,24.1,7.9,20.5,0.98,Evet,1.03,0
+KT0098,72,Erkek,Ortaöğretim,Hayır,2,2,Hayır,Hayır,184,24.4,8.6,22.1,1.16,Hayır,1.26,0
+KT0099,79,Kadın,İlkokul ve altı,Hayır,3,9,Hayır,Hayır,215,27.1,6.1,17.5,0.89,Hayır,0.81,1
+KT0100,71,Kadın,İlkokul ve altı,Evet,2,5,Hayır,Hayır,164,28.2,6,20.1,1.33,Hayır,1.22,0
+KT0101,69,Erkek,Yükseköğretim,Hayır,3,0,Hayır,Evet,64,29.1,7.2,21.3,1.26,Hayır,1.23,0
+KT0102,69,Erkek,İlkokul ve altı,Evet,1,5,Hayır,Hayır,171,24.1,6.4,22.5,1.54,Hayır,1.55,0
+KT0103,70,Erkek,Ortaöğretim,Hayır,6,9,Evet,Hayır,0,32.4,6.9,30.6,1.07,Evet,1.07,1
+KT0104,70,Kadın,Yükseköğretim,Hayır,4,9,Hayır,Hayır,221,23.7,7,18.1,1.37,Hayır,1.43,0
+KT0105,80,Kadın,Yükseköğretim,Hayır,6,5,Hayır,Hayır,28,29.6,3.7,8.2,0.73,Evet,0.93,1
+KT0106,74,Erkek,İlkokul ve altı,Evet,0,3,Hayır,Hayır,48,25.3,8,33.6,1.34,Hayır,1.39,0
+KT0107,70,Kadın,İlkokul ve altı,Hayır,3,6,Hayır,Hayır,0,23.1,7.3,21.5,1.29,Evet,1.38,0
+KT0108,69,Kadın,İlkokul ve altı,Hayır,0,1,Hayır,Evet,38,37,6,25.2,1.1,Evet,1.22,0
+KT0109,71,Kadın,İlkokul ve altı,Evet,1,2,Hayır,Hayır,0,27.7,6.2,23.3,1.15,Hayır,1.16,0
+KT0110,89,Kadın,İlkokul ve altı,Evet,2,2,Evet,Evet,114,30.3,5.2,16.5,0.79,Hayır,0.85,0
+KT0111,69,Kadın,İlkokul ve altı,Hayır,1,0,Evet,Hayır,96,27.7,8,14.2,1.25,Hayır,1.34,0
+KT0112,71,Erkek,Ortaöğretim,Hayır,2,4,Evet,Hayır,123,29.6,7.1,30.4,1.23,Hayır,1.15,1
+KT0113,67,Kadın,İlkokul ve altı,Hayır,3,3,Hayır,Evet,0,20.1,4.4,22.2,1.22,Hayır,1.03,0
+KT0114,77,Kadın,İlkokul ve altı,Evet,0,1,Evet,Hayır,217,24.9,8.4,21.3,1.14,Hayır,0.86,0
+KT0115,67,Kadın,İlkokul ve altı,Hayır,0,0,Hayır,Evet,178,29.5,6,29.2,1.02,Evet,1.07,0
+KT0116,83,Kadın,Ortaöğretim,Hayır,5,9,Evet,Hayır,33,33.1,6.3,11.9,0.87,Hayır,0.84,0
+KT0117,83,Erkek,Yükseköğretim,Evet,0,2,Hayır,Hayır,63,27.7,5.8,30.4,1.18,Hayır,1.15,0
+KT0118,86,Erkek,İlkokul ve altı,Evet,3,5,Hayır,Hayır,30,27.4,6.1,25.3,0.76,Evet,0.79,0
+KT0119,81,Kadın,Yükseköğretim,Hayır,1,2,Hayır,Evet,51,26.2,6.4,16,1.2,Hayır,1.16,1
+KT0120,88,Kadın,Ortaöğretim,Evet,1,4,Evet,Evet,0,29.9,7.7,18.6,0.84,Evet,0.93,1
+KT0121,75,Kadın,İlkokul ve altı,Hayır,4,7,Hayır,Hayır,31,30.2,7.1,21.8,0.78,Hayır,0.77,1
+KT0122,76,Erkek,Ortaöğretim,Hayır,2,3,Hayır,Hayır,85,28.9,7.9,25,1.2,Evet,1.15,1
+KT0123,70,Kadın,İlkokul ve altı,Hayır,1,3,Evet,Evet,146,30.3,5.6,26.6,1.26,Hayır,1.14,0
+KT0124,77,Erkek,İlkokul ve altı,Hayır,1,3,Evet,Hayır,50,28.6,6.4,30.3,1.18,Hayır,1.13,1
+KT0125,73,Erkek,Yükseköğretim,Evet,3,8,Evet,Hayır,124,25.6,6.5,29,1.27,Hayır,1.03,0
+KT0126,73,Kadın,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,59,23.4,7.9,18.7,0.96,Hayır,0.86,0
+KT0127,77,Erkek,Yükseköğretim,Hayır,2,4,Hayır,Hayır,62,17,6.1,30.6,1.28,Hayır,1.22,0
+KT0128,83,Kadın,Ortaöğretim,Hayır,1,4,Hayır,Hayır,0,23.7,7.1,18.6,0.9,Hayır,0.93,1
+KT0129,77,Kadın,İlkokul ve altı,Hayır,3,5,Hayır,Hayır,0,28.7,7.8,23.6,0.67,Evet,0.71,0
+KT0130,70,Erkek,Ortaöğretim,Hayır,3,1,Evet,Evet,31,17,7.6,23.3,1.01,Hayır,0.93,1
+KT0131,89,Erkek,İlkokul ve altı,Evet,2,3,Evet,Hayır,0,31.1,4.6,28.6,0.62,Evet,0.67,0
+KT0132,79,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,88,23.8,6.9,21.4,1.13,Hayır,1.16,0
+KT0133,79,Erkek,Yükseköğretim,Hayır,0,0,Hayır,Hayır,30,22.8,8.1,21.9,1.14,Hayır,1.13,0
+KT0134,68,Erkek,Ortaöğretim,Hayır,1,4,Hayır,Hayır,127,32.2,6.2,32.8,1.5,Hayır,1.41,0
+KT0135,84,Kadın,Ortaöğretim,Hayır,3,4,Hayır,Hayır,0,24.6,5.9,19.3,0.91,Hayır,0.75,1
+KT0136,74,Erkek,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,0,27.6,4.9,26.7,1.2,Evet,1.13,0
+KT0137,67,Kadın,Yükseköğretim,Hayır,1,8,Hayır,Evet,100,25.1,7.5,19.4,1.27,Hayır,1.12,1
+KT0138,82,Kadın,Yükseköğretim,Evet,4,4,Evet,Hayır,76,27.5,5.1,10.6,0.8,Evet,0.9,1
+KT0139,78,Erkek,Ortaöğretim,Hayır,3,5,Evet,Hayır,150,23.4,7.1,26.1,1.04,Hayır,1.21,1
+KT0140,78,Erkek,İlkokul ve altı,Evet,2,3,Hayır,Hayır,37,24.6,6.8,17,1.26,Hayır,1.2,0
+KT0141,79,Kadın,İlkokul ve altı,Hayır,2,5,Hayır,Hayır,65,24.3,7.7,23.5,0.97,Hayır,0.96,0
+KT0142,79,Erkek,Ortaöğretim,Hayır,3,2,Hayır,Evet,0,20.7,6.4,26.3,1.01,Hayır,0.92,1
+KT0143,77,Erkek,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,31,35.2,6.8,30.4,0.75,Evet,0.73,1
+KT0144,70,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,171,21.4,6.5,28.4,1.28,Hayır,1.1,0
+KT0145,66,Erkek,Yükseköğretim,Hayır,2,4,Hayır,Hayır,67,26.1,7.7,36.4,1.34,Hayır,1.43,0
+KT0146,67,Erkek,İlkokul ve altı,Hayır,1,0,Evet,Hayır,59,25.2,7.5,34.6,1.02,Hayır,0.85,1
+KT0147,78,Kadın,Yükseköğretim,Hayır,0,1,Hayır,Hayır,110,24.1,6,25.4,1.3,Hayır,1.31,0
+KT0148,72,Erkek,İlkokul ve altı,Hayır,4,5,Hayır,Hayır,22,30.5,6.7,25.9,1.11,Hayır,1.25,0
+KT0149,83,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,0,25.6,5.4,17.2,0.76,Hayır,0.7,0
+KT0150,84,Kadın,Ortaöğretim,Hayır,2,2,Hayır,Evet,138,26.6,5.8,17.6,1.13,Hayır,1.17,0
+KT0151,80,Kadın,Ortaöğretim,Evet,5,8,Evet,Hayır,0,25.7,5.7,10.2,0.82,Hayır,0.88,0
+KT0152,65,Erkek,Yükseköğretim,Hayır,1,3,Hayır,Hayır,76,25.3,7.3,28.3,1.39,Hayır,1.44,0
+KT0153,72,Erkek,İlkokul ve altı,Hayır,1,3,Hayır,Evet,192,28.4,7.1,29.6,1.07,Hayır,1.01,0
+KT0154,75,Kadın,Yükseköğretim,Evet,3,2,Hayır,Hayır,61,25.1,6.8,16.9,1.11,Hayır,1.05,0
+KT0155,77,Erkek,Yükseköğretim,Hayır,0,1,Hayır,Hayır,145,22.8,7.2,30.5,1.32,Hayır,1.17,0
+KT0156,80,Erkek,İlkokul ve altı,Hayır,0,3,Evet,Hayır,34,23.8,6.6,28,1.14,Hayır,1.08,0
+KT0157,74,Erkek,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,53,24.1,7.2,34.6,1.15,Evet,1.33,0
+KT0158,67,Erkek,İlkokul ve altı,Evet,0,0,Hayır,Hayır,0,24.4,6.2,34.3,1.25,Hayır,1.11,0
+KT0159,65,Kadın,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,27,31.6,5.9,34.5,1.12,Hayır,1.1,1
+KT0160,74,Kadın,Ortaöğretim,Evet,2,4,Evet,Evet,0,26.9,7.5,28.9,1.12,Hayır,1.16,0
+KT0161,76,Kadın,Ortaöğretim,Hayır,2,3,Hayır,Evet,15,27.1,7.5,22.1,1.12,Hayır,1.11,0
+KT0162,68,Erkek,Yükseköğretim,Hayır,3,2,Hayır,Hayır,116,30,5.7,43,0.95,Hayır,0.76,0
+KT0163,84,Kadın,İlkokul ve altı,Hayır,6,10,Hayır,Evet,45,24.5,6.6,9,0.91,Evet,0.98,1
+KT0164,79,Kadın,İlkokul ve altı,Evet,1,3,Hayır,Hayır,72,26.5,6.3,18.6,0.93,Hayır,0.82,0
+KT0165,72,Erkek,Ortaöğretim,Hayır,0,2,Hayır,Hayır,399,32.5,7.8,25.7,1.44,Evet,1.58,0
+KT0166,76,Erkek,Ortaöğretim,Evet,3,6,Hayır,Hayır,58,29.6,8.6,20.5,0.9,Hayır,0.84,0
+KT0167,82,Kadın,Ortaöğretim,Hayır,1,4,Hayır,Hayır,0,30.1,7.3,16,0.96,Hayır,1.03,0
+KT0168,75,Kadın,İlkokul ve altı,Evet,4,8,Hayır,Hayır,66,24.3,7,15.5,0.97,Hayır,0.81,0
+KT0169,79,Erkek,İlkokul ve altı,Hayır,2,6,Hayır,Hayır,152,22.4,6.4,26.6,1.1,Hayır,1.19,0
+KT0170,70,Kadın,Ortaöğretim,Hayır,3,4,Hayır,Hayır,172,30.6,5.4,16.8,1.26,Hayır,1.19,0
+KT0171,76,Kadın,İlkokul ve altı,Hayır,2,4,Hayır,Hayır,92,27.4,6.4,18.2,1.05,Hayır,0.96,1
+KT0172,83,Erkek,Yükseköğretim,Hayır,0,0,Evet,Hayır,69,26.7,5.9,27.4,1.15,Hayır,1.15,0
+KT0173,65,Kadın,Yükseköğretim,Hayır,1,2,Hayır,Hayır,175,26.8,5.3,26.1,1.22,Hayır,1.19,1
+KT0174,75,Erkek,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,101,27.8,5.1,29,1.21,Hayır,1.03,0
+KT0175,67,Kadın,Yükseköğretim,Evet,1,1,Hayır,Hayır,0,26.8,4.3,23.1,1.38,Hayır,1.36,0
+KT0176,69,Kadın,Yükseköğretim,Hayır,1,0,Hayır,Hayır,235,31.1,7.5,33.5,1.25,Hayır,1.25,0
+KT0177,69,Kadın,Yükseköğretim,Hayır,0,1,Hayır,Hayır,88,18.9,7.3,17.9,1.49,Hayır,1.56,0
+KT0178,74,Kadın,Yükseköğretim,Evet,0,1,Hayır,Hayır,47,27.4,7.2,21.6,1.25,Hayır,1.27,0
+KT0179,73,Erkek,Yükseköğretim,Hayır,4,4,Hayır,Hayır,19,30.1,5.6,25.7,1.05,Hayır,0.96,0
+KT0180,75,Erkek,Ortaöğretim,Hayır,1,2,Hayır,Hayır,0,27.5,5.5,21.5,1.17,Hayır,1.15,0
+KT0181,74,Kadın,İlkokul ve altı,Evet,0,0,Evet,Hayır,34,26.3,6.1,23.6,1.22,Evet,1.12,0
+KT0182,71,Erkek,İlkokul ve altı,Evet,2,2,Hayır,Hayır,100,23.4,6.6,29.6,1.4,Hayır,1.23,0
+KT0183,70,Kadın,İlkokul ve altı,Hayır,2,1,Hayır,Hayır,37,30.2,7.3,19,1.16,Evet,1.27,0
+KT0184,76,Erkek,Yükseköğretim,Hayır,1,3,Hayır,Hayır,73,30.3,7.3,34.9,1.23,Hayır,1.08,0
+KT0185,78,Erkek,Ortaöğretim,Evet,1,2,Evet,Hayır,62,25.2,5.4,28.6,1.14,Hayır,1.2,0
+KT0186,70,Kadın,İlkokul ve altı,Hayır,2,4,Evet,Hayır,34,31,4,19.1,0.94,Hayır,0.71,0
+KT0187,76,Erkek,Yükseköğretim,Hayır,0,1,Hayır,Hayır,88,25.5,7.7,31.4,1.32,Hayır,1.26,1
+KT0188,76,Kadın,Yükseköğretim,Hayır,2,1,Hayır,Hayır,95,29.5,6.2,22.8,1.07,Hayır,0.95,0
+KT0189,68,Kadın,İlkokul ve altı,Evet,2,3,Hayır,Hayır,46,32.2,6.7,21.6,1.16,Hayır,1.17,0
+KT0190,72,Kadın,İlkokul ve altı,Hayır,0,3,Hayır,Hayır,0,26.8,7.1,18.6,1.28,Hayır,1.27,0
+KT0191,74,Erkek,Yükseköğretim,Hayır,2,2,Hayır,Hayır,0,26.5,6.5,22.3,0.96,Evet,1.16,0
+KT0192,67,Erkek,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,80,28,7.1,35.1,1.36,Hayır,1.22,0
+KT0193,81,Kadın,İlkokul ve altı,Evet,4,5,Hayır,Hayır,59,36,6.4,14.3,0.85,Evet,0.71,1
+KT0194,82,Kadın,Ortaöğretim,Hayır,3,4,Evet,Hayır,0,26.5,6.9,20.8,0.85,Hayır,0.8,1
+KT0195,78,Kadın,Yükseköğretim,Hayır,3,3,Evet,Hayır,84,28.6,7.2,10.5,0.71,Hayır,0.6,1
+KT0196,73,Kadın,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,74,29.7,6.6,16.3,1.12,Hayır,1.04,0
+KT0197,79,Erkek,Ortaöğretim,Hayır,1,3,Hayır,Hayır,0,28.8,9.2,25.1,1.13,Evet,1.06,0
+KT0198,66,Kadın,Ortaöğretim,Hayır,1,1,Hayır,Hayır,561,28.7,7.3,28.9,1.25,Evet,1.24,0
+KT0199,72,Kadın,Ortaöğretim,Evet,2,3,Evet,Hayır,112,26.6,7.3,28.6,1.04,Evet,1.11,1
+KT0200,71,Kadın,Yükseköğretim,Hayır,0,1,Hayır,Evet,0,23.9,6.4,26.7,1.13,Evet,1.23,0
+KT0201,66,Kadın,Ortaöğretim,Hayır,3,4,Hayır,Hayır,58,31.5,5.8,23.7,1.15,Hayır,1.27,0
+KT0202,82,Kadın,Yükseköğretim,Hayır,0,1,Hayır,Hayır,90,33.7,6.5,24.9,1.07,Hayır,1.12,0
+KT0203,70,Kadın,Yükseköğretim,Hayır,3,6,Hayır,Hayır,91,30.9,6,25.2,1.02,Hayır,1.04,1
+KT0204,71,Erkek,Yükseköğretim,Evet,4,5,Hayır,Hayır,37,21.2,4.1,29,1.27,Hayır,1.21,0
+KT0205,79,Erkek,Ortaöğretim,Hayır,1,3,Hayır,Hayır,0,27.3,8.7,29.2,1.02,Hayır,1.02,0
+KT0206,73,Erkek,İlkokul ve altı,Hayır,5,8,Evet,Hayır,35,27.3,8.4,28.3,0.86,Hayır,0.96,0
+KT0207,65,Erkek,Yükseköğretim,Hayır,0,1,Hayır,Hayır,0,23.4,5.8,35.1,1.16,Hayır,1.01,0
+KT0208,73,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,254,27.9,6,15.1,1.26,Hayır,1.3,0
+KT0209,75,Kadın,Ortaöğretim,Evet,4,8,Hayır,Hayır,37,27.6,5.8,9.4,0.8,Evet,0.79,0
+KT0210,73,Kadın,İlkokul ve altı,Evet,3,1,Hayır,Hayır,124,24.9,7.7,22.3,1.23,Hayır,1.19,0
+KT0211,74,Kadın,Yükseköğretim,Evet,3,7,Hayır,Hayır,86,22.3,6.5,11.2,1.03,Hayır,0.88,1
+KT0212,85,Kadın,İlkokul ve altı,Evet,2,2,Evet,Hayır,169,29.1,6.8,15,0.95,Evet,1.06,0
+KT0213,73,Erkek,Yükseköğretim,Hayır,3,3,Evet,Evet,107,27.4,7.5,27.4,1.23,Evet,1.25,0
+KT0214,79,Kadın,Ortaöğretim,Evet,4,8,Hayır,Evet,0,29.1,7.2,16.3,0.6,Hayır,0.55,0
+KT0215,83,Kadın,Ortaöğretim,Evet,1,1,Hayır,Hayır,0,33.2,6.9,16.2,1.01,Evet,1.02,0
+KT0216,82,Kadın,İlkokul ve altı,Hayır,3,3,Evet,Hayır,110,23.5,6.6,17.5,0.92,Hayır,0.85,0
+KT0217,83,Erkek,İlkokul ve altı,Hayır,4,7,Hayır,Hayır,57,25.1,7.1,31.5,0.88,Evet,0.83,0
+KT0218,66,Erkek,Ortaöğretim,Hayır,1,3,Hayır,Hayır,310,29.4,6.5,29.3,1.56,Hayır,1.49,0
+KT0219,81,Kadın,Ortaöğretim,Evet,4,2,Hayır,Hayır,49,30.4,6.1,9.5,1.13,Hayır,1.03,0
+KT0220,80,Erkek,Ortaöğretim,Hayır,2,6,Hayır,Hayır,46,27.1,7.5,16.1,1.04,Hayır,1.24,0
+KT0221,70,Kadın,İlkokul ve altı,Evet,0,3,Hayır,Hayır,75,28,8.8,32.9,1.27,Hayır,1.15,0
+KT0222,75,Kadın,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,27,30.4,7.7,26.7,0.92,Hayır,0.94,1
+KT0223,78,Kadın,Ortaöğretim,Hayır,0,1,Hayır,Hayır,84,27.3,6.8,20.5,1.13,Evet,1.18,0
+KT0224,77,Erkek,Ortaöğretim,Hayır,2,6,Hayır,Hayır,0,27.4,6.3,23.2,1.17,Evet,1.23,1
+KT0225,83,Kadın,İlkokul ve altı,Hayır,4,7,Hayır,Hayır,78,29.5,6.7,13.3,0.82,Hayır,0.69,1
+KT0226,78,Kadın,Yükseköğretim,Hayır,3,6,Evet,Evet,0,28.3,7.5,25.1,0.99,Evet,1.03,1
+KT0227,74,Erkek,İlkokul ve altı,Evet,2,1,Evet,Hayır,212,30.9,6,19.7,1.25,Evet,1.17,1
+KT0228,76,Erkek,Ortaöğretim,Hayır,1,2,Hayır,Hayır,171,26.4,6.9,25.4,1.29,Hayır,1.33,0
+KT0229,74,Kadın,Yükseköğretim,Hayır,1,4,Evet,Evet,75,33.5,6.3,16.6,0.98,Evet,1.07,0
+KT0230,70,Erkek,Yükseköğretim,Hayır,1,1,Evet,Hayır,33,28.9,4.7,36.5,1.29,Hayır,1.34,0
+KT0231,69,Erkek,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,97,23.7,5.9,29.9,1.39,Hayır,1.21,0
+KT0232,67,Kadın,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,234,23.2,6.3,23.9,1.34,Hayır,1.42,0
+KT0233,79,Kadın,Ortaöğretim,Evet,1,2,Hayır,Hayır,149,30.1,7,30.6,1.04,Evet,1.06,0
+KT0234,87,Erkek,İlkokul ve altı,Hayır,3,2,Hayır,Hayır,38,29.3,4.2,21.3,0.72,Hayır,0.45,0
+KT0235,89,Kadın,İlkokul ve altı,Evet,3,2,Evet,Hayır,70,29.7,6.5,11.9,0.8,Evet,0.85,0
+KT0236,80,Kadın,Ortaöğretim,Evet,1,2,Hayır,Hayır,107,32.7,9.2,13.9,0.89,Evet,0.95,0
+KT0237,77,Kadın,Ortaöğretim,Hayır,3,4,Evet,Hayır,45,26.4,6.1,18.5,1.12,Hayır,0.97,0
+KT0238,94,Kadın,İlkokul ve altı,Evet,1,4,Hayır,Evet,0,27.6,7.5,15.6,0.79,Evet,0.91,1
+KT0239,72,Kadın,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,231,30.9,5.9,23.8,1.34,Hayır,1.2,0
+KT0240,70,Erkek,Ortaöğretim,Hayır,2,4,Hayır,Hayır,0,28.5,6.3,35.1,1.16,Hayır,1.05,0
+KT0241,75,Erkek,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,96,28.4,5.6,30.7,0.94,Hayır,0.99,0
+KT0242,82,Kadın,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,118,28.5,6.9,18.8,0.92,Hayır,0.9,0
+KT0243,76,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,183,17.6,6.3,17.3,1.33,Hayır,1.25,1
+KT0244,70,Erkek,Yükseköğretim,Hayır,1,3,Evet,Hayır,0,19.5,6.5,24,1.38,Hayır,1.35,0
+KT0245,80,Erkek,İlkokul ve altı,Hayır,1,1,Evet,Hayır,0,29.5,7.8,32.6,1.05,Hayır,1,0
+KT0246,68,Erkek,Ortaöğretim,Evet,2,6,Evet,Hayır,316,27,6.6,29.9,1.61,Hayır,1.68,0
+KT0247,73,Erkek,Yükseköğretim,Hayır,3,5,Hayır,Evet,163,28.7,6.4,27.8,1.18,Hayır,1.07,0
+KT0248,74,Erkek,Ortaöğretim,Hayır,2,2,Hayır,Hayır,0,25.3,5.4,17.1,1.35,Hayır,1.35,0
+KT0249,77,Erkek,Yükseköğretim,Hayır,3,1,Hayır,Hayır,103,28.9,5.6,31.9,0.92,Hayır,0.82,0
+KT0250,73,Kadın,Yükseköğretim,Evet,2,2,Evet,Hayır,46,34.5,7.8,21.5,0.89,Hayır,0.91,0
+KT0251,73,Erkek,İlkokul ve altı,Hayır,2,1,Hayır,Hayır,154,24.2,7.6,25.3,1.03,Hayır,1.04,0
+KT0252,76,Kadın,Ortaöğretim,Hayır,1,3,Evet,Hayır,159,26.8,7.9,20,1.19,Hayır,1.23,0
+KT0253,77,Kadın,Yükseköğretim,Hayır,2,5,Hayır,Hayır,63,22.6,7.2,29.5,1.13,Hayır,1.11,0
+KT0254,69,Kadın,Yükseköğretim,Evet,2,4,Hayır,Hayır,43,33,6,18.1,1.02,Evet,0.86,0
+KT0255,77,Kadın,İlkokul ve altı,Evet,4,7,Hayır,Hayır,53,31,5.9,17.9,0.81,Evet,1.04,1
+KT0256,79,Erkek,Yükseköğretim,Evet,3,4,Evet,Hayır,102,29.3,8.3,28.1,1.14,Hayır,1.12,0
+KT0257,89,Kadın,İlkokul ve altı,Evet,3,5,Evet,Evet,108,30.6,5,11.4,0.67,Evet,0.68,1
+KT0258,85,Erkek,Ortaöğretim,Hayır,2,2,Hayır,Hayır,90,27.4,6.6,31.1,0.87,Hayır,0.83,0
+KT0259,68,Kadın,İlkokul ve altı,Hayır,2,4,Evet,Hayır,89,26.4,5.7,31.2,1.01,Hayır,1.07,0
+KT0260,75,Erkek,Ortaöğretim,Hayır,1,4,Hayır,Hayır,84,22.5,8.4,28.3,1.16,Hayır,1.02,0
+KT0261,79,Erkek,Ortaöğretim,Hayır,2,3,Hayır,Hayır,38,28,6.1,27.5,1.03,Hayır,1.06,0
+KT0262,83,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,0,30.7,6.4,17,0.95,Hayır,1.02,0
+KT0263,70,Kadın,İlkokul ve altı,Hayır,2,8,Hayır,Hayır,131,27.9,8,15.6,1.2,Hayır,1.09,0
+KT0264,81,Kadın,Ortaöğretim,Hayır,4,10,Hayır,Hayır,17,31.6,5.8,17.5,0.85,Hayır,0.87,0
+KT0265,83,Kadın,Yükseköğretim,Hayır,2,3,Evet,Hayır,97,36,6.3,7,0.99,Hayır,1,1
+KT0266,73,Kadın,Ortaöğretim,Evet,2,3,Hayır,Hayır,51,30.8,7.2,16.4,0.96,Evet,1.02,0
+KT0267,81,Erkek,Ortaöğretim,Hayır,2,3,Hayır,Hayır,82,27.4,6,26.4,1,Evet,1.04,1
+KT0268,69,Kadın,Ortaöğretim,Hayır,1,2,Evet,Hayır,57,28.7,6.4,37.8,1.13,Hayır,1.02,0
+KT0269,77,Erkek,Yükseköğretim,Hayır,1,0,Hayır,Hayır,135,28.3,8.2,21.9,1.07,Hayır,1.11,0
+KT0270,75,Erkek,İlkokul ve altı,Hayır,4,7,Hayır,Hayır,32,29,6.1,38,0.93,Hayır,0.87,0
+KT0271,72,Kadın,Ortaöğretim,Hayır,2,5,Hayır,Hayır,329,27.8,8,16.3,1.22,Evet,1.32,0
+KT0272,73,Erkek,Yükseköğretim,Hayır,4,4,Hayır,Hayır,101,24.1,6,27.3,0.96,Evet,0.97,0
+KT0273,73,Erkek,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,56,26.9,7,28.4,1.29,Hayır,1.43,0
+KT0274,65,Erkek,İlkokul ve altı,Hayır,2,6,Hayır,Hayır,108,27.7,5.6,32,1.32,Hayır,1.35,0
+KT0275,77,Kadın,İlkokul ve altı,Evet,0,1,Hayır,Hayır,65,27,6.5,26.5,1.08,Hayır,0.99,1
+KT0276,67,Erkek,Yükseköğretim,Hayır,2,3,Hayır,Hayır,215,24,6.5,33.4,1.5,Evet,1.77,0
+KT0277,68,Kadın,İlkokul ve altı,Hayır,2,5,Hayır,Hayır,67,32.8,6.6,23.5,1.04,Hayır,1.02,0
+KT0278,75,Erkek,İlkokul ve altı,Hayır,2,4,Evet,Hayır,38,26.4,7.5,22.7,1.11,Hayır,0.99,0
+KT0279,76,Erkek,İlkokul ve altı,Evet,1,3,Hayır,Hayır,66,28.2,6.7,23.4,1.28,Hayır,1.29,0
+KT0280,74,Erkek,Ortaöğretim,Hayır,4,6,Evet,Hayır,62,28.8,7.7,26.6,1.08,Hayır,1.17,0
+KT0281,76,Erkek,İlkokul ve altı,Evet,0,0,Hayır,Hayır,187,26,7.4,31.9,0.9,Hayır,0.79,0
+KT0282,75,Kadın,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,104,29.2,6.8,25.9,1.03,Hayır,1.06,0
+KT0283,76,Erkek,İlkokul ve altı,Evet,1,2,Hayır,Hayır,40,28.2,7.1,31.8,1.15,Evet,1.16,0
+KT0284,73,Kadın,Ortaöğretim,Hayır,1,3,Hayır,Hayır,124,25.4,4.7,23.7,1.13,Hayır,1.09,0
+KT0285,68,Kadın,İlkokul ve altı,Hayır,4,3,Hayır,Hayır,56,29.6,5.6,16.6,1.4,Hayır,1.39,0
+KT0286,76,Erkek,İlkokul ve altı,Hayır,0,1,Evet,Hayır,0,30.1,7.5,28.3,1.35,Hayır,1.32,0
+KT0287,81,Kadın,Yükseköğretim,Hayır,4,8,Evet,Hayır,94,31.4,9,18.8,0.81,Hayır,0.86,1
+KT0288,78,Erkek,Ortaöğretim,Hayır,4,5,Hayır,Evet,79,28,5.7,25,1,Hayır,0.77,0
+KT0289,83,Kadın,İlkokul ve altı,Evet,3,5,Evet,Evet,238,28.8,7.5,22.7,0.88,Evet,0.88,0
+KT0290,80,Erkek,Ortaöğretim,Evet,0,1,Hayır,Hayır,31,28.5,6.3,26.8,1.02,Hayır,1.17,0
+KT0291,86,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Evet,42,26.1,6.4,21.1,0.81,Hayır,0.76,0
+KT0292,85,Erkek,İlkokul ve altı,Evet,3,7,Hayır,Hayır,73,30.6,6.2,20.1,0.87,Evet,0.95,1
+KT0293,79,Kadın,Yükseköğretim,Evet,3,11,Hayır,Evet,0,27,7.4,27.6,0.82,Evet,0.85,0
+KT0294,72,Kadın,Ortaöğretim,Evet,0,0,Hayır,Evet,90,30,7.2,19,1.31,Hayır,1.26,0
+KT0295,84,Erkek,Ortaöğretim,Hayır,2,5,Evet,Hayır,103,31.6,6.7,26.6,0.8,Evet,0.83,1
+KT0296,69,Kadın,İlkokul ve altı,Evet,3,3,Hayır,Hayır,129,28,8.3,28.9,1.27,Hayır,1.32,0
+KT0297,75,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,233,27.1,6.5,28.1,1.14,Hayır,1.1,0
+KT0298,81,Kadın,Ortaöğretim,Hayır,3,2,Evet,Hayır,0,31.3,6.9,21.8,0.74,Evet,0.81,0
+KT0299,80,Erkek,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,45,24.1,7,22.7,1.13,Hayır,1.03,0
+KT0300,76,Kadın,Ortaöğretim,Evet,0,1,Hayır,Evet,175,32,7.9,22.9,1.08,Evet,1.2,0
+KT0301,74,Kadın,Ortaöğretim,Hayır,4,6,Hayır,Hayır,0,29.3,5.8,23.3,0.88,Hayır,0.82,0
+KT0302,77,Erkek,İlkokul ve altı,Hayır,3,4,Hayır,Hayır,30,23,6.7,25.7,1.1,Hayır,1.06,0
+KT0303,75,Kadın,Ortaöğretim,Evet,2,4,Hayır,Hayır,26,27.5,5.9,16,1.2,Hayır,1.14,1
+KT0304,70,Erkek,Yükseköğretim,Hayır,1,0,Hayır,Hayır,0,22.2,8.5,23.3,1.17,Hayır,1.14,0
+KT0305,78,Erkek,Ortaöğretim,Evet,2,2,Hayır,Hayır,30,25.4,7.4,31.9,1.21,Hayır,1.24,0
+KT0306,76,Kadın,Yükseköğretim,Evet,0,2,Hayır,Hayır,116,26.1,7.1,25.3,1.12,Hayır,1.13,0
+KT0307,79,Kadın,Yükseköğretim,Evet,2,2,Hayır,Hayır,0,28.6,5.5,23.5,0.94,Hayır,0.81,1
+KT0308,71,Kadın,Ortaöğretim,Hayır,2,4,Hayır,Hayır,442,31.3,7.9,21.3,1.47,Hayır,1.49,0
+KT0309,88,Erkek,İlkokul ve altı,Hayır,3,8,Hayır,Hayır,0,29.2,6.1,25.9,0.95,Evet,1.07,0
+KT0310,70,Kadın,Yükseköğretim,Evet,1,2,Hayır,Hayır,0,24.7,6.9,26.8,0.81,Hayır,0.76,0
+KT0311,88,Kadın,İlkokul ve altı,Evet,2,3,Hayır,Hayır,112,23.3,5.4,14.7,0.81,Hayır,0.89,0
+KT0312,78,Kadın,İlkokul ve altı,Hayır,4,6,Hayır,Hayır,101,28,6.6,11.9,0.91,Hayır,0.77,0
+KT0313,65,Erkek,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,0,24.8,7.4,36.3,1.09,Hayır,1.06,0
+KT0314,89,Kadın,Ortaöğretim,Evet,3,5,Hayır,Evet,69,28.7,6.3,20.2,0.85,Hayır,0.86,1
+KT0315,80,Erkek,Ortaöğretim,Evet,2,3,Hayır,Hayır,0,28.8,7.2,29,1.19,Hayır,1.01,0
+KT0316,79,Kadın,Yükseköğretim,Hayır,2,1,Evet,Hayır,0,35.4,6.3,12.2,0.88,Hayır,0.83,1
+KT0317,78,Erkek,Ortaöğretim,Hayır,1,5,Hayır,Hayır,49,23.8,6.3,35.7,1.11,Hayır,1.13,0
+KT0318,68,Kadın,Yükseköğretim,Hayır,2,2,Hayır,Hayır,165,28.4,6.3,18.2,1.39,Hayır,1.25,0
+KT0319,79,Erkek,Yükseköğretim,Evet,0,3,Hayır,Evet,0,27.6,6.6,23.3,1.17,Hayır,1.07,0
+KT0320,78,Kadın,İlkokul ve altı,Evet,3,5,Hayır,Hayır,90,29.8,7.6,22,0.9,Evet,0.84,0
+KT0321,71,Erkek,İlkokul ve altı,Evet,3,7,Hayır,Hayır,104,21.4,7.5,25.9,1.15,Hayır,1.24,0
+KT0322,83,Erkek,Ortaöğretim,Evet,3,4,Hayır,Hayır,35,18.7,6.1,21.4,0.88,Hayır,0.81,1
+KT0323,73,Kadın,Ortaöğretim,Hayır,5,11,Evet,Hayır,0,21.5,6,27.8,0.96,Hayır,1.04,1
+KT0324,80,Erkek,İlkokul ve altı,Hayır,5,7,Hayır,Hayır,0,28.4,5.3,32.5,0.71,Hayır,0.9,1
+KT0325,67,Kadın,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,190,33.4,6.2,28.3,1.14,Hayır,1.05,0
+KT0326,73,Kadın,İlkokul ve altı,Hayır,3,2,Hayır,Hayır,75,31.6,5.3,19.7,0.98,Hayır,0.86,0
+KT0327,75,Erkek,Yükseköğretim,Hayır,1,2,Hayır,Evet,56,30.7,6.4,23.1,0.92,Hayır,0.88,0
+KT0328,80,Kadın,İlkokul ve altı,Hayır,1,1,Evet,Hayır,57,25.9,6.3,28.2,1.2,Evet,1.19,0
+KT0329,79,Erkek,Yükseköğretim,Hayır,1,1,Hayır,Hayır,142,27,6.9,20.1,1.24,Hayır,1.12,1
+KT0330,80,Erkek,İlkokul ve altı,Hayır,2,4,Hayır,Hayır,31,27.2,5.9,21.3,1.03,Evet,1.19,0
+KT0331,83,Kadın,Yükseköğretim,Hayır,4,5,Evet,Hayır,173,29.3,6.1,17.9,1.05,Evet,1.06,0
+KT0332,78,Kadın,Ortaöğretim,Hayır,1,0,Hayır,Hayır,327,32.2,6,21.2,0.92,Evet,0.91,0
+KT0333,73,Kadın,Yükseköğretim,Hayır,1,5,Hayır,Hayır,55,26.2,5.1,21,1.18,Hayır,1.05,0
+KT0334,72,Erkek,İlkokul ve altı,Hayır,3,2,Hayır,Hayır,0,26.6,5.9,33,1.17,Hayır,1.07,0
+KT0335,79,Kadın,Ortaöğretim,Hayır,2,0,Hayır,Evet,74,27.8,6.9,22.7,0.98,Hayır,0.93,0
+KT0336,75,Kadın,Ortaöğretim,Hayır,0,2,Hayır,Hayır,66,27.4,5.3,27,1.3,Evet,1.38,0
+KT0337,84,Erkek,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,0,17,8,21.3,1.27,Hayır,1.27,1
+KT0338,82,Kadın,İlkokul ve altı,Hayır,5,4,Hayır,Hayır,124,27.2,4.8,20.3,0.85,Evet,0.81,0
+KT0339,78,Kadın,İlkokul ve altı,Evet,1,4,Hayır,Hayır,32,20.1,7.3,20.5,1.32,Hayır,1.33,0
+KT0340,70,Kadın,Yükseköğretim,Hayır,2,2,Hayır,Hayır,60,27.5,7.6,32.2,1.14,Hayır,1.19,0
+KT0341,71,Kadın,Ortaöğretim,Hayır,2,3,Hayır,Hayır,0,33.8,6.3,19.4,1.09,Hayır,1.02,0
+KT0342,77,Erkek,İlkokul ve altı,Evet,2,2,Hayır,Hayır,43,26.7,7.9,32.2,1.21,Evet,1.28,0
+KT0343,69,Erkek,Yükseköğretim,Hayır,3,6,Hayır,Hayır,151,25.5,4.5,30.5,1.13,Evet,1.34,1
+KT0344,76,Kadın,İlkokul ve altı,Hayır,0,0,Evet,Hayır,112,31,7.9,19.1,1.18,Evet,1.2,0
+KT0345,78,Erkek,İlkokul ve altı,Evet,2,5,Hayır,Hayır,0,27.5,4.9,31.1,0.74,Evet,0.83,1
+KT0346,76,Kadın,Ortaöğretim,Hayır,1,1,Hayır,Hayır,39,38.6,6.6,14,1.1,Hayır,1.01,0
+KT0347,82,Erkek,Ortaöğretim,Evet,4,8,Evet,Evet,62,27.1,8.4,20.2,0.8,Evet,0.88,1
+KT0348,84,Erkek,İlkokul ve altı,Hayır,2,5,Evet,Evet,48,29,6.6,23.5,1.1,Hayır,1.19,1
+KT0349,81,Kadın,Yükseköğretim,Evet,1,1,Hayır,Hayır,154,27.1,6.6,26.1,0.95,Hayır,0.97,1
+KT0350,73,Kadın,İlkokul ve altı,Evet,1,3,Hayır,Hayır,138,21.3,6.1,13.8,1.45,Hayır,1.44,0
+KT0351,72,Kadın,Yükseköğretim,Evet,0,0,Hayır,Hayır,0,31,4.7,23,1.04,Hayır,1.08,0
+KT0352,66,Kadın,Ortaöğretim,Evet,0,2,Hayır,Hayır,108,24.3,6.9,28.3,1.28,Hayır,1.26,0
+KT0353,76,Kadın,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,45,31.4,4.6,20.7,0.92,Evet,1.02,0
+KT0354,66,Erkek,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,232,33.9,7.7,30.2,1.68,Hayır,1.66,0
+KT0355,70,Erkek,Ortaöğretim,Hayır,1,3,Evet,Hayır,0,27.1,6.7,23.4,1.11,Evet,1.27,0
+KT0356,75,Kadın,İlkokul ve altı,Hayır,3,7,Hayır,Hayır,236,30.4,6.9,14.8,1.2,Hayır,1.21,1
+KT0357,81,Kadın,Ortaöğretim,Evet,1,2,Evet,Hayır,57,26.4,5.3,28.8,1.02,Evet,1.06,0
+KT0358,71,Kadın,İlkokul ve altı,Hayır,2,0,Evet,Hayır,66,28.5,8.3,21.1,0.99,Hayır,0.89,0
+KT0359,74,Kadın,İlkokul ve altı,Hayır,1,3,Hayır,Evet,51,25.1,6.9,24.3,1.13,Hayır,1.05,0
+KT0360,72,Erkek,İlkokul ve altı,Hayır,3,11,Hayır,Hayır,380,23.3,6.1,25,1.61,Hayır,1.68,1
+KT0361,70,Kadın,İlkokul ve altı,Hayır,3,5,Evet,Hayır,22,27,5.9,16.3,1.02,Evet,1.2,1
+KT0362,77,Kadın,Yükseköğretim,Hayır,2,5,Hayır,Hayır,0,28.6,8.2,17.1,1.08,Evet,1.12,0
+KT0363,69,Kadın,Ortaöğretim,Hayır,0,0,Hayır,Evet,127,24,6.9,28.1,1.25,Evet,1.27,0
+KT0364,72,Erkek,Ortaöğretim,Hayır,1,3,Hayır,Hayır,155,30.3,8.2,26.9,1.44,Evet,1.46,1
+KT0365,68,Kadın,Ortaöğretim,Hayır,3,5,Hayır,Hayır,90,25.9,6.7,33,1.16,Hayır,1.05,0
+KT0366,84,Erkek,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,113,29.3,6.3,24.2,1.03,Evet,1.05,0
+KT0367,69,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,297,33.4,5.1,22.7,1.27,Hayır,1.32,0
+KT0368,81,Kadın,Yükseköğretim,Evet,2,7,Hayır,Hayır,8,28.5,6.6,18.2,1.11,Evet,1.18,0
+KT0369,72,Erkek,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,112,28,6,28.6,1.24,Hayır,1.11,1
+KT0370,82,Erkek,İlkokul ve altı,Evet,1,1,Hayır,Hayır,0,22.6,6.9,19.7,0.84,Evet,0.92,0
+KT0371,72,Kadın,Ortaöğretim,Hayır,3,4,Hayır,Hayır,0,30.8,4.4,22.2,0.9,Hayır,0.94,0
+KT0372,90,Erkek,Ortaöğretim,Evet,1,2,Evet,Hayır,100,29.7,6.7,25.9,1,Evet,1.02,1
+KT0373,84,Erkek,Ortaöğretim,Hayır,0,0,Hayır,Hayır,19,31.2,7.2,25,0.89,Evet,0.96,0
+KT0374,83,Kadın,Yükseköğretim,Hayır,2,3,Hayır,Hayır,0,29.3,6.6,16.6,0.84,Hayır,0.66,0
+KT0375,75,Kadın,Yükseköğretim,Hayır,3,3,Hayır,Hayır,0,34.3,6.9,11.6,0.97,Hayır,1.07,0
+KT0376,80,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Evet,50,31.8,7.4,18.8,0.87,Hayır,0.77,1
+KT0377,84,Erkek,İlkokul ve altı,Evet,4,7,Hayır,Evet,76,31,6.5,26.2,0.74,Evet,0.65,1
+KT0378,74,Erkek,İlkokul ve altı,Hayır,3,3,Hayır,Hayır,129,25.5,4.8,31,1.16,Hayır,1.17,1
+KT0379,72,Erkek,Ortaöğretim,Evet,6,12,Evet,Evet,81,25.8,5.4,25.5,0.83,Evet,0.91,0
+KT0380,89,Erkek,Ortaöğretim,Hayır,2,1,Hayır,Evet,105,27.6,7.4,24.8,0.8,Evet,1.01,1
+KT0381,76,Erkek,Ortaöğretim,Hayır,4,8,Hayır,Hayır,54,28.1,8.5,24.9,0.78,Hayır,0.6,0
+KT0382,76,Kadın,İlkokul ve altı,Hayır,3,2,Hayır,Hayır,102,25.4,8,18.2,1.1,Hayır,1.15,0
+KT0383,72,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,0,32.3,8,26.8,1.05,Hayır,1.03,0
+KT0384,77,Kadın,Ortaöğretim,Hayır,2,4,Hayır,Hayır,0,26.6,7.6,11.9,0.94,Hayır,1,0
+KT0385,68,Kadın,İlkokul ve altı,Hayır,3,1,Evet,Evet,207,26.3,5.9,24.2,1.31,Hayır,1.36,0
+KT0386,73,Kadın,İlkokul ve altı,Evet,1,3,Hayır,Evet,135,32.5,7.2,25.1,1.09,Hayır,1.07,0
+KT0387,78,Kadın,İlkokul ve altı,Evet,4,7,Evet,Hayır,24,17,7.1,24.4,0.84,Hayır,0.63,0
+KT0388,74,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,98,34.1,9,23.8,1.28,Hayır,1.18,0
+KT0389,75,Erkek,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,206,21.1,7.2,30.5,1.37,Evet,1.44,0
+KT0390,73,Kadın,Yükseköğretim,Hayır,0,2,Hayır,Hayır,106,28,8.4,17.9,1.27,Evet,1.51,0
+KT0391,84,Kadın,İlkokul ve altı,Evet,3,4,Evet,Hayır,30,21.9,4.9,16.5,0.79,Hayır,0.85,0
+KT0392,67,Erkek,Ortaöğretim,Hayır,0,1,Hayır,Hayır,0,30.2,5.2,39.6,1.3,Hayır,1.24,0
+KT0393,72,Kadın,İlkokul ve altı,Evet,1,5,Hayır,Hayır,0,31.3,7.3,23.7,1.12,Evet,1.04,0
+KT0394,67,Kadın,Yükseköğretim,Hayır,2,2,Evet,Hayır,60,33.5,5.4,23.8,0.96,Hayır,0.89,0
+KT0395,77,Kadın,İlkokul ve altı,Hayır,3,4,Evet,Hayır,23,25.6,5,20.9,0.98,Evet,0.99,0
+KT0396,73,Erkek,İlkokul ve altı,Hayır,3,5,Hayır,Hayır,85,26.2,5.8,23,1.28,Hayır,1.31,1
+KT0397,77,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Evet,0,34.8,7,14.7,1.06,Evet,0.97,0
+KT0398,66,Erkek,Yükseköğretim,Hayır,0,0,Hayır,Hayır,41,23.2,7.5,31.5,1.32,Hayır,1.19,0
+KT0399,80,Erkek,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,51,26.6,6.4,22.2,1.21,Hayır,1.43,0
+KT0400,80,Kadın,Yükseköğretim,Hayır,3,7,Hayır,Hayır,0,26.9,6.4,15,1.08,Evet,1.34,0
+KT0401,73,Kadın,Yükseköğretim,Hayır,2,5,Hayır,Hayır,133,28.5,6.6,18.1,1.24,Hayır,1.2,1
+KT0402,68,Kadın,İlkokul ve altı,Evet,0,1,Hayır,Evet,0,24.9,5.8,21.5,1.43,Evet,1.46,0
+KT0403,80,Kadın,İlkokul ve altı,Evet,2,4,Hayır,Evet,74,33.6,6.3,26,0.88,Hayır,0.91,1
+KT0404,81,Erkek,Ortaöğretim,Hayır,4,8,Hayır,Hayır,40,31.9,6,34.4,0.8,Evet,0.74,1
+KT0405,87,Kadın,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,0,20.9,6.4,17.9,0.98,Hayır,1.06,0
+KT0406,76,Kadın,Yükseköğretim,Evet,1,2,Hayır,Hayır,0,22,9.4,19.1,1.22,Hayır,0.98,1
+KT0407,69,Erkek,İlkokul ve altı,Evet,4,7,Hayır,Hayır,84,30.1,7.7,22.1,1.12,Evet,1.05,1
+KT0408,76,Erkek,Ortaöğretim,Evet,3,5,Hayır,Evet,43,26.7,7.6,25.2,1.04,Hayır,0.91,0
+KT0409,76,Kadın,İlkokul ve altı,Hayır,3,3,Hayır,Evet,155,26.7,6,21.1,1.07,Hayır,1.03,0
+KT0410,72,Kadın,Ortaöğretim,Hayır,0,1,Evet,Hayır,182,24.3,7,18.4,1.54,Hayır,1.62,0
+KT0411,67,Erkek,Ortaöğretim,Hayır,3,5,Hayır,Evet,0,27.8,7.5,29.2,1.2,Hayır,1.17,0
+KT0412,76,Erkek,Yükseköğretim,Hayır,0,2,Hayır,Hayır,46,32.2,6.8,29.7,1.2,Evet,1.28,0
+KT0413,74,Erkek,Yükseköğretim,Evet,1,1,Hayır,Hayır,186,23.5,4.2,23.1,1.23,Hayır,1.13,1
+KT0414,73,Kadın,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,93,31.7,4.9,24.2,1.24,Hayır,1.2,0
+KT0415,78,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,215,27.7,6.7,14.2,0.96,Hayır,0.84,0
+KT0416,77,Kadın,Ortaöğretim,Hayır,3,5,Evet,Hayır,79,28.3,4.3,19.7,0.82,Evet,0.95,0
+KT0417,68,Kadın,Ortaöğretim,Hayır,1,1,Hayır,Hayır,75,30.1,7.5,16.4,1.33,Hayır,1.38,1
+KT0418,82,Erkek,Yükseköğretim,Hayır,2,4,Evet,Evet,51,23.7,7.6,26.7,1.06,Hayır,1.01,1
+KT0419,70,Kadın,Yükseköğretim,Evet,0,2,Hayır,Hayır,52,31.4,6,22.8,0.99,Hayır,0.9,1
+KT0420,70,Kadın,Ortaöğretim,Evet,1,0,Hayır,Hayır,118,24.6,6.6,26,1.04,Hayır,1.15,0
+KT0421,67,Erkek,İlkokul ve altı,Hayır,4,1,Hayır,Hayır,0,24.2,6.9,27.8,1.31,Hayır,1.3,0
+KT0422,71,Erkek,Yükseköğretim,Hayır,0,2,Hayır,Hayır,29,32.1,6.6,30.4,1.01,Evet,1.1,0
+KT0423,67,Kadın,İlkokul ve altı,Hayır,3,4,Evet,Hayır,37,27.1,4.3,21.4,1,Hayır,0.88,0
+KT0424,80,Kadın,Ortaöğretim,Evet,3,3,Hayır,Hayır,0,30.2,4.3,17,0.86,Hayır,0.68,0
+KT0425,73,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,102,27.6,6.4,12.3,1.17,Hayır,1.07,0
+KT0426,73,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,114,29.6,6.3,25.4,1.35,Hayır,1.13,0
+KT0427,81,Erkek,İlkokul ve altı,Hayır,4,9,Hayır,Hayır,0,31.6,7.2,21.9,0.89,Hayır,0.83,0
+KT0428,76,Kadın,Yükseköğretim,Hayır,3,5,Hayır,Hayır,162,23.9,6.7,19.9,1.01,Hayır,1.09,1
+KT0429,67,Kadın,Ortaöğretim,Evet,0,3,Hayır,Hayır,248,30.8,6.4,31.2,1.45,Hayır,1.48,0
+KT0430,67,Erkek,Yükseköğretim,Hayır,2,0,Hayır,Hayır,82,23.2,6.2,31.8,1.26,Hayır,1.18,0
+KT0431,82,Kadın,Ortaöğretim,Hayır,4,5,Evet,Hayır,0,29.8,7.2,17.8,0.86,Hayır,0.66,0
+KT0432,81,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,50,21.5,9,12.9,1.22,Hayır,1.13,0
+KT0433,70,Kadın,İlkokul ve altı,Evet,2,3,Evet,Hayır,0,27.8,7.6,18.9,1.1,Hayır,1.22,0
+KT0434,77,Erkek,Ortaöğretim,Hayır,0,2,Hayır,Hayır,110,28.6,6.9,30.2,1.29,Evet,1.28,0
+KT0435,76,Erkek,Yükseköğretim,Evet,1,0,Evet,Hayır,133,27.4,8.1,40.1,1.19,Hayır,1.16,1
+KT0436,73,Erkek,İlkokul ve altı,Evet,1,1,Hayır,Evet,0,30.4,5.3,42.7,1.14,Hayır,0.94,0
+KT0437,69,Erkek,Yükseköğretim,Evet,0,1,Hayır,Hayır,163,30.6,6.9,36.8,1.28,Hayır,1.29,0
+KT0438,75,Kadın,Yükseköğretim,Hayır,2,6,Hayır,Evet,40,28.1,7.6,18.4,1.22,Evet,1.33,0
+KT0439,70,Erkek,Yükseköğretim,Hayır,1,0,Hayır,Evet,0,29.8,6.7,34.1,1.23,Evet,1.39,0
+KT0440,71,Erkek,İlkokul ve altı,Evet,1,2,Hayır,Hayır,137,33.3,6.2,26.7,1.17,Hayır,0.98,0
+KT0441,81,Kadın,Yükseköğretim,Hayır,0,1,Evet,Hayır,39,27.8,5.1,13.5,1.25,Evet,1.3,0
+KT0442,77,Erkek,İlkokul ve altı,Hayır,3,2,Evet,Hayır,0,26.1,5.2,22.3,1.22,Evet,1.21,0
+KT0443,75,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,33,29.3,6.8,24,1.19,Evet,1.18,0
+KT0444,79,Erkek,Ortaöğretim,Hayır,2,2,Hayır,Evet,0,30,8.2,20.9,0.95,Hayır,0.99,1
+KT0445,72,Kadın,İlkokul ve altı,Evet,2,3,Hayır,Hayır,153,33.7,5.5,22,0.96,Hayır,1.07,0
+KT0446,66,Kadın,İlkokul ve altı,Evet,1,1,Evet,Hayır,82,19.5,7.2,18.9,1.17,Hayır,1.09,0
+KT0447,78,Erkek,Ortaöğretim,Hayır,2,8,Hayır,Hayır,52,24.5,6.1,28,0.87,Hayır,0.78,1
+KT0448,73,Kadın,Ortaöğretim,Hayır,4,4,Hayır,Hayır,37,24.8,6.2,23.1,0.97,Hayır,0.9,1
+KT0449,83,Erkek,İlkokul ve altı,Evet,3,5,Evet,Hayır,0,28.4,5.9,26.3,0.82,Hayır,0.83,1
+KT0450,86,Kadın,Yükseköğretim,Evet,1,1,Hayır,Hayır,31,22.6,5.6,16.5,1.01,Hayır,0.82,0
+KT0451,79,Erkek,Yükseköğretim,Hayır,2,4,Evet,Hayır,43,21.4,6.8,18.1,1.06,Hayır,0.93,1
+KT0452,68,Kadın,Yükseköğretim,Evet,3,4,Hayır,Evet,112,31.5,6.9,24.7,1.13,Evet,1.22,0
+KT0453,80,Kadın,Yükseköğretim,Hayır,5,9,Evet,Hayır,95,27,6.4,13.4,0.61,Evet,0.65,0
+KT0454,71,Kadın,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,69,27.1,6.6,20.4,0.98,Hayır,0.87,1
+KT0455,71,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Evet,92,22.5,4.7,24.8,1.21,Evet,1.37,0
+KT0456,70,Kadın,Yükseköğretim,Hayır,0,1,Hayır,Hayır,117,23.5,6.3,26.8,1.54,Evet,1.55,0
+KT0457,67,Kadın,İlkokul ve altı,Evet,1,1,Hayır,Hayır,104,33.5,6.3,28.6,1.13,Hayır,1,0
+KT0458,78,Kadın,İlkokul ve altı,Hayır,0,0,Hayır,Evet,94,31,7.7,26,1.01,Hayır,1.06,1
+KT0459,87,Kadın,Ortaöğretim,Hayır,2,5,Hayır,Hayır,0,19.7,6.5,12.8,1.17,Hayır,1.1,0
+KT0460,72,Kadın,İlkokul ve altı,Hayır,2,4,Hayır,Hayır,72,27.7,7.6,20,0.83,Hayır,0.92,0
+KT0461,68,Erkek,İlkokul ve altı,Hayır,1,2,Evet,Hayır,253,24.8,7.2,33.7,1.06,Hayır,0.91,0
+KT0462,69,Kadın,Yükseköğretim,Evet,3,4,Hayır,Hayır,141,28.6,6.3,15.7,1.24,Hayır,1.18,1
+KT0463,75,Kadın,Yükseköğretim,Evet,1,2,Hayır,Hayır,181,26,5.2,17.7,1.14,Hayır,1.04,0
+KT0464,67,Erkek,Yükseköğretim,Hayır,1,1,Hayır,Hayır,72,28.5,5.7,22.6,1.36,Hayır,1.25,0
+KT0465,67,Kadın,Yükseköğretim,Hayır,2,5,Hayır,Hayır,145,20.3,6.8,31.5,1.3,Evet,1.27,0
+KT0466,79,Kadın,İlkokul ve altı,Evet,4,6,Evet,Evet,60,34.2,5.1,19.7,0.97,Evet,1.08,1
+KT0467,71,Kadın,Yükseköğretim,Hayır,4,7,Evet,Hayır,0,32.1,6.5,16.1,1.12,Hayır,1.09,0
+KT0468,83,Erkek,Yükseköğretim,Evet,2,4,Evet,Evet,0,26.8,6.3,24.8,0.98,Hayır,0.98,1
+KT0469,70,Erkek,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,122,21.3,5.4,29.7,1.31,Hayır,1.23,1
+KT0470,73,Erkek,İlkokul ve altı,Hayır,2,1,Hayır,Hayır,208,33.1,5.8,23.4,1.09,Evet,1.11,0
+KT0471,78,Kadın,Ortaöğretim,Evet,5,6,Evet,Hayır,188,26.3,6,16.2,0.97,Hayır,0.92,0
+KT0472,81,Erkek,Yükseköğretim,Evet,3,2,Hayır,Hayır,0,27.9,6.8,24.4,1.04,Hayır,1.01,1
+KT0473,73,Erkek,Ortaöğretim,Hayır,1,3,Hayır,Hayır,22,26.1,5.6,32,1.33,Hayır,1.3,0
+KT0474,72,Erkek,İlkokul ve altı,Hayır,1,2,Hayır,Evet,121,26.4,7.9,24.3,1.27,Hayır,1.3,1
+KT0475,72,Kadın,Ortaöğretim,Hayır,1,1,Hayır,Evet,135,32,5.8,18.2,1.15,Hayır,1.12,1
+KT0476,75,Kadın,Yükseköğretim,Hayır,0,1,Hayır,Hayır,67,23.1,6.5,22,0.98,Evet,0.89,0
+KT0477,91,Kadın,Ortaöğretim,Evet,5,9,Evet,Evet,53,22.4,8,6,0.7,Hayır,0.49,1
+KT0478,79,Kadın,İlkokul ve altı,Evet,0,1,Hayır,Hayır,109,31.3,6.6,16.7,0.81,Evet,0.91,0
+KT0479,79,Kadın,İlkokul ve altı,Hayır,2,1,Hayır,Hayır,130,26.5,6.8,24.9,0.87,Hayır,1,0
+KT0480,87,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Evet,0,29.1,7.9,11.8,0.83,Evet,1.01,1
+KT0481,74,Kadın,İlkokul ve altı,Hayır,0,4,Evet,Hayır,230,28.4,7.8,22.5,1.03,Hayır,0.95,0
+KT0482,73,Kadın,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,0,29.7,6.7,19.9,1.01,Hayır,1,0
+KT0483,68,Kadın,Yükseköğretim,Hayır,0,0,Evet,Hayır,250,26.8,7.2,17.5,1.38,Hayır,1.52,0
+KT0484,74,Erkek,İlkokul ve altı,Evet,4,8,Hayır,Hayır,26,25.9,5.9,20.3,0.98,Hayır,0.92,0
+KT0485,82,Erkek,İlkokul ve altı,Hayır,5,6,Evet,Evet,61,28.9,6.4,21.2,0.78,Evet,0.71,1
+KT0486,74,Erkek,Yükseköğretim,Hayır,2,2,Evet,Evet,168,23.2,8.2,23,1.17,Hayır,1.14,1
+KT0487,72,Erkek,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,52,29.1,5.9,29.9,1.46,Hayır,1.47,0
+KT0488,85,Kadın,Ortaöğretim,Evet,2,1,Evet,Evet,0,29.5,7.3,17.4,0.79,Hayır,0.82,1
+KT0489,79,Erkek,İlkokul ve altı,Evet,3,5,Evet,Hayır,0,35.4,7.3,22.7,0.89,Hayır,0.9,1
+KT0490,81,Erkek,İlkokul ve altı,Hayır,3,5,Hayır,Hayır,0,25.5,5.3,18.2,0.96,Hayır,0.88,1
+KT0491,70,Erkek,İlkokul ve altı,Hayır,1,3,Hayır,Evet,56,33.5,7.6,27.7,1.07,Hayır,0.94,0
+KT0492,86,Kadın,İlkokul ve altı,Evet,1,2,Evet,Hayır,58,29.5,6.6,24.9,0.89,Evet,1.05,0
+KT0493,75,Kadın,Ortaöğretim,Hayır,1,6,Hayır,Hayır,145,28.1,6.3,17.7,1.15,Hayır,0.95,0
+KT0494,73,Erkek,Yükseköğretim,Hayır,0,1,Hayır,Hayır,54,26.3,5.6,36.6,1.26,Hayır,1.3,0
+KT0495,82,Kadın,Ortaöğretim,Evet,3,4,Evet,Hayır,0,25.4,6.7,16.4,0.76,Hayır,0.61,0
+KT0496,86,Kadın,İlkokul ve altı,Hayır,2,3,Hayır,Evet,0,21,8.1,11.5,1.1,Evet,1.23,1
+KT0497,75,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Hayır,128,34.5,5.8,14.2,1.06,Evet,1.05,1
+KT0498,81,Kadın,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,56,23.8,5.7,20.6,1.11,Hayır,0.95,0
+KT0499,75,Kadın,İlkokul ve altı,Hayır,0,0,Hayır,Hayır,110,24.2,5,26.3,0.95,Hayır,1.07,0
+KT0500,89,Erkek,İlkokul ve altı,Hayır,3,3,Hayır,Hayır,52,27.2,4.4,20.4,0.7,Hayır,0.68,0
+KT0501,77,Erkek,İlkokul ve altı,Hayır,1,2,Hayır,Evet,0,32.1,6.7,34.4,1.03,Hayır,0.83,1
+KT0502,75,Kadın,İlkokul ve altı,Hayır,7,9,Evet,Hayır,0,23.7,5.9,16.8,0.81,Hayır,0.92,1
+KT0503,76,Erkek,İlkokul ve altı,Evet,3,8,Hayır,Hayır,94,27.2,9,32.2,1.31,Evet,1.24,0
+KT0504,79,Erkek,Yükseköğretim,Hayır,4,9,Hayır,Hayır,70,26.6,7.9,21.1,0.75,Evet,0.81,1
+KT0505,81,Kadın,İlkokul ve altı,Hayır,1,0,Hayır,Evet,0,21.2,5.5,13.2,0.94,Hayır,0.91,1
+KT0506,75,Erkek,Ortaöğretim,Evet,2,1,Hayır,Hayır,26,27.1,5.7,35.1,1.25,Evet,1.32,0
+KT0507,72,Kadın,Yükseköğretim,Hayır,1,2,Hayır,Hayır,36,21.5,7.2,23.7,1.38,Evet,1.31,0
+KT0508,74,Kadın,İlkokul ve altı,Hayır,2,4,Hayır,Hayır,99,24.9,7.3,23.4,0.99,Evet,1.01,0
+KT0509,75,Erkek,Ortaöğretim,Hayır,2,4,Hayır,Hayır,34,31.3,8.4,23.5,1.03,Hayır,0.9,1
+KT0510,82,Erkek,İlkokul ve altı,Hayır,1,5,Hayır,Hayır,179,23.2,6.1,28.1,1.1,Evet,1.04,0
+KT0511,79,Erkek,İlkokul ve altı,Hayır,2,7,Hayır,Hayır,26,24.2,6.8,33.5,1.19,Evet,1.15,0
+KT0512,76,Erkek,Ortaöğretim,Evet,0,3,Hayır,Hayır,0,29.9,5.4,30,1.27,Evet,1.11,0
+KT0513,87,Erkek,İlkokul ve altı,Hayır,1,1,Hayır,Hayır,0,22.7,9.5,24,1.11,Hayır,1.03,0
+KT0514,76,Kadın,Yükseköğretim,Hayır,1,2,Hayır,Hayır,0,29.9,5.4,19.1,1.05,Hayır,1.16,0
+KT0515,71,Erkek,Ortaöğretim,Hayır,1,1,Hayır,Hayır,0,30.2,6.2,22.5,1.11,Hayır,1.18,0
+KT0516,72,Erkek,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,240,27,7.1,20.9,1.44,Hayır,1.34,1
+KT0517,78,Erkek,Ortaöğretim,Evet,1,2,Hayır,Evet,104,21.6,6.1,25.4,1.29,Hayır,1.18,1
+KT0518,86,Kadın,Ortaöğretim,Evet,2,3,Hayır,Hayır,0,19.7,5.6,28.7,0.83,Evet,1.09,0
+KT0519,69,Kadın,Yükseköğretim,Evet,3,4,Hayır,Hayır,119,23.6,6.1,28.4,1.13,Hayır,1.12,0
+KT0520,80,Kadın,Ortaöğretim,Hayır,1,2,Hayır,Hayır,54,31.1,6.5,20.8,0.87,Hayır,1,0
+KT0521,83,Kadın,İlkokul ve altı,Hayır,5,10,Hayır,Hayır,192,21,6.3,19,0.78,Hayır,0.64,0
+KT0522,78,Kadın,İlkokul ve altı,Hayır,2,5,Hayır,Hayır,89,31.9,6.7,15.4,1.09,Hayır,0.99,0
+KT0523,74,Erkek,Yükseköğretim,Hayır,2,3,Hayır,Hayır,120,31.7,8.7,33.2,1.1,Evet,1.1,0
+KT0524,82,Erkek,Ortaöğretim,Evet,2,4,Hayır,Hayır,46,27.3,4.9,28.5,1.01,Evet,1,0
+KT0525,85,Erkek,İlkokul ve altı,Evet,1,1,Hayır,Hayır,49,27.5,4.2,29.4,1.19,Evet,1.05,0
+KT0526,69,Erkek,Ortaöğretim,Evet,0,0,Hayır,Hayır,205,26.7,8.1,36.5,1.09,Hayır,0.93,0
+KT0527,75,Kadın,İlkokul ve altı,Hayır,2,3,Hayır,Hayır,0,24.6,7.2,21.1,0.87,Evet,0.84,0
+KT0528,67,Erkek,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,88,27.5,4.9,25.9,1.17,Hayır,1.13,0
+KT0529,71,Erkek,İlkokul ve altı,Hayır,0,2,Hayır,Evet,109,27.1,7.9,37,1.12,Evet,1.35,0
+KT0530,78,Kadın,Ortaöğretim,Hayır,2,4,Hayır,Hayır,37,27.9,6.1,19.4,1.04,Hayır,0.97,1
+KT0531,86,Kadın,İlkokul ve altı,Evet,0,1,Hayır,Hayır,87,23.3,5.8,10.6,1.08,Hayır,1.13,0
+KT0532,73,Kadın,İlkokul ve altı,Hayır,0,4,Hayır,Hayır,116,26.4,5.9,23.1,1.02,Hayır,1.16,0
+KT0533,74,Erkek,Yükseköğretim,Hayır,1,5,Hayır,Hayır,134,25.9,6.8,22.2,1.13,Evet,1.18,0
+KT0534,71,Erkek,İlkokul ve altı,Evet,1,3,Hayır,Hayır,0,28.7,5.7,26,1.23,Hayır,1.27,0
+KT0535,80,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,265,30.1,6.4,10.1,1.07,Evet,1.22,0
+KT0536,80,Kadın,İlkokul ve altı,Evet,1,2,Evet,Hayır,0,31.2,7.1,16.3,1.07,Hayır,1.16,0
+KT0537,82,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,0,31.2,6.7,17.3,1.1,Hayır,1.06,0
+KT0538,74,Erkek,İlkokul ve altı,Hayır,2,5,Hayır,Hayır,0,29.9,7.1,24.9,1.09,Hayır,1.01,1
+KT0539,81,Kadın,İlkokul ve altı,Evet,2,6,Hayır,Hayır,240,36.1,7.8,19.8,0.78,Hayır,0.74,1
+KT0540,70,Kadın,İlkokul ve altı,Hayır,0,1,Hayır,Hayır,42,25.5,5.8,22.1,1.45,Hayır,1.39,0
+KT0541,70,Erkek,Ortaöğretim,Hayır,0,3,Hayır,Hayır,498,29.2,7.8,32.7,1.66,Hayır,1.66,0
+KT0542,79,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,24,33.3,6.9,6.8,1,Hayır,0.91,0
+KT0543,76,Kadın,İlkokul ve altı,Hayır,3,3,Hayır,Hayır,44,20.9,7,30.2,0.94,Evet,1.15,1
+KT0544,83,Erkek,İlkokul ve altı,Hayır,5,11,Hayır,Evet,0,32.3,7.3,30.5,0.97,Evet,0.93,0
+KT0545,71,Erkek,İlkokul ve altı,Hayır,2,6,Evet,Evet,0,30.6,6.7,28,1.06,Hayır,1.13,0
+KT0546,81,Kadın,İlkokul ve altı,Hayır,1,2,Hayır,Hayır,48,23.5,7.4,18.3,0.96,Evet,0.95,0
+KT0547,77,Erkek,Yükseköğretim,Hayır,1,1,Hayır,Hayır,47,29.7,8,28.3,1.27,Evet,1.33,0
+KT0548,80,Erkek,İlkokul ve altı,Hayır,2,6,Evet,Hayır,0,31.3,6.3,24,1.18,Evet,1.36,0
+KT0549,82,Erkek,İlkokul ve altı,Hayır,3,4,Hayır,Hayır,17,24.3,7.1,21.8,0.97,Hayır,0.91,1
+KT0550,83,Erkek,İlkokul ve altı,Evet,2,3,Hayır,Hayır,0,23.9,8.1,25,0.88,Hayır,0.83,0
+KT0551,73,Kadın,İlkokul ve altı,Hayır,4,1,Hayır,Evet,206,32.5,6.5,14.6,1.05,Hayır,1.09,0
+KT0552,77,Erkek,Yükseköğretim,Evet,1,3,Hayır,Hayır,88,31,8.4,30.3,0.94,Hayır,0.94,0
+KT0553,70,Erkek,Yükseköğretim,Hayır,3,12,Hayır,Hayır,65,28.6,7.7,30.5,0.92,Hayır,0.81,1
+KT0554,80,Kadın,İlkokul ve altı,Evet,2,2,Hayır,Evet,89,30.9,5.6,19.4,0.8,Evet,0.75,0
+KT0555,67,Erkek,Yükseköğretim,Hayır,3,2,Hayır,Evet,117,28.6,7.3,23.6,1.39,Hayır,1.17,0
+KT0556,87,Erkek,İlkokul ve altı,Hayır,4,5,Hayır,Evet,0,25.5,5.8,14.9,0.74,Evet,0.65,0
+KT0557,68,Kadın,Ortaöğretim,Hayır,0,1,Hayır,Hayır,126,24.7,6.5,26.8,1.45,Hayır,1.51,0
+KT0558,71,Kadın,İlkokul ve altı,Hayır,3,5,Evet,Hayır,114,30,6.6,14.8,1.06,Hayır,0.95,0
+KT0559,76,Kadın,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,32,31.8,6.5,18.5,1.12,Evet,1.21,0
+KT0560,79,Erkek,Yükseköğretim,Evet,2,3,Evet,Hayır,0,23.1,5.6,29.7,1.07,Hayır,0.96,1
+KT0561,65,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,89,31.5,4.8,21.8,1.36,Hayır,1.53,0
+KT0562,75,Erkek,Ortaöğretim,Hayır,0,1,Evet,Hayır,76,37.8,6.4,23.9,1.16,Hayır,1.17,0
+KT0563,76,Kadın,İlkokul ve altı,Hayır,0,2,Hayır,Hayır,0,25.1,6,21.2,1.31,Hayır,1.29,0
+KT0564,80,Erkek,Ortaöğretim,Hayır,2,3,Evet,Hayır,177,28.6,7,23.1,0.91,Hayır,0.84,0
+KT0565,84,Erkek,Yükseköğretim,Hayır,2,4,Hayır,Hayır,142,23,6.3,23.9,0.91,Evet,1.04,0
+KT0566,75,Kadın,İlkokul ve altı,Hayır,2,2,Hayır,Hayır,84,25.5,6.1,21.4,1.12,Hayır,0.93,0
+KT0567,69,Kadın,İlkokul ve altı,Evet,1,3,Hayır,Hayır,102,27.1,6.6,30.9,1.23,Evet,1.14,0
+KT0568,76,Kadın,Ortaöğretim,Hayır,2,5,Hayır,Hayır,78,21.1,6.7,25.8,1.37,Hayır,1.18,0
+KT0569,84,Erkek,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,123,26.3,7.6,21.9,0.92,Evet,1.08,1
+KT0570,68,Kadın,Yükseköğretim,Hayır,0,1,Hayır,Hayır,197,31.4,8.5,25.6,1.27,Evet,1.3,0
+KT0571,68,Kadın,Yükseköğretim,Hayır,1,1,Hayır,Hayır,186,27.3,7.1,22.7,1.21,Hayır,1.14,0
+KT0572,71,Erkek,Ortaöğretim,Evet,1,2,Hayır,Hayır,217,26.9,5.5,37,1.1,Hayır,0.97,0
+KT0573,75,Kadın,İlkokul ve altı,Hayır,1,3,Hayır,Hayır,81,28.7,6.5,24.8,0.83,Evet,0.8,0
+KT0574,74,Erkek,Yükseköğretim,Evet,3,6,Hayır,Evet,127,29.8,6.6,24.4,1.04,Evet,1.2,0
+KT0575,68,Erkek,Ortaöğretim,Hayır,3,5,Evet,Hayır,63,24.7,7.5,26.5,1.47,Hayır,1.29,0
+KT0576,74,Kadın,Ortaöğretim,Evet,0,0,Hayır,Hayır,0,27.3,5.5,14.6,1.04,Hayır,0.8,1
+KT0577,85,Kadın,Yükseköğretim,Hayır,3,6,Hayır,Hayır,73,30.7,5.9,18.5,0.87,Evet,0.88,0
+KT0578,67,Kadın,İlkokul ve altı,Evet,0,0,Hayır,Hayır,85,35.6,7.6,26.4,1.07,Hayır,1.01,0
+KT0579,79,Kadın,İlkokul ve altı,Evet,2,0,Evet,Evet,39,26.6,5.7,15.8,1.15,Hayır,1.19,1
+KT0580,72,Erkek,Ortaöğretim,Hayır,3,2,Hayır,Hayır,51,33.7,5.4,24.5,0.95,Hayır,0.91,0
+KT0581,78,Kadın,İlkokul ve altı,Evet,4,7,Hayır,Hayır,0,23.8,6,11.6,0.96,Evet,0.92,1
+KT0582,76,Kadın,Ortaöğretim,Hayır,2,2,Hayır,Hayır,67,30.6,5.6,20.9,1.04,Hayır,1,0
+KT0583,73,Erkek,Yükseköğretim,Hayır,2,3,Evet,Hayır,138,32.7,7.5,28.9,1.13,Hayır,1.2,0
+KT0584,87,Kadın,İlkokul ve altı,Evet,1,4,Hayır,Hayır,44,30.7,6.4,22.8,0.98,Evet,0.9,0
+KT0585,76,Kadın,Ortaöğretim,Hayır,2,2,Hayır,Hayır,91,28,3.9,24.1,1.17,Hayır,1.07,1
+KT0586,68,Kadın,İlkokul ve altı,Evet,2,4,Hayır,Hayır,58,26.7,7.2,22,1.22,Evet,1.34,0
+KT0587,69,Kadın,İlkokul ve altı,Hayır,2,2,Evet,Hayır,200,28.2,4.6,15.6,1.15,Hayır,1.14,0
+KT0588,86,Erkek,İlkokul ve altı,Hayır,4,6,Hayır,Hayır,65,27.2,6.9,20.8,0.61,Evet,0.47,0
+KT0589,68,Erkek,Yükseköğretim,Hayır,2,2,Hayır,Hayır,171,32.1,7.3,25.4,1.17,Hayır,1.2,0
+KT0590,80,Kadın,İlkokul ve altı,Hayır,3,2,Hayır,Hayır,0,25.5,7.5,19,1.02,Hayır,1.03,0
+KT0591,71,Erkek,İlkokul ve altı,Evet,2,2,Evet,Evet,52,21.8,6.6,22.9,1.13,Hayır,1.06,0
+KT0592,77,Kadın,Ortaöğretim,Hayır,3,3,Hayır,Hayır,63,21.8,7.3,22.1,0.93,Hayır,1.08,0
+KT0593,69,Erkek,Yükseköğretim,Hayır,3,6,Hayır,Hayır,76,28.1,6.7,24.5,1.23,Hayır,1.26,0
+KT0594,75,Erkek,İlkokul ve altı,Hayır,1,4,Hayır,Hayır,206,27.9,6.7,32.3,1.3,Hayır,1.34,0
+KT0595,82,Erkek,İlkokul ve altı,Hayır,2,3,Evet,Evet,33,22.7,6.3,29.6,0.96,Hayır,0.86,1
+KT0596,73,Kadın,İlkokul ve altı,Hayır,1,4,Hayır,Hayır,174,31.7,6,20.2,1.11,Hayır,1.1,0
+KT0597,73,Erkek,Yükseköğretim,Hayır,2,4,Hayır,Hayır,98,33.2,6,30.6,1.08,Evet,1.05,0
+KT0598,69,Erkek,Ortaöğretim,Hayır,4,6,Hayır,Evet,83,27.4,8.5,31.4,1.29,Evet,1.27,0
+KT0599,82,Erkek,Ortaöğretim,Hayır,2,5,Hayır,Hayır,75,25,6.4,25.4,1.04,Evet,1.15,0
+KT0600,70,Kadın,İlkokul ve altı,Hayır,0,2,Evet,Hayır,131,28.6,6.9,34.2,1.2,Hayır,1.25,0

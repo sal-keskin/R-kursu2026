@@ -4,7 +4,8 @@
 
 kok <- normalizePath("..")
 kurs_dosyalari <- c("R_egitim.Rproj", "OKUBENI.txt", "oturum1_ilk_adim.R",
-                    "oturum2_veri_temizligi.R", "seminer_verileri.R")
+                    "oturum2_veri_temizligi.R", "oturum3_bulgular.R", "veriye_bakis.R",
+                    "seminer_verileri.R")
 # Script'ler çalıştırılınca veri/ klasörüne kaydedilen dosyalar: siteye ve zip'e girmez
 uretilen_veri <- c("ht_tarama_oturum2.rds", "ht_tarama_oturum2.csv", "ht_temizlik_kararlari.csv")
 
