@@ -137,7 +137,28 @@ script_to_rmd <- function(yol, ekler = list()) {
 #   - kod_sayfasi: tarayıcıda çalışmayan satırlar için yönlendirilecek "Kodlar ve çıktıları" sayfası
 tarayicida_calismaz <- "library\\(summarytools\\)|st_options\\(|stview\\(|dfSummary\\(|stby\\(|gtExtras::"
 
-script_to_live <- function(yol, alistirmalar = list(), kod_sayfasi = "oturum1-kod.qmd") {
+# Desene uyan bütün ifadeleri (birden çok satıra yayılanlar dahil) yorum satırına çevirir.
+# Oturuma özgü tarayıcıda çalışmayan satırlar için (ör. Oturum 3: ggsave, Word, PDF raporu).
+ifadeleri_yorumla <- function(kod, desen) {
+  ifade <- tryCatch(parse(text = kod, keep.source = TRUE), error = function(e) NULL)
+  if (is.null(ifade) || !length(ifade)) return(list(kod = kod, degisti = FALSE))
+  sr <- attr(ifade, "srcref")
+  degisti <- FALSE
+  for (i in seq_along(ifade)) {
+    satirlar <- sr[[i]][1]:sr[[i]][3]
+    if (any(grepl(desen, kod[satirlar]))) {
+      yorum <- grepl("^\\s*#", kod[satirlar])
+      kod[satirlar[!yorum]] <- paste0("# ", kod[satirlar[!yorum]])
+      degisti <- TRUE
+    }
+  }
+  list(kod = kod, degisti = degisti)
+}
+
+#   - calismaz: oturuma özgü desen; uyan ifadeler bütünüyle yorum satırına çevrilir
+#   - ekler: list(list(desen, md)); kodu desene uyan bloğun altına md eklenir (ör. ek bir webR kutusu)
+script_to_live <- function(yol, alistirmalar = list(), kod_sayfasi = "oturum1-kod.qmd",
+                           calismaz = NULL, ekler = list()) {
   cikti <- character()
   simdiki <- NA_character_
   ekle_alistirma <- function(no) {
@@ -158,8 +179,13 @@ script_to_live <- function(yol, alistirmalar = list(), kod_sayfasi = "oturum1-ko
     not <- FALSE
     kurulum <- !yorum_mu & grepl("^install\\.packages\\(", kod)
     kod[kurulum] <- paste0("# ", kod[kurulum], "   # tarayıcıda paket kurmaya gerek yok")
-    calismaz <- !yorum_mu & grepl(tarayicida_calismaz, kod)
-    if (any(calismaz)) { kod[calismaz] <- paste0("# ", kod[calismaz]); not <- TRUE }
+    satir_calismaz <- !yorum_mu & grepl(tarayicida_calismaz, kod)
+    if (any(satir_calismaz)) { kod[satir_calismaz] <- paste0("# ", kod[satir_calismaz]); not <- TRUE }
+    if (!is.null(calismaz)) {
+      y <- ifadeleri_yorumla(kod, calismaz)
+      kod <- y$kod
+      if (y$degisti) not <- TRUE
+    }
 
     calisir <- !grepl("^\\s*#", kod) & nzchar(trimws(kod))
     if (!any(calisir) || any(grepl("^\\?", kod))) {
@@ -176,6 +202,7 @@ script_to_live <- function(yol, alistirmalar = list(), kod_sayfasi = "oturum1-ko
                  sprintf("Yorum satırına çevrilen satırlar tarayıcıda çalışmaz. Sonuçlarını [Kodlar ve çıktıları](%s) sayfasında görebilir, RStudio'da kendiniz deneyebilirsiniz.", kod_sayfasi),
                  ":::", "")
     }
+    for (ek in ekler) if (any(grepl(ek$desen, p$satir))) cikti <- c(cikti, ek$md, "")
   }
   ekle_alistirma(simdiki)
   paste(cikti, collapse = "\n")

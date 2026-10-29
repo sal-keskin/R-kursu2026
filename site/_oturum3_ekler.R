@@ -30,3 +30,22 @@ ekler_listesi <- list(
          list(c("4. Sonuca göre profil", "invisible(grup_sayfasi(dusme, yurume_hizi, parametrik = TRUE))"),
               c("5. Sayısal değişkenler, sonuca göre", "invisible(grup_sayisal_sayfasi(dusme, yurume_hizi))"))))
 )
+
+# "Tarayıcıda deneyin" sayfası: veriye_bakis() satırı tarayıcıda çalışmaz (PDF dosyası açılamaz).
+# Raporun sayfaları, altına eklenen kutuda tek tek çizilebilir.
+canli_ekler_listesi <- list(
+  list(desen = "veriye_bakis\\(dusme, grup = dusme_12ay",
+       md = c("::: {.callout-tip appearance=\"simple\"}",
+              paste("Tarayıcıda PDF dosyası açılamaz. Raporun sayfaları aşağıdaki kutuda tek tek çizilir;",
+                    "her sayfa birkaç saniye sürer. Başka bir sayfa için o satırın başındaki `#` işaretini silin.",
+                    "Bütün sayfalar [Kodlar ve çıktıları](oturum3-kod.qmd) sayfasında da var."),
+              ":::", "",
+              "```{webr}", "#| fig-width: 8.27", "#| fig-height: 11.69",
+              "# invisible(): fonksiyonun döndürdüğü özet tablo ekrana yazılmaz",
+              "invisible(veri_karti(dusme))",
+              "# invisible(kategorik_sayfasi(dusme))",
+              "# invisible(normallik_sayfasi(dusme))",
+              "# invisible(grup_sayfasi(dusme, dusme_12ay))",
+              "# invisible(grup_sayisal_sayfasi(dusme, dusme_12ay))",
+              "```"))
+)

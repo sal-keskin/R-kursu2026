@@ -51,6 +51,8 @@ website:
             href: oturum3.qmd
           - text: "Kodlar ve çıktıları"
             href: oturum3-kod.qmd
+          - text: "Tarayıcıda deneyin"
+            href: oturum3-dene.qmd
       - text: "Veriler"
         menu:
           - text: "Hipertansiyon taraması"

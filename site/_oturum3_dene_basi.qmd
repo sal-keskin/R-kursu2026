@@ -1,0 +1,105 @@
+---
+ust-etiket: "Oturum 3 · tarayıcıda"
+title: "Araştırma bulgularını tarayıcıda deneyin"
+subtitle: "Oturum 3'ün kodunu hiçbir şey kurmadan, bu sayfanın içinde çalıştırabilirsiniz. Sayfa, oturum3_bulgular.R dosyasıyla aynı sırayı izler."
+format:
+  live-html:
+    theme:
+      light: [cosmo, styles/acik.scss]
+      dark: [cosmo, styles/koyu.scss]
+    respect-user-color-scheme: true
+    css: styles/site.css
+    include-after-body:
+      - styles/live-tr.html
+      - styles/dolgu.html
+      - styles/ortam.html
+      - styles/tema-dugmesi.html
+    template-partials:
+      - sablon/title-block.html
+    toc: true
+    toc-title: "Bu sayfada"
+    toc-depth: 2
+    page-layout: article
+    grid:
+      body-width: 860px
+      margin-width: 260px
+engine: knitr
+webr:
+  packages: ["readxl", "dplyr", "ggplot2", "patchwork", "gtsummary", "tibble", "janitor", "tidyr", "scales", "ggstats", "broom.helpers", "nortest", "MASS"]
+resources:
+  - veri/dusme65.xlsx
+  - indir/veriye_bakis.R
+---
+
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum3_dene_basi.qmd'den, alıştırmalar
+     _oturum3_alistirmalar.R'den, gövde ../oturum3_bulgular.R'den gelir. Elle düzenlemeyin. -->
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+::: {.callout-note appearance="simple"}
+## Nasıl kullanılır?
+
+- Gri kutulardaki kodu değiştirebilir, **Çalıştır**'a basarak sonucu görebilirsiniz.
+- Kutuları yukarıdan aşağıya, sırayla çalıştırın. Veri (`dusme`) Bölüm 2'de hazırlanır; sonraki bölümler ona dayanır. Bir bölümü atlarsanız sonraki kutular hata verebilir.
+- Veri, sayfa açılınca Bölüm 1–2'deki gibi okunup hazırlanır; alıştırmalar bu yüzden hemen çalışır.
+- **Sıra sizde** kutularında boşluğa cevabınızı yazın ve Enter'a basın.
+- Word dosyası, PDF raporu ve resim kaydetme satırları tarayıcıda çalışmaz; yorum satırına çevrilmiştir. Sonuçları [Kodlar ve çıktıları](oturum3-kod.qmd) sayfasında görebilirsiniz.
+- Sağdaki **Ortam** paneli, RStudio'daki Environment paneli gibi, R'da o an hangi nesnelerin olduğunu gösterir.
+- R, tarayıcınızın içinde çalışır; kodunuz ve veri hiçbir sunucuya gönderilmez.
+- Sayfa ilk açıldığında R'ın, paketlerin ve verinin hazırlanması bir iki dakika sürebilir. Sol alttaki yükleme yazısı kaybolunca başlayabilirsiniz. Sayfayı yenilerseniz her şey baştan başlar.
+:::
+
+```{webr}
+#| autorun: true
+#| include: false
+# Sayfa açılınca: paketleri yükler, veriyi Bölüm 1–2'deki gibi hazırlar (alıştırmalar hemen çalışsın)
+View <- function(x, ...) {
+  cat("View() tarayıcıda tablo penceresi açamaz. İlk satırlar:\n")
+  print(head(x))
+}
+invisible(file.copy("indir/veriye_bakis.R", "veriye_bakis.R", overwrite = TRUE))
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(patchwork)
+library(gtsummary)
+library(tibble)
+options(OutDec = ",")
+dusme_ham <- read_excel("veri/dusme65.xlsx", sheet = "veri")
+dusme <- dusme_ham |>
+  mutate(onceki_dusme   = factor(onceki_dusme, levels = c("Hayır", "Evet")),
+         cinsiyet       = factor(cinsiyet, levels = c("Kadın", "Erkek")),
+         egitim         = factor(egitim, levels = c("Yükseköğretim", "Ortaöğretim", "İlkokul ve altı")),
+         yalniz_yasama  = factor(yalniz_yasama, levels = c("Hayır", "Evet")),
+         gorme_guclugu  = factor(gorme_guclugu, levels = c("Hayır", "Evet")),
+         denge_programi = factor(denge_programi, levels = c("Evet", "Hayır")),
+         dusme_12ay     = factor(dusme_12ay, levels = c(0, 1), labels = c("Hayır", "Evet")),
+         yas_grubu      = cut(yas, breaks = c(64, 74, 84, Inf), labels = c("65-74", "75-84", "85+"))) |>
+  relocate(yas_grubu, .after = yas)
+```
+
+::: {#ortam-calistirici .ortam-calistirici}
+```{webr}
+#| autorun: true
+# Ortam paneli için: R'daki nesneleri listeler (sayfadaki gizli kutu; her çalıştırmadan sonra yenilenir)
+local({
+  ozet <- function(x) {
+    if (is.data.frame(x)) return(c("Veri", sprintf("%d gözlem, %d değişken", nrow(x), ncol(x))))
+    if (is.function(x)) return(c("Fonksiyonlar", "fonksiyon"))
+    if (inherits(x, "theme")) return(c("Değerler", "ggplot teması"))
+    if (inherits(x, "gg")) return(c("Değerler", "ggplot grafiği"))
+    if (is.atomic(x) && length(x) == 1 && !is.factor(x)) {
+      return(c("Değerler", if (is.character(x)) sprintf('"%s"', x) else format(x)))
+    }
+    satir <- utils::capture.output(utils::str(x, vec.len = 2, give.attr = FALSE, nchar.max = 40))[1]
+    c("Değerler", substr(trimws(satir), 1, 80))
+  }
+  for (ad in grep("^ojs", setdiff(ls(globalenv()), "View"), value = TRUE, invert = TRUE)) {
+    o <- tryCatch(ozet(get(ad, envir = globalenv())), error = function(e) c("Değerler", ""))
+    cat("ORTAM", o[1], ad, o[2], sep = "\t")
+    cat("\n")
+  }
+  cat("ORTAM_SON\n")
+})
+```
+:::

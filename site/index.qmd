@@ -190,7 +190,7 @@ Oturumda 65 yaş ve üstü 600 kişinin 12 aylık düşme izlemini kullanacağı
 ::: {.cipler}
 [`Genel bakış` oturumun akışı, kurulum satırı](oturum3.qmd){.cip}
 [`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum3-kod.qmd){.cip}
-[`oturum3_bulgular.R` script'i indir](indir/oturum3_bulgular.R){.cip}
+[`webR` R'ı tarayıcıda deneyin!](oturum3-dene.qmd){.cip}
 :::
 
 Önceki oturumların kodları, kayıtları ve verisi üst menüde, **Oturum 1** ve **Oturum 2** altında.

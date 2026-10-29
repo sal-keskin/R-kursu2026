@@ -15,9 +15,12 @@ oturumlar <- list(
        dene_basi = "_oturum1_dene_basi.qmd", dene = "dene.qmd", alistirma = "_oturum1_alistirmalar.R"),
   list(script = "oturum2_veri_temizligi.R", kod_basi = "_oturum2_kod_basi.qmd", kod = "oturum2-kod.qmd",
        dene_basi = "_oturum2_dene_basi.qmd", dene = "oturum2-dene.qmd", alistirma = "_oturum2_alistirmalar.R"),
-  # Oturum 3: kod sayfasına veriye_bakis() raporunun sayfaları eklenir (_oturum3_ekler.R)
+  # Oturum 3: kod sayfasına veriye_bakis() raporunun sayfaları eklenir (_oturum3_ekler.R);
+  # tarayıcı sayfasında Word, PDF ve dosyaya kaydetme satırları çalışmaz (calismaz)
   list(script = "oturum3_bulgular.R", kod_basi = "_oturum3_kod_basi.qmd", kod = "oturum3-kod.qmd",
-       ekler = "_oturum3_ekler.R")
+       ekler = "_oturum3_ekler.R",
+       dene_basi = "_oturum3_dene_basi.qmd", dene = "oturum3-dene.qmd", alistirma = "_oturum3_alistirmalar.R",
+       calismaz = "ggsave\\(|veriye_bakis\\(|^\\s*view\\(|tibble::view\\(|flextable::|read_docx\\(|library\\(officer\\)")
 )
 
 yenile <- function(klasor) {
@@ -52,13 +55,15 @@ source("_alistirma.R")
 for (o in oturumlar) {
   script <- file.path(kok, o$script)
   ekler_listesi <- list()
-  if (!is.null(o$ekler)) source(o$ekler, encoding = "UTF-8")   # ekler_listesi
+  canli_ekler_listesi <- list()
+  if (!is.null(o$ekler)) source(o$ekler, encoding = "UTF-8")   # ekler_listesi, canli_ekler_listesi
   writeLines(c(readLines(o$kod_basi, encoding = "UTF-8"), "", script_to_rmd(script, ekler_listesi)),
              o$kod, useBytes = TRUE)
   if (is.null(o$dene)) next
   source(o$alistirma)   # alistirma_listesi
   writeLines(c(readLines(o$dene_basi, encoding = "UTF-8"), "",
-               script_to_live(script, alistirmalar_md(alistirma_listesi), kod_sayfasi = o$kod)),
+               script_to_live(script, alistirmalar_md(alistirma_listesi), kod_sayfasi = o$kod,
+                              calismaz = o$calismaz, ekler = canli_ekler_listesi)),
              o$dene, useBytes = TRUE)
 }
 
