@@ -1,0 +1,262 @@
+---
+ust-etiket: "Veri tanıtımı · Oturum 3"
+title: "Düşme izlemi verisi"
+subtitle: "65 yaş ve üstü 600 kişinin başlangıç değerlendirmesi ve 12 aylık düşme izlemi. Bu sayfa veriyi tablo ve grafiklerle tanıtır. Her tablonun ve grafiğin üstündeki **R'da nasıl yapılır?** düğmesi, aynı sonucu R'da nasıl elde edeceğinizi gösterir."
+code-fold: true
+code-summary: "R'da nasıl yapılır?"
+toc-depth: 2
+---
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(fig.width = 7.5, fig.height = 4.2)
+ondalik <- function(x, k = 1) format(round(x, k), nsmall = k, decimal.mark = ",")
+yuzde <- function(x, k = 1) paste0("%", ondalik(100 * mean(x), k))
+```
+
+## Hazırlık
+
+Sayfadaki bütün tablo ve grafikler aşağıdaki hazırlık kodundan sonra çalışır. Kendi bilgisayarınızda denemek için önce bu kodu `R_egitim` projesinde çalıştırın.
+
+```{r}
+#| code-fold: false
+library(readxl)    # Excel dosyası
+library(dplyr)     # veri yönetimi
+library(tidyr)     # tabloyu uzun biçime çevirme
+library(ggplot2)   # grafik
+options(OutDec = ",")   # çıktılarda ve grafik eksenlerinde ondalık ayracı virgül
+
+# Excel dosyasının "veri" sayfası okunur; kategorilere sıra verilir
+dusme <- read_excel("veri/dusme65.xlsx", sheet = "veri") |>
+  mutate(
+    cinsiyet       = factor(cinsiyet, levels = c("Kadın", "Erkek")),
+    egitim         = factor(egitim, levels = c("İlkokul ve altı", "Ortaöğretim", "Yükseköğretim")),
+    across(c(yalniz_yasama, gorme_guclugu, onceki_dusme, denge_programi),
+           ~ factor(.x, levels = c("Hayır", "Evet"))),
+    dusme_12ay     = factor(dusme_12ay, levels = c(0, 1), labels = c("Hayır", "Evet")),
+    yas_grubu      = cut(yas, breaks = c(64, 74, 84, Inf), labels = c("65-74", "75-84", "85+"))
+  )
+
+theme_set(theme_minimal(base_size = 12))          # bütün grafiklerde sade tema
+renk_dusme <- c(Hayır = "#6baed6", Evet = "#eb6834")
+```
+
+## Bir bakışta
+
+```{r}
+#| echo: false
+#| output: asis
+cat(sprintf('
+::: {.kartlar}
+::: {.kart}
+[%d kişi]{.kart-sayi}
+65 yaş ve üstü; her satır bir kişi.
+:::
+::: {.kart}
+[%d değişken]{.kart-sayi}
+Kişisel bilgiler, sağlık durumu, ölçümler ve izlem sonucu.
+:::
+::: {.kart}
+[12 ay izlem]{.kart-sayi}
+Başlangıç değerlendirmesinden sonra düşme izlendi.
+:::
+::: {.kart}
+[%d kişi düştü]{.kart-sayi}
+12 ay içinde en az bir kez; bütün katılımcıların %s.
+:::
+:::
+', nrow(dusme), ncol(dusme) - 1L, sum(dusme$dusme_12ay == "Evet"), yuzde(dusme$dusme_12ay == "Evet")))
+```
+
+Veri eğitim için üretildi; gerçek kişilere ait değildir. Eksik değer ve tekrar eden kayıt yoktur.
+
+## Aynı veri, üç dosya
+
+`veri/` klasöründe bu verinin üç dosyası var. **İçerik aynıdır, yalnızca dosya biçimi farklıdır.** Oturum 3'te Excel dosyası kullanılır.
+
+| Dosya | R'da okuma | Bilmeniz gereken |
+|------|--------|------------------|
+| [`dusme65.xlsx`](veri/dusme65.xlsx) | `read_excel()` | İki sayfa var: "veri" ve "sozluk". Sözlükte başlıklar 3. satırdadır; `skip = 2` ile okunur. Kategoriler metin olarak gelir. |
+| [`dusme65.csv`](veri/dusme65.csv) | `read_csv()` | Düz metin dosyasıdır; her programda açılır. Kategoriler yine metindir. |
+| [`dusme65.sav`](veri/dusme65.sav) | `read_sav()` | Kategoriler sayı olarak saklanır, anlamları değer etiketindedir (Kadın = 1, Erkek = 2; Hayır = 0, Evet = 1). Değişken açıklamaları korunur. |
+
+## Değişkenler
+
+Tablo, Excel dosyasının "sozluk" sayfasından okunur.
+
+```{r}
+sozluk <- read_excel("veri/dusme65.xlsx", sheet = "sozluk", skip = 2) |>
+  janitor::clean_names()
+sozluk |>
+  select(Değişken = degisken, Açıklama = aciklama, Tür = veri_turu,
+         `Kodlama ya da aralık` = kodlama_deger_araligi, Birim = birim) |>
+  knitr::kable()
+```
+
+## Katılımcılar
+
+### Yaş
+
+Katılımcıların yaş ortalaması `r ondalik(mean(dusme$yas))`, ortancası `r median(dusme$yas)`. En genç katılımcı `r min(dusme$yas)`, en yaşlı katılımcı `r max(dusme$yas)` yaşında. Analizlerde yaş üç gruba ayrılır: 65-74, 75-84 ve 85+.
+
+```{r}
+ggplot(dusme, aes(x = yas, fill = yas_grubu)) +
+  geom_histogram(binwidth = 1, colour = "white") +
+  scale_fill_manual(values = c("#9ecae1", "#4292c6", "#08519c")) +
+  labs(x = "Yaş (yıl)", y = "Kişi sayısı", fill = "Yaş grubu")
+```
+
+### Cinsiyet, eğitim ve yalnız yaşama
+
+Kadın: `r sum(dusme$cinsiyet == "Kadın")` kişi (`r yuzde(dusme$cinsiyet == "Kadın")`). Yalnız yaşayan: `r sum(dusme$yalniz_yasama == "Evet")` kişi (`r yuzde(dusme$yalniz_yasama == "Evet")`).
+
+```{r}
+dusme |>
+  count(egitim, cinsiyet) |>
+  pivot_wider(names_from = cinsiyet, values_from = n) |>
+  mutate(Toplam = Kadın + Erkek,
+         Yüzde = paste0("%", format(round(100 * Toplam / sum(Toplam), 1), nsmall = 1, decimal.mark = ","))) |>
+  rename(Eğitim = egitim) |>
+  knitr::kable(caption = "Eğitim düzeyi, cinsiyete göre (kişi sayısı)")
+```
+
+## Sağlık durumu
+
+### Kronik hastalık ve ilaç sayısı
+
+Her iki değişken de sayımdır: kişide kaç kronik hastalık olduğu ve düzenli kaç ilaç kullandığı. Kronik hastalığı çok olanlar daha çok ilaç kullanır (Spearman r = `r ondalik(cor(dusme$kronik_sayisi, dusme$ilac_sayisi, method = "spearman"), 2)`).
+
+```{r}
+#| fig-height: 3.6
+dusme |>
+  select(`Kronik hastalık sayısı` = kronik_sayisi, `İlaç sayısı` = ilac_sayisi) |>
+  pivot_longer(everything(), names_to = "degisken", values_to = "sayi") |>
+  ggplot(aes(x = sayi)) +
+  geom_bar(fill = "#4292c6") +
+  facet_wrap(~ degisken, scales = "free_x") +
+  labs(x = NULL, y = "Kişi sayısı")
+```
+
+### Görme güçlüğü ve önceki düşme
+
+Görme güçlüğü bildiren: `r sum(dusme$gorme_guclugu == "Evet")` kişi (`r yuzde(dusme$gorme_guclugu == "Evet")`). Başlangıçtan önceki 12 ayda düşen: `r sum(dusme$onceki_dusme == "Evet")` kişi (`r yuzde(dusme$onceki_dusme == "Evet")`).
+
+## Ölçümler
+
+### Dağılımlar
+
+Beş ölçümün dağılımı aşağıdadır. Fiziksel aktivite sağa çarpıktır: çoğu kişi az, birkaç kişi çok hareket eder. Bu yüzden onu ortanca ile özetlemek daha uygundur. Öteki ölçümler normal dağılıma yakındır.
+
+```{r}
+#| fig-height: 5.5
+dusme |>
+  select(`Fiziksel aktivite (dk/hafta)` = aktivite_dk, `BKİ (kg/m²)` = bki,
+         `Uyku (saat/gece)` = uyku_saat, `El kavrama kuvveti (kg)` = kavrama_kg,
+         `Yürüme hızı (m/s)` = yurume_hizi) |>
+  pivot_longer(everything(), names_to = "olcum", values_to = "deger") |>
+  ggplot(aes(x = deger)) +
+  geom_histogram(bins = 25, fill = "#4292c6", colour = "white") +
+  facet_wrap(~ olcum, scales = "free", ncol = 3) +
+  labs(x = NULL, y = "Kişi sayısı")
+```
+
+```{r}
+dusme |>
+  select(`Fiziksel aktivite (dk/hafta)` = aktivite_dk, `BKİ (kg/m²)` = bki,
+         `Uyku (saat/gece)` = uyku_saat, `El kavrama kuvveti (kg)` = kavrama_kg,
+         `Yürüme hızı (m/s)` = yurume_hizi, `6. ay yürüme hızı (m/s)` = yurume_hizi_6ay) |>
+  pivot_longer(everything(), names_to = "Ölçüm", values_to = "deger") |>
+  mutate(Ölçüm = factor(Ölçüm, levels = unique(Ölçüm))) |>   # tablo sırası seçimdeki gibi
+  group_by(Ölçüm) |>
+  summarise(Ortalama = mean(deger), SS = sd(deger), Ortanca = median(deger),
+            Q1 = quantile(deger, 0.25), Q3 = quantile(deger, 0.75),
+            `En küçük` = min(deger), `En büyük` = max(deger)) |>
+  knitr::kable(digits = 2, format.args = list(decimal.mark = ","),
+               caption = "Ölçümlerin özeti (SS: standart sapma; Q1–Q3: çeyrekler)")
+```
+
+### Yürüme hızı: başlangıç ve 6. ay
+
+Yürüme hızı başlangıçta ve 6. ayda ölçüldü. İki ölçüm birbirine çok yakındır; çizginin üstündeki noktalar 6. ayda daha hızlı yürüyenlerdir. Yaş grupları arasında yürüme hızı belirgin biçimde farklıdır.
+
+```{r}
+#| fig-height: 4.5
+ggplot(dusme, aes(x = yurume_hizi, y = yurume_hizi_6ay, colour = denge_programi)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", colour = "grey50") +
+  geom_point(alpha = 0.5) +
+  scale_colour_manual(values = c(Hayır = "#6baed6", Evet = "#eb6834")) +
+  labs(x = "Başlangıç yürüme hızı (m/s)", y = "6. ay yürüme hızı (m/s)",
+       colour = "Denge programına kayıt")
+```
+
+```{r}
+#| fig-height: 3.6
+ggplot(dusme, aes(x = yas_grubu, y = yurume_hizi)) +
+  geom_boxplot(fill = "#c6dbef", width = 0.5) +
+  labs(x = "Yaş grubu", y = "Başlangıç yürüme hızı (m/s)")
+```
+
+## Denge programı
+
+Başlangıçta `r sum(dusme$denge_programi == "Evet")` kişi (`r yuzde(dusme$denge_programi == "Evet")`) denge programına kayıtlıydı. Kayıt kurayla belirlenmedi; kayıtlı olanlarla olmayanlar başlangıçta birbirinden farklıdır. Programla düşme arasındaki ilişkiyi yorumlarken bu fark akılda tutulmalıdır (Oturum 3, Bölüm 9).
+
+```{r}
+dusme |>
+  group_by(`Denge programına kayıt` = denge_programi) |>
+  summarise(Kişi = n(),
+            `Yaş ortalaması` = mean(yas),
+            `Yürüme hızı ortalaması (m/s)` = mean(yurume_hizi),
+            `Önceki düşme (%)` = 100 * mean(onceki_dusme == "Evet")) |>
+  knitr::kable(digits = 2, format.args = list(decimal.mark = ","))
+```
+
+## 12 ayda düşme
+
+### Kategorilere göre
+
+İzlemin sonucu, 12 ay içinde en az bir kez düşmektir. Tablo, her kategoride düşenlerin yüzdesini verir (satır yüzdesi); bütün örneklemde bu oran `r yuzde(dusme$dusme_12ay == "Evet")`.
+
+```{r}
+#| fig-height: 5
+dusme |>
+  select(dusme_12ay, `Yaş grubu` = yas_grubu, Cinsiyet = cinsiyet,
+         `Görme güçlüğü` = gorme_guclugu, `Önceki düşme` = onceki_dusme,
+         `Denge programına kayıt` = denge_programi) |>
+  mutate(across(-dusme_12ay, as.character)) |>
+  pivot_longer(-dusme_12ay, names_to = "degisken", values_to = "kategori") |>
+  group_by(degisken, kategori) |>
+  summarise(yuzde = 100 * mean(dusme_12ay == "Evet"), .groups = "drop") |>
+  ggplot(aes(x = yuzde, y = kategori)) +
+  geom_col(fill = "#eb6834", width = 0.6) +
+  geom_vline(xintercept = 100 * mean(dusme$dusme_12ay == "Evet"), linetype = "dashed") +
+  geom_text(aes(label = paste0("%", format(round(yuzde, 1), nsmall = 1, decimal.mark = ","))),
+            hjust = -0.15, size = 3.2) +
+  facet_wrap(~ degisken, scales = "free_y", ncol = 2) +
+  scale_x_continuous(limits = c(0, 52), labels = function(x) paste0("%", x)) +
+  labs(x = "12 ayda düşenler (kesikli çizgi: bütün örneklem)", y = NULL)
+```
+
+### Yürüme hızına göre
+
+Düşenlerin başlangıç yürüme hızı ortalama `r ondalik(mean(dusme$yurume_hizi[dusme$dusme_12ay == "Evet"]), 2)` m/s, düşmeyenlerin `r ondalik(mean(dusme$yurume_hizi[dusme$dusme_12ay == "Hayır"]), 2)` m/s.
+
+```{r}
+#| fig-height: 3.6
+ggplot(dusme, aes(x = yurume_hizi, fill = dusme_12ay)) +
+  geom_density(alpha = 0.5) +
+  scale_fill_manual(values = renk_dusme) +
+  labs(x = "Başlangıç yürüme hızı (m/s)", y = "Yoğunluk", fill = "12 ayda düşme")
+```
+
+## Bu veriyle Oturum 3'te
+
+Oturumda iki araştırma sorusu yanıtlanır:
+
+1. Başlangıç yürüme hızı hangi özelliklerle ilişkilidir? (doğrusal regresyon)
+2. 12 ay içinde düşme hangi özelliklerle ilişkilidir? (lojistik regresyon)
+
+::: {.cipler}
+[`Genel bakış` oturumun akışı ve bölümleri](oturum3.qmd){.cip}
+[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum3-kod.qmd){.cip}
+[`webR` R'ı tarayıcıda deneyin!](oturum3-dene.qmd){.cip}
+:::

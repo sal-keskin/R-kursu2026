@@ -53,10 +53,14 @@ website:
             href: oturum3-kod.qmd
           - text: "Tarayıcıda deneyin"
             href: oturum3-dene.qmd
+          - text: "Oturumun verisi"
+            href: veri-dusme.qmd
       - text: "Veriler"
         menu:
           - text: "Hipertansiyon taraması"
             href: veri-ht.qmd
+          - text: "Düşme izlemi (65 yaş ve üstü)"
+            href: veri-dusme.qmd
     right:
       - icon: github
         href: https://github.com/sal-keskin/R-kursu2026
