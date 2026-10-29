@@ -606,3 +606,17 @@ body.quarto-dark { --rk-tema-ikon: url("data:image/svg+xml,%3Csvg xmlns='http://
 }
 .quarto-color-scheme-toggle { border-radius: 8px; padding: .3rem .45rem !important; }
 .quarto-color-scheme-toggle:hover { background: var(--rk-surface); }
+
+/* Script'teki ASCII çizimler (Oturum 3: MOLA, OTURUMUN SONU): satırlar kaydırılmaz */
+pre.ascii-sanat, pre.ascii-sanat code {
+  white-space: pre !important;
+  overflow-x: auto;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  color: var(--bs-body-color) !important;
+}
+pre.ascii-sanat {
+  background-color: rgba(127, 127, 127, 0.08);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+}

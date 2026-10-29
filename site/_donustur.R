@@ -62,6 +62,8 @@ grafik_boyutu <- function(kod) {
   if (any(grepl("plot_annotation\\(", kod))) c(12, 14)
   else if (tek %in% c("pA", "pF")) c(10, 4.4)
   else if (tek %in% c("pB", "pC", "pD", "pE")) c(7.5, 4.6)
+  else if (any(grepl("^grafik_kor", kod))) c(8.5, 7)               # Oturum 3 korelasyon ısı haritaları
+  else if (any(grepl("ggcoef_table", kod))) c(9, 4.5)               # Oturum 3 orman grafiği
   else if (any(grepl("facet_wrap|vis_miss", kod))) c(9, 5.5)
   else if (any(grepl("par\\(mfrow = c\\(1, 2\\)\\)", kod))) c(9, 4.8)
   else NULL
@@ -76,6 +78,12 @@ baslik_satiri <- function(p) paste(strrep("#", p$duzey), p$metin)
 # Yalnız yorumdan oluşan böyle bloklar düz kod olarak gösterilir; kod içerenlerin başına boş bir yorum satırı eklenir.
 ayar_gibi <- function(kod) grepl("^#\\s*\\|", kod[1])
 
+# Yorum satırlarıyla çizilmiş ASCII resim (ör. Oturum 3'teki MOLA ve "OTURUMUN SONU"): düz metin olarak,
+# satırları kaydırılmadan ve renklendirilmeden gösterilir
+ascii_sanat <- function(kod) {
+  all(grepl("^\\s*#", kod)) && length(kod) >= 5 && any(grepl("={20,}|-{5,}\\+|#{2,}\\s+#{2,}", kod))
+}
+
 # "# Hata N:" ya da "# Hata örneği:" bloğundaki, yorum işareti silinince çalışacak kod satırları
 hatali_satirlar <- function(kod) {
   bas <- grepl("^# Hata( [0-9]+| örneği)?:", kod)
@@ -89,7 +97,9 @@ hatali_satirlar <- function(kod) {
 # ---- "Kodlar ve çıktıları" ----
 #   - Yardım satırları (?mean) gösterilir ama çalıştırılmaz
 #   - "# Hata N" örneklerinin altına, yorum işareti silinince R'ın verdiği hata mesajı eklenir
-script_to_rmd <- function(yol) {
+#   - ekler: list(list(desen = "...", md = "...")); kodu desene uyan bloğun altına md eklenir
+#     (ör. Oturum 3'te PDF'e yazılan rapor sayfalarını sayfada göstermek için)
+script_to_rmd <- function(yol, ekler = list()) {
   cikti <- character()
   for (p in script_parcalari(yol)) {
     if (p$tur == "baslik") {
@@ -97,6 +107,7 @@ script_to_rmd <- function(yol) {
       next
     }
     kod <- p$satir
+    if (ascii_sanat(kod)) { cikti <- c(cikti, "```{.text .ascii-sanat}", kod, "```", ""); next }
     if (ayar_gibi(kod)) {
       if (all(grepl("^\\s*#", kod))) { cikti <- c(cikti, "```r", kod, "```", ""); next }
       kod <- c("#", kod)
@@ -113,6 +124,7 @@ script_to_rmd <- function(yol) {
                  "Satırın başındaki `#` silinip çalıştırılınca R şu mesajı verir:", "",
                  "```{r}", "#| error: true", "#| echo: false", hatali, "```", ":::", "")
     }
+    for (ek in ekler) if (any(grepl(ek$desen, kod))) cikti <- c(cikti, ek$md, "")
   }
   paste(cikti, collapse = "\n")
 }
@@ -141,6 +153,7 @@ script_to_live <- function(yol, alistirmalar = list(), kod_sayfasi = "oturum1-ko
       next
     }
     kod <- p$satir
+    if (ascii_sanat(kod)) { cikti <- c(cikti, "```{.text .ascii-sanat}", kod, "```", ""); next }
     yorum_mu <- grepl("^\\s*#", kod)
     not <- FALSE
     kurulum <- !yorum_mu & grepl("^install\\.packages\\(", kod)

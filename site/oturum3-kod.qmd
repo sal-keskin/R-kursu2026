@@ -1,0 +1,1388 @@
+---
+ust-etiket: "Oturum 3 · 30 Ekim 2026"
+title: "Oturum 3: kodlar ve çıktıları"
+subtitle: "Oturum 3'ün kodları R'da çalıştırıldığında nasıl görünür? Her kod bloğunun altında R'ın verdiği sonuç var. Kendi bilgisayarınızda da aynı sonuçları görmelisiniz; yalnızca uyarıların ve hata mesajlarının dili farklı olabilir."
+toc-depth: 2
+lightbox: true
+---
+
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum3_kod_basi.qmd'den, rapor sayfaları
+     _oturum3_ekler.R'den, gövde ../oturum3_bulgular.R'den gelir. Elle düzenlemeyin; değişiklikler bir sonraki derlemede silinir. -->
+
+```{r}
+#| include: false
+# Script, katılımcının klasörünün birebir kopyasında çalışsın (ciktilar/ klasörü sitenin klasörüne düşmesin)
+kurs <- file.path(tempdir(), "R_egitim")
+unlink(kurs, recursive = TRUE)
+dir.create(kurs)
+file.copy(file.path("..", c("R_egitim.Rproj", "OKUBENI.txt", "oturum3_bulgular.R", "veriye_bakis.R")), kurs)
+file.copy("../veri", kurs, recursive = TRUE)
+knitr::opts_knit$set(root.dir = kurs)
+
+# Derleme sırasında etkisiz kalacak satırlar (kodda olduğu gibi görünürler)
+install.packages <- function(...) invisible(NULL)
+View <- function(...) invisible(NULL)
+```
+
+::: {.cipler}
+[`oturum3_bulgular.R` script'i indir](indir/oturum3_bulgular.R){.cip}
+[`veriye_bakis.R` yardımcı dosyayı indir](indir/veriye_bakis.R){.cip}
+[`R_egitim.zip` ders klasörünün tamamı](indir/R_egitim.zip){.cip}
+:::
+
+::: {.callout-note appearance="simple"}
+Bu sayfa her güncellemede `oturum3_bulgular.R` dosyasından yeniden üretilir; script ile sayfa hep aynıdır. Gri satırlar yorumdur; R onları çalıştırmaz. Script'in Word ve PDF dosyaları sayfada gösterilmez; RStudio'da çalıştırdığınızda `ciktilar` klasörüne yazılır. Yalnız `veriye_bakis()` raporunun sayfaları, ilgili kodun altında resim olarak verilmiştir; resme tıklayınca büyür.
+:::
+
+
+## Bölüm 0: Hazırlık: paketler ve Türkçe sayı biçimi
+
+```{r}
+# 0a. Paketler
+# Oturumdan önce kurulmadıysa satırın başındaki "# " işaretini silip bir kez çalıştırın:
+```
+
+```{r}
+# install.packages(c("gtsummary", "broom.helpers", "ggstats", "flextable", "officer",
+#                    "nortest", "patchwork"))
+```
+
+```{r}
+library(readxl)      # Excel dosyası okuma
+library(dplyr)       # veri yönetimi
+library(ggplot2)     # grafikler
+library(patchwork)   # grafikleri yan yana yerleştirme
+library(gtsummary)   # tanımlayıcı ve regresyon tabloları
+library(officer)     # Word dosyası
+library(tibble)
+```
+
+```{r}
+#  bazen görülen "masked" ve "overwritten" mesajları hata değildir (Oturum 1).
+```
+
+```{r}
+# Biçimleri TÜRKÇE'ye çevirelim.
+# 0b. Türkçe sayı biçimi
+# Türkçede ondalık ayracı virgül, binlik ayracı noktadır: 1,25 ve 1.500.
+```
+
+```{r}
+# R İngilizce kuralı kullanır: 1.25 ve 1,500. Aşağıdaki dört ayar, R'ın ürettiği
+# bütün çıktıları Türkçe biçime çevirir.
+```
+
+```{r}
+options(OutDec = ",")                 # 1) konsol ve grafik eksenleri
+```
+
+```{r}
+theme_gtsummary_language("en", decimal.mark = ",", big.mark = ".",   # 2) gtsummary tabloları
+                         iqr.sep = "–", ci.sep = "; ")
+```
+
+```{r}
+set_gtsummary_theme(list("pkgwide-fn:pvalue_fun" = label_style_pvalue(digits = 3)))  # 3) p: üç ondalık
+```
+
+```{r}
+flextable::set_flextable_defaults(decimal.mark = ",", big.mark = ".",                # 4) Word tabloları
+                                  font.family = "Times New Roman", hansi.family = "Times New Roman",
+                                  font.size = 9, padding.top = 1, padding.bottom = 1)
+```
+
+```{r}
+mean(c(1.2, 1.3))    # Kontrol edelim: 1,25 çıktısı görülmeli
+# Kodun içinde ondalık ayracı her zaman nokta kullanılmalıdır (1.2); virgül yalnızca çıktıda görünür.
+```
+
+```{r}
+# bu kod ile klasör oluşturduk!  tablo ve şekilleri "ciktilar" klasörüne  kaydedeceğiz
+dir.create("ciktilar")   
+```
+
+
+## Bölüm 1: Yeni verinin okunması
+
+```{r}
+# bir yaşlı izlem çalışması: 65 yaş ve üstü 600 katılımcı başlangıçta değerlendirilmiş,
+# 12 ay boyunca düşme açısından izlenmiştir. Çalışma soruları:
+```
+
+```{r}
+#   1. Başlangıç yürüme hızı hangi özelliklerle ilişkilidir?   (doğrusal regresyon)
+#   2. 12 ay içinde düşme hangi özelliklerle ilişkilidir?       (lojistik regresyon)
+```
+
+```{r}
+# önce verinin içindeki alt sayfalara bakalım !
+excel_sheets("veri/dusme65.xlsx")      # dosyadaki sayfalar: "sozluk" ve "veri"
+```
+
+```{r}
+# Verimiz "veri" sayfasında yer alıyor.  (SPSS: File > Open > Data > Excel, Worksheet).
+dusme_ham <- read_excel("veri/dusme65.xlsx", sheet = "veri")
+```
+
+```{r}
+# içine bakış atalım
+glimpse(dusme_ham)
+```
+
+```{r}
+#  bazen görülen "masked" ve "overwritten" mesajları hata değildir (Oturum 1).
+# bazen farklı paketler altında benzer isimde fonksiyonlar olabiliyor:
+```
+
+```{r}
+# verinin tümünü görelim
+view(dusme_ham)
+```
+
+```{r}
+tibble::view(dusme_ham)
+```
+
+```{r}
+# Ad sözlüğü "sozluk" sayfasındadır. Başlıklar 3. satırda olduğu için üstteki 2 satır
+# atlanır (skip = 2); sütun adları clean_names() ile sadeleştirilir (Oturum 2).
+sozluk <- read_excel("veri/dusme65.xlsx", sheet = "sozluk", skip = 2) |>
+  janitor::clean_names()
+```
+
+
+## Bölüm 2: Verinin analize hazırlanması
+
+```{r}
+# Bu veride dört ana işlem yapacağız: 
+```
+
+```{r}
+#  (a) kategorik değişkenlere sıra ve referans verilir, ör. eğitim: yükseköğretim (1) > ortaöğretim (2) > ilkokul ve altı (3)
+```
+
+```{r}
+#  (b) aynı işlem Evet/Hayır değişkenlerine uygulanır,
+```
+
+```{r}
+#  (c) sonuç değişkeni 0/1 yerine Hayır/Evet olur,
+```
+
+```{r}
+#  (d) Bazen de yeni bir değişken türetilir. 
+```
+
+```{r}
+#  (e)  Ham veriyi (dusme_ham) değiştirmemekte yarar var; yeni veri/değişken tanımlayalım.
+```
+
+```{r}
+#  değişiklikleri dusme adlı yeni veride (bkz:e) yapacağız
+```
+
+```{r}
+# 2a. R için kategori sırası ve referans
+# Excel'den gelen kategoriler R için metin formatındadır. 
+levels(dusme_ham$onceki_dusme)
+```
+
+```{r}
+# R metni faktöre çevirirken kategorileri alfabetik olarak sıralamaktadır.
+```
+
+```{r}
+# DİKKAT: R'da ilk kategori referans olur. 
+```
+
+```{r}
+# Alfabetik sırada "Evet" öndedir. E,F...H, Referans "Evet" olursa OR'ler düşme öyküsü olmayanlara
+# göre değil, olanlara göre hesaplanır ve ters yönde okunur. 
+```
+
+```{r}
+# En GARANTİSİ TÜM KATEGORİLERİ ELLE belirlemektir.
+```
+
+```{r}
+# değişken sırası, factor() içinde levels ile açıkça verilmelidir; ilk yazılan kategori referanstır.
+```
+
+```{r}
+dusme_ham$onceki_dusme <- as.factor(dusme_ham$onceki_dusme)
+```
+
+```{r}
+levels(dusme_ham$onceki_dusme)
+```
+
+```{r}
+# değişkenler aşağıdaki fonksiyonla önce faktöre dönüştürülüp sonra sıralanabilir.
+```
+
+```{r}
+dusme <- dusme_ham |>
+  mutate(onceki_dusme = factor(onceki_dusme, levels = c("Hayır", "Evet")))
+```
+
+```{r}
+levels(dusme$onceki_dusme)
+```
+
+```{r}
+# değişkenler aşağıdaki fonksiyonla topluca da sıralanabilir.
+```
+
+```{r}
+dusme <- dusme |>
+  mutate(cinsiyet = factor(cinsiyet, levels = c("Kadın", "Erkek")),
+         egitim   = factor(egitim, levels = c("Yükseköğretim", "Ortaöğretim", "İlkokul ve altı")))
+```
+
+```{r}
+levels(dusme$cinsiyet)     # referans: Kadın
+levels(dusme$egitim)       # referans: Yükseköğretim
+# DİKKAT: bazen alfabetik sıra doğru sıraya denk gelir; ama sıra yine de açıkça yazılmalı. Türkçe
+# harfle (İ, Ö, Ü) başlayan kategoriler bazı programlarda alfabenin sonuna dizilebilir.
+```
+
+```{r}
+# 2b. Evet/hayır değişkenleri: aynı dönüşüm dört değişkene uygulanır
+# evet_hayir() küçük bir fonksiyondur; verilen sütunu "Hayır" referanslı faktöre çevirir.
+evet_hayir <- function(x) factor(x, levels = c("Hayır", "Evet"))
+```
+
+```{r}
+dusme <- dusme |>
+  mutate(yalniz_yasama = factor(yalniz_yasama, levels = c("Hayır", "Evet")),
+         gorme_guclugu   = factor(gorme_guclugu, levels = c("Hayır", "Evet")),
+         denge_programi   = factor(denge_programi, levels = c("Evet", "Hayır"))
+         )
+# denge_programi'nda referans "Evet"tir (programa kayıtlı olanlar); OR'ler kayıtlı olmayanları
+# kayıtlılarla karşılaştırır (Bölüm 9).
+```
+
+```{r}
+# 2c. Sonuç değişkeni: 0/1 yerine Hayır/Evet olsun
+# DİKKAT ! : BU VERİ NUMERİK GELMİŞTİ
+# labels, sayı kodlarının ekranda görünecek adlarını belirtir. Lojistik regresyonda
+# ikinci kategori ("Evet") olay olarak alınır.
+dusme <- dusme |>
+  mutate(dusme_12ay = factor(dusme_12ay, levels = c(0, 1), labels = c("Hayır", "Evet")))
+```
+
+```{r}
+count(dusme, dusme_12ay)         # Hayır 454, Evet 146
+```
+
+```{r}
+# 2d. Türetilmiş değişken: yaş grubu
+# cut() sürekli bir değişkeni aralıklara böler (SPSS: Transform > Recode into
+# Different Variables). (64, 74] aralığı 65-74 yaşı kapsar: sol sınır dahil değil,
+# sağ sınır dahildir.   64.000..01 - 74.000....
+```
+
+```{r}
+dusme <- dusme |>
+  mutate(yas_grubu = cut(yas, breaks = c(64, 74, 84, Inf),
+                         labels = c("65-74", "75-84", "85+"))) |>
+  relocate(yas_grubu, .after = yas)     # yeni sütun yaşın yanına taşınır
+count(dusme, yas_grubu)          # 269, 287 ve 44 kişi
+```
+
+```{r}
+# 2f. Değişken etiketleri
+# Etiket, tablolarda değişken adı yerine yazılan açıklamadır (SPSS: Variable View > #Label).
+```
+
+```{r}
+# Etiket temel R'daki attr() ile verilir. (Hmisc paketinin label() fonksiyonu sütuna
+# "labelled" sınıfı ekler; gtsummary bu sınıfla Tablo 1'de hata verir.)
+```
+
+```{r}
+attr(dusme$gorme_guclugu, "label")    # önce kontrol
+```
+
+```{r}
+attr(dusme$gorme_guclugu, "label") <- "Görme güçlüğü" # label atama
+```
+
+```{r}
+# Döngüler bazı tekrarlayan işlerde çok yararlıdır.
+```
+
+```{r}
+# etiket_listesi vektöründeki değişken adlarını tek tek dolaşır; 
+# her bir değişkenin okunabilir açıklamasını (metin etiketini), 
+# dusme veri çerçevesindeki ilgili sütunun "label" metaveri özniteliğine (attribute) yazar.
+```
+
+```{r}
+etiket_listesi <- c(yas = "Yaş (yıl)", 
+               yas_grubu = "Yaş grubu", 
+               cinsiyet = "Cinsiyet",
+               egitim = "Eğitim", 
+               yalniz_yasama = "Yalnız yaşama",
+               kronik_sayisi = "Kronik hastalık sayısı", 
+               ilac_sayisi = "İlaç sayısı",
+               gorme_guclugu = "Görme güçlüğü", 
+               onceki_dusme = "Önceki 12 ayda düşme",
+               aktivite_dk = "Fiziksel aktivite (dk/hafta)", bki = "BKİ (kg/m²)",
+               uyku_saat = "Uyku süresi (saat/gece)", kavrama_kg = "El kavrama kuvveti (kg)",
+               yurume_hizi = "Yürüme hızı (m/s)", denge_programi = "Denge programına kayıt",
+               yurume_hizi_6ay = "6. ay yürüme hızı (m/s)", dusme_12ay = "12 ayda düşme")
+```
+
+```{r}
+for (x in names(etiket_listesi)) {attr(dusme[[x]], "label") <- etiket_listesi[[x]]}
+```
+
+```{r}
+attr(dusme$yurume_hizi, "label")    # Kontrol
+```
+
+
+## Bölüm 3: R ile veriye ilk bakış
+
+```{r}
+# 3a. Hazır analiz sayfaları ve paketler
+# Bazı tekrar eden işler-analizler için yan R dosyaları çalıştırabiliriz !
+```
+
+```{r}
+# source() başka bir R dosyasındaki kodu çalıştırır. 
+```
+
+```{r}
+source("veriye_bakis.R")
+```
+
+```{r}
+# bu oturumda yan dosya olarak veriye_bakis.R dosyasını kullanacağız!
+# "veriye_bakis" hazırladığım bir R paketinin basitleştirilmiş halidir.
+# Dosya beş sayfa üreten beş fonksiyonu ve hepsini birlikte çalıştıran veriye_bakis()
+# fonksiyonunu tanımlar. Dosya Files panelinden açılıp incelenebilir; 
+# Tabii ki kendi verinizle de kullanabilirsiniz.
+```
+
+```{r}
+#   1. veri_karti()          Veri kimlik kartı: her değişkenin türü, eksiği ve özeti
+#   2. kategorik_sayfasi()   Kategorik değişkenler: kategori yüzde ve  sayıları
+#   3. normallik_sayfasi()   Sayısal değişkenler: tanımlayıcılar, dört grafik ve dört test
+#   4. grup_sayfasi()        Sonuca göre: her kategoride 12 ayda düşme yüzdesi
+#   5. grup_sayisal_sayfasi() Sayısal değişkenler: düşenlerde ve düşmeyenlerde dağılım ve testler
+```
+
+```{r}
+# 3b. nasıl kullanacağız?
+# grup, sonuç değişkenidir. dosya, raporun adı ve yeridir; klasör yoksa oluşturulur.
+# birlestir = TRUE beş sayfayı bu tek PDF dosyasında toplar; birlestir = FALSE beş sayfayı
+# aynı klasöre, adları dosya adıyla başlayan ayrı dosyalar olarak yazar.
+```
+
+```{r}
+bakis_dusme <- veriye_bakis(dusme, grup = dusme_12ay, birlestir = TRUE,
+                            dosya = "ciktilar/veriye_bakis/dusme.pdf")
+```
+
+::: {.callout-tip appearance="simple"}
+Bu satır beş sayfalık raporu PDF dosyasına yazar. Sayfalar aşağıdaki sekmelerdedir.
+:::
+
+::: {.panel-tabset}
+
+## 1. Veri kimlik kartı
+
+```{r}
+#| echo: false
+#| fig-width: 8.27
+#| fig-height: 11.69
+invisible(veri_karti(dusme))
+```
+
+## 2. Kategorik değişkenler
+
+```{r}
+#| echo: false
+#| fig-width: 8.27
+#| fig-height: 11.69
+invisible(kategorik_sayfasi(dusme))
+```
+
+## 3. Sayısal değişkenler
+
+```{r}
+#| echo: false
+#| fig-width: 8.27
+#| fig-height: 11.69
+invisible(normallik_sayfasi(dusme))
+```
+
+## 4. Sonuca göre profil
+
+```{r}
+#| echo: false
+#| fig-width: 8.27
+#| fig-height: 11.69
+invisible(grup_sayfasi(dusme, dusme_12ay))
+```
+
+## 5. Sayısal değişkenler, sonuca göre
+
+```{r}
+#| echo: false
+#| fig-width: 8.27
+#| fig-height: 11.69
+invisible(grup_sayisal_sayfasi(dusme, dusme_12ay))
+```
+
+:::
+
+```{r}
+# ciktilar/veriye_bakis/dusme.pdf dosyasını açın.
+```
+
+```{r}
+# 3c. Sürekli sonuç: başlangıç yürüme hızı
+# grup sürekli bir değişken olduğunda 4. ve 5. sayfa buna göre farklılaşır.
+# kategorilerde ortalama ve %95 GA, sayısal değişkenlerde saçılım grafiği ve korelasyon.
+# (SPSS: Compare Means > Means; Correlate > Bivariate). 
+# Yürüme hızı normal dağıldığı için ikili karşılaştırmada t testi kullanılır (parametrik = TRUE).
+```
+
+```{r}
+bakis_yurume <- veriye_bakis(dusme, grup = yurume_hizi, parametrik = TRUE, birlestir = TRUE,
+                            dosya = "ciktilar/veriye_bakis/yurume.pdf")
+```
+
+::: {.callout-tip appearance="simple"}
+Sonuç sürekli olduğu için yalnız 4. ve 5. sayfa değişir; ilk üç sayfa yukarıdakiyle aynıdır.
+:::
+
+::: {.panel-tabset}
+
+## 4. Sonuca göre profil
+
+```{r}
+#| echo: false
+#| fig-width: 8.27
+#| fig-height: 11.69
+invisible(grup_sayfasi(dusme, yurume_hizi, parametrik = TRUE))
+```
+
+## 5. Sayısal değişkenler, sonuca göre
+
+```{r}
+#| echo: false
+#| fig-width: 8.27
+#| fig-height: 11.69
+invisible(grup_sayisal_sayfasi(dusme, yurume_hizi))
+```
+
+:::
+
+```{r}
+#   ortalama yürüme hızı 65-74 yaşta 1,19 m/s, 85 yaş ve üstünde 0,87 m/s'dir;
+#   üç yaş grubu arasındaki farkların hepsi anlamlıdır. Eğitimde ANOVA p=0,054,
+#   Kruskal-Wallis p=0,019'dur: test seçimi yorumumuzu değiştirebilir !
+```
+
+```{r}
+# 3d. Normallik kararı
+# Büyük örneklemde (600 kişi) testler küçük ve önemsiz sapmaları da istatistiksel
+# olarak anlamlı bulur. Bu nedenle kararın grafiklerle birlikte verilmesi daha sağlıklı olabilir.
+```
+
+```{r}
+normal_degiskenler <- c("bki", "uyku_saat", "kavrama_kg", "yurume_hizi", "yurume_hizi_6ay")
+# bu listeyi tanımlayıcıları sunarken kullanacağız; normal dağılanlar ortalama (SS) ile,
+# listede bulunmayan sürekli değişkenler ise ortanca (Q1–Q3) ile verilecek. 
+```
+
+```{r}
+# bu tüm değişkenler için " grup=x " tek tek analiz edilip çeşitli karşılaştırmalara bakılabilir.
+# bir diğer tanımlayıcı yol ise  KORELASYON lar !
+```
+
+
+## Bölüm 4: Değişkenler arası korelasyon
+
+```{r}
+# Korelasyon katsayısı (r), iki değişkenin birlikte artma ya da azalma eğilimini -1 ile
+# +1 arasında özetler. Spearman korelasyonu değerlerin sıralarını kullanır; normal dağılım
+# varsaymaz ve sıralı değişkenlerle de kullanılabilir. Bölüm 3'te normal dağılmayan
+# değişkenler bulunduğu için seçilir (SPSS: Analyze > Correlate > Bivariate > Spearman).
+# Korelasyon ilişkinin yönünü ve gücünü gösterir; neden-sonuç ilişkisini göstermez.
+```
+
+```{r}
+# 4a. Yalnız sayısal değişkenler
+```
+
+```{r}
+# Adım 1: sayısal sütunlar seçilir (yaş, BKİ, yürüme hızı gibi ölçüm ve sayımlar).
+sayisal_veri <- dusme |> select(where(is.numeric))
+names(sayisal_veri)                     # Kontrol edelim: 9 sayısal değişken
+```
+
+```{r}
+# Adım 2: sütun adlarının yerine Türkçe etiketler yazılır; grafikte bu adlar görünür.
+names(sayisal_veri) <- etiket_listesi[names(sayisal_veri)]
+```
+
+```{r}
+# Adım 3: Spearman korelasyon matrisi hesaplanır. Her hücre iki değişkenin r değeridir.
+kor_sayisal <- cor(sayisal_veri, method = "spearman")
+round(kor_sayisal, 2)                   # Kontrol
+```
+
+```{r}
+# Adım 4: ggplot2 için matris uzun tabloya çevrilir.
+kor_sayisal_uzun <- as.data.frame(as.table(kor_sayisal)) |>
+  rename(degisken1 = Var1, degisken2 = Var2, r = Freq) |>
+  filter(as.integer(degisken1) > as.integer(degisken2))
+```
+
+```{r}
+#| fig-width: 8.5
+#| fig-height: 7
+# Adım 5: ısı haritası. Her kare bir değişken çiftidir; renk r'nin yönünü (mavi pozitif,
+# kırmızı negatif) ve gücünü, karenin içindeki sayı r değerini gösterir.
+grafik_kor_sayisal <- ggplot(kor_sayisal_uzun, aes(x = degisken2, y = degisken1, fill = r)) +
+  geom_tile(colour = "white") +                                          # renkli kareler
+  geom_text(aes(label = format(round(r, 2), nsmall = 2)), size = 2.4) +  # karedeki r değeri
+  scale_fill_gradient2(low = "#b2182b", mid = "white", high = "#2166ac",
+                       limits = c(-1, 1)) +                              # -1 kırmızı, 0 beyaz, +1 mavi
+  scale_y_discrete(limits = rev) +                                       # üçgen sol altta dursun
+  labs(x = NULL, y = NULL, fill = "Spearman r") +
+  theme_minimal(base_size = 9) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),               # eğik değişken adları
+        panel.grid = element_blank())
+grafik_kor_sayisal
+```
+
+```{r}
+# ggplot objelerini yüksek kalitede kaydedelim!
+ggsave("ciktilar/korelasyon_sayisal.png", grafik_kor_sayisal, width = 15, height = 12, units = "cm", dpi = 300)
+```
+
+```{r}
+# kronik hastalık sayısı ile ilaç sayısı arasında r=0,67; 
+# yürüme hızı ile yaş arasında r=-0,59.
+```
+
+```{r}
+# 4b. Bütün değişkenler: peki kategorileri de sayıya çevirsek olur mu?
+```
+
+```{r}
+# Adım 1: data.matrix() her kategorik değişkeni kategori
+# sırasına göre 1, 2, 3 diye kodlar; sıra Bölüm 2'de belirlediğimiz gibidir.
+```
+
+```{r}
+#   İki kategorili (cinsiyet): pozitif r, öteki değişken arttıkça ikinci kategoride bulunma
+#     eğilimini gösterir.
+```
+
+```{r}
+#   Sıralı, çok kategorili (eğitim): kategoriler arasında doğal bir sıra bulunduğu
+#     için korelasyona girebilir.
+```
+
+```{r}
+#   Sırasız, çok kategorili değişkenler (il, meslek gibi) korelasyona ALINMAMALIDIR.
+```
+
+```{r}
+# kontrol edelim
+levels(dusme$cinsiyet)                  # Kontrol: 1 Kadın, 2 Erkek
+levels(dusme$egitim)                    # 1 Yükseköğretim, 2 Ortaöğretim, 3 İlkokul ve altı
+levels(dusme$denge_programi)            # 1 Evet, 2 Hayır
+tum_veri <- dusme |> select(-katilimci_no, -yas_grubu) |> data.matrix()
+head(tum_veri, 3)                       # Kontrol: kategoriler artık 1, 2, 3
+```
+
+```{r}
+# Adım 2-4: 4a'daki adımlar tekrarlanır: Türkçe adlar, Spearman korelasyonu, uzun tablo.
+colnames(tum_veri) <- etiket_listesi[colnames(tum_veri)]
+```
+
+```{r}
+kor_tum <- cor(tum_veri, method = "spearman")
+kor_tum_uzun <- as.data.frame(as.table(kor_tum)) |>
+  rename(degisken1 = Var1, degisken2 = Var2, r = Freq) |>
+  filter(as.integer(degisken1) > as.integer(degisken2))
+```
+
+```{r}
+#| fig-width: 8.5
+#| fig-height: 7
+# Adım 5: ısı haritası; kod 4a ile aynıdır, yalnızca veri (kor_tum_uzun) değişir.
+grafik_korelasyon <- ggplot(kor_tum_uzun, aes(x = degisken2, y = degisken1, fill = r)) +
+  geom_tile(colour = "white") +
+  geom_text(aes(label = format(round(r, 2), nsmall = 2)), size = 2.4) +
+  scale_fill_gradient2(low = "#b2182b", mid = "white", high = "#2166ac", limits = c(-1, 1)) +
+  scale_y_discrete(limits = rev) +
+  labs(x = NULL, y = NULL, fill = "Spearman r") +
+  theme_minimal(base_size = 9) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), panel.grid = element_blank())
+grafik_korelasyon
+```
+
+```{r}
+ggsave("ciktilar/korelasyon_tumu.png", grafik_korelasyon, width = 18, height = 15, units = "cm", dpi = 300)
+# İnceleyin: cinsiyet ile el kavrama kuvveti arasında r=0,55; kavrama kuvveti erkeklerde
+# (2) daha yüksektir. Denge programı ile yürüme hızı arasında r=0,22; programa kayıtlı
+# olmayanların (2) yürüme hızı daha yüksektir (Tablo 4).
+```
+
+
+## Bölüm 5: Tanımlayıcı istatistikler ve ikili karşılaştırmalar
+
+```{r}
+# Tablo 1 bütün katılımcıların başlangıç özelliklerini verir (5a–5c). Tablo 2 aynı
+# özellikleri 12 ayda düşenler ve düşmeyenler için ayrı ayrı verir ve iki grubu
+# karşılaştırır (5d–5h).
+```
+
+```{r}
+# 5a. Tabloya girecek değişkenleri tümden negatif seçimle belirleyelim.
+# select() içinde eksi işareti koyarak "bu sütunlar dışındakiler" anlamı verebiliriz. 
+# Çalışmamızda Kimlik numarası ve 6. ay ölçümü başlangıç özelliği olmadığı için tabloya almadık.
+```
+
+```{r}
+#tablo1_veri adında yeni bir veriseti oluşturduk | veri kaybetmeyelim! dusme_ham  > dusme > tablo1_veri
+```
+
+```{r}
+tablo1_veri <- dusme |> select(-katilimci_no, -yurume_hizi_6ay)
+names(tablo1_veri)
+```
+
+```{r}
+# 5b. Makale-tez için Tablo 1 oluşturalım:
+tbl_summary(tablo1_veri)
+```
+
+```{r}
+# tbl_summary bütün sürekli değişkenleri ortanca (Q1–Q3) ile verir. 
+# Az sayıda farklı değer alan kronik hastalık sayısını ise kategori gibi sayar (0, 1, 2 ... satırları).
+```
+
+```{r}
+# 5c. İstatistik seçimi (Bölüm 3'te normal değişkenleri seçmiştik)
+# normal_degiskenler <- c("bki", "uyku_saat", "kavrama_kg", "yurume_hizi", "yurume_hizi_6ay")
+```
+
+```{r}
+tablo1 <- tbl_summary(
+  tablo1_veri,
+  type      = list(c(kronik_sayisi, ilac_sayisi) ~ "continuous"),   # sayım: sürekli
+  statistic = list(all_continuous()           ~ "{median} ({p25}–{p75})",
+                   any_of(normal_degiskenler) ~ "{mean} ({sd})",
+                   all_categorical()          ~ "{n} (%{p})"),           # yüzde işareti sayıdan önce: 146 (%24,3)
+  digits    = list(all_continuous() ~ 0, any_of(normal_degiskenler) ~ 1, yurume_hizi ~ 2,
+                   all_categorical() ~ c(0, 1)))                         # yüzde: bir ondalık
+```
+
+```{r}
+tablo1
+```
+
+```{r}
+# tablo omurgası tbl_summary ile kurulur > şekil değişiklikleri ve eklemeler pipe |> ile yapılabilir.
+# Tablo 1'in Türkçe başlıkları ve notu
+tablo1 <- tablo1 |>
+  modify_header(label ~ "**Özellik**", stat_0 ~ "**Tümü**  \nn={N}") |>
+  modify_footnote_header("n (%); ortalama (SS); ortanca (Q1–Q3)", columns = all_stat_cols()) |>
+  modify_caption("Tablo 1. Katılımcıların başlangıç özellikleri") |>
+  bold_labels()
+tablo1
+```
+
+```{r}
+# 5d. İkili karşılaştırma: Tablo 2
+# by = dusme_12ay, tabloyu 12 ayda düşmeyenler (Hayır) ve düşenler (Evet) olarak iki
+# sütuna böler (SPSS: Crosstabs ve Compare Means). 
+tablo2 <- tbl_summary(
+  tablo1_veri,
+  by        = dusme_12ay,        # tek satırla veriyi dusme_12ay'a göre iki sütuna bölüyor! 
+  type      = list(c(kronik_sayisi, ilac_sayisi) ~ "continuous"),
+  statistic = list(all_continuous()           ~ "{median} ({p25}–{p75})",
+                   any_of(normal_degiskenler) ~ "{mean} ({sd})",
+                   all_categorical()          ~ "{n} (%{p})"),
+  digits    = list(all_continuous() ~ 0, any_of(normal_degiskenler) ~ 1, yurume_hizi ~ 2,
+                   all_categorical() ~ c(0, 1)))
+tablo2
+```
+
+```{r}
+# 5e. p değerleri ve tablo notları ekleyelim
+# add_p() normal dağılan değişkenlerde t testini, ötekilerde Mann-Whitney U testini,
+# kategorik değişkenlerde ki-kare testini kullanır (beklenen sayısı 5'ten küçük hücre
+# varsa Fisher kesin testi). Her p değerinin yanına kullanılan testi gösteren üst simge
+# rakam eklenir; rakamların açıklaması tablonun altındadır. Kullanılan istatistikler
+# rakamsız notta yazılır.
+```
+
+```{r}
+tablo2 <- tablo2 |>
+  add_p(test = list(any_of(normal_degiskenler) ~ "t.test")) |>
+  modify_footnote_body("t testi (Welch)", columns = "p.value",
+                       rows = row_type == "label" & test_name == "t.test") |>
+  modify_footnote_body("Mann-Whitney U testi", columns = "p.value",
+                       rows = row_type == "label" & test_name == "wilcox.test") |>
+  modify_footnote_body("ki-kare testi", columns = "p.value",
+                       rows = row_type == "label" & test_name %in% c("chisq.test", "chisq.test.no.correct")) |>
+  modify_footnote_body("Fisher kesin testi", columns = "p.value",
+                       rows = row_type == "label" & test_name == "fisher.test") |>
+  modify_source_note(paste("Normal dağılan sürekli değişkenler ortalama (SS), öteki sürekli",
+                           "değişkenler ortanca (Q1–Q3), kategorik değişkenler n (%) olarak verilmiştir."))
+tablo2
+```
+
+```{r}
+# 5f. Türkçe başlıklar
+tablo2 <- tablo2 |>
+  modify_header(label ~ "**Özellik**", all_stat_cols() ~ "**{level}**  \nn={n}",
+                p.value ~ "**p**") |>
+  remove_footnote_header() |>
+  modify_caption("Tablo 2. Katılımcıların 12 ayda düşme durumuna göre başlangıç özellikleri") |>
+  bold_labels()
+tablo2
+```
+
+```{r}
+# İnceleyin: Tablodaki yüzdeler sütun yüzdesidir. 
+# Düşenlerin %59,6'sı 75-84 yaş grubundadır.
+```
+
+```{r}
+# 5g. Satır yüzdesiyle Tablo 2
+# Sütun yüzdesi, her grubun (düşen, düşmeyen) yüzde kaçının bir özelliği taşıdığını verir.
+# Satır yüzdesi ise her kategorideki kişilerin yüzde kaçının 12 ayda düştüğünü verir;
+# percent = "row" ile alınır (SPSS: Crosstabs > Cells > Percentages: Row). 
+# tablo omurgası değiştiği için baştan yazıyoruz!
+```
+
+```{r}
+tablo2_satir <- tbl_summary(
+  tablo1_veri,
+  by        = dusme_12ay,
+  percent   = "row",                                   # satır yüzdesi
+  type      = list(c(kronik_sayisi, ilac_sayisi) ~ "continuous"),
+  statistic = list(all_continuous()           ~ "{median} ({p25}–{p75})",
+                   any_of(normal_degiskenler) ~ "{mean} ({sd})",
+                   all_categorical()          ~ "{n} (%{p})"),
+  digits    = list(all_continuous() ~ 0, any_of(normal_degiskenler) ~ 1, yurume_hizi ~ 2,
+                   all_categorical() ~ c(0, 1))) |>
+  add_p(test = list(any_of(normal_degiskenler) ~ "t.test")) |>
+  modify_footnote_body("t testi (Welch)", columns = "p.value",
+                       rows = row_type == "label" & test_name == "t.test") |>
+  modify_footnote_body("Mann-Whitney U testi", columns = "p.value",
+                       rows = row_type == "label" & test_name == "wilcox.test") |>
+  modify_footnote_body("ki-kare testi", columns = "p.value",
+                       rows = row_type == "label" & test_name %in% c("chisq.test", "chisq.test.no.correct")) |>
+  modify_footnote_body("Fisher kesin testi", columns = "p.value",
+                       rows = row_type == "label" & test_name == "fisher.test") |>
+  modify_source_note(paste("Normal dağılan sürekli değişkenler ortalama (SS), öteki sürekli",
+                           "değişkenler ortanca (Q1–Q3), kategorik değişkenler n (satır yüzdesi) olarak",
+                           "verilmiştir.")) |>
+  modify_header(label ~ "**Özellik**", all_stat_cols() ~ "**{level}**  \nn={n}",
+                p.value ~ "**p**") |>
+  remove_footnote_header() |>
+  modify_caption("Tablo 2. Katılımcıların 12 ayda düşme durumuna göre başlangıç özellikleri (satır yüzdesi)") |>
+  bold_labels()
+tablo2_satir
+```
+
+```{r}
+# İnceleyin: 75-84 yaş grubunun %30,3'ü düşmüştür. 85+ grubunda bu sıklık %36,4'tür.
+```
+
+```{r}
+# 5h. Word'e aktarma (yazı tipini ve boyutunu Bölüm 0'da ayarlamıştık.)
+as_flex_table(tablo1) |> flextable::save_as_docx(path = "ciktilar/tablo1.docx")
+as_flex_table(tablo2) |> flextable::save_as_docx(path = "ciktilar/tablo2.docx")
+```
+
+```{.text .ascii-sanat}
+# ==============================================================
+#
+#                    )   (   )
+#                   (   )   (
+#                    )   (   )
+#                 .-------------.
+#                 |             |--.
+#                 |             |  |
+#                 |             |--'
+#                 '-------------'
+#               ~~~~~~~~~~~~~~~~~~~
+#
+#
+#      ##   ##    #####    ##          ###
+#      ### ###   ##   ##   ##         ## ##
+#      ## # ##   ##   ##   ##        ##   ##
+#      ##   ##   ##   ##   ##        #######
+#      ##   ##    #####    #######   ##   ##
+#
+# ==============================================================
+```
+
+
+## Bölüm 6: Grafikler: ggplot2'nin yapısı ve grafik türleri
+
+```{r}
+# 6a. GGPLOT ve GRAFİKLER
+```
+
+```{r}
+#| fig-width: 9
+#| fig-height: 5.5
+# R'da modern grafikler ggplot2 ile çizilir. Her ggplot2 grafiği çeşitli parçalardan oluşur ve
+# parçalar "+" ile eklenir:
+#   veri       ggplot(dusme, ...)                    hangi veri
+#   eşleme     aes(x = ..., y = ..., fill = ...)     hangi değişken hangi eksen ya da renk
+#   katman     geom_bar(), geom_histogram() ...      hangi geometrik şekil
+#   etiket     labs()                                başlık ve eksen adları
+#   ölçek      scale_...()                           renkler ve eksen biçimi
+#   tema       theme_...()                           arka plan, yazı tipi, ızgara
+#   panel      facet_wrap()                          alt gruplara göre ayrı paneller
+```
+
+```{r}
+# Aşağıdaki grafiklerde bu parçaları sırayla ekleyelim:
+```
+
+```{r}
+#        veri   ,          eşleme        +   katman       en yalın grafik
+ggplot(dusme_ham, aes(x = onceki_dusme)) + geom_bar()
+```
+
+```{r}
+# ggplot objelerine isim verip kaydetmekte yarar var! az önceki grafiği kaydedelim
+```
+
+```{r}
+grafik_sira_once <- ggplot(dusme_ham, aes(x = onceki_dusme)) +
+  geom_bar()
+```
+
+```{r}
+grafik_sira_once
+```
+
+```{r}
+# barın içini boyadık (katman ayarı)
+grafik_sira_once <- ggplot(dusme_ham, aes(x = onceki_dusme)) +
+  geom_bar(fill = "turquoise4")
+```
+
+```{r}
+grafik_sira_once
+```
+
+```{r}
+# açıklamalar ekledik (etiket: labs)
+grafik_sira_once <- ggplot(dusme_ham, aes(x = onceki_dusme)) +
+  geom_bar(fill = "turquoise4") +
+
+  labs(title = "Önce: alfabetik sıra", 
+       subtitle = "Referans: Evet", 
+       x = "Önceki 12 ayda düşme", 
+       y = "Kişi sayısı")
+```
+
+```{r}
+grafik_sira_once
+```
+
+```{r}
+# title: en üst
+# subtitle title'ın bir altı
+# x yatay eksen
+# y düşey eksen
+```
+
+```{r}
+# FAKTÖR DÖNÜŞÜMÜ YAPILDIKTAN SONRA (2a'da levels ile sıra verildi)
+# veri dusme_ham idi şimdi dusme'yi kullanıyoruz.
+```
+
+```{r}
+grafik_sira_sonra <- ggplot(dusme, aes(x = onceki_dusme)) +
+  geom_bar(fill = "steelblue") +
+  labs(title = "Sonra: levels ile verilen sıra", 
+       subtitle = "Referans: Hayır",
+       x = "Önceki 12 ayda düşme", 
+       y = "Kişi sayısı")
+```
+
+```{r}
+grafik_sira_sonra
+```
+
+```{r}
+# R ile grafik birleştirme  (patchwork)
+# üstte kaydettiğimiz grafik objelerini örn:"grafik_sira_sonra" birleştireceğiz! 
+```
+
+```{r}
+# "|" grafikleri yan yana birleştirir.
+(grafik_sira_once | grafik_sira_sonra)
+```
+
+```{r}
+# "/" alt alta yerleştirir
+(grafik_sira_once | grafik_sira_sonra) / (grafik_sira_once | grafik_sira_sonra) 
+```
+
+```{r}
+# bir de histogram görelim!
+ggplot(dusme, aes(x = yas)) +
+  geom_histogram(binwidth = 1) # binwidth: her çubuk 1 yaşlık aralık
+```
+
+```{r}
+# daha şık bir histogram görelim! bin aralarını beyaza boyadık
+ggplot(dusme, aes(x = yas)) +
+  geom_histogram(binwidth = 1, colour = "white")
+```
+
+```{r}
+# aes içinde "fill", çubukları bir değişkene (yaş grubu) göre doldurur-boyar!
+ggplot(dusme, aes(x = yas, fill = yas_grubu)) +
+  geom_histogram(binwidth = 1, colour = "white")
+```
+
+```{r}
+# scale_x_continuous() ile eksen değerlerini atayabiliriz! (ölçek; eğik-dik yazılar için tema)
+ggplot(dusme, aes(x = yas, fill = yas_grubu)) +
+  geom_histogram(binwidth = 1, colour = "white") +
+  scale_x_continuous(breaks = 65:95)+                 # x ekseni değerlerini atadık
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8))
+```
+
+```{r}
+# geom_vline ile düşey çizgiler atabilirsiniz! 
+ggplot(dusme, aes(x = yas, fill = yas_grubu)) +
+  geom_histogram(binwidth = 1, colour = "white") +
+  scale_x_continuous(breaks = 65:95)+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8)) +
+  geom_vline(xintercept = c(74.5, 84.5), linetype = "dashed")
+```
+
+```{r}
+# bir de etiket ekleyelim :)
+ggplot(dusme, aes(x = yas, fill = yas_grubu)) +
+  geom_histogram(binwidth = 1, colour = "white") +
+  scale_x_continuous(breaks = 65:95)+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 8)) +
+  geom_vline(xintercept = c(74.5, 84.5), linetype = "dashed")+
+  labs(title = "Yaş grupları: kesikli çizgiler cut() sınırlarıdır",
+       x = "Yaş (yıl)", y = "Kişi sayısı", fill = "Yaş grubu")
+```
+
+```{r}
+# 6b. ggplot2'nin yapısı: adım adım bir grafik daha yapalım!
+#  saçılım grafiği
+```
+
+```{r}
+# Adım 1: veri ve eşleme. Eksenler çizilir
+grafik <- ggplot(dusme, aes(x = yas, y = yurume_hizi))
+grafik
+```
+
+```{r}
+# Adım 2: katman. Her katılımcı bir noktadır; alpha noktaları yarı saydam yapar.
+grafik <- grafik + geom_point(alpha = 0.5) # geom_point ile noktaları ekledik
+grafik
+```
+
+```{r}
+# Adım 3: Noktalara cinsiyete göre renk verelim. Noktanın rengi "colour =" ile verilir;
+# "fill =" ise çubuk ve alanların içini boyar (6a'daki histogram).
+grafik <- grafik + aes(colour = cinsiyet)
+grafik
+```
+
+```{r}
+# Adım 4: Her cinsiyet için doğrusal eğilim çizgisi ve %95 GA 
+grafik <- grafik + geom_smooth(method = "lm")
+grafik
+```
+
+```{r}
+# Adım 5: etiketler. ggplot2 eksen adlarını 2f'deki etiketlerden kendiliğinden alır;
+#  labs() ile başlık eklenebilir ve eksen adları değiştirilebilir.
+grafik <- grafik + labs(title = "Yaşa göre yürüme hızı", x = "Yaş (yıl)",
+                        y = "Yürüme hızı (m/s)", colour = "Cinsiyet")
+grafik
+```
+
+```{r}
+# Adım 6: ölçek. Renkler elle seçilebilir.
+grafik <- grafik + scale_colour_manual(values = c(Kadın = "orange", Erkek = "navy"))
+grafik
+```
+
+```{r}
+# Adım 7: tema. Gri arka plan kaldırılır, yazı boyutu ayarlanabilir.
+grafik <- grafik + theme_minimal(base_size = 10)
+grafik
+grafik_sacilim <- grafik
+ggsave("ciktilar/sekil_yas_yurume.png", grafik_sacilim, width = 16, height = 10,
+       units = "cm", dpi = 300)
+```
+
+```{r}
+#| fig-width: 9
+#| fig-height: 5.5
+# Adım 8: paneller. Aynı grafik denge programına göre iki panele bölünür.
+grafik_sacilim + facet_wrap(~ denge_programi) +
+                  labs(subtitle = "Denge programı katılımına göre (Panel)")
+```
+
+```{r}
+# 6c. Grafik türleri: R Graph Gallery
+# https://r-graph-gallery.com grafik türlerini amaca göre gruplar ve her biri için kod verir.
+```
+
+```{r}
+# Aşağıdaki örnekleri beraber görelim; her örneğin yanındaki linkten galeri
+# sayfasına ulaşabilirsiniz. 
+```
+
+```{r}
+# Rstudio'da linklere tıklamak için ctrl / cmd basılı tutup sol tuşa tıklayın.
+```
+
+```{r}
+# Dağılım: yoğunluk grafiği (https://r-graph-gallery.com/density-plot.html)
+ggplot(dusme, aes(x = yurume_hizi, fill = dusme_12ay)) +
+  geom_density(alpha = 0.5) +
+  labs(x = "Yürüme hızı (m/s)", y = "Yoğunluk", fill = "12 ayda düşme") +
+  theme_minimal(base_size = 12)
+```
+
+```{r}
+# Dağılım: keman ve kutu (https://r-graph-gallery.com/violin.html, /boxplot.html)
+# kutu: ortanca ve Q1–Q3; bıyıklar Q1–Q3'ten en çok 1,5 kat çeyrekler arası uzaklığa uzanır
+ggplot(dusme, aes(x = dusme_12ay, y = yurume_hizi, fill = dusme_12ay)) +
+  geom_violin(alpha = 0.4, colour = NA) +
+  geom_boxplot(width = 0.15, fill = "white", outlier.shape = NA) +
+  geom_jitter(width = 0.08, alpha = 0.2, size = 0.8) +
+  labs(x = "12 ayda düşme", y = "Yürüme hızı (m/s)") +
+  theme_minimal(base_size = 12) + theme(legend.position = "none")
+```
+
+```{r}
+# İlişki: kabarcık grafiği (https://r-graph-gallery.com/bubble-chart.html)
+# Üçüncü bir değişken (ilaç sayısı) noktanın büyüklüğüyle gösterilebilir.
+ggplot(dusme, aes(x = yas, y = yurume_hizi, size = ilac_sayisi)) +
+  geom_point(alpha = 0.3, colour = "steelblue") +
+  labs(x = "Yaş (yıl)", y = "Yürüme hızı (m/s)", size = "İlaç sayısı") +
+  theme_minimal(base_size = 12)
+```
+
+```{r}
+# İlişki: iki boyutlu yoğunluk (https://r-graph-gallery.com/2d-density-chart.html)
+# Açık renkli bölgeler katılımcıların yoğunlaştığı yaş ve yürüme hızı bileşimlerini gösterir.
+ggplot(dusme, aes(x = yas, y = yurume_hizi)) +
+  stat_density_2d(aes(fill = after_stat(level)), geom = "polygon", alpha = 0.8) +
+  geom_point(alpha = 0.15, size = 0.6) +
+  scale_fill_viridis_c() +
+  labs(x = "Yaş (yıl)", y = "Yürüme hızı (m/s)", fill = "Yoğunluk") +
+  theme_minimal(base_size = 12)
+```
+
+```{r}
+# Bütünün parçaları: yüzde yığın çubuk (https://r-graph-gallery.com/stacked-barplot.html)
+# Her çubuk %100'dür; renkler 12 ayda düşenlerin ve düşmeyenlerin payını gösterir.
+ggplot(dusme, aes(x = onceki_dusme, fill = dusme_12ay)) +
+  geom_bar(position = "fill") +
+  scale_y_continuous(labels = scales::label_percent(prefix = "%", suffix = "")) +
+  labs(x = "Önceki düşme", y = "Katılımcı yüzdesi", fill = "12 ayda düşme") +
+  theme_minimal(base_size = 12)
+```
+
+```{r}
+# Sıralama: lolipop grafiği (https://r-graph-gallery.com/lollipop-plot.html)
+# Önce yaş gruplarına göre düşme yüzdesi hesaplanır (SPSS: Compare Means > Means).
+dusme_yuzde <- dusme |>
+  group_by(yas_grubu) |>
+  summarise(kisi = n(), dusen = sum(dusme_12ay == "Evet"), yuzde = dusen / kisi * 100)
+dusme_yuzde
+ggplot(dusme_yuzde, aes(x = yas_grubu, y = yuzde)) +
+  geom_segment(aes(xend = yas_grubu, y = 0, yend = yuzde), colour = "grey60") +
+  geom_point(size = 5, colour = "steelblue") +
+  geom_text(aes(label = paste0("%", format(round(yuzde, 1), nsmall = 1))), vjust = -1.2) +
+  scale_y_continuous(limits = c(0, 45)) +
+  labs(x = "Yaş grubu", y = "12 ayda düşenler (%)") +
+  theme_minimal(base_size = 12)
+```
+
+```{r}
+# Zaman içinde değişim: çizgi grafiği (https://r-graph-gallery.com/line-plot.html)
+# denge programına kayıt durumuna göre başlangıç ve 6. ay yürüme hızı ortalamaları.
+yurume_zaman <- dusme |>
+  group_by(denge_programi) |>
+  summarise(Başlangıç = mean(yurume_hizi), `6. ay` = mean(yurume_hizi_6ay)) |>
+  tidyr::pivot_longer(c(Başlangıç, `6. ay`), names_to = "zaman", values_to = "ortalama") |>
+  mutate(zaman = factor(zaman, levels = c("Başlangıç", "6. ay")))
+ggplot(yurume_zaman, aes(x = zaman, y = ortalama, colour = denge_programi,
+                         group = denge_programi)) +
+  geom_line(linewidth = 1) +
+  geom_point(size = 3) +
+  labs(x = NULL, y = "Ortalama yürüme hızı (m/s)", colour = "Denge programı") +
+  theme_minimal(base_size = 12)
+```
+
+```{r}
+# Pasta ve halka grafikleri galeride önerilmemektedir.
+```
+
+
+## Bölüm 7: Regresyon modellerinin tanımlanması
+
+```{r}
+# Bölüm 8 ve 9'daki iki model burada tanımlanır.
+#   Bağımlı (sonuç) değişken: açıklanmak istenen değişken
+#   Bağımsız (açıklayıcı) değişkenler: sonuçla ilişkisi incelenen değişkenler
+```
+
+```{r}
+# 7a. Birimler
+# Katsayı ve OR "1 birim artış" içindir; birim anlamlı bir büyüklükte seçilmesinde yarar var.
+dusme <- dusme |>
+  mutate(aktivite_saat = aktivite_dk / 60,   # dakika yerine saat
+         yas_5         = yas / 5,             # 1 yıl yerine 5 yıl
+         yurume_01    = yurume_hizi * 10)            # 1 m/s yerine 0,1 m/s
+```
+
+```{r}
+attr(dusme$aktivite_saat, "label") <- "Fiziksel aktivite (saat/hafta)"
+attr(dusme$yas_5, "label")         <- "Yaş (5 yıl)"
+attr(dusme$yurume_01, "label")    <- "Yürüme hızı (0,1 m/s)"
+```
+
+```{r}
+# 7b. Değişkenlerin modele nasıl seçileceği
+# başlı başına belki bir dönemlik ders
+```
+
+```{r}
+bagimli_dogrusal    <- "yurume_hizi"
+aciklayici_dogrusal <- c("yas", "cinsiyet", "egitim", "kronik_sayisi", "aktivite_saat", "bki")
+bagimli_lojistik    <- "dusme_12ay"
+aciklayici_lojistik <- c("yas_5", "cinsiyet", "onceki_dusme", "gorme_guclugu",
+                         "kronik_sayisi", "ilac_sayisi", "yurume_01", "denge_programi")
+```
+
+```{r}
+# 7c. Formüller
+# reformulate() listelerden "sonuç ~ açıklayıcı1 + açıklayıcı2 + ..." formülünü kurar.
+formul_dogrusal <- reformulate(aciklayici_dogrusal, response = bagimli_dogrusal)
+formul_lojistik <- reformulate(aciklayici_lojistik, response = bagimli_lojistik)
+formul_dogrusal
+formul_lojistik
+```
+
+
+## Bölüm 8: Doğrusal regresyon: yürüme hızı
+
+```{r}
+# (SPSS: Analyze > Regression > Linear)
+model_dogrusal <- lm(formul_dogrusal, data = dusme)
+```
+
+```{r}
+# 8a. Hızlı çıktı
+summary(model_dogrusal)
+# Estimate: B katsayısı; değişken 1 birim arttığında yürüme hızındaki ortalama değişim (m/s).
+# Pr(>|t|): p değeri. Multiple R-squared: yürüme hızındaki değişkenliğin açıklanan oranı.
+# Kategorik değişkenler referansa göre okunur: cinsiyet Erkek, erkeklerin kadınlara göre farkıdır.
+```
+
+```{r}
+tbl_regression(model_dogrusal)      # daha düzenli tablo olarak
+```
+
+```{r}
+# 8b. Tez tablosu: ham ve düzeltilmiş katsayılar yan yana
+# Ham: her değişken modele tek başına girer. Düzeltilmiş: bütün değişkenler aynı modeldedir.
+# Yürüme hızı küçük birimli olduğu için katsayılar üç ondalıkla yazılır.
+uc_ondalik <- label_style_number(digits = 3)
+ham_dogrusal <- tbl_uvregression(dusme, method = lm, y = yurume_hizi,
+                                 include = all_of(aciklayici_dogrusal), hide_n = TRUE,
+                                 estimate_fun = uc_ondalik)
+duz_dogrusal <- tbl_regression(model_dogrusal, estimate_fun = uc_ondalik)
+tablo3_dogrusal <- tbl_merge(list(ham_dogrusal, duz_dogrusal),
+                             tab_spanner = c("**Ham**", "**Düzeltilmiş**")) |>
+  modify_header(label ~ "**Değişken**", starts_with("estimate") ~ "**β**",
+                starts_with("conf.low") ~ "**%95 GA**", starts_with("p.value") ~ "**p**") |>
+  remove_abbreviation() |>
+  modify_caption("Tablo 3. Başlangıç yürüme hızı (m/s) ile ilişkili özellikler: doğrusal regresyon") |>
+  modify_source_note("β: regresyon katsayısı (m/s); GA: güven aralığı.") |>
+  bold_labels()
+tablo3_dogrusal
+```
+
+```{r}
+#   Yaş: her 1 yıllık artışta yürüme hızı ortalama 0,016 m/s daha düşüktür
+#  (β: -0,016; %95 GA: -0,018; -0,015; p<0,001). 10 yılda bu fark yaklaşık 0,16 m/s'dir.
+#   Cinsiyet: erkeklerin yürüme hızı kadınlara (referans) göre ortalama 0,054 m/s daha
+#     yüksektir (%95 GA: 0,033; 0,075; p<0,001).
+#   Eğitim: ortaöğretim (p=0,566) ve ilkokul ve altı (p=0,135) ile yükseköğretim
+#     (referans) arasındaki fark istatistiksel olarak anlamlı değildir; GA 0'ı içerir.
+```
+
+
+## Bölüm 9: Lojistik regresyon: 12 ayda düşme
+
+```{r}
+# (SPSS: Analyze > Regression > Binary Logistic)
+model_lojistik <- glm(formul_lojistik, family = binomial, data = dusme)
+```
+
+```{r}
+# 9a. Hızlı çıktı
+summary(model_lojistik)          # Estimate: log(OR)
+exp(coef(model_lojistik))        # OR (SPSS: Exp(B))
+tbl_regression(model_lojistik, exponentiate = TRUE)
+```
+
+```{r}
+# 9b. Tez tablosu: ham ve düzeltilmiş OR yan yana
+ham_lojistik <- tbl_uvregression(dusme, method = glm, y = dusme_12ay,
+                                 include = all_of(aciklayici_lojistik),
+                                 method.args = list(family = binomial),
+                                 exponentiate = TRUE, hide_n = TRUE)
+tablo4_lojistik <- tbl_merge(list(ham_lojistik, tbl_regression(model_lojistik, exponentiate = TRUE)),
+                             tab_spanner = c("**Ham**", "**Düzeltilmiş**")) |>
+  modify_header(label ~ "**Değişken**", starts_with("estimate") ~ "**OR**",
+                starts_with("conf.low") ~ "**%95 GA**", starts_with("p.value") ~ "**p**") |>
+  remove_abbreviation() |>
+  modify_caption("Tablo 4. 12 ayda düşme ile ilişkili özellikler: lojistik regresyon") |>
+  modify_source_note("OR: odds oranı; GA: güven aralığı.") |>
+  bold_labels()
+tablo4_lojistik
+grep("[0-9]\\.[0-9]", unlist(as_tibble(tablo4_lojistik)), value = TRUE)   # biçim denetimi
+```
+
+```{r}
+# Tablonun yorumu
+# Ham OR her değişkenin tek başına düşme ile ilişkisidir. Düzeltilmiş OR, modeldeki öteki
+# değişkenlere (yaş, cinsiyet, önceki düşme, görme güçlüğü, kronik hastalık ve ilaç sayısı,
+# yürüme hızı, denge programı) göre düzeltilmiş ilişkidir. OR 1'den büyükse düşme odds'u
+# daha yüksek, 1'den küçükse daha düşüktür.
+```
+
+```{r}
+#    Düzeltilmiş modele göre:
+#   Yaş: her 5 yıllık artış, daha yüksek düşme odds'u ile ilişkili bulunmuştur.
+#     (düzeltilmiş OR: 1,25; %95 GA: 1,01–1,56; p=0,040).
+```
+
+```{r}
+#   Cinsiyet (Ref: Kadın): erkeklerde 12 ayda düşme odds'u kadınlara göre istatistiksel
+#     olarak anlamlı biçimde farklı bulunmamıştır (ham OR: 1,10; %95 GA: 0,75–1,59; p=0,636;
+#     düzeltilmiş OR: 1,20; %95 GA: 0,80–1,80; p=0,371).
+```
+
+```{r}
+#   Önceki düşme: önceki 12 ayda düşenlerde, düşmeyenlere (referans) göre 12 ayda düşme
+#     odds'u daha yüksektir (OR: 2,27; %95 GA: 1,39–3,68; p<0,001).
+```
+
+```{r}
+#   Yürüme hızı: 0,1 m/s'lik artış, daha düşük düşme odds'u ile ilişkili bulunmuştur
+#     (OR: 0,83; %95 GA: 0,72–0,97; p=0,018).
+```
+
+```{r}
+#| fig-width: 9
+#| fig-height: 4.5
+# 9c. Orman grafiği (forest plot): ggstats
+virgul2  <- scales::label_number(accuracy = 0.01, decimal.mark = ",")
+p_virgul <- scales::label_pvalue(accuracy = 0.001, decimal.mark = ",")
+grafik_or <- ggstats::ggcoef_table(model_lojistik, exponentiate = TRUE,
+                                   colour = NULL, significance = NULL,
+                                   table_stat_label = list(estimate = virgul2, conf.low = virgul2,
+                                                           conf.high = virgul2, p.value = p_virgul),
+                                   ci_pattern = "{conf.low}; {conf.high}",
+                                   table_header = c("OR", "%95 GA", "p"))
+grafik_or
+ggsave("ciktilar/sekil_or.png", grafik_or, width = 22, height = 11, units = "cm", dpi = 300)
+```
+
+
+## Bölüm 10: Bulguların Word dosyasında toplanması
+
+```{r}
+# Dört tablo ve orman grafiği tek bir Word dosyasına yazılır. body_add_break() yeni
+# sayfa açar; grafik, Bölüm 9c'de kaydedilen PNG dosyasından eklenir.
+read_docx() |>
+  flextable::body_add_flextable(as_flex_table(tablo1)) |>
+  body_add_break() |>
+  flextable::body_add_flextable(as_flex_table(tablo2)) |>
+  body_add_break() |>
+  flextable::body_add_flextable(as_flex_table(tablo3_dogrusal)) |>
+  body_add_par("") |>
+  flextable::body_add_flextable(as_flex_table(tablo4_lojistik)) |>
+  body_add_break() |>
+  body_add_par("Şekil 1. 12 ayda düşme için düzeltilmiş odds oranları") |>
+  body_add_img("ciktilar/sekil_or.png", width = 6.3, height = 3.15) |>
+  print(target = "ciktilar/bulgular.docx")
+list.files("ciktilar")
+```
+
+```{r}
+# Script baştan çalıştırıldığında bütün tablo ve şekiller yeniden üretilir; veri
+# değiştiğinde çıktılar da güncellenecektir.
+```
+
+
+### LLM köşesi: "Bu tablodan Bulgular paragrafı yaz"
+
+```{r}
+#
+#  Tablolar zaten özettir ve kişi verisi içermediği için LLM'e verilebilir. 
+#  Tablo metin olarak şu komutla alınır:
+    as_tibble(tablo4_lojistik)
+#
+```
+
+```{r}
+#   LLM komutu:
+#   "aşağıdaki lojistik regresyon tablosundan makalemin Bulgular bölümü için bir paragraf yaz.
+#    bağımlı değişkenimiz "12 ayda düşme"
+#    Akademik Türkçe kullan; ondalık ayracı virgül olsun.
+#   Tabloda bulunmayan hiçbir sayıyı ekleme. [tablo]"
+#
+```
+
+```{r}
+#                         OTURUMUN SONU
+```
+
+```{.text .ascii-sanat}
+#                            _.-'-._
+#                          .'       `.
+#                         /   o   o   \
+#                        |    \___/    |
+#                        |             |
+#                       /               \
+#                     .'                 `.
+#                   .'                     `.
+#                .-'                         `-.
+#           _.-'                                 `-._
+# _______.-'                                         `-.___
+#-------+---------+---------+---------+---------+---------+--->
+#     -3SS      -2SS      -1SS       0       +1SS      +2SS    [BURADASINIZ]
+```
+

@@ -1,0 +1,35 @@
+---
+ust-etiket: "Oturum 3 · 30 Ekim 2026"
+title: "Oturum 3: kodlar ve çıktıları"
+subtitle: "Oturum 3'ün kodları R'da çalıştırıldığında nasıl görünür? Her kod bloğunun altında R'ın verdiği sonuç var. Kendi bilgisayarınızda da aynı sonuçları görmelisiniz; yalnızca uyarıların ve hata mesajlarının dili farklı olabilir."
+toc-depth: 2
+lightbox: true
+---
+
+<!-- Bu dosya site/_hazirla.R tarafından üretilir: sayfa başı _oturum3_kod_basi.qmd'den, rapor sayfaları
+     _oturum3_ekler.R'den, gövde ../oturum3_bulgular.R'den gelir. Elle düzenlemeyin; değişiklikler bir sonraki derlemede silinir. -->
+
+```{r}
+#| include: false
+# Script, katılımcının klasörünün birebir kopyasında çalışsın (ciktilar/ klasörü sitenin klasörüne düşmesin)
+kurs <- file.path(tempdir(), "R_egitim")
+unlink(kurs, recursive = TRUE)
+dir.create(kurs)
+file.copy(file.path("..", c("R_egitim.Rproj", "OKUBENI.txt", "oturum3_bulgular.R", "veriye_bakis.R")), kurs)
+file.copy("../veri", kurs, recursive = TRUE)
+knitr::opts_knit$set(root.dir = kurs)
+
+# Derleme sırasında etkisiz kalacak satırlar (kodda olduğu gibi görünürler)
+install.packages <- function(...) invisible(NULL)
+View <- function(...) invisible(NULL)
+```
+
+::: {.cipler}
+[`oturum3_bulgular.R` script'i indir](indir/oturum3_bulgular.R){.cip}
+[`veriye_bakis.R` yardımcı dosyayı indir](indir/veriye_bakis.R){.cip}
+[`R_egitim.zip` ders klasörünün tamamı](indir/R_egitim.zip){.cip}
+:::
+
+::: {.callout-note appearance="simple"}
+Bu sayfa her güncellemede `oturum3_bulgular.R` dosyasından yeniden üretilir; script ile sayfa hep aynıdır. Gri satırlar yorumdur; R onları çalıştırmaz. Script'in Word ve PDF dosyaları sayfada gösterilmez; RStudio'da çalıştırdığınızda `ciktilar` klasörüne yazılır. Yalnız `veriye_bakis()` raporunun sayfaları, ilgili kodun altında resim olarak verilmiştir; resme tıklayınca büyür.
+:::

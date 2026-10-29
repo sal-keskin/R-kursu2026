@@ -14,7 +14,10 @@ oturumlar <- list(
   list(script = "oturum1_ilk_adim.R", kod_basi = "_oturum1_kod_basi.qmd", kod = "oturum1-kod.qmd",
        dene_basi = "_oturum1_dene_basi.qmd", dene = "dene.qmd", alistirma = "_oturum1_alistirmalar.R"),
   list(script = "oturum2_veri_temizligi.R", kod_basi = "_oturum2_kod_basi.qmd", kod = "oturum2-kod.qmd",
-       dene_basi = "_oturum2_dene_basi.qmd", dene = "oturum2-dene.qmd", alistirma = "_oturum2_alistirmalar.R")
+       dene_basi = "_oturum2_dene_basi.qmd", dene = "oturum2-dene.qmd", alistirma = "_oturum2_alistirmalar.R"),
+  # Oturum 3: kod sayfasına veriye_bakis() raporunun sayfaları eklenir (_oturum3_ekler.R)
+  list(script = "oturum3_bulgular.R", kod_basi = "_oturum3_kod_basi.qmd", kod = "oturum3-kod.qmd",
+       ekler = "_oturum3_ekler.R")
 )
 
 yenile <- function(klasor) {
@@ -48,8 +51,11 @@ source("_donustur.R")
 source("_alistirma.R")
 for (o in oturumlar) {
   script <- file.path(kok, o$script)
-  writeLines(c(readLines(o$kod_basi, encoding = "UTF-8"), "", script_to_rmd(script)),
+  ekler_listesi <- list()
+  if (!is.null(o$ekler)) source(o$ekler, encoding = "UTF-8")   # ekler_listesi
+  writeLines(c(readLines(o$kod_basi, encoding = "UTF-8"), "", script_to_rmd(script, ekler_listesi)),
              o$kod, useBytes = TRUE)
+  if (is.null(o$dene)) next
   source(o$alistirma)   # alistirma_listesi
   writeLines(c(readLines(o$dene_basi, encoding = "UTF-8"), "",
                script_to_live(script, alistirmalar_md(alistirma_listesi), kod_sayfasi = o$kod)),

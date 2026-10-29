@@ -7,7 +7,7 @@ toc: false
 ---
 
 ::: {.duyuru-satir}
-[Yeni]{.duyuru-etiket} İkinci oturumun veri seti ve çıktıları yayında. [Oturuma genel bakış](oturum2.qmd){.duyuru-baglanti}
+[Yeni]{.duyuru-etiket} Üçüncü oturumun dosyaları, veri seti ve çıktıları yayında. [Oturuma genel bakış](oturum3.qmd){.duyuru-baglanti}
 :::
 
 ::: {.duyuru}
@@ -172,25 +172,25 @@ RStudio'nun güncel sürümü **Windows 11** ve **macOS 14 (Sonoma)** ya da daha
 Oturuma yine katılın. Ekranı izleyerek takip edebilirsiniz. Kodu kurulum yapmadan [Tarayıcıda deneyin](oturum2-dene.qmd) sayfasında da çalıştırabilirsiniz.
 :::
 
-## İkinci oturum: dağınık veriyi temizlemek
+## Üçüncü oturum: hazır veriden araştırma bulgularına
 
-[23 Ekim 2026]{.ust-etiket}
+[30 Ekim 2026]{.ust-etiket}
 
 Bu oturumun sonunda şunları yapabileceksiniz:
 
-- Sahadan gelen dağınık bir Excel dosyasını doğru ayarlarla okumak.
-- Veriyi LLM'e göstermeden, yalnız özetini paylaşarak yardım istemek.
-- `|>` ve dplyr fiilleriyle satır ve sütun seçmek, yeni sütun oluşturmak.
-- Farklı yazılmış kategorileri birleştirmek; metin olarak okunan sayıları ve tarihleri düzeltmek.
-- Akla yatkın olmayan değerleri ve tekrar eden kayıtları bulmak.
-- Her düzeltmeyi kontrol etmek ve kararları kaydetmek.
+- Bir veriye ilk bakış için tek satırla beş sayfalık bir PDF raporu üretmek.
+- Değişkenler arasındaki korelasyonu ısı haritasıyla göstermek.
+- Tez biçiminde Tablo 1 hazırlamak; grupları karşılaştırıp p değerlerini ve testleri eklemek.
+- ggplot2 ile grafiği parça parça kurmak ve yüksek çözünürlükle kaydetmek.
+- Doğrusal ve lojistik regresyon kurmak, ham ve düzeltilmiş sonuçları yan yana vermek, çıktıyı yorumlamak.
+- Bütün tabloları ve şekilleri tek bir Word dosyasında toplamak.
 
-Oturumda, ilk oturumdaki hipertansiyon taramasının sahadan gelmiş, dağınık Excel halini kullanacağız. Bu veri eğitim için üretildi; gerçek kişilere ait değildir.
+Oturumda 65 yaş ve üstü 600 kişinin 12 aylık düşme izlemini kullanacağız. Bu veri eğitim için üretildi; gerçek kişilere ait değildir. Oturumdan önce yeni paketleri kurmanız gerekir; kurulum satırı genel bakış sayfasında.
 
 ::: {.cipler}
-[`Genel bakış` oturumun akışı ve bölümleri](oturum2.qmd){.cip}
-[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum2-kod.qmd){.cip}
-[`webR` R'ı tarayıcıda deneyin!](oturum2-dene.qmd){.cip}
+[`Genel bakış` oturumun akışı, kurulum satırı](oturum3.qmd){.cip}
+[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum3-kod.qmd){.cip}
+[`oturum3_bulgular.R` script'i indir](indir/oturum3_bulgular.R){.cip}
 :::
 
-İlk oturumun kodları, kaydı ve verisi üst menüde, **Oturum 1** altında.
+Önceki oturumların kodları, kayıtları ve verisi üst menüde, **Oturum 1** ve **Oturum 2** altında.

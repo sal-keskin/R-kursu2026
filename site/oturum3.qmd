@@ -1,0 +1,140 @@
+---
+ust-etiket: "Temel 3 · 30 Ekim 2026, Cuma 14:00–16:00"
+title: "Hazır veriden araştırma bulgularına"
+subtitle: "Oturumun sonunda bir makalenin ya da tezin Bulgular bölümündeki tabloları ve şekilleri R'da baştan sona üretmiş olacaksınız: veriye ilk bakış, korelasyon, Tablo 1, grafikler, doğrusal ve lojistik regresyon."
+---
+
+::: {.cipler}
+[`oturum3_bulgular.R` script'i indir](indir/oturum3_bulgular.R){.cip}
+[`veriye_bakis.R` yardımcı dosyayı indir](indir/veriye_bakis.R){.cip}
+[`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum3-kod.qmd){.cip}
+:::
+
+::: {.callout-note appearance="simple"}
+## Oturumdan önce
+
+1. İki dosyayı indirip `R_egitim` klasörünüze koyun: `oturum3_bulgular.R` ve `veriye_bakis.R`. Oturumun verisi `veri/dusme65.xlsx` dosyasıdır. Klasörü yeniden indirirseniz `R_egitim.zip` içinde üç oturumun bütün dosyaları bulunur.
+2. Bu oturumda yeni paketler kullanılır. RStudio'da bir kez şu satırı çalıştırın; kurulum birkaç dakika sürebilir:
+
+```r
+install.packages(c("gtsummary", "broom.helpers", "ggstats", "flextable", "officer",
+                   "nortest", "patchwork"))
+```
+:::
+
+## Oturumun verisi
+
+Bir yaşlı izlem çalışması: 65 yaş ve üstü 600 katılımcı başlangıçta değerlendirilmiş, ardından 12 ay boyunca düşme açısından izlenmiştir. Veri 17 değişken içerir: yaş, cinsiyet, eğitim, yalnız yaşama, kronik hastalık ve ilaç sayısı, görme güçlüğü, önceki düşme, fiziksel aktivite, BKİ, uyku süresi, el kavrama kuvveti, başlangıç ve 6. ay yürüme hızı, denge programına kayıt ve 12 ayda düşme. Excel dosyasının "sozluk" sayfasında her değişkenin açıklaması yer alır. Bu veri eğitim için üretilmiştir; gerçek kişilere ait değildir.
+
+Oturumda iki araştırma sorusu yanıtlanır:
+
+1. Başlangıç yürüme hızı hangi özelliklerle ilişkilidir? (doğrusal regresyon)
+2. 12 ay içinde düşme hangi özelliklerle ilişkilidir? (lojistik regresyon)
+
+## Akış
+
+Oturum, `oturum3_bulgular.R` script'inin bölümlerini sırayla izlemektedir. Her adımın çıktısı tez ya da makale biçimindedir: ondalık ayracı virgül, yüzde işareti sayıdan önce.
+
+::::: {.adimlar}
+:::: {.adim}
+[01]{.adim-no}
+
+[Hazırlık ve veri]{.adim-baslik}
+[Bölüm 0–2]{.adim-ek}
+
+- Paketler yüklenmekte; R'ın bütün çıktıları Türkçe sayı biçimine çevrilmektedir (1,25 ve 1.500).
+- Excel dosyasının "veri" ve "sozluk" sayfaları okunmaktadır.
+- Kategorilere sıra ve referans verilmekte, sonuç değişkeni 0/1 yerine Hayır/Evet yapılmakta, yaş grubu türetilmektedir.
+- Değişkenlere Türkçe etiketler verilmektedir; tablolar ve grafikler bu etiketleri kullanır.
+::::
+
+:::: {.adim}
+[02]{.adim-no}
+
+[Veriye ilk bakış]{.adim-baslik}
+[Bölüm 3]{.adim-ek}
+
+`veriye_bakis.R` yardımcı dosyası `source()` ile yüklenmektedir. Tek bir satır, beş sayfalık bir PDF raporu üretir:
+
+- Veri kimlik kartı: her değişkenin türü, eksik sayısı, özeti ve küçük bir dağılım grafiği.
+- Kategorik değişkenler: kategorilerin payı, yüzdesi ve kişi sayısı.
+- Sayısal değişkenler: tanımlayıcılar, histogram, QQ grafiği ve dört normallik testi.
+- Sonuca göre profil: her kategoride sonucun yüzdesi ve %95 güven aralığı; sayısal değişkenlerin gruplara göre dağılımı ve testleri.
+
+Aynı rapor sürekli bir sonuç (başlangıç yürüme hızı) için de üretilmekte; normallik kararı grafiklerle birlikte verilmektedir.
+::::
+
+:::: {.adim}
+[03]{.adim-no}
+
+[Korelasyon]{.adim-baslik}
+[Bölüm 4]{.adim-ek}
+
+- Spearman korelasyonu ve ısı haritası, önce yalnız sayısal değişkenlerle kurulmaktadır.
+- Ardından kategoriler sayıya çevrilerek bütün değişkenler aynı grafikte gösterilmektedir; kodlamanın nasıl okunacağı tartışılmaktadır.
+::::
+
+:::: {.adim}
+[04]{.adim-no}
+
+[Tablo 1 ve Tablo 2]{.adim-baslik}
+[Bölüm 5]{.adim-ek}
+
+- `gtsummary` ile bütün katılımcıların başlangıç özellikleri (Tablo 1) adım adım kurulmaktadır.
+- Aynı tablo 12 ayda düşenler ve düşmeyenler için ayrı ayrı verilmekte, p değerleri ve kullanılan testler eklenmektedir (Tablo 2).
+- Sütun yüzdesi ile satır yüzdesi arasındaki fark gösterilmekte, tablolar Word'e aktarılmaktadır.
+::::
+
+:::: {.adim}
+[05]{.adim-no}
+
+[Grafikler]{.adim-baslik}
+[Bölüm 6]{.adim-ek}
+
+- ggplot2 grafiğinin parçaları (veri, eşleme, katman, etiket, ölçek, tema, panel) önce/sonra grafikleriyle tanıtılmaktadır.
+- Bir saçılım grafiği sekiz adımda kurulmakta ve yüksek çözünürlükle kaydedilmektedir.
+- R Graph Gallery'den yoğunluk, keman, kabarcık, yığılmış çubuk, lolipop ve çizgi grafikleri gösterilmektedir.
+::::
+
+:::: {.adim}
+[06]{.adim-no}
+
+[Regresyon ve Word dosyası]{.adim-baslik}
+[Bölüm 7–10]{.adim-ek}
+
+- Katsayıların anlamlı birimlerle okunması için değişkenler yeniden ölçeklenmektedir (5 yıl, 0,1 m/s).
+- Doğrusal regresyon (Tablo 3) ve lojistik regresyon (Tablo 4) ham ve düzeltilmiş sonuçlarıyla yan yana verilmekte, çıktılar yorumlanmaktadır.
+- Düzeltilmiş odds oranları orman grafiğinde gösterilmekte; dört tablo ve şekil tek bir Word dosyasında toplanmaktadır.
+- LLM köşesi: tablodan Bulgular paragrafı istenmekte; paragraf tabloyla karşılaştırılarak denetlenmektedir.
+::::
+:::::
+
+## Script'in bölümleri
+
+| Bölüm | Konu | SPSS'teki karşılığı |
+|--|--------|--------|
+| 0 | Hazırlık: paketler ve Türkçe sayı biçimi | Edit > Options |
+| 1 | Verinin okunması | File > Open > Data (Excel) |
+| 2 | Verinin analize hazırlanması | Variable View: Values, Label; Recode into Different Variables |
+| 3 | Veriye ilk bakış | Codebook; Frequencies; Explore (normallik grafikleri ve testleri) |
+| 4 | Değişkenler arası korelasyon | Correlate > Bivariate > Spearman |
+| 5 | Tanımlayıcı istatistikler ve ikili karşılaştırmalar | Descriptives, Crosstabs, Compare Means |
+| 6 | Grafikler | Chart Builder |
+| 7 | Regresyon modellerinin tanımlanması | Compute Variable |
+| 8 | Doğrusal regresyon | Regression > Linear |
+| 9 | Lojistik regresyon | Regression > Binary Logistic |
+| 10 | Bulguların Word dosyasında toplanması | Output > Export |
+
+## Bu oturumdaki paketler
+
+`readxl`, `dplyr`, `ggplot2`, `tidyr` ve `janitor` önceki oturumlarda kuruldu. Yeni paketler yukarıdaki satırla kurulur.
+
+| Paket | Ne için? |
+|------|----------|
+| `gtsummary` | Tablo 1, Tablo 2 ve regresyon tabloları; p değerleri ve dipnotlar |
+| `broom.helpers` | `gtsummary` ve `ggstats`'ın regresyon modellerini okuması için |
+| `ggstats` | Odds oranları için orman grafiği |
+| `flextable`, `officer` | Tabloları ve şekilleri Word dosyasına aktarmak |
+| `nortest` | `veriye_bakis.R`'daki Anderson-Darling ve Lilliefors normallik testleri |
+| `patchwork` | Grafikleri yan yana ya da alt alta birleştirmek |
+| `ggplot2` | Grafikler |

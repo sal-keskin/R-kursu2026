@@ -1,5 +1,5 @@
 # Her push'ta Quarto sitesini derler ve GitHub Pages'e yayınlar.
-# R kodu (Oturum 1 script'i ve Veriler sayfası) derleme sırasında gerçekten çalıştırılır;
+# R kodu (oturum script'leri ve Veriler sayfası) derleme sırasında gerçekten çalıştırılır;
 # script hata verirse site yayınlanmaz, eski sürüm yayında kalır.
 name: Siteyi derle ve yayınla
 
@@ -61,6 +61,12 @@ jobs:
             any::janitor
             any::stringr
             any::lubridate
+            any::gtsummary
+            any::broom.helpers
+            any::ggstats
+            any::flextable
+            any::officer
+            any::nortest
 
       # Türkçe yerel ayar yalnız derlemede: R çıktıları ve hata mesajları Türkçe olsun.
       # (Bütün işe uygulanınca "Türkçe İ" sorunu yüzünden paket kurulumu bozuluyor.)
