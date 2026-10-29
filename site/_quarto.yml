@@ -59,7 +59,7 @@ website:
         menu:
           - text: "Hipertansiyon taraması"
             href: veri-ht.qmd
-          - text: "Düşme izlemi (65 yaş ve üstü)"
+          - text: "Düşme izlemi"
             href: veri-dusme.qmd
     right:
       - icon: github
