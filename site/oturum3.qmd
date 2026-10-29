@@ -1,12 +1,14 @@
 ---
 ust-etiket: "Temel 3 · 30 Ekim 2026, Cuma 14:00–16:00"
 title: "Hazır veriden araştırma bulgularına"
-subtitle: "Oturumun sonunda bir makalenin ya da tezin Bulgular bölümündeki tabloları ve şekilleri R'da baştan sona üretmiş olacaksınız: veriye ilk bakış, korelasyon, Tablo 1, grafikler, doğrusal ve lojistik regresyon."
+subtitle: "Oturumun sonunda bir makalenin ya da tezin Bulgular bölümündeki tabloları ve şekilleri R'da baştan sona üretmiş olacağız: veriye ilk bakış, korelasyon, Tablo 1, grafikler, doğrusal ve lojistik regresyon."
 ---
 
 ::: {.cipler}
+[`R_egitim.zip` ders klasörünün tamamı (önerilen)](indir/R_egitim.zip){.cip}
 [`oturum3_bulgular.R` script'i indir](indir/oturum3_bulgular.R){.cip}
 [`veriye_bakis.R` yardımcı dosyayı indir](indir/veriye_bakis.R){.cip}
+[`dusme65.xlsx` oturumun verisi (Excel)](veri/dusme65.xlsx){.cip}
 [`Kodlar ve çıktıları` R'da çalıştırıldığında nasıl görünür](oturum3-kod.qmd){.cip}
 [`webR` R'ı tarayıcıda deneyin!](oturum3-dene.qmd){.cip}
 :::
@@ -14,7 +16,9 @@ subtitle: "Oturumun sonunda bir makalenin ya da tezin Bulgular bölümündeki ta
 ::: {.callout-note appearance="simple"}
 ## Oturumdan önce
 
-1. İki dosyayı indirip `R_egitim` klasörünüze koyun: `oturum3_bulgular.R` ve `veriye_bakis.R`. Oturumun verisi `veri/dusme65.xlsx` dosyasıdır. Klasörü yeniden indirirseniz `R_egitim.zip` içinde üç oturumun bütün dosyaları bulunur.
+1. Ders klasörünü [`R_egitim.zip`](indir/R_egitim.zip) olarak yeniden indirip açmanızı öneririz. İçinde üç oturumun script'leri, `veriye_bakis.R` ve `veri/dusme65.xlsx` dahil bütün veriler bulunur. Zip açılınca yine `R_egitim` adlı bir klasör oluşur; eski klasörünüzde kendi notlarınız varsa önce onun adını değiştirin (örneğin `R_egitim_eski`).
+
+    Yalnız yeni dosyaları almak isterseniz: `oturum3_bulgular.R` ve `veriye_bakis.R` dosyalarını `R_egitim` klasörüne, [`dusme65.xlsx`](veri/dusme65.xlsx) dosyasını `R_egitim/veri` klasörüne koyun.
 2. Bu oturumda yeni paketler kullanılır. RStudio'da bir kez şu satırı çalıştırın; kurulum birkaç dakika sürebilir:
 
 ```r
