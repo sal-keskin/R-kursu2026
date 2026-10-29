@@ -25,7 +25,7 @@ format:
       margin-width: 260px
 engine: knitr
 webr:
-  packages: ["readxl", "dplyr", "ggplot2", "patchwork", "gtsummary", "tibble", "janitor", "tidyr", "scales", "ggstats", "broom.helpers", "nortest", "MASS"]
+  packages: ["readxl", "dplyr", "ggplot2", "patchwork", "gtsummary", "tibble", "janitor", "tidyr", "scales", "ggstats", "broom.helpers", "nortest"]
 resources:
   - veri/dusme65.xlsx
   - indir/veriye_bakis.R
@@ -58,6 +58,9 @@ View <- function(x, ...) {
   print(head(x))
 }
 invisible(file.copy("indir/veriye_bakis.R", "veriye_bakis.R", overwrite = TRUE))
+# MASS yalnız kurulur, yüklenmez: iki boyutlu yoğunluk grafiği (Bölüm 6) onu arka planda kullanır.
+# library(MASS) yapılsaydı MASS'ın select() fonksiyonu dplyr'ın select()'ini örterdi.
+webr::install("MASS", quiet = TRUE)
 library(readxl)
 library(dplyr)
 library(ggplot2)
