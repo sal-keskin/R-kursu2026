@@ -55,6 +55,9 @@ website:
             href: oturum3-dene.qmd
           - text: "Oturumun verisi"
             href: veri-dusme.qmd
+          - text: "Ders kaydı"
+            href: https://www.youtube.com/watch?v=pqXjjbS7s0E&list=PLVqkPXX13dHk
+            target: _blank
       - text: "Veriler"
         menu:
           - text: "Hipertansiyon taraması"
