@@ -10,44 +10,59 @@ toc: false
 [Yeni]{.duyuru-etiket} Üçüncü oturumun kaydı yayında; dosyalar ve çıktılar için: [Oturuma genel bakış](oturum3.qmd){.duyuru-baglanti}
 :::
 
-::: {.kayitlar}
-::: {.kayitlar-ust}
-[Ders kayıtları]{.duyuru-etiket} Katılamadığınız oturumu ya da yeniden görmek istediğiniz bölümü izleyin. [Bütün kayıtlar](https://www.youtube.com/playlist?list=PLVqkPXX13dHk){.duyuru-baglanti}
-:::
-
-::: {.kayit}
 ```{=html}
-<div class="duyuru-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/pqXjjbS7s0E?rel=0" title="Oturum 3 ders kaydı, 30 Ekim 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- Ders kayıtları galerisi: üstte oynatıcı ve seçili kaydın bilgisi, altta bütün kayıtların küçük resimleri.
+     Küçük resme tıklanınca kayıt oynatıcıda açılır (JavaScript yoksa YouTube'da açılır).
+     Yeni kayıt gelince: oynatıcıyı, metni ve galerinin ilk öğesini o kayda göre değiştirin; aria-current yeni öğede olsun. -->
+<div class="duyuru" id="ders-kayitlari">
+  <div class="duyuru-video">
+    <iframe src="https://www.youtube-nocookie.com/embed/pqXjjbS7s0E?rel=0" title="Oturum 3 ders kaydı" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="duyuru-metin">
+    <p><span class="duyuru-etiket">Ders kayıtları</span></p>
+    <p class="kayit-oturum">Oturum 3 · 30&nbsp;Ekim</p>
+    <p><strong class="kayit-ad">Hazır veriden araştırma bulgularına</strong></p>
+    <p>Katılamadığınız oturumu ya da yeniden görmek istediğiniz bölümü izleyin. Başka bir kayıt için alttaki resimlerden birini seçin.</p>
+    <p class="kayit-baglantilar"><a class="duyuru-baglanti kayit-youtube" href="https://www.youtube.com/watch?v=pqXjjbS7s0E&amp;list=PLVqkPXX13dHk">YouTube'da açın</a> <a class="duyuru-baglanti" href="https://www.youtube.com/playlist?list=PLVqkPXX13dHk">Bütün kayıtlar</a></p>
+  </div>
+  <div class="galeri">
+    <a class="galeri-oge" href="https://www.youtube.com/watch?v=pqXjjbS7s0E&amp;list=PLVqkPXX13dHk" data-video="pqXjjbS7s0E" data-oturum="Oturum 3 · 30 Ekim" data-ad="Hazır veriden araştırma bulgularına" aria-current="true">
+      <img src="https://i.ytimg.com/vi/pqXjjbS7s0E/mqdefault.jpg" alt="" width="320" height="180" loading="lazy">
+      <span><span class="galeri-ust">Oturum 3 · 30&nbsp;Ekim</span><span class="galeri-ad">Hazır veriden araştırma bulgularına</span></span>
+    </a>
+    <a class="galeri-oge" href="https://www.youtube.com/watch?v=824RjWL-aeQ&amp;list=PLVqkPXX13dHk" data-video="824RjWL-aeQ" data-oturum="Oturum 2 · 23 Ekim" data-ad="Dağınık veriyi temizlemek">
+      <img src="https://i.ytimg.com/vi/824RjWL-aeQ/mqdefault.jpg" alt="" width="320" height="180" loading="lazy">
+      <span><span class="galeri-ust">Oturum 2 · 23&nbsp;Ekim</span><span class="galeri-ad">Dağınık veriyi temizlemek</span></span>
+    </a>
+    <a class="galeri-oge" href="https://www.youtube.com/watch?v=cc22iYSFUmw&amp;list=PLVqkPXX13dHk" data-video="cc22iYSFUmw" data-oturum="Oturum 1 · 16 Ekim" data-ad="R ve RStudio'ya ilk adım">
+      <img src="https://i.ytimg.com/vi/cc22iYSFUmw/mqdefault.jpg" alt="" width="320" height="180" loading="lazy">
+      <span><span class="galeri-ust">Oturum 1 · 16&nbsp;Ekim</span><span class="galeri-ad">R ve RStudio'ya ilk adım</span></span>
+    </a>
+  </div>
 </div>
+<script>
+(() => {
+  const kutu = document.getElementById("ders-kayitlari");
+  const oynatici = kutu.querySelector("iframe");
+  const ogeler = kutu.querySelectorAll(".galeri-oge");
+  ogeler.forEach(oge => oge.addEventListener("click", olay => {
+    // Ctrl/Cmd ile tıklayan yeni sekmede YouTube'u açsın
+    if (olay.metaKey || olay.ctrlKey || olay.shiftKey || olay.button !== 0) return;
+    olay.preventDefault();
+    const d = oge.dataset;
+    oynatici.src = "https://www.youtube-nocookie.com/embed/" + d.video + "?rel=0&autoplay=1";
+    oynatici.title = d.oturum.split(" · ")[0] + " ders kaydı";
+    kutu.querySelector(".kayit-oturum").textContent = d.oturum;
+    kutu.querySelector(".kayit-ad").textContent = d.ad;
+    kutu.querySelector(".kayit-youtube").href = oge.href;
+    ogeler.forEach(o => o.removeAttribute("aria-current"));
+    oge.setAttribute("aria-current", "true");
+    // Telefonda oynatıcı ekranın üstünde kalır; görünür olsun
+    if (oynatici.getBoundingClientRect().top < 0) oynatici.scrollIntoView({ behavior: "smooth", block: "center" });
+  }));
+})();
+</script>
 ```
-
-[Oturum 3 · 30\ Ekim]{.kayit-ust}
-[Hazır veriden araştırma bulgularına](https://www.youtube.com/watch?v=pqXjjbS7s0E&list=PLVqkPXX13dHk){.kayit-baslik}
-:::
-
-::: {.kayit}
-```{=html}
-<div class="duyuru-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/824RjWL-aeQ?rel=0" title="Oturum 2 ders kaydı, 23 Ekim 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-```
-
-[Oturum 2 · 23\ Ekim]{.kayit-ust}
-[Dağınık veriyi temizlemek](https://www.youtube.com/watch?v=824RjWL-aeQ&list=PLVqkPXX13dHk){.kayit-baslik}
-:::
-
-::: {.kayit}
-```{=html}
-<div class="duyuru-video">
-  <iframe src="https://www.youtube-nocookie.com/embed/cc22iYSFUmw?rel=0" title="Oturum 1 ders kaydı, 16 Ekim 2026" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-```
-
-[Oturum 1 · 16\ Ekim]{.kayit-ust}
-[R ve RStudio'ya ilk adım](https://www.youtube.com/watch?v=cc22iYSFUmw&list=PLVqkPXX13dHk){.kayit-baslik}
-:::
-:::
 
 ## Başlamadan önce
 
